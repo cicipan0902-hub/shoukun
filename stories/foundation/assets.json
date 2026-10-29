@@ -137,14 +137,14 @@
     {
       "id": "avatar-lifei",
       "category": "characters",
-      "file": null,
+      "file": "assets/characters/avatar-lifei.png",
       "required": false,
       "description": "原创NPC首字占位头像"
     },
     {
       "id": "avatar-zhujiaqi",
       "category": "characters",
-      "file": null,
+      "file": "assets/characters/avatar-zhujiaqi.png",
       "required": false,
       "description": "原创NPC首字占位头像"
     },
@@ -158,7 +158,7 @@
     {
       "id": "photo-party-evening",
       "category": "gallery",
-      "file": null,
+      "file": "assets/gallery/party-evening-01.jpg",
       "required": false,
       "description": "第六章聚会合照；待作者上传，不用无关照片替代。"
     },
@@ -434,6 +434,13 @@
       "file": "assets/weibo/entertainment/football-01.jpg",
       "required": false,
       "description": "娱乐候选话题配图，待作者提供有权使用的原始素材"
+    },
+    {
+      "id": "photo-ch08-book-exchange",
+      "category": "events",
+      "file": "assets/events/ch08-book-exchange-01.jpg",
+      "required": false,
+      "description": "第八章旧书交换活动照片，可选，不阻断主线"
     }
   ]
 }

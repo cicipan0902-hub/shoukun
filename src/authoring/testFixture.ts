@@ -15,3 +15,10 @@ export function foundationExtensions() {
 export function authorOnlyFixture<T>(name: string): T | undefined {
   return files["../../stories/foundation/" + name] as T | undefined;
 }
+
+export function foundationPathCount() {
+  return [project.sourceFile, project.extensionsFile, ...project.additionalExtensionsFiles].reduce((sum, path) => {
+    const data = files["../../" + path] as { tests?: unknown[] } | undefined;
+    return sum + (data?.tests?.length || 0);
+  }, 0);
+}

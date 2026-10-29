@@ -2404,9 +2404,257 @@
           "value": "相册：运动会 · 出手以后。"
         }
       ]
+    },
+    {
+      "id": "ch08-open",
+      "chatId": "ch08-work",
+      "trigger": {
+        "event": "variable",
+        "target": "chapter.chapter-08-pending.started",
+        "conditions": [
+          {
+            "key": "chapter.chapter-08-pending.started",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "onStart": [
+        {
+          "type": "variable",
+          "key": "ch08.stage",
+          "value": "opening"
+        }
+      ],
+      "steps": [
+        {
+          "message": "ch08-intro-1"
+        },
+        {
+          "message": "ch08-intro-2"
+        },
+        {
+          "message": "ch08-intro-3"
+        },
+        {
+          "message": "ch08-intro-4"
+        }
+      ],
+      "after": [
+        {
+          "type": "variable",
+          "key": "ch08.stage",
+          "value": "confession"
+        },
+        {
+          "type": "unlock",
+          "key": "ch08-confession",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "文件：放学后 · 走廊。"
+        }
+      ]
+    },
+    {
+      "id": "ch08-wrap",
+      "chatId": "ch08-work",
+      "trigger": {
+        "event": "variable",
+        "target": "ch08.wrapReady",
+        "conditions": [
+          {
+            "key": "ch08.wrapReady",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "onStart": [
+        {
+          "type": "variable",
+          "key": "ch08.stage",
+          "value": "wrap"
+        }
+      ],
+      "steps": [
+        {
+          "message": "ch08-wrap-1"
+        },
+        {
+          "message": "ch08-wrap-2"
+        },
+        {
+          "message": "ch08-wrap-3"
+        },
+        {
+          "message": "ch08-wrap-4"
+        },
+        {
+          "message": "ch08-wrap-5"
+        },
+        {
+          "message": "ch08-wrap-6"
+        },
+        {
+          "message": "ch08-wrap-7"
+        },
+        {
+          "message": "ch08-wrap-8"
+        },
+        {
+          "message": "ch08-wrap-9"
+        },
+        {
+          "message": "ch08-wrap-10"
+        }
+      ],
+      "after": [
+        {
+          "type": "variable",
+          "key": "ch08.chatDone",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch08.stage",
+          "value": "memo"
+        },
+        {
+          "type": "unlock",
+          "key": "ch08-memo",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ch08-weibo-star",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ch08-weibo-owner",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "备忘录有新记录，微博也更新了。微博不影响本章完成。"
+        }
+      ]
     }
   ],
   "guides": [
+    {
+      "title": "进入第八章 · 她喜欢的人",
+      "detail": "备忘录 → 第八章入口。",
+      "app": "notes",
+      "itemId": "ch08-entry",
+      "conditions": [
+        {
+          "key": "chapter.chapter-07-pending.completed",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "chapter.chapter-08-pending.started",
+          "op": "eq",
+          "value": false
+        }
+      ]
+    },
+    {
+      "title": "看看值班安排",
+      "detail": "按主线继续；朋友圈、微博和相册都可跳过。",
+      "app": "wechat",
+      "thread": "旧书摊收工群",
+      "conditions": [
+        {
+          "key": "ch08.stage",
+          "op": "eq",
+          "value": "opening"
+        }
+      ]
+    },
+    {
+      "title": "放学后 · 走廊",
+      "detail": "按主线继续；朋友圈、微博和相册都可跳过。",
+      "app": "files",
+      "itemId": "ch08-confession",
+      "conditions": [
+        {
+          "key": "ch08.stage",
+          "op": "eq",
+          "value": "confession"
+        }
+      ]
+    },
+    {
+      "title": "去旧书摊帮忙",
+      "detail": "按主线继续；朋友圈、微博和相册都可跳过。",
+      "app": "files",
+      "itemId": "ch08-activity",
+      "conditions": [
+        {
+          "key": "ch08.stage",
+          "op": "eq",
+          "value": "activity"
+        }
+      ]
+    },
+    {
+      "title": "第二天的走廊偶遇",
+      "detail": "按主线继续；朋友圈、微博和相册都可跳过。",
+      "app": "files",
+      "itemId": "ch08-corridor",
+      "conditions": [
+        {
+          "key": "ch08.stage",
+          "op": "eq",
+          "value": "corridor"
+        }
+      ]
+    },
+    {
+      "title": "回群看收工消息",
+      "detail": "按主线继续；朋友圈、微博和相册都可跳过。",
+      "app": "wechat",
+      "thread": "旧书摊收工群",
+      "conditions": [
+        {
+          "key": "ch08.stage",
+          "op": "eq",
+          "value": "wrap"
+        }
+      ]
+    },
+    {
+      "title": "读读今晚的备忘录",
+      "detail": "按主线继续；朋友圈、微博和相册都可跳过。",
+      "app": "notes",
+      "itemId": "ch08-memo",
+      "conditions": [
+        {
+          "key": "ch08.stage",
+          "op": "eq",
+          "value": "memo"
+        }
+      ]
+    },
+    {
+      "title": "第八章已完成",
+      "detail": "按主线继续；朋友圈、微博和相册都可跳过。",
+      "app": "notes",
+      "itemId": "ch08-memo",
+      "conditions": [
+        {
+          "key": "ch08.stage",
+          "op": "eq",
+          "value": "completed"
+        }
+      ]
+    },
     {
       "title": "进入第七章 · 差一点就赢了",
       "detail": "备忘录 → 第七章入口。",
@@ -3244,6 +3492,13 @@
       "label": "进入第七章 · 差一点就赢了",
       "event": "chapterStart",
       "target": "chapter-07-pending"
+    },
+    {
+      "afterKey": "chapter.chapter-07-pending.completed",
+      "startedKey": "chapter.chapter-08-pending.started",
+      "label": "进入第八章 · 她喜欢的人",
+      "event": "chapterStart",
+      "target": "chapter-08-pending"
     }
   ],
   "documents": [
@@ -3922,6 +4177,307 @@
             {
               "type": "variable",
               "key": "ch07.wrapReady",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch08-confession",
+      "itemId": "ch08-confession",
+      "kind": "scene",
+      "conditions": [],
+      "entries": [],
+      "sections": [
+        {
+          "text": "男生：不是问题目。我想了几天，还是想跟你说，我挺喜欢你的。\n我：谢谢你愿意告诉我。但我没办法答应，也不想让你以为以后会有机会。\n男生：是因为你有喜欢的人了吗？\n\n我握了一下书包带。\n我：嗯，有。\n男生：我认识吗？\n我：……对不起。",
+          "conditions": []
+        },
+        {
+          "text": "我：你不用觉得自己哪里不好。这是我的想法。\n男生：知道了，你不用一直道歉。",
+          "conditions": [
+            {
+              "key": "ch08.refusal",
+              "op": "eq",
+              "value": "gentle"
+            }
+          ]
+        },
+        {
+          "text": "我：我不想说得含糊，让你白等。\n男生：明白。那明天见。",
+          "conditions": [
+            {
+              "key": "ch08.refusal",
+              "op": "eq",
+              "value": "clear"
+            }
+          ]
+        },
+        {
+          "text": "他点点头，把练习册塞回包里。我往另一边走，没有再补一句“以后再说”。\n\n楼梯口，朱志鑫的脚步慢了一瞬，随即跟着下楼的人流走远了。他没有看清谈话的另一个人。",
+          "conditions": []
+        }
+      ],
+      "controls": [
+        {
+          "id": "gentle",
+          "label": "补一句：“不是你哪里不好。”（可选）",
+          "conditions": [
+            {
+              "key": "ch08.stage",
+              "op": "eq",
+              "value": "confession"
+            },
+            {
+              "key": "ch08.refusal",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch08.refusal",
+              "value": "gentle"
+            }
+          ]
+        },
+        {
+          "id": "clear",
+          "label": "补一句：“我不想让你白等。”（可选）",
+          "conditions": [
+            {
+              "key": "ch08.stage",
+              "op": "eq",
+              "value": "confession"
+            },
+            {
+              "key": "ch08.refusal",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch08.refusal",
+              "value": "clear"
+            }
+          ]
+        },
+        {
+          "id": "continue",
+          "label": "去参加旧书交换活动",
+          "conditions": [
+            {
+              "key": "ch08.stage",
+              "op": "eq",
+              "value": "confession"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch08.overheard",
+              "value": true
+            },
+            {
+              "type": "variable",
+              "key": "ch08.stage",
+              "value": "activity"
+            },
+            {
+              "type": "unlock",
+              "key": "ch08-activity",
+              "value": true
+            },
+            {
+              "type": "unlock",
+              "key": "ch08-moment-activity",
+              "value": true
+            },
+            {
+              "type": "notification",
+              "key": "",
+              "value": "朋友圈有新动态，可以之后再看。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch08-activity",
+      "itemId": "ch08-activity",
+      "kind": "scene",
+      "conditions": [],
+      "entries": [],
+      "sections": [
+        {
+          "text": "朱志鑫：你们几点结束？\n我：五点半。你要换书？\n朱志鑫：没带。可以先看看吗？\n我：可以，又不查入场券。\n\n他手已经伸向一本书，听见这句，又收回来一点。\n我：我是说，拿起来看也行。\n朱志鑫：哦。",
+          "conditions": []
+        },
+        {
+          "text": "我：你平时看这类的？\n朱志鑫：以前看过一半，后来没找到。\n我：那这次能从头看了。\n朱志鑫：……好像也是。\n\n我低头整理书签，明明已经排齐，又把最上面一张挪了一下。他没有立刻走。",
+          "conditions": []
+        },
+        {
+          "text": "一个同学过来问旧书的登记位置，我把自己的椅子让给她。左航抱着两本书回来，问我是不是把他的水也换出去了。\n我：在箱子后面。你那瓶没人肯换。\n左航：合理，瓶盖已经被我拧坏了。\n\n张峻豪伸手替我接住快掉下去的一摞书：“别叠了，我刚从另一边搬完，又得在你这儿重来。”\n我：那你先别走，这箱也归你。\n张峻豪：安排得挺顺手啊。",
+          "conditions": []
+        },
+        {
+          "text": "朱志鑫把书签放回桌上。\n朱志鑫：那我先去帮他们搬箱子。\n我：好，等会儿——\n\n他回头。我指了指剪刀：“要用这个的话，别拿混了。”\n朱志鑫：嗯。\n\n收摊时我隔着书架看过去，他正跟别人核对箱数。最后一张登记表传回来，他没再过来。",
+          "conditions": []
+        }
+      ],
+      "controls": [
+        {
+          "id": "continue",
+          "label": "收好登记表，继续第二天的事",
+          "conditions": [
+            {
+              "key": "ch08.stage",
+              "op": "eq",
+              "value": "activity"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch08.stage",
+              "value": "corridor"
+            },
+            {
+              "type": "unlock",
+              "key": "ch08-corridor",
+              "value": true
+            },
+            {
+              "type": "unlock",
+              "key": "ch08-photo",
+              "value": true
+            },
+            {
+              "type": "unlock",
+              "key": "ch08-weibo-zuo",
+              "value": true
+            },
+            {
+              "type": "notification",
+              "key": "",
+              "value": "相册、微博有更新，可自由查看。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch08-corridor",
+      "itemId": "ch08-corridor",
+      "kind": "scene",
+      "conditions": [],
+      "entries": [],
+      "sections": [
+        {
+          "text": "我：朱志鑫。\n\n他停下来。我已经往前走了半步，又退回转角。\n我：昨天你看的那本书，后来换走了吗？我收摊时没看见。\n朱志鑫：在我这儿。你也想看？\n我：有点。书名没记全，查了一下没找到。\n朱志鑫：最后两个字是“往事”。",
+          "conditions": []
+        },
+        {
+          "text": "我：那等你看完，我再去找。\n朱志鑫：我放回换书架。不会直接拿走。",
+          "conditions": [
+            {
+              "key": "ch08.approach",
+              "op": "eq",
+              "value": "wait"
+            }
+          ]
+        },
+        {
+          "text": "我：你觉得前面好看吗？别说了，我还是自己看吧。\n朱志鑫：我也还没重看。你先别急着信我。",
+          "conditions": [
+            {
+              "key": "ch08.approach",
+              "op": "eq",
+              "value": "read"
+            }
+          ]
+        },
+        {
+          "text": "朱志鑫：你一般……\n我：嗯？\n\n他看了眼我手上的登记表。\n朱志鑫：没事，放回去的时候，我让他们贴个条。\n我：行，谢谢。\n朱志鑫：嗯。\n\n他往楼梯那边走。我把书名补全，站了一会儿才想起，登记表还没交。",
+          "conditions": []
+        }
+      ],
+      "controls": [
+        {
+          "id": "wait",
+          "label": "“那等你看完，我再去找。”（可选）",
+          "conditions": [
+            {
+              "key": "ch08.stage",
+              "op": "eq",
+              "value": "corridor"
+            },
+            {
+              "key": "ch08.approach",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch08.approach",
+              "value": "wait"
+            }
+          ]
+        },
+        {
+          "id": "read",
+          "label": "“前面好看吗？算了，我自己看。”（可选）",
+          "conditions": [
+            {
+              "key": "ch08.stage",
+              "op": "eq",
+              "value": "corridor"
+            },
+            {
+              "key": "ch08.approach",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch08.approach",
+              "value": "read"
+            }
+          ]
+        },
+        {
+          "id": "continue",
+          "label": "交完登记表，回群看消息",
+          "conditions": [
+            {
+              "key": "ch08.stage",
+              "op": "eq",
+              "value": "corridor"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch08.stage",
+              "value": "wrap"
+            },
+            {
+              "type": "variable",
+              "key": "ch08.wrapReady",
+              "value": true
+            },
+            {
+              "type": "unlock",
+              "key": "ch08-moment-junhao",
               "value": true
             }
           ]

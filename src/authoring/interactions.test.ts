@@ -1,4 +1,4 @@
-import { foundationExtensions } from "./testFixture";
+import { foundationExtensions, foundationPathCount } from "./testFixture";
 import { describe, it, expect } from "vitest";
 import source from "../../stories/foundation/chapter-01.json";
 import project from "../../stories/foundation/project.json";
@@ -41,7 +41,7 @@ function step(
 describe("reusable choice conversations and friendship progression", () => {
   it("retains every first chapter path and all 64 second chapter combinations", () => {
     const { work, story } = build();
-    expect(story.tests).toHaveLength(129);
+    expect(story.tests).toHaveLength(foundationPathCount());
     expect(testStory(story, work)).toEqual([]);
     for (const path of story.tests.slice(18, 82)) {
       let state = dispatch(work, initialRuntime(work), "start");

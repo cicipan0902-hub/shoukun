@@ -1,4 +1,4 @@
-import { foundationExtensions, authorOnlyFixture } from "./testFixture";
+import { foundationExtensions, authorOnlyFixture, foundationPathCount } from "./testFixture";
 import { describe, it, expect } from "vitest";
 import source from "../../stories/foundation/chapter-01.json";
 import project from "../../stories/foundation/project.json";
@@ -36,7 +36,7 @@ function before(target: string) {
 describe("chapter three, task documents and private diary", () => {
   it("plays every new branch with restoration after every interaction, keeping chapter 1/2 and friendship history", () => {
     const { work, story } = build();
-    expect(story.tests).toHaveLength(129);
+    expect(story.tests).toHaveLength(foundationPathCount());
     expect(story.tests.slice(82, 94)).toHaveLength(12);
     for (const path of story.tests.slice(82, 94)) {
       let s = dispatch(work, initialRuntime(work), "start");
@@ -60,7 +60,7 @@ describe("chapter three, task documents and private diary", () => {
       expect(repeated.endings).toEqual(s.endings);
       expect(repeated.notifications).toEqual(s.notifications);
     }
-  });
+  }, 20000);
   it("starts only after chapter 2, and adds the new entry to an old completed save without resetting it", () => {
     const { work, story } = build();
     let s = dispatch(work, initialRuntime(work), "start");

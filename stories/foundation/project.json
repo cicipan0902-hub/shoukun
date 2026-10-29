@@ -331,6 +331,42 @@
       ],
       "completeLogic": "all",
       "next": []
+    },
+    {
+      "id": "chapter-08-pending",
+      "title": "她喜欢的人",
+      "kind": "main",
+      "date": null,
+      "characterIds": [
+        "owner",
+        "zhuzhixin",
+        "zhangjunhao",
+        "zhangzeyu",
+        "zuohang",
+        "lifei",
+        "zhujiaqi"
+      ],
+      "eventIds": [
+        "ch08-start",
+        "ch08-start-note",
+        "ch08-read-memo",
+        "ch08-complete",
+        "flow-ch08-open",
+        "flow-ch08-wrap"
+      ],
+      "entry": {
+        "event": "read",
+        "target": "ch08-entry"
+      },
+      "completeWhen": [
+        {
+          "key": "chapter.chapter-08-pending.completed",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "completeLogic": "all",
+      "next": []
     }
   ],
   "bindings": [
@@ -673,6 +709,21 @@
       "assetId": "weibo-ent-football",
       "target": "itemMedia",
       "targetId": "ent-post-football"
+    },
+    {
+      "assetId": "group-after-class",
+      "target": "groupAvatar",
+      "targetId": "ch08-work"
+    },
+    {
+      "assetId": "photo-ch08-book-exchange",
+      "target": "itemMedia",
+      "targetId": "ch08-photo"
+    },
+    {
+      "assetId": "photo-ch08-book-exchange",
+      "target": "itemMedia",
+      "targetId": "ch08-moment-activity"
     }
   ],
   "minigames": [],
@@ -686,7 +737,8 @@
     "stories/foundation/xianyu-sellers.json",
     "stories/foundation/chapter-07.json",
     "stories/foundation/weibo-personal.json",
-    "stories/foundation/weibo-entertainment.json"
+    "stories/foundation/weibo-entertainment.json",
+    "stories/foundation/chapter-08.json"
   ],
   "interactionsFile": "stories/foundation/interactions.json"
 }

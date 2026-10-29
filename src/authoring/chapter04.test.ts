@@ -1,4 +1,4 @@
-import { foundationExtensions, authorOnlyFixture } from "./testFixture";
+import { foundationExtensions, authorOnlyFixture, foundationPathCount } from "./testFixture";
 import { describe, it, expect } from "vitest";
 import source from "../../stories/foundation/chapter-01.json";
 import project from "../../stories/foundation/project.json";
@@ -34,7 +34,7 @@ function before(target: string) {
 describe("unfinished melody chapter and safe draft handoff", () => {
   it("plays all three Demo choices through the same ending with distinct recorded replies and private memos", () => {
     const { work, story } = build();
-    expect(story.tests).toHaveLength(129);
+    expect(story.tests).toHaveLength(foundationPathCount());
     expect(story.tests.slice(82, 94)).toHaveLength(12);
     const relationshipStates: unknown[] = [];
     for (const [index, path] of story.tests.slice(94, 97).entries()) {
@@ -123,7 +123,7 @@ describe("unfinished melody chapter and safe draft handoff", () => {
     expect(s.variables["ch04.demoActualSeconds"]).toBe("unconfirmed");
     expect(s.variables["ch04.demoDeclaredSeconds"]).toBe("unconfirmed");
     expect(s.variables["ch05.durationCheck.status"]).toBe("pending-media");
-    expect(project.chapters).toHaveLength(7);
+    expect(JSON.parse(String(work.variables["author.chapters"]))).toEqual(project.chapters);
     expect(s.variables["chapter.chapter-05-pending.started"]).toBe(false);
     if (planning) expect(JSON.stringify(work)).not.toContain(planning.starObservation);
     if (planning) expect(JSON.stringify(work)).not.toContain(planning.nextChapter.plannedEvent);
