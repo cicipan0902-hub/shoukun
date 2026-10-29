@@ -1,0 +1,6531 @@
+{
+  "variables": {
+    "chapter.chapter-06-pending.started": false,
+    "chapter.chapter-06-pending.completed": false,
+    "ch06.stage": "locked",
+    "ch06.venue": "unset",
+    "ch06.concern": "unset",
+    "ch06.answer": "unset",
+    "ch06.restaurant": false,
+    "ch06.ktv": false,
+    "ch06.truthReady": false,
+    "ch06.zuoReady": false,
+    "ch06.chatDone": false,
+    "ch06.photoRead": false,
+    "ch06.memoRead": false
+  },
+  "chats": [
+    {
+      "id": "ch06-party",
+      "app": "wechat",
+      "title": "今晚见",
+      "participants": [
+        "owner",
+        "brother",
+        "junhao",
+        "star",
+        "zuohang",
+        "jiaqi",
+        "lifei"
+      ],
+      "messages": [
+        {
+          "id": "ch06-party-01",
+          "senderId": "brother",
+          "body": "今晚出来坐坐。安慰一下没入选的音乐人，费用各自承担。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-02",
+          "senderId": "junhao",
+          "body": "你这个安慰方案，我看主要是你想出门。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-03",
+          "senderId": "brother",
+          "body": "你还肯回嘴，说明问题不大。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-04",
+          "senderId": "lifei",
+          "body": "我七点之后有空。吃饭还是唱歌？",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-05",
+          "senderId": "jiaqi",
+          "body": "都行。别又让我到了才说走错门。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-06",
+          "senderId": "brother",
+          "body": "订好了，小包间。菜单发群里，别等菜上齐才说忌口。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-07",
+          "senderId": "zuohang",
+          "body": "{{playerName}}不吃生葱。别只把面上那点挑走，汤里也别加。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-08",
+          "senderId": "owner",
+          "body": "你记这个倒比记交作业准。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-09",
+          "senderId": "zuohang",
+          "body": "作业我记得，偶尔不想交。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-10",
+          "senderId": "junhao",
+          "body": "少辣，嗓子还要用。其他我没要求。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-11",
+          "senderId": "brother",
+          "body": "给你单点了清汤。冰的别碰，今天没人跟你抢。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-12",
+          "senderId": "junhao",
+          "body": "我刚想点冰水。你看菜单还是看我？",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-13",
+          "senderId": "brother",
+          "body": "看账单。你倒了还得我扶。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-14",
+          "senderId": "star",
+          "body": "这道先别下单，家琪不是说不吃香菜？",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-15",
+          "senderId": "jiaqi",
+          "body": "我说我不吃香菜根。叶子可以。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-16",
+          "senderId": "lifei",
+          "body": "那我备注“留叶去根”。服务员看得懂吧？",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-17",
+          "senderId": "jiaqi",
+          "body": "……不用，别备注了。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-18",
+          "senderId": "junhao",
+          "body": "我点了第一首。谁把它切了？",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-19",
+          "senderId": "jiaqi",
+          "body": "我以为那个是确认键。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-20",
+          "senderId": "brother",
+          "body": "你先把遥控器放下。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-21",
+          "senderId": "jiaqi",
+          "body": "我来研究，不用你教。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-22",
+          "senderId": "zuohang",
+          "body": "目前研究成果：三首歌同时消失。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-23",
+          "senderId": "lifei",
+          "body": "合唱要不要提前分词？同一句一起唱，我怕听不清。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-24",
+          "senderId": "star",
+          "body": "不用。你跟着原唱进就行。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-25",
+          "senderId": "jiaqi",
+          "body": "这首跟我唱。朱志鑫，右边那支麦给你。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-26",
+          "senderId": "star",
+          "body": "等峻豪唱完。别又给他切了。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-27",
+          "senderId": "junhao",
+          "body": "终于有人维护我的演出秩序了。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-28",
+          "senderId": "brother",
+          "body": "你嗓子刚好，别一口气唱完歌单。温水在左手边。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-29",
+          "senderId": "junhao",
+          "body": "知道。唱完这首先歇。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-30",
+          "senderId": "brother",
+          "body": "都坐齐了，玩一轮。今晚谁都不许装。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-31",
+          "senderId": "jiaqi",
+          "body": "可以，我没什么不敢选的。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-32",
+          "senderId": "zuohang",
+          "body": "那你打头。用最严肃的语气夸一下礼菲。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-33",
+          "senderId": "jiaqi",
+          "body": "礼菲，你做事特别……",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-34",
+          "senderId": "lifei",
+          "body": "说不出来可以明天再交。我不急。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-35",
+          "senderId": "jiaqi",
+          "body": "我才说了五个字！",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-36",
+          "senderId": "lifei",
+          "body": "哦。我以为你卡住了。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-37",
+          "senderId": "brother",
+          "body": "这一轮礼菲赢了。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-38",
+          "senderId": "jiaqi",
+          "body": "不是，我的惩罚为什么有输赢？",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-39",
+          "senderId": "junhao",
+          "body": "下一轮认真点吧。问我。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-40",
+          "senderId": "zuohang",
+          "body": "以后真有机会去外地学音乐，你去不去？",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-41",
+          "senderId": "junhao",
+          "body": "去。但先把要学什么、花多少钱问清楚。我想去，不等于闭着眼就去。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-42",
+          "senderId": "junhao",
+          "body": "真选了，落下的课和钱也不能全推给家里。反正不能一直等条件齐了才动。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-43",
+          "senderId": "brother",
+          "body": "申请时间你别记岔。上回附件是我催到最后一天才齐的。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-44",
+          "senderId": "junhao",
+          "body": "你替我存着呢？",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-45",
+          "senderId": "brother",
+          "body": "我存的东西多了。别给自己加戏。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-46",
+          "senderId": "zuohang",
+          "body": "我下学期想报竞赛，周末估计没这么好叫了。你真找学校，资料我可以帮着看，钱别找我。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-47",
+          "senderId": "junhao",
+          "body": "行，知道你有自己的坑要跳。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-48",
+          "senderId": "junhao",
+          "body": "是可惜。但下次我带能上台的完整版本，不靠大家替我惋惜。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-49",
+          "senderId": "junhao",
+          "body": "当然。名单上没我名字，文件上还写着我的名字呢。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-50",
+          "senderId": "star",
+          "body": "你把他这几版都记得挺清楚。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-51",
+          "senderId": "owner",
+          "body": "我帮着核过附件，总不能看完就忘。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-52",
+          "senderId": "star",
+          "body": "嗯。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-53",
+          "senderId": "zuohang",
+          "body": "轮到你了，{{playerName}}。如果你喜欢的人和你想象中完全不一样，你还会喜欢他吗？",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-54",
+          "senderId": "zuohang",
+          "body": "那先空着。不强迫交卷。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-55",
+          "senderId": "zuohang",
+          "body": "行，保留意见。下一位。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-56",
+          "senderId": "zuohang",
+          "body": "知道了。不问名字，放心。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-57",
+          "senderId": "jiaqi",
+          "body": "我来抽。别再让我夸人了，怪费劲的。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-party-sticker",
+          "senderId": "junhao",
+          "body": "[表情包]",
+          "kind": "image",
+          "hidden": true,
+          "time": "聚会当晚"
+        }
+      ]
+    },
+    {
+      "id": "ch06-zuo",
+      "app": "wechat",
+      "title": "左航",
+      "participants": [
+        "owner",
+        "zuohang"
+      ],
+      "messages": [
+        {
+          "id": "ch06-zuo-01",
+          "senderId": "zuohang",
+          "body": "【聚会合照 · 图片待补】\n你正低头收东西，没看镜头。",
+          "hidden": true,
+          "time": "聚会当晚",
+          "kind": "image"
+        },
+        {
+          "id": "ch06-zuo-02",
+          "senderId": "zuohang",
+          "body": "到家了？你那张没看镜头的，我也留着。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-zuo-03",
+          "senderId": "owner",
+          "body": "拍之前能不能叫我一声。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-zuo-04",
+          "senderId": "zuohang",
+          "body": "叫了。你在清点自己的伞、杯子和充电线，像来检查失物招领的。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-zuo-05",
+          "senderId": "owner",
+          "body": "我这叫少给别人添麻烦。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-zuo-06",
+          "senderId": "zuohang",
+          "body": "挺好。照片也给你放相册了，别等我清手机才来要原图。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-zuo-07",
+          "senderId": "owner",
+          "body": "存了。你今晚那道题，故意问的？",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-zuo-08",
+          "senderId": "zuohang",
+          "body": "你可以不答。现在也不用补。",
+          "hidden": true,
+          "time": "聚会当晚"
+        },
+        {
+          "id": "ch06-zuo-09",
+          "senderId": "zuohang",
+          "body": "我去看题了，明早别拿“昨晚太晚”当迟到理由。",
+          "hidden": true,
+          "time": "聚会当晚"
+        }
+      ]
+    }
+  ],
+  "content": {
+    "notes": [
+      {
+        "id": "ch06-entry",
+        "title": "第六章 · 今晚谁都不许装",
+        "body": "哥哥拉了个临时群，说晚上出去坐坐。张峻豪还没来得及拒绝，他已经开始问谁有空。",
+        "kind": "note",
+        "hidden": false,
+        "time": "名单确定之后",
+        "unlock": "chapter.chapter-05-pending.completed"
+      },
+      {
+        "id": "ch06-memo",
+        "title": "散场以后",
+        "body": "到家才发现杯盖没拧紧，包里湿了一小块。把东西摊开晾着，又看了一遍左航发的照片。\n\n张峻豪说想去外地学音乐，连花费和落下的课都想过。哥哥替他记着申请时间，却说自己什么都存。我想接句话，后来又觉得没什么好问。\n\n朱志鑫今晚也会替朋友留意小事。我有一瞬间怀疑，前天是不是自己说重了。可他后来那句“你记得挺清楚”，听着还是不舒服。我没有只关心张峻豪，也没想让谁保证结果。怎么每次都没说到一起。\n\n合照里我正低头收东西，确实没看镜头。左航居然留着这张，连我临走要清点什么都记得。他问过那个问题以后，也真的没再追问。\n\n照片存好了。明早见面，先谢谢他。别的今晚想不明白。",
+        "kind": "note",
+        "hidden": true,
+        "time": "聚会当晚 · 回家后"
+      }
+    ],
+    "files": [
+      {
+        "id": "ch06-demo-replay",
+        "title": "等点歌时 · 旧稿回放",
+        "body": "这是张峻豪之前提交的作品 Demo，不是今晚的合唱录像。等点歌时，可以再看看他带来的那份草稿。",
+        "kind": "note",
+        "hidden": true,
+        "time": "聚会当晚 · KTV",
+        "meta": {
+          "activityDocument": "ch06-demo-replay",
+          "reviewMedia": "audio"
+        }
+      },
+      {
+        "id": "ch06-ktv-clip",
+        "title": "今晚谁来唱 · KTV 现场",
+        "body": "点一个名字，看看他唱的那一段。可以切换、重看，也可以直接回群继续。",
+        "kind": "note",
+        "hidden": true,
+        "time": "聚会当晚 · KTV",
+        "meta": {
+          "activityDocument": "ch06-ktv-clip"
+        }
+      },
+      {
+        "id": "ch06-ktv-star",
+        "title": "朱志鑫 · KTV 演唱",
+        "body": "聚会当晚的演唱片段。可以回到《今晚谁来唱 · KTV 现场》选择其他人。",
+        "kind": "note",
+        "hidden": true,
+        "time": "聚会当晚 · KTV",
+        "meta": {
+          "activityDocument": "ch06-ktv-star",
+          "reviewMedia": "audio"
+        }
+      },
+      {
+        "id": "ch06-ktv-junhao",
+        "title": "张峻豪 · KTV 演唱",
+        "body": "聚会当晚的演唱片段。可以回到《今晚谁来唱 · KTV 现场》选择其他人。",
+        "kind": "note",
+        "hidden": true,
+        "time": "聚会当晚 · KTV",
+        "meta": {
+          "activityDocument": "ch06-ktv-junhao",
+          "reviewMedia": "audio"
+        }
+      },
+      {
+        "id": "ch06-ktv-brother",
+        "title": "张泽禹 · KTV 演唱",
+        "body": "聚会当晚的演唱片段。可以回到《今晚谁来唱 · KTV 现场》选择其他人。",
+        "kind": "note",
+        "hidden": true,
+        "time": "聚会当晚 · KTV",
+        "meta": {
+          "activityDocument": "ch06-ktv-brother",
+          "reviewMedia": "audio"
+        }
+      },
+      {
+        "id": "ch06-ktv-zuohang",
+        "title": "左航 · KTV 演唱",
+        "body": "聚会当晚的演唱片段。可以回到《今晚谁来唱 · KTV 现场》选择其他人。",
+        "kind": "note",
+        "hidden": true,
+        "time": "聚会当晚 · KTV",
+        "meta": {
+          "activityDocument": "ch06-ktv-zuohang",
+          "reviewMedia": "audio"
+        }
+      }
+    ],
+    "photos": [
+      {
+        "id": "ch06-photo",
+        "title": "散场前的合照",
+        "body": "【聚会合照待补素材】\n\n左航留下的一张合照。大家还没完全站好，我在低头收东西；这张原本不在我准备保存的照片里。",
+        "kind": "image",
+        "hidden": true,
+        "time": "聚会当晚",
+        "folder": "聚会"
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "ch06-start",
+      "label": "开始第六章《今晚谁都不许装》",
+      "event": "chapterStart",
+      "target": "chapter-06-pending",
+      "conditions": [
+        {
+          "key": "chapter.chapter-05-pending.completed",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "chapter.chapter-06-pending.started",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "chapter.chapter-06-pending.started",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch06.stage",
+          "value": "invite"
+        },
+        {
+          "type": "variable",
+          "key": "story.dayLabel",
+          "value": "聚会当晚"
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信：张泽禹邀请你加入“今晚见”。"
+        }
+      ]
+    },
+    {
+      "id": "ch06-start-note",
+      "label": "开始第六章《今晚谁都不许装》",
+      "event": "read",
+      "target": "ch06-entry",
+      "conditions": [
+        {
+          "key": "chapter.chapter-05-pending.completed",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "chapter.chapter-06-pending.started",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "chapter.chapter-06-pending.started",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch06.stage",
+          "value": "invite"
+        },
+        {
+          "type": "variable",
+          "key": "story.dayLabel",
+          "value": "聚会当晚"
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信：张泽禹邀请你加入“今晚见”。"
+        }
+      ]
+    },
+    {
+      "id": "ch06-read-photo",
+      "label": "保存散场合照",
+      "event": "read",
+      "target": "ch06-photo",
+      "conditions": [
+        {
+          "key": "ch06.chatDone",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "unlocked:ch06-photo",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch06.photoRead",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ch06-memo",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch06.stage",
+          "value": "memo"
+        }
+      ]
+    },
+    {
+      "id": "ch06-read-memo",
+      "label": "阅读散场以后",
+      "event": "read",
+      "target": "ch06-memo",
+      "conditions": [
+        {
+          "key": "ch06.photoRead",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "unlocked:ch06-memo",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch06.memoRead",
+          "value": true
+        }
+      ],
+      "next": [
+        "ch06-complete"
+      ]
+    },
+    {
+      "id": "ch06-complete",
+      "label": "第六章完成",
+      "type": "ending",
+      "conditions": [
+        {
+          "key": "ch06.chatDone",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch06.photoRead",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch06.memoRead",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "chapter.chapter-06-pending.completed",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch06.stage",
+          "value": "completed"
+        },
+        {
+          "type": "variable",
+          "key": "chapter.next",
+          "value": "chapter-07-pending"
+        },
+        {
+          "type": "ending",
+          "key": "",
+          "value": "第六章《今晚谁都不许装》已完成。照片存下了，有些话还留在今晚。"
+        }
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "第六章-restaurant-regret-deny",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-dodge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-honest"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-restaurant"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-program-regret"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-truth-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-memo"
+        }
+      ],
+      "ending": "第六章《今晚谁都不许装》已完成。照片存下了，有些话还留在今晚。",
+      "expectUnlocked": [
+        "ch06-photo",
+        "ch06-memo"
+      ]
+    },
+    {
+      "name": "第六章-restaurant-regret-reason",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-dodge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-honest"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-restaurant"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-program-regret"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-truth-reason"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-memo"
+        }
+      ],
+      "ending": "第六章《今晚谁都不许装》已完成。照片存下了，有些话还留在今晚。",
+      "expectUnlocked": [
+        "ch06-photo",
+        "ch06-memo"
+      ]
+    },
+    {
+      "name": "第六章-restaurant-regret-disappointed",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-dodge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-honest"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-restaurant"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-program-regret"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-truth-disappointed"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-memo"
+        }
+      ],
+      "ending": "第六章《今晚谁都不许装》已完成。照片存下了，有些话还留在今晚。",
+      "expectUnlocked": [
+        "ch06-photo",
+        "ch06-memo"
+      ]
+    },
+    {
+      "name": "第六章-restaurant-next-deny",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-dodge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-honest"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-restaurant"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-program-next"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-truth-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-memo"
+        }
+      ],
+      "ending": "第六章《今晚谁都不许装》已完成。照片存下了，有些话还留在今晚。",
+      "expectUnlocked": [
+        "ch06-photo",
+        "ch06-memo"
+      ]
+    },
+    {
+      "name": "第六章-restaurant-next-reason",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-dodge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-honest"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-restaurant"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-program-next"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-truth-reason"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-memo"
+        }
+      ],
+      "ending": "第六章《今晚谁都不许装》已完成。照片存下了，有些话还留在今晚。",
+      "expectUnlocked": [
+        "ch06-photo",
+        "ch06-memo"
+      ]
+    },
+    {
+      "name": "第六章-restaurant-next-disappointed",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-dodge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-honest"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-restaurant"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-program-next"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-truth-disappointed"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-memo"
+        }
+      ],
+      "ending": "第六章《今晚谁都不许装》已完成。照片存下了，有些话还留在今晚。",
+      "expectUnlocked": [
+        "ch06-photo",
+        "ch06-memo"
+      ]
+    },
+    {
+      "name": "第六章-ktv-regret-deny",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-dodge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-honest"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-ktv"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-demo-replay"
+        },
+        {
+          "event": "read",
+          "target": "ch06-ktv-clip"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-star"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-zuohang"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-star"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch06-ktv-clip.continue"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-program-regret"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-truth-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-memo"
+        }
+      ],
+      "ending": "第六章《今晚谁都不许装》已完成。照片存下了，有些话还留在今晚。",
+      "expectUnlocked": [
+        "ch06-photo",
+        "ch06-memo",
+        "ch06-demo-replay",
+        "ch06-ktv-clip"
+      ]
+    },
+    {
+      "name": "第六章-ktv-regret-reason",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-dodge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-honest"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-ktv"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-demo-replay"
+        },
+        {
+          "event": "read",
+          "target": "ch06-ktv-clip"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-star"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-zuohang"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-star"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch06-ktv-clip.continue"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-program-regret"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-truth-reason"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-memo"
+        }
+      ],
+      "ending": "第六章《今晚谁都不许装》已完成。照片存下了，有些话还留在今晚。",
+      "expectUnlocked": [
+        "ch06-photo",
+        "ch06-memo",
+        "ch06-demo-replay",
+        "ch06-ktv-clip"
+      ]
+    },
+    {
+      "name": "第六章-ktv-regret-disappointed",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-dodge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-honest"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-ktv"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-demo-replay"
+        },
+        {
+          "event": "read",
+          "target": "ch06-ktv-clip"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-star"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-zuohang"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-star"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch06-ktv-clip.continue"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-program-regret"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-truth-disappointed"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-memo"
+        }
+      ],
+      "ending": "第六章《今晚谁都不许装》已完成。照片存下了，有些话还留在今晚。",
+      "expectUnlocked": [
+        "ch06-photo",
+        "ch06-memo",
+        "ch06-demo-replay",
+        "ch06-ktv-clip"
+      ]
+    },
+    {
+      "name": "第六章-ktv-next-deny",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-dodge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-honest"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-ktv"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-demo-replay"
+        },
+        {
+          "event": "read",
+          "target": "ch06-ktv-clip"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-star"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-zuohang"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-star"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch06-ktv-clip.continue"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-program-next"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-truth-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-memo"
+        }
+      ],
+      "ending": "第六章《今晚谁都不许装》已完成。照片存下了，有些话还留在今晚。",
+      "expectUnlocked": [
+        "ch06-photo",
+        "ch06-memo",
+        "ch06-demo-replay",
+        "ch06-ktv-clip"
+      ]
+    },
+    {
+      "name": "第六章-ktv-next-reason",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-dodge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-honest"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-ktv"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-demo-replay"
+        },
+        {
+          "event": "read",
+          "target": "ch06-ktv-clip"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-star"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-zuohang"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-star"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch06-ktv-clip.continue"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-program-next"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-truth-reason"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-memo"
+        }
+      ],
+      "ending": "第六章《今晚谁都不许装》已完成。照片存下了，有些话还留在今晚。",
+      "expectUnlocked": [
+        "ch06-photo",
+        "ch06-memo",
+        "ch06-demo-replay",
+        "ch06-ktv-clip"
+      ]
+    },
+    {
+      "name": "第六章-ktv-next-disappointed",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-dodge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-honest"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-ktv"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-demo-replay"
+        },
+        {
+          "event": "read",
+          "target": "ch06-ktv-clip"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-star"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-zuohang"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch06-ktv-clip.ch06-ktv-star"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch06-ktv-clip.continue"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-program-next"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-truth-disappointed"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-memo"
+        }
+      ],
+      "ending": "第六章《今晚谁都不许装》已完成。照片存下了，有些话还留在今晚。",
+      "expectUnlocked": [
+        "ch06-photo",
+        "ch06-memo",
+        "ch06-demo-replay",
+        "ch06-ktv-clip"
+      ]
+    }
+  ]
+}

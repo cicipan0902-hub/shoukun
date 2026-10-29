@@ -1,0 +1,3932 @@
+{
+  "version": 1,
+  "autoChat": true,
+  "defaultDelayMs": 1100,
+  "additionalApps": [
+    "reminders",
+    "weibo",
+    "xianyu"
+  ],
+  "initialFriends": [
+    "brother",
+    "zuohang"
+  ],
+  "controlledFriends": [
+    "star",
+    "junhao",
+    "lifei",
+    "jiaqi"
+  ],
+  "requests": [
+    {
+      "id": "ch02-junhao-request",
+      "contactId": "junhao",
+      "direction": "incoming",
+      "message": "我是张峻豪，文化节群里的。把报名文件发你。",
+      "conditions": [
+        {
+          "key": "ch02.groupReady",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "acceptActions": [
+        {
+          "type": "variable",
+          "key": "ch02.junhaoAccepted",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch02-star-request",
+      "contactId": "star",
+      "direction": "outgoing",
+      "message": "文化节活动对接，方便确认资料。",
+      "conditions": [
+        {
+          "key": "ch02.addZhuAtEnd",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch02.groupFinished",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "acceptActions": [
+        {
+          "type": "variable",
+          "key": "ch02.zhuAccepted",
+          "value": true
+        }
+      ]
+    }
+  ],
+  "flows": [
+    {
+      "id": "ch02-secret",
+      "chatId": "ch02-brother",
+      "trigger": {
+        "event": "variable",
+        "target": "chapter.chapter-02-small-crush.started",
+        "conditions": [
+          {
+            "key": "chapter.chapter-02-small-crush.started",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch02-brother-01"
+        },
+        {
+          "message": "ch02-brother-02"
+        },
+        {
+          "message": "ch02-brother-03"
+        },
+        {
+          "choice": "ch02-secret",
+          "prompt": "怎么回应哥哥的试探？",
+          "options": [
+            {
+              "id": "ch02-secret-deny",
+              "text": "没有啊，你想多了。",
+              "kind": "tone",
+              "replies": [
+                {
+                  "message": "ch02-brother-04"
+                },
+                {
+                  "message": "ch02-brother-05"
+                }
+              ],
+              "actions": []
+            },
+            {
+              "id": "ch02-secret-vague",
+              "text": "也没有什么特别的事。",
+              "kind": "tone",
+              "replies": [
+                {
+                  "message": "ch02-brother-06"
+                },
+                {
+                  "message": "ch02-brother-07"
+                }
+              ],
+              "actions": []
+            },
+            {
+              "id": "ch02-secret-ask-back",
+              "text": "你怎么突然开始关心这个？",
+              "kind": "tone",
+              "replies": [
+                {
+                  "message": "ch02-brother-08"
+                },
+                {
+                  "message": "ch02-brother-09"
+                }
+              ],
+              "actions": []
+            },
+            {
+              "id": "ch02-secret-half-admit",
+              "text": "可能有一点。但你先别采访。",
+              "kind": "tone",
+              "replies": [
+                {
+                  "message": "ch02-brother-10"
+                },
+                {
+                  "message": "ch02-brother-11"
+                }
+              ],
+              "actions": []
+            }
+          ]
+        },
+        {
+          "message": "ch02-brother-12"
+        },
+        {
+          "message": "ch02-brother-13"
+        },
+        {
+          "message": "ch02-brother-14"
+        },
+        {
+          "message": "ch02-brother-15"
+        },
+        {
+          "message": "ch02-brother-16"
+        },
+        {
+          "message": "ch02-brother-17"
+        }
+      ],
+      "after": [
+        {
+          "type": "variable",
+          "key": "ch02.stage",
+          "value": "moments"
+        },
+        {
+          "type": "unlock",
+          "key": "ch02-moment-activity",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ch02-moment-lunch",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ch02-moment-zuo",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信：朋友圈有新的校园日常，看看《文化节招募》。"
+        }
+      ]
+    },
+    {
+      "id": "ch02-zuo",
+      "chatId": "ch02-zuo",
+      "trigger": {
+        "event": "read",
+        "target": "ch02-ceremony-photo",
+        "conditions": [
+          {
+            "key": "ch02.stage",
+            "op": "eq",
+            "value": "photo"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch02-zuo-01"
+        },
+        {
+          "message": "ch02-zuo-02"
+        },
+        {
+          "message": "ch02-zuo-03"
+        },
+        {
+          "choice": "ch02-daily",
+          "prompt": "接着聊点什么？",
+          "options": [
+            {
+              "id": "ch02-zuo-book",
+              "text": "吃了。你最近又借了什么书？",
+              "kind": "information",
+              "replies": [
+                {
+                  "message": "ch02-zuo-04"
+                },
+                {
+                  "message": "ch02-zuo-05"
+                }
+              ],
+              "actions": [
+                {
+                  "type": "unlock",
+                  "key": "ch02-reading",
+                  "value": true
+                }
+              ]
+            },
+            {
+              "id": "ch02-zuo-lunch",
+              "text": "还没想好吃什么，推荐一下？",
+              "kind": "information",
+              "replies": [
+                {
+                  "message": "ch02-zuo-06"
+                },
+                {
+                  "message": "ch02-zuo-07"
+                }
+              ],
+              "actions": []
+            }
+          ]
+        },
+        {
+          "message": "ch02-zuo-08"
+        },
+        {
+          "message": "ch02-zuo-09"
+        },
+        {
+          "message": "ch02-zuo-10"
+        },
+        {
+          "message": "ch02-zuo-11"
+        }
+      ],
+      "after": [
+        {
+          "type": "variable",
+          "key": "ch02.stage",
+          "value": "plan"
+        },
+        {
+          "type": "unlock",
+          "key": "ch02-plan",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "备忘录：写下《不是只有一个理由》。"
+        }
+      ],
+      "onStart": [
+        {
+          "type": "variable",
+          "key": "ch02.stage",
+          "value": "zuo"
+        }
+      ]
+    },
+    {
+      "id": "ch02-plan",
+      "chatId": "ch02-brother",
+      "trigger": {
+        "event": "read",
+        "target": "ch02-plan",
+        "conditions": [
+          {
+            "key": "ch02.stage",
+            "op": "eq",
+            "value": "plan"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch02-brother-18"
+        },
+        {
+          "message": "ch02-brother-19"
+        },
+        {
+          "message": "ch02-brother-20"
+        },
+        {
+          "choice": "ch02-participation",
+          "prompt": "你想先尝试哪项工作？",
+          "options": [
+            {
+              "id": "ch02-role-data",
+              "text": "我想试试资料整理，至少能把事情理清楚。",
+              "kind": "important",
+              "replies": [
+                {
+                  "message": "ch02-brother-21"
+                },
+                {
+                  "message": "ch02-brother-22"
+                }
+              ],
+              "actions": [
+                {
+                  "type": "variable",
+                  "key": "ch02.activityRole",
+                  "value": "data"
+                }
+              ]
+            },
+            {
+              "id": "ch02-role-site",
+              "text": "我想做现场协助，总坐着反而容易想太多。",
+              "kind": "important",
+              "replies": [
+                {
+                  "message": "ch02-brother-23"
+                },
+                {
+                  "message": "ch02-brother-24"
+                }
+              ],
+              "actions": [
+                {
+                  "type": "variable",
+                  "key": "ch02.activityRole",
+                  "value": "site"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "message": "ch02-brother-25"
+        },
+        {
+          "message": "ch02-brother-26"
+        },
+        {
+          "message": "ch02-brother-27"
+        }
+      ],
+      "after": [
+        {
+          "type": "variable",
+          "key": "ch02.stage",
+          "value": "group-intro"
+        },
+        {
+          "type": "unlock",
+          "key": "ch02-todo",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch02.groupReady",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信：你已加入「文化节临时筹备」。"
+        }
+      ],
+      "onStart": [
+        {
+          "type": "variable",
+          "key": "ch02.stage",
+          "value": "brother"
+        }
+      ]
+    },
+    {
+      "id": "ch02-group-intro",
+      "chatId": "ch02-activity",
+      "trigger": {
+        "event": "variable",
+        "target": "ch02.groupReady",
+        "conditions": [
+          {
+            "key": "ch02.groupReady",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch02-activity-01"
+        },
+        {
+          "message": "ch02-activity-02"
+        },
+        {
+          "message": "ch02-activity-03"
+        },
+        {
+          "message": "ch02-activity-04"
+        },
+        {
+          "message": "ch02-activity-05"
+        },
+        {
+          "message": "ch02-activity-06"
+        },
+        {
+          "message": "ch02-activity-07"
+        },
+        {
+          "message": "ch02-activity-08"
+        }
+      ],
+      "after": [
+        {
+          "type": "variable",
+          "key": "ch02.stage",
+          "value": "friend-junhao"
+        },
+        {
+          "type": "variable",
+          "key": "ch02.inviteJunhao",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信：收到张峻豪的好友申请。通讯录 → 新的朋友，可查看并同意。"
+        }
+      ],
+      "onStart": [
+        {
+          "type": "variable",
+          "key": "ch02.groupKnown",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch02-junhao",
+      "chatId": "ch02-junhao",
+      "trigger": {
+        "event": "variable",
+        "target": "ch02.junhaoAccepted",
+        "conditions": [
+          {
+            "key": "ch02.junhaoAccepted",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch02-junhao-01"
+        },
+        {
+          "message": "ch02-junhao-02"
+        },
+        {
+          "message": "ch02-junhao-03"
+        },
+        {
+          "message": "ch02-junhao-04"
+        }
+      ],
+      "after": [
+        {
+          "type": "variable",
+          "key": "ch02.stage",
+          "value": "junhao-read"
+        }
+      ],
+      "onStart": [
+        {
+          "type": "variable",
+          "key": "ch02.stage",
+          "value": "junhao-read"
+        }
+      ]
+    },
+    {
+      "id": "ch02-group-talk",
+      "chatId": "ch02-activity",
+      "trigger": {
+        "event": "read",
+        "target": "ch02-junhao-04",
+        "conditions": [
+          {
+            "key": "ch02.stage",
+            "op": "eq",
+            "value": "junhao-read"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch02-activity-09"
+        },
+        {
+          "message": "ch02-activity-10"
+        },
+        {
+          "message": "ch02-activity-11"
+        },
+        {
+          "message": "ch02-activity-12"
+        },
+        {
+          "message": "ch02-activity-13"
+        },
+        {
+          "choice": "ch02-group-question",
+          "prompt": "你想先问清楚什么？",
+          "options": [
+            {
+              "id": "ch02-question-file",
+              "text": "我有个问题，岗位可以先试一次再确认吗？",
+              "kind": "information",
+              "replies": [
+                {
+                  "message": "ch02-activity-14"
+                },
+                {
+                  "message": "ch02-activity-15"
+                },
+                {
+                  "message": "ch02-activity-16"
+                }
+              ],
+              "actions": []
+            },
+            {
+              "id": "ch02-question-place",
+              "text": "集合地点写得有点模糊，是图书馆侧门吗？",
+              "kind": "information",
+              "replies": [
+                {
+                  "message": "ch02-activity-17"
+                },
+                {
+                  "message": "ch02-activity-18"
+                },
+                {
+                  "message": "ch02-activity-19"
+                }
+              ],
+              "actions": []
+            }
+          ]
+        },
+        {
+          "message": "ch02-activity-20"
+        },
+        {
+          "message": "ch02-activity-21"
+        },
+        {
+          "message": "ch02-activity-22"
+        },
+        {
+          "choice": "ch02-group-wrap",
+          "prompt": "今天先到这里？",
+          "options": [
+            {
+              "id": "ch02-wrap-careful",
+              "text": "我先把表存好，明天再核对一遍。",
+              "kind": "tone",
+              "replies": [
+                {
+                  "message": "ch02-activity-23"
+                }
+              ],
+              "actions": []
+            },
+            {
+              "id": "ch02-wrap-offer",
+              "text": "我先看看说明，哪里需要补充可以叫我。",
+              "kind": "tone",
+              "replies": [
+                {
+                  "message": "ch02-activity-24"
+                }
+              ],
+              "actions": []
+            }
+          ]
+        },
+        {
+          "message": "ch02-activity-25"
+        },
+        {
+          "message": "ch02-activity-26"
+        },
+        {
+          "message": "ch02-activity-27"
+        }
+      ],
+      "after": [
+        {
+          "type": "variable",
+          "key": "ch02.stage",
+          "value": "ending"
+        },
+        {
+          "type": "variable",
+          "key": "ch02.groupFinished",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ch02-ending-note",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "备忘录：今天有了一点新的认识，《先把名字放回日常里》已更新。"
+        }
+      ],
+      "onStart": [
+        {
+          "type": "variable",
+          "key": "ch02.stage",
+          "value": "group-talk"
+        }
+      ]
+    },
+    {
+      "id": "ch02-star-optional",
+      "chatId": "ch02-star",
+      "trigger": {
+        "event": "variable",
+        "target": "ch02.zhuAccepted",
+        "conditions": [
+          {
+            "key": "ch02.zhuAccepted",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch02-star-01"
+        },
+        {
+          "message": "ch02-star-02"
+        }
+      ],
+      "after": []
+    },
+    {
+      "id": "ch03-task",
+      "chatId": "ch03-work",
+      "trigger": {
+        "event": "variable",
+        "target": "chapter.chapter-03-beyond-form.started",
+        "conditions": [
+          {
+            "key": "chapter.chapter-03-beyond-form.started",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch03-work-01"
+        },
+        {
+          "message": "ch03-work-02"
+        },
+        {
+          "message": "ch03-work-03"
+        },
+        {
+          "message": "ch03-work-04"
+        },
+        {
+          "message": "ch03-work-05"
+        },
+        {
+          "message": "ch03-work-06"
+        },
+        {
+          "choice": "ch03-task",
+          "prompt": "接下核对工作",
+          "options": [
+            {
+              "id": "ch03-task-direct",
+              "text": "好，我来核对。",
+              "kind": "tone",
+              "replies": [
+                {
+                  "message": "ch03-work-07"
+                }
+              ],
+              "actions": [
+                {
+                  "type": "variable",
+                  "key": "ch03.style",
+                  "value": "direct"
+                }
+              ]
+            },
+            {
+              "id": "ch03-task-time",
+              "text": "什么时候之前要？我排一下手头的事。",
+              "kind": "information",
+              "replies": [
+                {
+                  "message": "ch03-work-08"
+                },
+                {
+                  "message": "ch03-work-09"
+                }
+              ],
+              "actions": [
+                {
+                  "type": "variable",
+                  "key": "ch03.style",
+                  "value": "schedule"
+                }
+              ]
+            },
+            {
+              "id": "ch03-task-organize",
+              "text": "好的，我先把待确认的单独列出来。",
+              "kind": "tone",
+              "replies": [
+                {
+                  "message": "ch03-work-10"
+                }
+              ],
+              "actions": [
+                {
+                  "type": "variable",
+                  "key": "ch03.style",
+                  "value": "organize"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "message": "ch03-work-11"
+        },
+        {
+          "message": "ch03-work-12"
+        }
+      ],
+      "onStart": [],
+      "after": [
+        {
+          "type": "variable",
+          "key": "ch03.stage",
+          "value": "roster"
+        },
+        {
+          "type": "unlock",
+          "key": "ch03-roster",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "文件：收到《文化节报名表 · 核对版》。"
+        }
+      ]
+    },
+    {
+      "id": "ch03-work",
+      "chatId": "ch03-work",
+      "trigger": {
+        "event": "variable",
+        "target": "ch03.rosterChecked",
+        "conditions": [
+          {
+            "key": "ch03.rosterChecked",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch03-work-13"
+        },
+        {
+          "message": "ch03-work-14"
+        },
+        {
+          "message": "ch03-work-15"
+        },
+        {
+          "message": "ch03-work-16"
+        },
+        {
+          "message": "ch03-work-17"
+        },
+        {
+          "message": "ch03-work-18"
+        },
+        {
+          "message": "ch03-work-19"
+        },
+        {
+          "message": "ch03-work-20"
+        },
+        {
+          "message": "ch03-work-21"
+        },
+        {
+          "message": "ch03-work-22"
+        },
+        {
+          "message": "ch03-work-23"
+        },
+        {
+          "choice": "ch03-plan",
+          "prompt": "如何处理未确认的节目",
+          "options": [
+            {
+              "id": "ch03-plan-verify",
+              "text": "先写“意向待补”，设备和人员都确认后再转正式报名。",
+              "kind": "important",
+              "replies": [
+                {
+                  "message": "ch03-work-24"
+                },
+                {
+                  "message": "ch03-work-25"
+                }
+              ],
+              "actions": [
+                {
+                  "type": "variable",
+                  "key": "ch03.solution",
+                  "value": "verify"
+                }
+              ]
+            },
+            {
+              "id": "ch03-plan-ask",
+              "text": "我先问清谁负责、还缺什么，再单列成待确认项目。",
+              "kind": "important",
+              "replies": [],
+              "actions": [
+                {
+                  "type": "variable",
+                  "key": "ch03.solution",
+                  "value": "ask"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "message": "ch03-work-28"
+        },
+        {
+          "message": "ch03-work-29"
+        },
+        {
+          "message": "ch03-work-30"
+        },
+        {
+          "message": "ch03-work-31"
+        },
+        {
+          "message": "ch03-work-32"
+        },
+        {
+          "message": "ch03-work-33"
+        }
+      ],
+      "onStart": [
+        {
+          "type": "variable",
+          "key": "ch03.stage",
+          "value": "work"
+        }
+      ],
+      "after": [
+        {
+          "type": "variable",
+          "key": "ch03.stage",
+          "value": "onsite"
+        },
+        {
+          "type": "unlock",
+          "key": "ch03-onsite",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ch03-demo-note",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "文件：《现场核对单 · 排练室门口》已准备好。"
+        }
+      ]
+    },
+    {
+      "id": "ch04-task",
+      "chatId": "ch04-work",
+      "trigger": {
+        "event": "variable",
+        "target": "chapter.chapter-04-unfinished-melody.started",
+        "conditions": [
+          {
+            "key": "chapter.chapter-04-unfinished-melody.started",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "onStart": [],
+      "steps": [
+        {
+          "message": "ch04-work-01"
+        },
+        {
+          "message": "ch04-work-02"
+        },
+        {
+          "message": "ch04-work-03"
+        },
+        {
+          "message": "ch04-work-04"
+        },
+        {
+          "message": "ch04-work-05"
+        },
+        {
+          "message": "ch04-work-06"
+        }
+      ],
+      "after": [
+        {
+          "type": "variable",
+          "key": "ch04.stage",
+          "value": "demo"
+        },
+        {
+          "type": "unlock",
+          "key": "ch04-attachment",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ch04-demo",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "文件：收到草稿附件登记与文字试听记录。"
+        }
+      ]
+    },
+    {
+      "id": "ch04-demo-talk",
+      "chatId": "ch04-junhao",
+      "trigger": {
+        "event": "variable",
+        "target": "ch04.demoReviewed",
+        "conditions": [
+          {
+            "key": "ch04.demoReviewed",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "onStart": [
+        {
+          "type": "variable",
+          "key": "ch04.stage",
+          "value": "talk"
+        }
+      ],
+      "steps": [
+        {
+          "message": "ch04-junhao-01"
+        },
+        {
+          "message": "ch04-junhao-02"
+        },
+        {
+          "message": "ch04-junhao-03"
+        },
+        {
+          "message": "ch04-junhao-04"
+        },
+        {
+          "choice": "ch04-demo-response",
+          "prompt": "给未完成草稿的回应",
+          "options": [
+            {
+              "id": "ch04-demo-question",
+              "text": "中间空着那一段，你原本想怎么接下去？",
+              "kind": "information",
+              "actions": [
+                {
+                  "type": "variable",
+                  "key": "ch04.demoReply",
+                  "value": "question"
+                }
+              ],
+              "replies": [
+                {
+                  "message": "ch04-junhao-05"
+                },
+                {
+                  "message": "ch04-junhao-06"
+                },
+                {
+                  "message": "ch04-junhao-07"
+                }
+              ]
+            },
+            {
+              "id": "ch04-demo-like",
+              "text": "我喜欢它没急着填满的感觉，会想等你把空着的地方接上。",
+              "kind": "tone",
+              "actions": [
+                {
+                  "type": "variable",
+                  "key": "ch04.demoReply",
+                  "value": "like"
+                }
+              ],
+              "replies": []
+            },
+            {
+              "id": "ch04-demo-work",
+              "text": "我先把版本和附件核清楚，旋律的事晚点再聊。",
+              "kind": "tone",
+              "actions": [
+                {
+                  "type": "variable",
+                  "key": "ch04.demoReply",
+                  "value": "work"
+                }
+              ],
+              "replies": []
+            }
+          ]
+        }
+      ],
+      "after": [
+        {
+          "type": "variable",
+          "key": "ch04.stage",
+          "value": "onsite"
+        },
+        {
+          "type": "unlock",
+          "key": "ch04-onsite",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "现场：把附件单带到排练室门口。"
+        }
+      ]
+    },
+    {
+      "id": "ch04-wrap",
+      "chatId": "ch04-work",
+      "trigger": {
+        "event": "variable",
+        "target": "ch04.onsiteDone",
+        "conditions": [
+          {
+            "key": "ch04.onsiteDone",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "onStart": [
+        {
+          "type": "variable",
+          "key": "ch04.stage",
+          "value": "wrap-chat"
+        }
+      ],
+      "steps": [
+        {
+          "message": "ch04-work-07"
+        },
+        {
+          "message": "ch04-work-08"
+        },
+        {
+          "message": "ch04-work-09"
+        },
+        {
+          "message": "ch04-work-10"
+        },
+        {
+          "message": "ch04-work-11"
+        },
+        {
+          "message": "ch04-work-12"
+        }
+      ],
+      "after": [
+        {
+          "type": "variable",
+          "key": "ch04.wrapDone",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch04.stage",
+          "value": "memo"
+        },
+        {
+          "type": "unlock",
+          "key": "ch04-moment-draft",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "备忘录：今晚有几句话想记下来。"
+        }
+      ]
+    },
+    {
+      "id": "ch05-brother-open",
+      "chatId": "ch05-brother",
+      "trigger": {
+        "event": "variable",
+        "target": "chapter.chapter-05-pending.started",
+        "conditions": [
+          {
+            "key": "chapter.chapter-05-pending.started",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch05-brother-01"
+        },
+        {
+          "message": "ch05-brother-02"
+        },
+        {
+          "message": "ch05-brother-03"
+        },
+        {
+          "choice": "ch05-tease",
+          "prompt": "哥哥看出来了？",
+          "options": [
+            {
+              "id": "ch05-tease-dodge",
+              "text": "我在问活动安排，你别乱总结。",
+              "kind": "tone",
+              "actions": [
+                {
+                  "type": "variable",
+                  "key": "ch05.tease",
+                  "value": "dodge"
+                }
+              ],
+              "replies": [
+                {
+                  "message": "ch05-brother-04"
+                }
+              ]
+            },
+            {
+              "id": "ch05-tease-admit",
+              "text": "是有点关注。你知道就行。",
+              "kind": "tone",
+              "actions": [
+                {
+                  "type": "variable",
+                  "key": "ch05.tease",
+                  "value": "admit"
+                }
+              ],
+              "replies": [
+                {
+                  "message": "ch05-brother-05"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "message": "ch05-brother-06"
+        }
+      ],
+      "after": [
+        {
+          "type": "variable",
+          "key": "ch05.readyWork",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信：文化节工作群在确认节目。"
+        }
+      ]
+    },
+    {
+      "id": "ch05-work",
+      "chatId": "ch05-work",
+      "trigger": {
+        "event": "variable",
+        "target": "ch05.readyWork",
+        "conditions": [
+          {
+            "key": "ch05.readyWork",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch05-work-01"
+        },
+        {
+          "message": "ch05-work-02"
+        },
+        {
+          "message": "ch05-work-03"
+        },
+        {
+          "message": "ch05-work-04"
+        },
+        {
+          "message": "ch05-work-05"
+        },
+        {
+          "message": "ch05-work-06"
+        },
+        {
+          "message": "ch05-work-07"
+        },
+        {
+          "message": "ch05-work-08"
+        },
+        {
+          "message": "ch05-work-09"
+        },
+        {
+          "message": "ch05-work-10"
+        },
+        {
+          "message": "ch05-work-11"
+        },
+        {
+          "message": "ch05-work-12"
+        },
+        {
+          "message": "ch05-work-13"
+        },
+        {
+          "message": "ch05-work-14"
+        },
+        {
+          "message": "ch05-work-15"
+        },
+        {
+          "message": "ch05-work-16"
+        },
+        {
+          "message": "ch05-work-17"
+        },
+        {
+          "choice": "ch05-question",
+          "prompt": "问出你的疑惑",
+          "options": [
+            {
+              "id": "ch05-ask-try",
+              "text": "朱志鑫，如果你再拿过去问一次，会不会还有机会？",
+              "kind": "important",
+              "actions": [
+                {
+                  "type": "variable",
+                  "key": "ch05.question",
+                  "value": "try"
+                }
+              ],
+              "replies": [
+                {
+                  "message": "ch05-work-18"
+                },
+                {
+                  "message": "ch05-work-19"
+                },
+                {
+                  "message": "ch05-work-20"
+                },
+                {
+                  "message": "ch05-work-21"
+                }
+              ]
+            },
+            {
+              "id": "ch05-ask-decision",
+              "text": "刚才为什么不再帮他问问？他确实准备了很久。",
+              "kind": "important",
+              "actions": [
+                {
+                  "type": "variable",
+                  "key": "ch05.question",
+                  "value": "decision"
+                }
+              ],
+              "replies": [
+                {
+                  "message": "ch05-work-22"
+                },
+                {
+                  "message": "ch05-work-23"
+                },
+                {
+                  "message": "ch05-work-24"
+                },
+                {
+                  "message": "ch05-work-25"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "message": "ch05-work-26"
+        },
+        {
+          "message": "ch05-work-27"
+        },
+        {
+          "message": "ch05-work-28"
+        },
+        {
+          "message": "ch05-work-29"
+        },
+        {
+          "message": "ch05-work-30"
+        }
+      ],
+      "after": [
+        {
+          "type": "variable",
+          "key": "ch05.talkDone",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch05.stage",
+          "value": "brother-end"
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信：张泽禹发来消息。"
+        }
+      ],
+      "onStart": [
+        {
+          "type": "variable",
+          "key": "ch05.stage",
+          "value": "work"
+        }
+      ]
+    },
+    {
+      "id": "ch05-brother-end",
+      "chatId": "ch05-brother",
+      "trigger": {
+        "event": "variable",
+        "target": "ch05.talkDone",
+        "conditions": [
+          {
+            "key": "ch05.talkDone",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch05-brother-07"
+        },
+        {
+          "message": "ch05-brother-08"
+        },
+        {
+          "choice": "ch05-confide",
+          "prompt": "和哥哥说到哪里？",
+          "options": [
+            {
+              "id": "ch05-confide-honest",
+              "text": "我还是喜欢他。但刚才那句“算了”，让我有点失望。",
+              "kind": "tone",
+              "actions": [
+                {
+                  "type": "variable",
+                  "key": "ch05.confide",
+                  "value": "honest"
+                }
+              ],
+              "replies": [
+                {
+                  "message": "ch05-brother-09"
+                },
+                {
+                  "message": "ch05-brother-10"
+                }
+              ]
+            },
+            {
+              "id": "ch05-confide-doubt",
+              "text": "可能是我不了解情况。可他明明知道峻豪有多在意。",
+              "kind": "tone",
+              "actions": [
+                {
+                  "type": "variable",
+                  "key": "ch05.confide",
+                  "value": "doubt"
+                }
+              ],
+              "replies": [
+                {
+                  "message": "ch05-brother-11"
+                },
+                {
+                  "message": "ch05-brother-12"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "message": "ch05-brother-13"
+        }
+      ],
+      "after": [
+        {
+          "type": "variable",
+          "key": "ch05.brotherDone",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch05.stage",
+          "value": "memo"
+        },
+        {
+          "type": "unlock",
+          "key": "ch05-memo",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "备忘录：还有一句话没说完。"
+        }
+      ]
+    },
+    {
+      "id": "ch06-invite",
+      "chatId": "ch06-party",
+      "trigger": {
+        "event": "variable",
+        "target": "chapter.chapter-06-pending.started",
+        "conditions": [
+          {
+            "key": "chapter.chapter-06-pending.started",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch06-party-01"
+        },
+        {
+          "message": "ch06-party-02"
+        },
+        {
+          "message": "ch06-party-sticker"
+        },
+        {
+          "message": "ch06-party-03"
+        },
+        {
+          "message": "ch06-party-04"
+        },
+        {
+          "message": "ch06-party-05"
+        },
+        {
+          "choice": "ch06-venue",
+          "prompt": "今晚去哪里？",
+          "options": [
+            {
+              "id": "ch06-restaurant",
+              "text": "去吃饭吧，找个能坐着慢慢聊的地方。",
+              "kind": "important",
+              "actions": [
+                {
+                  "type": "variable",
+                  "key": "ch06.venue",
+                  "value": "restaurant"
+                },
+                {
+                  "type": "variable",
+                  "key": "ch06.restaurant",
+                  "value": true
+                }
+              ],
+              "replies": []
+            },
+            {
+              "id": "ch06-ktv",
+              "text": "去 KTV。想唱的唱，不想唱的坐着听。",
+              "kind": "important",
+              "actions": [
+                {
+                  "type": "variable",
+                  "key": "ch06.venue",
+                  "value": "ktv"
+                },
+                {
+                  "type": "variable",
+                  "key": "ch06.ktv",
+                  "value": true
+                }
+              ],
+              "replies": []
+            }
+          ]
+        }
+      ],
+      "after": [],
+      "onStart": [
+        {
+          "type": "variable",
+          "key": "ch06.stage",
+          "value": "venue"
+        }
+      ]
+    },
+    {
+      "id": "ch06-restaurant",
+      "chatId": "ch06-party",
+      "trigger": {
+        "event": "variable",
+        "target": "ch06.restaurant",
+        "conditions": [
+          {
+            "key": "ch06.restaurant",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch06-party-06"
+        },
+        {
+          "message": "ch06-party-07"
+        },
+        {
+          "message": "ch06-party-08"
+        },
+        {
+          "message": "ch06-party-09"
+        },
+        {
+          "message": "ch06-party-10"
+        },
+        {
+          "message": "ch06-party-11"
+        },
+        {
+          "message": "ch06-party-12"
+        },
+        {
+          "message": "ch06-party-13"
+        },
+        {
+          "message": "ch06-party-14"
+        },
+        {
+          "message": "ch06-party-15"
+        },
+        {
+          "message": "ch06-party-16"
+        },
+        {
+          "message": "ch06-party-17"
+        }
+      ],
+      "after": [
+        {
+          "type": "variable",
+          "key": "ch06.truthReady",
+          "value": true
+        }
+      ],
+      "onStart": [
+        {
+          "type": "variable",
+          "key": "ch06.stage",
+          "value": "restaurant"
+        }
+      ]
+    },
+    {
+      "id": "ch06-ktv",
+      "chatId": "ch06-party",
+      "trigger": {
+        "event": "variable",
+        "target": "ch06.ktv",
+        "conditions": [
+          {
+            "key": "ch06.ktv",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch06-party-18"
+        },
+        {
+          "message": "ch06-party-19"
+        },
+        {
+          "message": "ch06-party-20"
+        },
+        {
+          "message": "ch06-party-21"
+        },
+        {
+          "message": "ch06-party-22"
+        },
+        {
+          "message": "ch06-party-23"
+        },
+        {
+          "message": "ch06-party-24"
+        },
+        {
+          "message": "ch06-party-25"
+        },
+        {
+          "message": "ch06-party-26"
+        },
+        {
+          "message": "ch06-party-27"
+        },
+        {
+          "message": "ch06-party-28"
+        },
+        {
+          "message": "ch06-party-29"
+        }
+      ],
+      "after": [
+        {
+          "type": "unlock",
+          "key": "ch06-ktv-zuohang",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ch06-ktv-brother",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ch06-ktv-junhao",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ch06-ktv-star",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ch06-demo-replay",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ch06-ktv-clip",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch06.stage",
+          "value": "video"
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "文件：四个人的 KTV 演唱片段已整理好，选一个名字观看。"
+        }
+      ],
+      "onStart": [
+        {
+          "type": "variable",
+          "key": "ch06.stage",
+          "value": "ktv"
+        }
+      ]
+    },
+    {
+      "id": "ch06-truth",
+      "chatId": "ch06-party",
+      "trigger": {
+        "event": "variable",
+        "target": "ch06.truthReady",
+        "conditions": [
+          {
+            "key": "ch06.truthReady",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch06-party-30"
+        },
+        {
+          "message": "ch06-party-31"
+        },
+        {
+          "message": "ch06-party-32"
+        },
+        {
+          "message": "ch06-party-33"
+        },
+        {
+          "message": "ch06-party-34"
+        },
+        {
+          "message": "ch06-party-35"
+        },
+        {
+          "message": "ch06-party-36"
+        },
+        {
+          "message": "ch06-party-37"
+        },
+        {
+          "message": "ch06-party-38"
+        },
+        {
+          "message": "ch06-party-39"
+        },
+        {
+          "message": "ch06-party-40"
+        },
+        {
+          "message": "ch06-party-41"
+        },
+        {
+          "message": "ch06-party-42"
+        },
+        {
+          "message": "ch06-party-43"
+        },
+        {
+          "message": "ch06-party-44"
+        },
+        {
+          "message": "ch06-party-45"
+        },
+        {
+          "message": "ch06-party-46"
+        },
+        {
+          "message": "ch06-party-47"
+        },
+        {
+          "choice": "ch06-program",
+          "prompt": "听他说起以后，你想说什么？",
+          "options": [
+            {
+              "id": "ch06-program-regret",
+              "text": "还是觉得这次没能上台有点可惜。你准备了那么久。",
+              "kind": "tone",
+              "actions": [
+                {
+                  "type": "variable",
+                  "key": "ch06.concern",
+                  "value": "regret"
+                }
+              ],
+              "replies": [
+                {
+                  "message": "ch06-party-48"
+                }
+              ]
+            },
+            {
+              "id": "ch06-program-next",
+              "text": "那段没写完的，还会继续做吧？别因为名单就搁下了。",
+              "kind": "tone",
+              "actions": [
+                {
+                  "type": "variable",
+                  "key": "ch06.concern",
+                  "value": "next"
+                }
+              ],
+              "replies": [
+                {
+                  "message": "ch06-party-49"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "message": "ch06-party-50"
+        },
+        {
+          "message": "ch06-party-51"
+        },
+        {
+          "message": "ch06-party-52"
+        },
+        {
+          "message": "ch06-party-53"
+        },
+        {
+          "choice": "ch06-truth",
+          "prompt": "你怎么回答？",
+          "options": [
+            {
+              "id": "ch06-truth-deny",
+              "text": "谁说我有喜欢的人了？这个问题不成立。",
+              "kind": "tone",
+              "actions": [
+                {
+                  "type": "variable",
+                  "key": "ch06.answer",
+                  "value": "deny"
+                }
+              ],
+              "replies": [
+                {
+                  "message": "ch06-party-54"
+                }
+              ]
+            },
+            {
+              "id": "ch06-truth-reason",
+              "text": "得看哪里不一样。还没了解清楚，我也说不好。",
+              "kind": "tone",
+              "actions": [
+                {
+                  "type": "variable",
+                  "key": "ch06.answer",
+                  "value": "reason"
+                }
+              ],
+              "replies": [
+                {
+                  "message": "ch06-party-55"
+                }
+              ]
+            },
+            {
+              "id": "ch06-truth-disappointed",
+              "text": "可能还会喜欢。但失望也是真的，没办法当没发生。",
+              "kind": "tone",
+              "actions": [
+                {
+                  "type": "variable",
+                  "key": "ch06.answer",
+                  "value": "disappointed"
+                }
+              ],
+              "replies": [
+                {
+                  "message": "ch06-party-56"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "message": "ch06-party-57"
+        }
+      ],
+      "after": [
+        {
+          "type": "variable",
+          "key": "ch06.zuoReady",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "聚会散场，左航发来一张照片。"
+        }
+      ],
+      "onStart": [
+        {
+          "type": "variable",
+          "key": "ch06.stage",
+          "value": "truth"
+        }
+      ]
+    },
+    {
+      "id": "ch06-zuo",
+      "chatId": "ch06-zuo",
+      "trigger": {
+        "event": "variable",
+        "target": "ch06.zuoReady",
+        "conditions": [
+          {
+            "key": "ch06.zuoReady",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch06-zuo-02"
+        },
+        {
+          "message": "ch06-zuo-01"
+        },
+        {
+          "message": "ch06-zuo-03"
+        },
+        {
+          "message": "ch06-zuo-04"
+        },
+        {
+          "message": "ch06-zuo-05"
+        },
+        {
+          "message": "ch06-zuo-06"
+        },
+        {
+          "message": "ch06-zuo-07"
+        },
+        {
+          "message": "ch06-zuo-08"
+        },
+        {
+          "message": "ch06-zuo-09"
+        }
+      ],
+      "after": [
+        {
+          "type": "unlock",
+          "key": "ch06-photo",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch06.chatDone",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch06.stage",
+          "value": "photo"
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "相册：看看左航留下的聚会合照。"
+        }
+      ],
+      "onStart": [
+        {
+          "type": "variable",
+          "key": "ch06.stage",
+          "value": "zuo"
+        }
+      ]
+    },
+    {
+      "id": "community-zuo",
+      "chatId": "community-zuo",
+      "trigger": {
+        "event": "variable",
+        "target": "community.noticeSeen",
+        "conditions": [
+          {
+            "key": "community.noticeSeen",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "community-zuo-01"
+        },
+        {
+          "message": "community-zuo-02"
+        }
+      ],
+      "after": [
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信：左航聊起了校园帖子。"
+        }
+      ]
+    },
+    {
+      "id": "ch07-signup",
+      "chatId": "ch07-sports",
+      "trigger": {
+        "event": "variable",
+        "target": "chapter.chapter-07-pending.started",
+        "conditions": [
+          {
+            "key": "chapter.chapter-07-pending.started",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch07-intro-1"
+        },
+        {
+          "message": "ch07-intro-2"
+        },
+        {
+          "message": "ch07-intro-3"
+        },
+        {
+          "message": "ch07-intro-4"
+        },
+        {
+          "choice": "ch07-sign",
+          "prompt": "要报名吗？",
+          "options": [
+            {
+              "id": "ch07-sign-challenge",
+              "text": "我报。别到时候全班都来看我就行。",
+              "kind": "important",
+              "actions": [
+                {
+                  "type": "variable",
+                  "key": "ch07.signed",
+                  "value": true
+                }
+              ],
+              "replies": [
+                {
+                  "message": "ch07-sign-a"
+                }
+              ]
+            },
+            {
+              "id": "ch07-sign-try",
+              "text": "我想试试。先别替我吹，我练完再说。",
+              "kind": "tone",
+              "actions": [
+                {
+                  "type": "variable",
+                  "key": "ch07.signed",
+                  "value": true
+                }
+              ],
+              "replies": [
+                {
+                  "message": "ch07-sign-b"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "onStart": [
+        {
+          "type": "variable",
+          "key": "ch07.stage",
+          "value": "signup"
+        }
+      ],
+      "after": [
+        {
+          "type": "unlock",
+          "key": "ch07-practice",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch07.stage",
+          "value": "practice"
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "文件：赛前 · 球场边，去看看练习时发生了什么。"
+        }
+      ]
+    },
+    {
+      "id": "ch07-score-low",
+      "chatId": "ch07-sports",
+      "trigger": {
+        "event": "variable",
+        "target": "ch07.lowReady",
+        "conditions": [
+          {
+            "key": "ch07.lowReady",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch07-score-low-0"
+        },
+        {
+          "message": "ch07-score-low-1"
+        },
+        {
+          "message": "ch07-score-low-2"
+        }
+      ],
+      "onStart": [
+        {
+          "type": "variable",
+          "key": "ch07.stage",
+          "value": "score"
+        }
+      ],
+      "after": [
+        {
+          "type": "unlock",
+          "key": "ch07-after",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch07.stage",
+          "value": "after"
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "文件：赛后 · 记分台旁。"
+        }
+      ]
+    },
+    {
+      "id": "ch07-score-mid",
+      "chatId": "ch07-sports",
+      "trigger": {
+        "event": "variable",
+        "target": "ch07.midReady",
+        "conditions": [
+          {
+            "key": "ch07.midReady",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch07-score-mid-0"
+        },
+        {
+          "message": "ch07-score-mid-1"
+        },
+        {
+          "message": "ch07-score-mid-2"
+        }
+      ],
+      "onStart": [
+        {
+          "type": "variable",
+          "key": "ch07.stage",
+          "value": "score"
+        }
+      ],
+      "after": [
+        {
+          "type": "unlock",
+          "key": "ch07-after",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch07.stage",
+          "value": "after"
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "文件：赛后 · 记分台旁。"
+        }
+      ]
+    },
+    {
+      "id": "ch07-score-high",
+      "chatId": "ch07-sports",
+      "trigger": {
+        "event": "variable",
+        "target": "ch07.highReady",
+        "conditions": [
+          {
+            "key": "ch07.highReady",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch07-score-high-0"
+        },
+        {
+          "message": "ch07-score-high-1"
+        },
+        {
+          "message": "ch07-score-high-2"
+        }
+      ],
+      "onStart": [
+        {
+          "type": "variable",
+          "key": "ch07.stage",
+          "value": "score"
+        }
+      ],
+      "after": [
+        {
+          "type": "unlock",
+          "key": "ch07-after",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch07.stage",
+          "value": "after"
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "文件：赛后 · 记分台旁。"
+        }
+      ]
+    },
+    {
+      "id": "ch07-wrap",
+      "chatId": "ch07-sports",
+      "trigger": {
+        "event": "variable",
+        "target": "ch07.wrapReady",
+        "conditions": [
+          {
+            "key": "ch07.wrapReady",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch07-wrap-1"
+        },
+        {
+          "message": "ch07-wrap-2"
+        },
+        {
+          "message": "ch07-wrap-3"
+        },
+        {
+          "message": "ch07-wrap-4"
+        },
+        {
+          "message": "ch07-wrap-5"
+        },
+        {
+          "choice": "ch07-photo-answer",
+          "prompt": "要留下这张照片吗？",
+          "options": [
+            {
+              "id": "ch07-keep",
+              "text": "不删了。发原图给我吧。",
+              "kind": "tone",
+              "actions": [],
+              "replies": [
+                {
+                  "message": "ch07-wrap-a"
+                }
+              ]
+            },
+            {
+              "id": "ch07-complain",
+              "text": "先留着。下次等我把嘴闭上再拍。",
+              "kind": "tone",
+              "actions": [],
+              "replies": [
+                {
+                  "message": "ch07-wrap-b"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "onStart": [
+        {
+          "type": "variable",
+          "key": "ch07.stage",
+          "value": "wrap"
+        }
+      ],
+      "after": [
+        {
+          "type": "unlock",
+          "key": "ch07-photo",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch07.chatDone",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch07.stage",
+          "value": "photo"
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "相册：运动会 · 出手以后。"
+        }
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "title": "进入第七章 · 差一点就赢了",
+      "detail": "备忘录 → 第七章入口。",
+      "app": "notes",
+      "conditions": [
+        {
+          "key": "chapter.chapter-06-pending.completed",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "chapter.chapter-07-pending.started",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "itemId": "ch07-entry"
+    },
+    {
+      "title": "运动会报名",
+      "detail": "点击前往，继续本章。",
+      "app": "wechat",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "signup"
+        }
+      ],
+      "thread": "运动会临时群"
+    },
+    {
+      "title": "去球场练习",
+      "detail": "点击前往，继续本章。",
+      "app": "files",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "practice"
+        }
+      ],
+      "itemId": "ch07-practice"
+    },
+    {
+      "title": "轮到你投五球了",
+      "detail": "点击前往，继续本章。",
+      "app": "files",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        }
+      ],
+      "itemId": "ch07-basketball"
+    },
+    {
+      "title": "看看赛后消息",
+      "detail": "点击前往，继续本章。",
+      "app": "wechat",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "score"
+        }
+      ],
+      "thread": "运动会临时群"
+    },
+    {
+      "title": "赛后 · 记分台旁",
+      "detail": "点击前往，继续本章。",
+      "app": "files",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "after"
+        }
+      ],
+      "itemId": "ch07-after"
+    },
+    {
+      "title": "回运动会群继续",
+      "detail": "点击前往，继续本章。",
+      "app": "wechat",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "wrap"
+        }
+      ],
+      "thread": "运动会临时群"
+    },
+    {
+      "title": "保存运动会照片",
+      "detail": "点击前往，继续本章。",
+      "app": "photos",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "photo"
+        }
+      ],
+      "itemId": "ch07-photo"
+    },
+    {
+      "title": "看看今天的备忘录",
+      "detail": "点击前往，继续本章。",
+      "app": "notes",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "memo"
+        }
+      ],
+      "itemId": "ch07-memo"
+    },
+    {
+      "title": "第七章已完成",
+      "detail": "点击前往，继续本章。",
+      "app": "notes",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "completed"
+        }
+      ],
+      "itemId": "ch07-memo"
+    },
+    {
+      "title": "进入第六章 · 今晚谁都不许装",
+      "detail": "备忘录 → 第六章入口。",
+      "app": "notes",
+      "itemId": "ch06-entry",
+      "conditions": [
+        {
+          "key": "chapter.chapter-05-pending.completed",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "chapter.chapter-06-pending.started",
+          "op": "eq",
+          "value": false
+        }
+      ]
+    },
+    {
+      "title": "第六章已完成",
+      "detail": "合照和今晚的记录可以回看。",
+      "app": "notes",
+      "itemId": "ch06-memo",
+      "conditions": [
+        {
+          "key": "chapter.chapter-06-pending.completed",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    {
+      "title": "今晚去哪里？",
+      "detail": "打开后查看最新内容，出现回复选项时选择一句。",
+      "app": "wechat",
+      "conditions": [
+        {
+          "key": "ch06.stage",
+          "op": "eq",
+          "value": "venue"
+        }
+      ],
+      "thread": "今晚见"
+    },
+    {
+      "title": "菜单先别急着下单",
+      "detail": "打开后查看最新内容，出现回复选项时选择一句。",
+      "app": "wechat",
+      "conditions": [
+        {
+          "key": "ch06.stage",
+          "op": "eq",
+          "value": "restaurant"
+        }
+      ],
+      "thread": "今晚见"
+    },
+    {
+      "title": "等大家把歌点好",
+      "detail": "打开后查看最新内容，出现回复选项时选择一句。",
+      "app": "wechat",
+      "conditions": [
+        {
+          "key": "ch06.stage",
+          "op": "eq",
+          "value": "ktv"
+        }
+      ],
+      "thread": "今晚见"
+    },
+    {
+      "title": "今晚想听谁唱？",
+      "detail": "文件 → 今晚谁来唱 · KTV 现场。四段视频可以自由切换，不必全部看完。",
+      "app": "files",
+      "conditions": [
+        {
+          "key": "ch06.stage",
+          "op": "eq",
+          "value": "video"
+        }
+      ],
+      "itemId": "ch06-ktv-clip"
+    },
+    {
+      "title": "今晚谁都不许装",
+      "detail": "打开后查看最新内容，出现回复选项时选择一句。",
+      "app": "wechat",
+      "conditions": [
+        {
+          "key": "ch06.stage",
+          "op": "eq",
+          "value": "truth"
+        }
+      ],
+      "thread": "今晚见"
+    },
+    {
+      "title": "散场后的消息",
+      "detail": "打开后查看最新内容，出现回复选项时选择一句。",
+      "app": "wechat",
+      "conditions": [
+        {
+          "key": "ch06.stage",
+          "op": "eq",
+          "value": "zuo"
+        }
+      ],
+      "thread": "左航"
+    },
+    {
+      "title": "看看左航留下的合照",
+      "detail": "打开后查看最新内容，出现回复选项时选择一句。",
+      "app": "photos",
+      "conditions": [
+        {
+          "key": "ch06.stage",
+          "op": "eq",
+          "value": "photo"
+        }
+      ],
+      "itemId": "ch06-photo"
+    },
+    {
+      "title": "散场以后",
+      "detail": "打开后查看最新内容，出现回复选项时选择一句。",
+      "app": "notes",
+      "conditions": [
+        {
+          "key": "ch06.stage",
+          "op": "eq",
+          "value": "memo"
+        }
+      ],
+      "itemId": "ch06-memo"
+    },
+    {
+      "title": "进入第五章 · 如果你再争取一下",
+      "detail": "备忘录 → 第五章入口。已完成第四章的存档可直接继续。",
+      "app": "notes",
+      "itemId": "ch05-entry",
+      "conditions": [
+        {
+          "key": "chapter.chapter-04-unfinished-melody.completed",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "chapter.chapter-05-pending.started",
+          "op": "eq",
+          "value": false
+        }
+      ]
+    },
+    {
+      "title": "第五章已完成",
+      "detail": "误会尚未说清，今晚的记录可以回看。",
+      "app": "notes",
+      "itemId": "ch05-memo",
+      "conditions": [
+        {
+          "key": "chapter.chapter-05-pending.completed",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    {
+      "title": "哥哥发来消息",
+      "detail": "微信 → 张泽禹，选择回复他的试探。",
+      "app": "wechat",
+      "thread": "张泽禹",
+      "conditions": [
+        {
+          "key": "ch05.stage",
+          "op": "eq",
+          "value": "brother-open"
+        }
+      ]
+    },
+    {
+      "title": "名单确定之前与之后",
+      "detail": "微信 → 文化节 · 表单核对，查看消息并选择如何询问。",
+      "app": "wechat",
+      "thread": "文化节 · 表单核对",
+      "conditions": [
+        {
+          "key": "ch05.stage",
+          "op": "eq",
+          "value": "work"
+        }
+      ]
+    },
+    {
+      "title": "还有话想和哥哥说",
+      "detail": "微信 → 张泽禹，聊聊刚才的争执。",
+      "app": "wechat",
+      "thread": "张泽禹",
+      "conditions": [
+        {
+          "key": "ch05.stage",
+          "op": "eq",
+          "value": "brother-end"
+        }
+      ]
+    },
+    {
+      "title": "那句“算了”",
+      "detail": "备忘录 → 那句“算了”，阅读后完成本章。",
+      "app": "notes",
+      "itemId": "ch05-memo",
+      "conditions": [
+        {
+          "key": "ch05.stage",
+          "op": "eq",
+          "value": "memo"
+        }
+      ]
+    },
+    {
+      "title": "第四章已完成",
+      "detail": "今晚的记录和工作动态仍可回看。下一次核对，等新的材料来了再继续。",
+      "app": "notes",
+      "conditions": [
+        {
+          "key": "chapter.chapter-04-unfinished-melody.completed",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    {
+      "title": "今晚，先记这些",
+      "detail": "备忘录 →《没接上的那一段》。工作朋友圈也已更新，可以自由浏览。",
+      "app": "notes",
+      "conditions": [
+        {
+          "key": "ch04.stage",
+          "op": "eq",
+          "value": "memo"
+        },
+        {
+          "key": "ch04.demoReply",
+          "op": "eq",
+          "value": "question"
+        }
+      ],
+      "itemId": "ch04-memo-question"
+    },
+    {
+      "title": "今晚，先记这些",
+      "detail": "备忘录 →《还想等后面》。工作朋友圈也已更新，可以自由浏览。",
+      "app": "notes",
+      "conditions": [
+        {
+          "key": "ch04.stage",
+          "op": "eq",
+          "value": "memo"
+        },
+        {
+          "key": "ch04.demoReply",
+          "op": "eq",
+          "value": "like"
+        }
+      ],
+      "itemId": "ch04-memo-like"
+    },
+    {
+      "title": "今晚，先记这些",
+      "detail": "备忘录 →《先把手头的做完》。工作朋友圈也已更新，可以自由浏览。",
+      "app": "notes",
+      "conditions": [
+        {
+          "key": "ch04.stage",
+          "op": "eq",
+          "value": "memo"
+        },
+        {
+          "key": "ch04.demoReply",
+          "op": "eq",
+          "value": "work"
+        }
+      ],
+      "itemId": "ch04-memo-work"
+    },
+    {
+      "title": "工作群还有两句话",
+      "detail": "微信 →《文化节 · 表单核对》。大家在收尾，消息会自动继续。",
+      "app": "wechat",
+      "conditions": [
+        {
+          "key": "ch04.stage",
+          "op": "eq",
+          "value": "wrap-chat"
+        }
+      ],
+      "thread": "文化节 · 表单核对"
+    },
+    {
+      "title": "把附件单送过去",
+      "detail": "文件 →《排练室门口 · 草稿之后》，读完现场经过后收好附件单。",
+      "app": "files",
+      "conditions": [
+        {
+          "key": "ch04.stage",
+          "op": "eq",
+          "value": "onsite"
+        }
+      ],
+      "itemId": "ch04-onsite"
+    },
+    {
+      "title": "给草稿一个回应",
+      "detail": "微信 → 张峻豪。三种回应都可以，选你现在想说的。",
+      "app": "wechat",
+      "conditions": [
+        {
+          "key": "ch04.stage",
+          "op": "eq",
+          "value": "talk"
+        }
+      ],
+      "thread": "张峻豪"
+    },
+    {
+      "title": "查看文字试听记录",
+      "detail": "文件 →《未完成的旋律 · 试听记录》。目前没有真实音频，看完文字记录后再回复。",
+      "app": "files",
+      "conditions": [
+        {
+          "key": "ch04.stage",
+          "op": "eq",
+          "value": "demo"
+        },
+        {
+          "key": "read:ch04-attachment",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "itemId": "ch04-demo"
+    },
+    {
+      "title": "先核附件和版本",
+      "detail": "文件 →《节目附件登记 · 草稿版》。实际时长与申报时长都先留待确认。",
+      "app": "files",
+      "conditions": [
+        {
+          "key": "ch04.stage",
+          "op": "eq",
+          "value": "demo"
+        }
+      ],
+      "itemId": "ch04-attachment"
+    },
+    {
+      "title": "继续今天的工作",
+      "detail": "微信 →《文化节 · 表单核对》。本次补附件，不重做报名。",
+      "app": "wechat",
+      "conditions": [
+        {
+          "key": "ch04.stage",
+          "op": "eq",
+          "value": "task"
+        }
+      ],
+      "thread": "文化节 · 表单核对"
+    },
+    {
+      "title": "进入第四章 · 未完成的旋律",
+      "detail": "备忘录 →《第四章 · 未完成的旋律》。可以继续第三章的存档。",
+      "app": "notes",
+      "conditions": [
+        {
+          "key": "chapter.chapter-03-beyond-form.completed",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "chapter.chapter-04-unfinished-melody.started",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "itemId": "ch04-entry"
+    },
+    {
+      "title": "第三章已完成",
+      "detail": "可以回看今晚的《今天的工作记录》。下一章内容尚待续写。",
+      "app": "notes",
+      "conditions": [
+        {
+          "key": "chapter.chapter-03-beyond-form.completed",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    {
+      "title": "今晚，写给自己",
+      "detail": "备忘录 →《今天的工作记录》。读完记录，完成第三章。",
+      "app": "notes",
+      "conditions": [
+        {
+          "key": "ch03.stage",
+          "op": "eq",
+          "value": "aftercare"
+        },
+        {
+          "key": "read:ch03-updated",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "read:ch03-moment-work",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "itemId": "ch03-memo"
+    },
+    {
+      "title": "看看今天的工作动态",
+      "detail": "朋友圈 → 张泽禹《今天先把待定写清楚》。",
+      "app": "wechat",
+      "conditions": [
+        {
+          "key": "ch03.stage",
+          "op": "eq",
+          "value": "aftercare"
+        },
+        {
+          "key": "read:ch03-updated",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "view": "moments"
+    },
+    {
+      "title": "核对后的节目单",
+      "detail": "文件 →《文化节节目单 · 核对后》。今晚的备忘录也已解锁，可以稍后再读。",
+      "app": "files",
+      "conditions": [
+        {
+          "key": "ch03.stage",
+          "op": "eq",
+          "value": "aftercare"
+        }
+      ],
+      "itemId": "ch03-updated"
+    },
+    {
+      "title": "排练室门口",
+      "detail": "文件 →《现场核对单 · 排练室门口》。读完现场经过，再交回纸单，回答取材料的同学。",
+      "app": "files",
+      "conditions": [
+        {
+          "key": "ch03.stage",
+          "op": "eq",
+          "value": "onsite"
+        }
+      ],
+      "itemId": "ch03-onsite"
+    },
+    {
+      "title": "处理待定项目",
+      "detail": "微信 →《文化节 · 表单核对》，看看大家怎样讨论。出现选项时给出你的核对办法。",
+      "app": "wechat",
+      "conditions": [
+        {
+          "key": "ch03.stage",
+          "op": "eq",
+          "value": "work"
+        }
+      ],
+      "thread": "文化节 · 表单核对"
+    },
+    {
+      "title": "查看并核对报名表",
+      "detail": "文件 →《文化节报名表 · 核对版》。逐一查看四位同学的公开资料，再提交核对。",
+      "app": "files",
+      "conditions": [
+        {
+          "key": "ch03.stage",
+          "op": "eq",
+          "value": "roster"
+        }
+      ],
+      "itemId": "ch03-roster"
+    },
+    {
+      "title": "接下文化节工作",
+      "detail": "微信 →《文化节 · 表单核对》。礼菲和朱家琪正在交接工作。",
+      "app": "wechat",
+      "conditions": [
+        {
+          "key": "ch03.stage",
+          "op": "eq",
+          "value": "task"
+        }
+      ],
+      "thread": "文化节 · 表单核对"
+    },
+    {
+      "title": "进入第三章 · 报名表之外",
+      "detail": "备忘录 →《第三章 · 报名表之外》。第二章的进度会保留。",
+      "app": "notes",
+      "conditions": [
+        {
+          "key": "chapter.chapter-02-small-crush.completed",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "chapter.chapter-03-beyond-form.started",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "itemId": "ch03-entry"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch02.stage",
+          "op": "eq",
+          "value": "completed"
+        }
+      ],
+      "title": "第二章已完成",
+      "detail": "下一章待创作；当前手机内容仍可浏览。",
+      "app": "notes"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch02.stage",
+          "op": "eq",
+          "value": "friend-junhao"
+        }
+      ],
+      "title": "处理张峻豪的好友申请",
+      "detail": "微信 → 通讯录 → 新的朋友 → 张峻豪 → 同意。通过后才会出现私聊。",
+      "app": "wechat"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch02.stage",
+          "op": "eq",
+          "value": "moments"
+        }
+      ],
+      "title": "看看文化节招募",
+      "detail": "打开朋友圈，最上方的新动态中找到张泽禹《文化节招募》，点开正文阅读。",
+      "app": "wechat",
+      "view": "moments"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch02.stage",
+          "op": "eq",
+          "value": "photo"
+        }
+      ],
+      "title": "查看保存的资料",
+      "detail": "相册 →《开学典礼那天》，点开照片继续。",
+      "app": "photos"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch02.stage",
+          "op": "eq",
+          "value": "plan"
+        }
+      ],
+      "title": "想想自己想做什么",
+      "detail": "备忘录 →《不是只有一个理由》。阅读后哥哥会来问你的选择。",
+      "app": "notes"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch02.stage",
+          "op": "eq",
+          "value": "junhao-read"
+        }
+      ],
+      "title": "看看新朋友发来的文件说明",
+      "detail": "微信 → 张峻豪，读完文件说明后回到临时筹备群。",
+      "app": "wechat",
+      "thread": "张峻豪"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch02.stage",
+          "op": "eq",
+          "value": "ending"
+        }
+      ],
+      "title": "把今天的想法记下来",
+      "detail": "备忘录 →《先把名字放回日常里》，阅读后完成第二章。",
+      "app": "notes"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch02.stage",
+          "op": "eq",
+          "value": "brother"
+        }
+      ],
+      "title": "哥哥有话想问你",
+      "detail": "微信 → 张泽禹。对方自动发送消息，出现「选择回复」后再回答。",
+      "app": "wechat",
+      "thread": "张泽禹"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch02.stage",
+          "op": "eq",
+          "value": "group-intro"
+        }
+      ],
+      "title": "加入了临时筹备群",
+      "detail": "微信 →「文化节临时筹备」。这是活动群，不是原来的四人私群。",
+      "app": "wechat",
+      "thread": "文化节临时筹备"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch02.stage",
+          "op": "eq",
+          "value": "zuo"
+        }
+      ],
+      "title": "左航发来消息",
+      "detail": "微信 → 左航。聊聊午饭或最近读的书。",
+      "app": "wechat",
+      "thread": "左航"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch02.stage",
+          "op": "eq",
+          "value": "group-talk"
+        }
+      ],
+      "title": "回到临时筹备群",
+      "detail": "微信 → 文化节临时筹备。消息会自动出现，轮到你时选择回复。",
+      "app": "wechat",
+      "thread": "文化节临时筹备"
+    }
+  ],
+  "continuation": {
+    "afterKey": "chapter.chapter-01-good-weather.completed",
+    "startedKey": "chapter.chapter-02-small-crush.started",
+    "label": "进入第二章 · 关于喜欢这件小事",
+    "event": "chapterStart",
+    "target": "chapter-02-small-crush"
+  },
+  "continuations": [
+    {
+      "afterKey": "chapter.chapter-02-small-crush.completed",
+      "startedKey": "chapter.chapter-03-beyond-form.started",
+      "label": "进入第三章 · 报名表之外",
+      "event": "chapterStart",
+      "target": "chapter-03-beyond-form"
+    },
+    {
+      "afterKey": "chapter.chapter-03-beyond-form.completed",
+      "startedKey": "chapter.chapter-04-unfinished-melody.started",
+      "label": "进入第四章 · 未完成的旋律",
+      "event": "chapterStart",
+      "target": "chapter-04-unfinished-melody"
+    },
+    {
+      "afterKey": "chapter.chapter-04-unfinished-melody.completed",
+      "startedKey": "chapter.chapter-05-pending.started",
+      "label": "进入第五章 · 如果你再争取一下",
+      "event": "chapterStart",
+      "target": "chapter-05-pending"
+    },
+    {
+      "afterKey": "chapter.chapter-05-pending.completed",
+      "startedKey": "chapter.chapter-06-pending.started",
+      "label": "进入第六章 · 今晚谁都不许装",
+      "event": "chapterStart",
+      "target": "chapter-06-pending"
+    },
+    {
+      "afterKey": "chapter.chapter-06-pending.completed",
+      "startedKey": "chapter.chapter-07-pending.started",
+      "label": "进入第七章 · 差一点就赢了",
+      "event": "chapterStart",
+      "target": "chapter-07-pending"
+    }
+  ],
+  "documents": [
+    {
+      "id": "ch03-roster",
+      "itemId": "ch03-roster",
+      "kind": "roster",
+      "conditions": [
+        {
+          "key": "chapter.chapter-03-beyond-form.started",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "entries": [
+        {
+          "id": "zhu",
+          "characterId": "star",
+          "project": "活动材料与流程协助",
+          "profile": "参与流程核对，愿意协助现场材料交接；舞台项目尚未确认。",
+          "status": "流程协助已确认；节目待定",
+          "required": true
+        },
+        {
+          "id": "junhao",
+          "characterId": "junhao",
+          "project": "器乐合奏构想",
+          "profile": "提出合奏意向，正在问设备、场地和参与人；可先提交旋律草稿。",
+          "status": "意向待补",
+          "required": true
+        },
+        {
+          "id": "brother",
+          "characterId": "brother",
+          "project": "宣传与资料协助",
+          "profile": "协助宣传文字及资料交接；可参与方案讨论，尚未确认舞台分工。",
+          "status": "工作意向已交",
+          "required": true
+        },
+        {
+          "id": "zuo",
+          "characterId": "zuohang",
+          "project": "现场协助",
+          "profile": "协助场地与设备检查；可按实际排练情况补充机位建议。",
+          "status": "现场协助已确认",
+          "required": true
+        },
+        {
+          "id": "lifei",
+          "characterId": "lifei",
+          "project": "活动统筹",
+          "profile": "汇总各组信息，区分正式报名与待确认项目，负责本轮试排表。",
+          "status": "统筹对接",
+          "required": false
+        },
+        {
+          "id": "jiaqi",
+          "characterId": "jiaqi",
+          "project": "主持",
+          "profile": "提交开场稿，正在调整长句与节奏；参加主持试排，不是比赛项目。",
+          "status": "进入试排",
+          "required": false
+        }
+      ],
+      "controls": [
+        {
+          "id": "submit",
+          "label": "提交本轮核对",
+          "conditions": [
+            {
+              "key": "ch03.stage",
+              "op": "eq",
+              "value": "roster"
+            },
+            {
+              "key": "document.ch03-roster.zhu.read",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "key": "document.ch03-roster.junhao.read",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "key": "document.ch03-roster.brother.read",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "key": "document.ch03-roster.zuo.read",
+              "op": "eq",
+              "value": true
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch03.rosterChecked",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch03-onsite",
+      "itemId": "ch03-onsite",
+      "kind": "scene",
+      "conditions": [
+        {
+          "key": "chapter.chapter-03-beyond-form.started",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "sections": [
+        {
+          "conditions": [
+            {
+              "key": "ch03.atDesk",
+              "op": "eq",
+              "value": true
+            }
+          ],
+          "text": "交完纸单，我把手机上的登记表又翻回去，朱志鑫那一行还停在屏幕中间。\n\n“有哪里填错了吗？”\n\n他回来取文件夹，看了一眼表，语气像真的在等我指出一处错误。我这才发现自己已经在这里停了好一会儿。"
+        },
+        {
+          "conditions": [
+            {
+              "key": "ch03.endingTone",
+              "op": "eq",
+              "value": "work"
+            }
+          ],
+          "text": "我说：“没有。我在确认流程协助和节目意向有没有分开记。”\n\n他点点头，把文件夹翻到那一页：“嗯，节目那边还没定。谢谢你标出来。”\n\n他走之前又看了一眼修改人那一栏。“这版是你核的？”我说是。他说了声“辛苦”，就去找礼菲了。"
+        },
+        {
+          "conditions": [
+            {
+              "key": "ch03.endingTone",
+              "op": "eq",
+              "value": "honest"
+            }
+          ],
+          "text": "我说：“已经核过了。刚刚又看了一遍，怕把没确认的也记进去。”\n\n“那你比我仔细。”他低头找了一下自己签的位置，“这版是你改的？”\n\n我点头。他把资料合好：“知道了，谢谢。后面有改动，我在工作群里说。”\n\n我松了口气，才发现手指一直压着屏幕边。"
+        }
+      ],
+      "controls": [
+        {
+          "id": "hand-in",
+          "label": "交回核对单，再看一眼登记表",
+          "conditions": [
+            {
+              "key": "ch03.stage",
+              "op": "eq",
+              "value": "onsite"
+            },
+            {
+              "key": "ch03.atDesk",
+              "op": "eq",
+              "value": false
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch03.atDesk",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": "work",
+          "label": "解释自己在分开核对两种意向。",
+          "conditions": [
+            {
+              "key": "ch03.atDesk",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "key": "ch03.onsiteDone",
+              "op": "eq",
+              "value": false
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch03.endingTone",
+              "value": "work"
+            },
+            {
+              "type": "variable",
+              "key": "ch03.onsiteDone",
+              "value": true
+            },
+            {
+              "type": "variable",
+              "key": "ch03.stage",
+              "value": "aftercare"
+            },
+            {
+              "type": "unlock",
+              "key": "ch03-updated",
+              "value": true
+            },
+            {
+              "type": "unlock",
+              "key": "ch03-moment-work",
+              "value": true
+            },
+            {
+              "type": "unlock",
+              "key": "ch03-memo",
+              "value": true
+            },
+            {
+              "type": "notification",
+              "key": "",
+              "value": "核对完成。文件、朋友圈和今晚的备忘录已更新。"
+            }
+          ]
+        },
+        {
+          "id": "honest",
+          "label": "承认已经核过，只是又多看了一遍。",
+          "conditions": [
+            {
+              "key": "ch03.atDesk",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "key": "ch03.onsiteDone",
+              "op": "eq",
+              "value": false
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch03.endingTone",
+              "value": "honest"
+            },
+            {
+              "type": "variable",
+              "key": "ch03.onsiteDone",
+              "value": true
+            },
+            {
+              "type": "variable",
+              "key": "ch03.stage",
+              "value": "aftercare"
+            },
+            {
+              "type": "unlock",
+              "key": "ch03-updated",
+              "value": true
+            },
+            {
+              "type": "unlock",
+              "key": "ch03-moment-work",
+              "value": true
+            },
+            {
+              "type": "unlock",
+              "key": "ch03-memo",
+              "value": true
+            },
+            {
+              "type": "notification",
+              "key": "",
+              "value": "核对完成。文件、朋友圈和今晚的备忘录已更新。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch04-demo",
+      "itemId": "ch04-demo",
+      "kind": "media-review",
+      "conditions": [
+        {
+          "key": "chapter.chapter-04-unfinished-melody.started",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "sections": [],
+      "controls": [
+        {
+          "id": "review",
+          "label": "记录已看完，回复张峻豪",
+          "conditions": [
+            {
+              "key": "ch04.stage",
+              "op": "eq",
+              "value": "demo"
+            },
+            {
+              "key": "read:ch04-attachment",
+              "op": "eq",
+              "value": true
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch04.demoReviewed",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch04-onsite",
+      "itemId": "ch04-onsite",
+      "kind": "scene",
+      "conditions": [
+        {
+          "key": "chapter.chapter-04-unfinished-melody.started",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "sections": [
+        {
+          "conditions": [
+            {
+              "key": "ch04.demoReply",
+              "op": "eq",
+              "value": "question"
+            }
+          ],
+          "text": "我问他：“刚才说有两个接法，你是不是还舍不得删掉其中一个？”\n\n“有点。”张峻豪笑了一下，“所以先都留着。试完再说，光想也听不出来。”\n\n我说自己连写开头都能改很久。他把文件夹往我这边挪了挪：“那先交一个呗。你又不是交完就不准碰了。”"
+        },
+        {
+          "conditions": [
+            {
+              "key": "ch04.demoReply",
+              "op": "eq",
+              "value": "like"
+            }
+          ],
+          "text": "张峻豪问：“你刚才说没填满的感觉，是中间那块？”\n\n我点头：“嗯，不是想让它一直空着，就是会等着你继续。”\n\n“懂了。这个我先记下来。”他抽了一张纸，认真写了几个字。我反而有点不好意思：“也不一定对。”\n\n“听感哪有什么标准答案。你说清楚你听见的就行。”"
+        },
+        {
+          "conditions": [
+            {
+              "key": "ch04.demoReply",
+              "op": "eq",
+              "value": "work"
+            }
+          ],
+          "text": "我把附件单摊开：“草稿和正式文件分开记。时长这里先留着，别拿随口估的数去报。”\n\n“明白，空着比乱填好。”张峻豪在旁边补了个记号。\n\n我笑他终于愿意认真写文件名了。他说自己也不想半夜对着“最终版二”猜哪份能用。话题没有继续到旋律，他也没介意，只问我还缺什么。"
+        },
+        {
+          "conditions": [],
+          "text": "说到一半，门口有人停了一下。朱志鑫抱着接线板，等我们说完，把东西放到墙边。\n\n我抬头时，他的视线刚从摊开的附件单移开。我点了点头，忽然又不知道要不要再说一句。\n\n他没有插进话题，拿好要还的东西就走了。张峻豪低头收纸，问我剩下的单据放哪儿，我这才把话接回去。"
+        }
+      ],
+      "controls": [
+        {
+          "id": "finish",
+          "label": "收好附件单，回工作群看看",
+          "conditions": [
+            {
+              "key": "ch04.stage",
+              "op": "eq",
+              "value": "onsite"
+            },
+            {
+              "key": "ch04.onsiteDone",
+              "op": "eq",
+              "value": false
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch04.onsiteDone",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch06-demo-replay",
+      "itemId": "ch06-demo-replay",
+      "kind": "media-review",
+      "conditions": [
+        {
+          "key": "ch06.ktv",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "sections": [],
+      "controls": []
+    },
+    {
+      "id": "ch06-ktv-clip",
+      "itemId": "ch06-ktv-clip",
+      "kind": "media-gallery",
+      "conditions": [
+        {
+          "key": "ch06.ktv",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "sections": [],
+      "controls": [
+        {
+          "id": "continue",
+          "label": "回群继续真心话",
+          "conditions": [
+            {
+              "key": "ch06.stage",
+              "op": "eq",
+              "value": "video"
+            },
+            {
+              "key": "ch06.truthReady",
+              "op": "eq",
+              "value": false
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch06.truthReady",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "id": "ch06-ktv-star",
+          "characterId": "star",
+          "project": "KTV 演唱",
+          "profile": "选择观看朱志鑫的演唱片段",
+          "status": "可观看",
+          "required": false
+        },
+        {
+          "id": "ch06-ktv-junhao",
+          "characterId": "junhao",
+          "project": "KTV 演唱",
+          "profile": "选择观看张峻豪的演唱片段",
+          "status": "可观看",
+          "required": false
+        },
+        {
+          "id": "ch06-ktv-brother",
+          "characterId": "brother",
+          "project": "KTV 演唱",
+          "profile": "选择观看张泽禹的演唱片段",
+          "status": "可观看",
+          "required": false
+        },
+        {
+          "id": "ch06-ktv-zuohang",
+          "characterId": "zuohang",
+          "project": "KTV 演唱",
+          "profile": "选择观看左航的演唱片段",
+          "status": "可观看",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "ch06-ktv-star",
+      "itemId": "ch06-ktv-star",
+      "kind": "media-review",
+      "conditions": [
+        {
+          "key": "ch06.ktv",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "entries": [],
+      "sections": [],
+      "controls": []
+    },
+    {
+      "id": "ch06-ktv-junhao",
+      "itemId": "ch06-ktv-junhao",
+      "kind": "media-review",
+      "conditions": [
+        {
+          "key": "ch06.ktv",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "entries": [],
+      "sections": [],
+      "controls": []
+    },
+    {
+      "id": "ch06-ktv-brother",
+      "itemId": "ch06-ktv-brother",
+      "kind": "media-review",
+      "conditions": [
+        {
+          "key": "ch06.ktv",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "entries": [],
+      "sections": [],
+      "controls": []
+    },
+    {
+      "id": "ch06-ktv-zuohang",
+      "itemId": "ch06-ktv-zuohang",
+      "kind": "media-review",
+      "conditions": [
+        {
+          "key": "ch06.ktv",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "entries": [],
+      "sections": [],
+      "controls": []
+    },
+    {
+      "id": "ch07-practice",
+      "itemId": "ch07-practice",
+      "kind": "scene",
+      "conditions": [
+        {
+          "key": "ch07.signed",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "entries": [],
+      "sections": [
+        {
+          "text": "朱志鑫：你出手太急了。\n我：……我知道没进。\n朱志鑫：我说脚，还没站住。\n\n我低头看了眼线，才发现鞋带散着。他把球递过来，没有笑，我反而不知道刚才那句该怎么接。",
+          "conditions": []
+        },
+        {
+          "text": "朱志鑫：鞋带先系好。\n我：哦。\n\n我蹲下时，他往旁边挪了半步，替我挡住又滚过来的一个球。我故意把结打得慢了点。\n\n有人在场边叫他。我站起来，刚想说等一下，他已经回了头，又指了指地上的线。\n朱志鑫：先站稳，再投。",
+          "conditions": []
+        }
+      ],
+      "controls": [
+        {
+          "id": "steady",
+          "label": "“那我再试一个。你有空的话，帮我看一眼？”",
+          "conditions": [
+            {
+              "key": "ch07.stage",
+              "op": "eq",
+              "value": "practice"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch07.practiceAnswer",
+              "value": "ask"
+            },
+            {
+              "type": "variable",
+              "key": "ch07.stage",
+              "value": "game"
+            },
+            {
+              "type": "unlock",
+              "key": "ch07-basketball",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": "myself",
+          "label": "“知道了。我自己再试试。”",
+          "conditions": [
+            {
+              "key": "ch07.stage",
+              "op": "eq",
+              "value": "practice"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch07.practiceAnswer",
+              "value": "self"
+            },
+            {
+              "type": "variable",
+              "key": "ch07.stage",
+              "value": "game"
+            },
+            {
+              "type": "unlock",
+              "key": "ch07-basketball",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch07-basketball",
+      "itemId": "ch07-basketball",
+      "kind": "basketball",
+      "conditions": [
+        {
+          "key": "ch07.signed",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "entries": [],
+      "sections": [],
+      "controls": []
+    },
+    {
+      "id": "ch07-after",
+      "itemId": "ch07-after",
+      "kind": "scene",
+      "conditions": [
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "entries": [],
+      "sections": [
+        {
+          "text": "朱志鑫：手疼？\n我：没有，刚才接球震了一下。\n朱志鑫：别一直拧那个盖。\n\n我这才松开瓶盖。原来拧上又拧开的动作，他也看见了。\n我：就差一点。\n朱志鑫：嗯。",
+          "conditions": []
+        },
+        {
+          "text": "朱志鑫：后面几次，没往前扑了。\n我：你在看？\n朱志鑫：我等下一组。\n\n他看了一眼球场，又补了一句。\n朱志鑫：最后那次，脚站住了。\n\n我把水换到另一只手上，忍了忍，还是问：“那比昨天好一点吧？”\n朱志鑫：不止一点。",
+          "conditions": []
+        },
+        {
+          "text": "朱家琪举着加油牌挤过来，皱着眉问谁把正面印反了。礼菲盯了一会儿：“你拿反了。”\n\n旁边有人笑着喊她翻过来。她瞪了那人一眼，自己也低头看。\n\n我跟着笑了一下，再回头，朱志鑫正要说话。\n朱志鑫：刚才你……\n我：嗯？\n朱志鑫：没什么。你拍了张峻豪那个球？",
+          "conditions": []
+        },
+        {
+          "text": "我：拍了。他说想看看怎么弹出去的。\n朱志鑫：你记得还挺清楚。\n\n我张了张嘴。广播突然开始报接力名单，盖过了半句“他刚刚不是说——”。我等着声音过去，他却先侧开了身。\n朱志鑫：那你们先看。我过去了。\n\n我还没来得及问，他是不是也想看。\n\n张峻豪在远处喊我发视频，哥哥抢先让他把水喝了，说他每次跑完都嫌常温的不好喝。左航从人群里钻出来，把椅子底下的外套塞给我。\n左航：拿着，别给踩了。我跳远那张要是拍得比这好，你记得发我。\n我：还挑上了。\n左航：当然。我也想留张像样的。\n\n我转过去翻相册。余光里，朱志鑫已经走到了另一边。",
+          "conditions": []
+        }
+      ],
+      "controls": [
+        {
+          "id": "back",
+          "label": "回群看看大家的消息",
+          "conditions": [
+            {
+              "key": "ch07.stage",
+              "op": "eq",
+              "value": "after"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch07.wrapReady",
+              "value": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

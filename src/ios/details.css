@@ -187,9 +187,47 @@
 .ios18 .native-file-preview {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding-top: 80px;
+  align-items: stretch;
+  text-align: left;
+  padding: 24px 20px 80px;
+}
+.ios18 .native-file-preview > svg {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  margin-bottom: 14px;
+}
+.ios18 .native-file-preview > h2 {
+  margin: 0 0 18px;
+  font-size: 21px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+.ios18 .native-file-preview > p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.85;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  text-align: left;
+}
+.ios18 .native-file-preview > small {
+  margin-top: 22px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #8e8e93;
+}
+.ios18 .native-file-preview > button {
+  align-self: flex-start;
+  flex-shrink: 0;
+  margin-top: 14px;
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 9px;
+  background: #f0f5ff;
+  color: #007aff;
+  font-size: 14px;
+  line-height: 1.5;
 }
 .ios18 .native-action-sheet {
   position: absolute;

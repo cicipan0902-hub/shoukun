@@ -1,0 +1,3914 @@
+{
+  "variables": {
+    "chapter.chapter-05-pending.started": false,
+    "chapter.chapter-05-pending.completed": false,
+    "ch05.stage": "locked",
+    "ch05.tease": "unset",
+    "ch05.question": "unset",
+    "ch05.confide": "unset",
+    "ch05.talkDone": false,
+    "ch05.brotherDone": false,
+    "ch05.readyWork": false,
+    "ch05.memoRead": false
+  },
+  "chats": [
+    {
+      "id": "ch05-brother",
+      "app": "wechat",
+      "title": "张泽禹",
+      "participants": [
+        "owner",
+        "brother"
+      ],
+      "messages": [
+        {
+          "id": "ch05-brother-01",
+          "senderId": "brother",
+          "body": "你最近问我的问题，主语都快固定了。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-brother-02",
+          "senderId": "brother",
+          "body": "朱志鑫今天去不去，朱志鑫负责哪块。你哥改姓朱了？",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-brother-03",
+          "senderId": "brother",
+          "body": "[表情包]",
+          "hidden": true,
+          "time": "名单确定日",
+          "kind": "image"
+        },
+        {
+          "id": "ch05-brother-04",
+          "senderId": "brother",
+          "body": "行。活动安排姓朱，知道了。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-brother-05",
+          "senderId": "brother",
+          "body": "知道了。我嘴严，收费也合理。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-brother-06",
+          "senderId": "brother",
+          "body": "不闹了。峻豪在补交节目稿，今天定名单。你核的附件可能还得改。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-brother-07",
+          "senderId": "brother",
+          "body": "刚才在群里，语文阅读理解都没见你追问这么认真。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-brother-08",
+          "senderId": "brother",
+          "body": "怎么，朱学长从满分卷变成待批改了？",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-brother-09",
+          "senderId": "brother",
+          "body": "喜欢也不用给人免检。你觉得别扭，可以说。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-brother-10",
+          "senderId": "brother",
+          "body": "但我没跟着他跑完每一趟，不能替他答。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-brother-11",
+          "senderId": "brother",
+          "body": "你现在是生气，还顺便替自己找了个“不该生气”的理由。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-brother-12",
+          "senderId": "brother",
+          "body": "不知道的先留着，别急着全填成好，也别全填成坏。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-brother-13",
+          "senderId": "brother",
+          "body": "我得去还耳机了。再拖下去，张峻豪要把我写进讨债歌。",
+          "hidden": true,
+          "time": "名单确定日"
+        }
+      ]
+    },
+    {
+      "id": "ch05-work",
+      "app": "wechat",
+      "title": "文化节 · 表单核对",
+      "participants": [
+        "owner",
+        "lifei",
+        "jiaqi",
+        "brother",
+        "junhao",
+        "star",
+        "zuohang"
+      ],
+      "messages": [
+        {
+          "id": "ch05-work-01",
+          "senderId": "junhao",
+          "body": "补交了。还是没写完，但这版能听出我要做什么了。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-work-02",
+          "senderId": "lifei",
+          "body": "收到了。下午锁名单，现场切换和设备也一起核。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-work-03",
+          "senderId": "junhao",
+          "body": "设备能减我就减。别替我把空白那段当故障报修就行。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-work-04",
+          "senderId": "zuohang",
+          "body": "设备组：感谢提前解除警报。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-work-05",
+          "senderId": "junhao",
+          "body": "真要调整，我去跟设备组说。给我个准话就行。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-work-06",
+          "senderId": "brother",
+          "body": "朱志鑫，你那边还有补报的口子吗？",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-work-07",
+          "senderId": "star",
+          "body": "补报已经关了。我问过登记的人，得按完整版本核。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-work-08",
+          "senderId": "brother",
+          "body": "要不把他这版拿过去，当面再问一次？",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-work-09",
+          "senderId": "star",
+          "body": "我再去说的话……",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-work-10",
+          "senderId": "star",
+          "body": "先算了。别让他过去了还等一个不确定的答复。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-work-11",
+          "senderId": "junhao",
+          "body": "不用替我兜着。我把能改的写上，设备那边我自己问。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-work-12",
+          "senderId": "lifei",
+          "body": "名单定了。这次音乐节目没有排进正式演出。稿件完整度和现场切换都还没核到可执行。",
+          "hidden": true,
+          "time": "下午 · 名单确定"
+        },
+        {
+          "id": "ch05-work-13",
+          "senderId": "junhao",
+          "body": "知道了。白跑一轮肯定不爽，但这稿子我还要写。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-work-14",
+          "senderId": "brother",
+          "body": "下一版给我听。别拿“没入选”当永久拖稿证明。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-work-15",
+          "senderId": "junhao",
+          "body": "你催稿可以，先把耳机还我。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-work-16",
+          "senderId": "zuohang",
+          "body": "债务关系比节目名单稳定。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-work-17",
+          "senderId": "junhao",
+          "body": "我去约课后的空教室，先把剩下那段接好。设备老师说能借我试一次。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-work-18",
+          "senderId": "star",
+          "body": "不是只差一句话。版本没核完，设备和切换也没定。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-work-19",
+          "senderId": "owner",
+          "body": "我知道有这些问题。我只是觉得，他很在意，你又是他朋友。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-work-20",
+          "senderId": "star",
+          "body": "临时改名单，会挤到别人的安排。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-work-21",
+          "senderId": "owner",
+          "body": "我没说一定要改结果。只是再替他问一句。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-work-22",
+          "senderId": "star",
+          "body": "准备了多久，和能不能排进现场，是两件事。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-work-23",
+          "senderId": "owner",
+          "body": "可他交来的也不是什么都没有。至少可以一起想想办法吧。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-work-24",
+          "senderId": "star",
+          "body": "截止前还没核好，不能让后面的节目一起等。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-work-25",
+          "senderId": "owner",
+          "body": "我明白截止。我不明白的是，为什么到“先算了”就停了。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-work-26",
+          "senderId": "star",
+          "body": "你很在意他这次能不能上台。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-work-27",
+          "senderId": "owner",
+          "body": "我在说朋友之间能不能再多做一点。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-work-28",
+          "senderId": "star",
+          "body": "我知道你替他着急。但我不能保证结果。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-work-29",
+          "senderId": "junhao",
+          "body": "这事我自己也在跑。没成我认，稿子不会就这么扔了。",
+          "hidden": true,
+          "time": "名单确定日"
+        },
+        {
+          "id": "ch05-work-30",
+          "senderId": "lifei",
+          "body": "名单我归档了。其他节目有改设备的，今晚前单独交。",
+          "hidden": true,
+          "time": "名单确定日"
+        }
+      ]
+    }
+  ],
+  "content": {
+    "notes": [
+      {
+        "id": "ch05-entry",
+        "title": "第五章 · 如果你再争取一下",
+        "body": "文化节名单快定了。张峻豪又交了一版作品，哥哥也发来了一句不怎么正经的问候。",
+        "kind": "note",
+        "hidden": false,
+        "time": "名单确定日",
+        "unlock": "chapter.chapter-04-unfinished-melody.completed"
+      },
+      {
+        "id": "ch05-memo",
+        "title": "那句“算了”",
+        "body": "群里没再说话，我还停在那句“先算了”。\n\n张峻豪已经去问空教室了。他有下一步要做，我知道。可看着他补了这么久的稿，还是觉得那次机会丢得可惜，也忍不住想，朱志鑫要是再陪他问一句呢？\n\n那些设备、名单和截止时间，我不是听不懂。我只是没想到，他会那么快停下来。后来他说我很在意张峻豪，我想解释，又觉得根本没说到同一件事上。\n\n哥哥让我先留着不知道的部分。我答应了，放下手机没多久，又翻回去看朱志鑫的回复。还是喜欢他，这件事并没有因为生气就变得简单。\n\n屏幕亮了很久，手心都有点热了。今晚先不看了。",
+        "kind": "note",
+        "hidden": true,
+        "time": "名单确定日 · 晚上"
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "ch05-start",
+      "label": "开始第五章《如果你再争取一下》",
+      "event": "chapterStart",
+      "target": "chapter-05-pending",
+      "conditions": [
+        {
+          "key": "chapter.chapter-04-unfinished-melody.completed",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "chapter.chapter-05-pending.started",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "chapter.chapter-05-pending.started",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch05.stage",
+          "value": "brother-open"
+        },
+        {
+          "type": "variable",
+          "key": "story.dayLabel",
+          "value": "文化节名单确定日"
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信：张泽禹似乎发现了什么。"
+        }
+      ]
+    },
+    {
+      "id": "ch05-start-from-note",
+      "label": "开始第五章《如果你再争取一下》",
+      "event": "read",
+      "target": "ch05-entry",
+      "conditions": [
+        {
+          "key": "chapter.chapter-04-unfinished-melody.completed",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "chapter.chapter-05-pending.started",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "chapter.chapter-05-pending.started",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch05.stage",
+          "value": "brother-open"
+        },
+        {
+          "type": "variable",
+          "key": "story.dayLabel",
+          "value": "文化节名单确定日"
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信：张泽禹似乎发现了什么。"
+        }
+      ]
+    },
+    {
+      "id": "ch05-read-memo",
+      "event": "read",
+      "target": "ch05-memo",
+      "conditions": [
+        {
+          "key": "ch05.brotherDone",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "unlocked:ch05-memo",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch05.memoRead",
+          "value": true
+        }
+      ],
+      "next": [
+        "ch05-complete"
+      ],
+      "label": "阅读那句算了"
+    },
+    {
+      "id": "ch05-complete",
+      "label": "第五章完成",
+      "type": "ending",
+      "conditions": [
+        {
+          "key": "ch05.talkDone",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch05.brotherDone",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch05.memoRead",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "chapter.chapter-05-pending.completed",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch05.stage",
+          "value": "completed"
+        },
+        {
+          "type": "variable",
+          "key": "chapter.next",
+          "value": "chapter-06-pending"
+        },
+        {
+          "type": "ending",
+          "key": "",
+          "value": "第五章《如果你再争取一下》已完成。那句“算了”，还没有答案。"
+        }
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "第五章-dodge-try-honest",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-dodge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-honest"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        }
+      ],
+      "ending": "第五章《如果你再争取一下》已完成。那句“算了”，还没有答案。",
+      "expectUnlocked": [
+        "ch05-memo"
+      ]
+    },
+    {
+      "name": "第五章-dodge-try-doubt",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-dodge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-doubt"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        }
+      ],
+      "ending": "第五章《如果你再争取一下》已完成。那句“算了”，还没有答案。",
+      "expectUnlocked": [
+        "ch05-memo"
+      ]
+    },
+    {
+      "name": "第五章-dodge-decision-honest",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-dodge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-decision"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-honest"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        }
+      ],
+      "ending": "第五章《如果你再争取一下》已完成。那句“算了”，还没有答案。",
+      "expectUnlocked": [
+        "ch05-memo"
+      ]
+    },
+    {
+      "name": "第五章-dodge-decision-doubt",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-dodge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-decision"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-doubt"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        }
+      ],
+      "ending": "第五章《如果你再争取一下》已完成。那句“算了”，还没有答案。",
+      "expectUnlocked": [
+        "ch05-memo"
+      ]
+    },
+    {
+      "name": "第五章-admit-try-honest",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-admit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-honest"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        }
+      ],
+      "ending": "第五章《如果你再争取一下》已完成。那句“算了”，还没有答案。",
+      "expectUnlocked": [
+        "ch05-memo"
+      ]
+    },
+    {
+      "name": "第五章-admit-try-doubt",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-admit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-doubt"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        }
+      ],
+      "ending": "第五章《如果你再争取一下》已完成。那句“算了”，还没有答案。",
+      "expectUnlocked": [
+        "ch05-memo"
+      ]
+    },
+    {
+      "name": "第五章-admit-decision-honest",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-admit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-decision"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-honest"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        }
+      ],
+      "ending": "第五章《如果你再争取一下》已完成。那句“算了”，还没有答案。",
+      "expectUnlocked": [
+        "ch05-memo"
+      ]
+    },
+    {
+      "name": "第五章-admit-decision-doubt",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-admit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-decision"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-doubt"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        }
+      ],
+      "ending": "第五章《如果你再争取一下》已完成。那句“算了”，还没有答案。",
+      "expectUnlocked": [
+        "ch05-memo"
+      ]
+    }
+  ]
+}

@@ -1,3 +1,17 @@
+> 当前已接入**第四章《未完成的旋律》**，并改善第三章资料卡与提交反馈。详见 [第三、四章说明](docs/CHAPTER04_AUTHORING_ZH.md)。第三章通关存档可直接续接；当前Demo为文字试听。
+
+> 当前版本已追加**第三章《报名表之外》**：可交互报名表、礼菲与朱家琪、现场记录和女主备忘录。详见 [第三章试玩说明](docs/CHAPTER03_AUTHORING_ZH.md) 与 [备忘录创作规范](docs/MEMO_WRITING_ZH.md)。第二章通关后续接，旧进度保留。
+
+> 当前校园版本：**V0.4 选项式微信＋第二章《关于喜欢这件小事》初稿**。详见 [创作与试玩说明](docs/CHAPTER02_AUTHORING_ZH.md)。已有第一章通关存档可续接，无需重玩。
+
+> 当前校园试玩版本：**V0.3《好天气》**。详见 [交付及试玩说明](docs/V0.3_DELIVERY_ZH.md)。运行 `npm run author:dev` 开始，默认内容位于 `stories/foundation/chapter-01.extensions.json`。旧演示源文件保留。
+
+> **校园创作环境 V0.2**：[中文创作手册](docs/AUTHORING_ZH.md) · [功能盘点](docs/FEATURE_AUDIT_V02.md) · [验证记录](docs/VERIFICATION_V02.md)。先运行 `npm run author:check`，作者预览用 `npm run author:dev`，玩家构建用 `npm run author:build`。下方保留此前版本及原项目信息。
+
+> 校园个性化演示已加入：[试玩、AI 接入与内容编辑说明](docs/CAMPUS_DEMO.md)。默认剧情命令使用 `foundation:*`；完整网页与 AI 服务使用 `npm run campus:serve`。
+
+> 本 Fork 的框架准备入口：先阅读 [准备与启动说明](docs/FOUNDATION_SETUP.md)。使用 `npm run foundation:dev` 打开无剧情的手机；原项目说明保留如下。
+
 # 捡手机 · FoundPhone Studio
 
 《捡手机》是一个可以通过 AI 添加剧情的交互式虚拟手机框架。你不需要重新制作手机界面，只需要准备人物设定、聊天记录和剧情要求，让 AI 填入故事数据。

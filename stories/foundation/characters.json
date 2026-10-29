@@ -1,0 +1,320 @@
+[
+  {
+    "id": "owner",
+    "storyId": "owner",
+    "name": "{{playerName}}",
+    "nickname": "{{playerName}}",
+    "persona": "温柔、细腻、共情能力强，外表理性，容易内耗。 寻找自己的理想、价值和方向，区分真实的他与情感投射。",
+    "avatarAssetId": "avatar-owner",
+    "avatarStages": {},
+    "wechat": {
+      "nickname": "{{playerName}}",
+      "bio": "温柔、细腻、共情能力强，外表理性，容易内耗。",
+      "momentsBio": "个人资料待补充"
+    },
+    "tags": [
+      "自我探索",
+      "家庭",
+      "成长"
+    ],
+    "storylineId": "player-growth",
+    "aiEnabled": false,
+    "relationships": [
+      {
+        "characterId": "zhangzeyu",
+        "kind": "兄妹",
+        "description": "思想独立，偶有争吵但理解彼此"
+      },
+      {
+        "characterId": "zhuzhixin",
+        "kind": "暗恋",
+        "description": "始于开学典礼的情感投射，未来逐步认识真实的对方"
+      }
+    ],
+    "publicBio": "温柔、细腻、共情能力强，外表理性，容易内耗。",
+    "authorNotes": "害怕令亲近的人失望，与张泽禹为亲兄妹。",
+    "placeholders": {
+      "age": null,
+      "grade": null,
+      "birthday": null,
+      "school": null
+    },
+    "contentIds": [],
+    "initialStates": {
+      "trust": "unexplored",
+      "understanding": "unexplored",
+      "conflict": "none",
+      "growth": "not-started"
+    }
+  },
+  {
+    "id": "zhuzhixin",
+    "storyId": "star",
+    "name": "朱志鑫",
+    "nickname": "朱志鑫",
+    "persona": "外在优秀受欢迎、成熟从容；内心敏感，重要选择时容易退缩。 从自我否定到学会表达和争取。",
+    "avatarAssetId": "avatar-zhuzhixin",
+    "avatarStages": {},
+    "wechat": {
+      "nickname": "朱志鑫",
+      "bio": "外在优秀受欢迎、成熟从容；内心敏感，重要选择时容易退缩。",
+      "momentsBio": "个人资料待补充"
+    },
+    "tags": [
+      "自我认同",
+      "家庭",
+      "表达"
+    ],
+    "storylineId": "zhu-growth",
+    "aiEnabled": true,
+    "relationships": [
+      {
+        "characterId": "owner",
+        "kind": "逐渐了解",
+        "description": "主要恋爱线，不用单一好感度定义"
+      },
+      {
+        "characterId": "zhangjunhao",
+        "kind": "好友",
+        "description": "有自己的友情与成长交集"
+      }
+    ],
+    "publicBio": "外在优秀受欢迎、成熟从容；内心敏感，重要选择时容易退缩。",
+    "authorNotes": "完全架空：父亲赌博、父母离婚，家庭关系不稳定；不对应现实人物。",
+    "placeholders": {
+      "age": null,
+      "grade": null,
+      "birthday": null,
+      "school": null
+    },
+    "contentIds": [],
+    "initialStates": {
+      "trust": "unexplored",
+      "understanding": "unexplored",
+      "conflict": "none",
+      "growth": "not-started"
+    }
+  },
+  {
+    "id": "zhangjunhao",
+    "storyId": "junhao",
+    "name": "张峻豪",
+    "nickname": "张峻豪",
+    "persona": "开朗自信、勇敢，有音乐才华。 音乐梦想与学业之间的选择，学习面对失败和脆弱。",
+    "avatarAssetId": "avatar-zhangjunhao",
+    "avatarStages": {},
+    "wechat": {
+      "nickname": "张峻豪",
+      "bio": "开朗自信、勇敢，有音乐才华。",
+      "momentsBio": "个人资料待补充"
+    },
+    "tags": [
+      "音乐",
+      "梦想",
+      "挫折"
+    ],
+    "storylineId": "junhao-music",
+    "aiEnabled": true,
+    "relationships": [
+      {
+        "characterId": "zhuzhixin",
+        "kind": "好友",
+        "description": "友情线独立于恋爱线"
+      },
+      {
+        "characterId": "zhangzeyu",
+        "kind": "重要朋友",
+        "description": "能够深入交流，存在尚未表达的情绪"
+      }
+    ],
+    "publicBio": "开朗自信、勇敢，有音乐才华。",
+    "authorNotes": "完全架空：家庭和睦、经济条件较好，可能出国学音乐；尚未揭晓的计划不直接写进日常 AI 回复。",
+    "placeholders": {
+      "age": null,
+      "grade": null,
+      "birthday": null,
+      "school": null
+    },
+    "contentIds": [],
+    "initialStates": {
+      "trust": "unexplored",
+      "understanding": "unexplored",
+      "conflict": "none",
+      "growth": "not-started"
+    }
+  },
+  {
+    "id": "zhangzeyu",
+    "storyId": "brother",
+    "name": "张泽禹",
+    "nickname": "张泽禹",
+    "persona": "幽默大方、聪明早慧、思想独立，文科与数学较好。 逐渐接纳自己，学习处理关系中的边界与失落。",
+    "avatarAssetId": "avatar-zhangzeyu",
+    "avatarStages": {},
+    "wechat": {
+      "nickname": "张泽禹",
+      "bio": "幽默大方、聪明早慧、思想独立，文科与数学较好。",
+      "momentsBio": "个人资料待补充"
+    },
+    "tags": [
+      "亲情",
+      "身份认同",
+      "边界"
+    ],
+    "storylineId": "zeyu-identity",
+    "aiEnabled": true,
+    "relationships": [
+      {
+        "characterId": "owner",
+        "kind": "兄妹",
+        "description": "彼此独立，亲情而非恋爱"
+      },
+      {
+        "characterId": "zhangjunhao",
+        "kind": "重要朋友",
+        "description": "情感尚未明朗，不作为现实信息呈现"
+      }
+    ],
+    "publicBio": "幽默大方、聪明早慧、思想独立，文科与数学较好。",
+    "authorNotes": "完全架空：对张峻豪有复杂朦胧的感情，对性取向有羞耻与纠结；不对应现实人物或事实。可能因未被及时告知出国计划而受伤。",
+    "placeholders": {
+      "age": null,
+      "grade": null,
+      "birthday": null,
+      "school": null
+    },
+    "contentIds": [],
+    "initialStates": {
+      "trust": "unexplored",
+      "understanding": "unexplored",
+      "conflict": "none",
+      "growth": "not-started"
+    }
+  },
+  {
+    "id": "zuohang",
+    "storyId": "zuohang",
+    "name": "左航",
+    "nickname": "左航",
+    "persona": "温柔、照顾人，习惯沉默，具有思辨和求知倾向。 阅读、孤独与自我探索，追寻自己的理想。",
+    "avatarAssetId": "avatar-zuohang",
+    "avatarStages": {},
+    "wechat": {
+      "nickname": "左航",
+      "bio": "温柔、照顾人，习惯沉默，具有思辨和求知倾向。",
+      "momentsBio": "个人资料待补充"
+    },
+    "tags": [
+      "阅读",
+      "理想",
+      "自我探索"
+    ],
+    "storylineId": "zuo-search",
+    "aiEnabled": true,
+    "relationships": [
+      {
+        "characterId": "owner",
+        "kind": "朋友",
+        "description": "照顾彼此，也各自成长"
+      },
+      {
+        "characterId": "zhangzeyu",
+        "kind": "朋友",
+        "description": "交流与陪伴"
+      }
+    ],
+    "publicBio": "温柔、照顾人，习惯沉默，具有思辨和求知倾向。",
+    "authorNotes": "架空潜在线：可能对女主有好感，但不是主要恋爱角色；高考后去远方的设想尚未定稿。",
+    "placeholders": {
+      "age": null,
+      "grade": null,
+      "birthday": null,
+      "school": null
+    },
+    "contentIds": [],
+    "initialStates": {
+      "trust": "unexplored",
+      "understanding": "unexplored",
+      "conflict": "none",
+      "growth": "not-started"
+    }
+  },
+  {
+    "id": "lifei",
+    "storyId": "lifei",
+    "name": "礼菲",
+    "nickname": "礼菲",
+    "persona": "效率高，重视规则；忙时有些急，但愿意解释和改正。",
+    "avatarAssetId": "avatar-lifei",
+    "avatarStages": {},
+    "wechat": {
+      "nickname": "礼菲",
+      "bio": "活动统筹",
+      "momentsBio": "文化节筹备中"
+    },
+    "tags": [
+      "原创NPC",
+      "活动统筹"
+    ],
+    "storylineId": "festival-support",
+    "aiEnabled": false,
+    "relationships": [
+      {
+        "characterId": "owner",
+        "kind": "工作伙伴",
+        "description": "通过文化节核对工作认识"
+      }
+    ],
+    "publicBio": "活动统筹，参与校园文化节筹备。",
+    "authorNotes": "基础工作角色，后续可扩展，不预设感情线。",
+    "placeholders": {
+      "age": null,
+      "grade": null,
+      "birthday": null,
+      "school": null
+    },
+    "contentIds": [],
+    "initialStates": {
+      "trust": "unexplored"
+    }
+  },
+  {
+    "id": "zhujiaqi",
+    "storyId": "jiaqi",
+    "name": "朱家琪",
+    "nickname": "朱家琪",
+    "persona": "表达自然，愿意接话；正式上台前仍会紧张，靠练习调整。",
+    "avatarAssetId": "avatar-zhujiaqi",
+    "avatarStages": {},
+    "wechat": {
+      "nickname": "朱家琪",
+      "bio": "主持组",
+      "momentsBio": "文化节筹备中"
+    },
+    "tags": [
+      "原创NPC",
+      "主持组"
+    ],
+    "storylineId": "festival-support",
+    "aiEnabled": false,
+    "relationships": [
+      {
+        "characterId": "owner",
+        "kind": "工作伙伴",
+        "description": "通过文化节核对工作认识"
+      }
+    ],
+    "publicBio": "主持组，参与校园文化节筹备。",
+    "authorNotes": "基础工作角色，后续可扩展，不预设感情线。",
+    "placeholders": {
+      "age": null,
+      "grade": null,
+      "birthday": null,
+      "school": null
+    },
+    "contentIds": [],
+    "initialStates": {
+      "trust": "unexplored"
+    }
+  }
+]

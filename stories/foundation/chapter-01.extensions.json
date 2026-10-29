@@ -1,0 +1,5233 @@
+{
+  "content": {
+    "wechat": [
+      {
+        "id": "moment-zhu-01",
+        "title": "今天的天不错。",
+        "sender": "朱志鑫",
+        "body": "今天的天不错。",
+        "kind": "post",
+        "folder": "朋友圈",
+        "hidden": false,
+        "comments": [],
+        "time": "日常"
+      },
+      {
+        "id": "moment-zhu-02",
+        "title": "终于。",
+        "sender": "朱志鑫",
+        "body": "终于。",
+        "kind": "post",
+        "folder": "朋友圈",
+        "hidden": false,
+        "comments": [
+          "张峻豪：你考得挺好还终于啥",
+          "朱志鑫回复张峻豪：终于能睡觉了"
+        ],
+        "time": "日常"
+      },
+      {
+        "id": "moment-zhu-03",
+        "title": "某人拍照技术有待提高。",
+        "sender": "朱志鑫",
+        "body": "某人拍照技术有待提高。",
+        "kind": "post",
+        "folder": "朋友圈",
+        "hidden": false,
+        "comments": [
+          "张峻豪：你就说帅不帅吧",
+          "左航：挺抽象的"
+        ],
+        "time": "日常"
+      },
+      {
+        "id": "moment-zhu-04",
+        "title": "下雨了。",
+        "sender": "朱志鑫",
+        "body": "下雨了。",
+        "kind": "post",
+        "folder": "朋友圈",
+        "hidden": true,
+        "comments": [],
+        "time": "日常"
+      },
+      {
+        "id": "moment-zhu-05",
+        "title": "算了。",
+        "sender": "朱志鑫",
+        "body": "算了。",
+        "kind": "post",
+        "folder": "朋友圈",
+        "hidden": true,
+        "comments": [],
+        "time": "日常"
+      },
+      {
+        "id": "moment-junhao-01",
+        "title": "今天又进步了一点点😎",
+        "sender": "张峻豪",
+        "body": "今天又进步了一点点😎",
+        "kind": "post",
+        "folder": "朋友圈",
+        "hidden": false,
+        "comments": [
+          "张泽禹：你这个一点点的定义是不是有点问题",
+          "张峻豪回复张泽禹：那确实不止一点点"
+        ],
+        "time": "日常"
+      },
+      {
+        "id": "moment-junhao-02",
+        "title": "数学你到底要我怎样",
+        "sender": "张峻豪",
+        "body": "数学你到底要我怎样",
+        "kind": "post",
+        "folder": "朋友圈",
+        "hidden": false,
+        "comments": [
+          "张泽禹：先把第二行移项移对",
+          "张峻豪回复张泽禹：你能不能别在朋友圈上课"
+        ],
+        "time": "日常"
+      },
+      {
+        "id": "moment-junhao-03",
+        "title": "谁把我冰箱里最后一瓶可乐喝了",
+        "sender": "张峻豪",
+        "body": "谁把我冰箱里最后一瓶可乐喝了",
+        "kind": "post",
+        "folder": "朋友圈",
+        "hidden": false,
+        "comments": [
+          "张泽禹：不知道",
+          "张峻豪回复张泽禹：你最好是真不知道"
+        ],
+        "time": "日常"
+      },
+      {
+        "id": "moment-junhao-04",
+        "title": "分享一段刚做的demo，耳机听。",
+        "sender": "张峻豪",
+        "body": "分享一段刚做的demo，耳机听。",
+        "kind": "post",
+        "folder": "朋友圈",
+        "hidden": true,
+        "comments": [
+          "左航：可以",
+          "张峻豪回复左航：你这个评价非常珍贵"
+        ],
+        "time": "日常"
+      },
+      {
+        "id": "moment-junhao-05",
+        "title": "今天不想碰琴。",
+        "sender": "张峻豪",
+        "body": "今天不想碰琴。",
+        "kind": "post",
+        "folder": "朋友圈",
+        "hidden": true,
+        "comments": [],
+        "time": "日常"
+      },
+      {
+        "id": "moment-zeyu-01",
+        "title": "文科生也是有数学尊严的。",
+        "sender": "张泽禹",
+        "body": "文科生也是有数学尊严的。",
+        "kind": "post",
+        "folder": "朋友圈",
+        "hidden": false,
+        "comments": [
+          "张峻豪：尊严能不能借我用两天",
+          "张泽禹回复张峻豪：按小时收费"
+        ],
+        "time": "日常"
+      },
+      {
+        "id": "moment-zeyu-02",
+        "title": "家里有个妹妹到底是谁的福气",
+        "sender": "张泽禹",
+        "body": "家里有个妹妹到底是谁的福气",
+        "kind": "post",
+        "folder": "朋友圈",
+        "hidden": false,
+        "comments": [
+          "{{playerName}}：反正肯定是你的",
+          "张泽禹回复{{playerName}}：我再想想"
+        ],
+        "time": "日常"
+      },
+      {
+        "id": "moment-zeyu-03",
+        "title": "有些人说是来图书馆学习的。",
+        "sender": "张泽禹",
+        "body": "有些人说是来图书馆学习的。",
+        "kind": "post",
+        "folder": "朋友圈",
+        "hidden": false,
+        "comments": [
+          "张峻豪：侵犯肖像权了",
+          "张泽禹回复张峻豪：已获得被摄者精神层面的默许"
+        ],
+        "time": "日常"
+      },
+      {
+        "id": "moment-zeyu-04",
+        "title": "今天讨论了半小时什么算真正的自由，最后一致决定先去吃饭。",
+        "sender": "张泽禹",
+        "body": "今天讨论了半小时什么算真正的自由，最后一致决定先去吃饭。",
+        "kind": "post",
+        "folder": "朋友圈",
+        "hidden": true,
+        "comments": [
+          "张峻豪：因为你再不吃饭就要低血糖了",
+          "张泽禹回复张峻豪：这是自由意志的胜利"
+        ],
+        "time": "日常"
+      },
+      {
+        "id": "moment-zuo-01",
+        "title": "本来只想进去看看。",
+        "sender": "左航",
+        "body": "本来只想进去看看。",
+        "kind": "post",
+        "folder": "朋友圈",
+        "hidden": false,
+        "comments": [
+          "张泽禹：你上次也是这么说的",
+          "左航回复张泽禹：下次还说"
+        ],
+        "time": "日常"
+      },
+      {
+        "id": "moment-zuo-02",
+        "title": "下雨适合睡觉，不适合上学。",
+        "sender": "左航",
+        "body": "下雨适合睡觉，不适合上学。",
+        "kind": "post",
+        "folder": "朋友圈",
+        "hidden": false,
+        "comments": [
+          "张峻豪：支持",
+          "张泽禹：明天去跟班主任说"
+        ],
+        "time": "日常"
+      },
+      {
+        "id": "moment-zuo-03",
+        "title": "晚霞像学校偷偷发的补偿。",
+        "sender": "左航",
+        "body": "晚霞像学校偷偷发的补偿。",
+        "kind": "post",
+        "folder": "朋友圈",
+        "hidden": false,
+        "comments": [
+          "{{playerName}}：那我申请每天都有",
+          "左航回复{{playerName}}：建议直接写进校规"
+        ],
+        "time": "日常"
+      },
+      {
+        "id": "moment-zuo-04",
+        "title": "有些书适合十八岁看，有些可能要过很多年才能看懂。",
+        "sender": "左航",
+        "body": "有些书适合十八岁看，有些可能要过很多年才能看懂。",
+        "kind": "post",
+        "folder": "朋友圈",
+        "hidden": true,
+        "comments": [],
+        "time": "日常"
+      },
+      {
+        "id": "moment-zuo-05",
+        "title": "去远一点的地方看看吧。",
+        "sender": "左航",
+        "body": "去远一点的地方看看吧。",
+        "kind": "post",
+        "folder": "朋友圈",
+        "hidden": true,
+        "comments": [],
+        "time": "日常"
+      },
+      {
+        "id": "moment-owner-01",
+        "title": "新学期，拜托顺利一点。",
+        "sender": "{{playerName}}",
+        "body": "新学期，拜托顺利一点。",
+        "kind": "post",
+        "folder": "朋友圈",
+        "hidden": false,
+        "comments": [
+          "张泽禹：首先希望你早上能按时起床",
+          "{{playerName}}回复张泽禹：已拉黑"
+        ],
+        "time": "日常"
+      },
+      {
+        "id": "moment-owner-02",
+        "title": "今天也算是个好天气。",
+        "sender": "{{playerName}}",
+        "body": "今天也算是个好天气。",
+        "kind": "post",
+        "folder": "朋友圈",
+        "hidden": false,
+        "comments": [],
+        "time": "日常"
+      },
+      {
+        "id": "moment-owner-03",
+        "title": "希望我明天的脑子比今天好用。",
+        "sender": "{{playerName}}",
+        "body": "希望我明天的脑子比今天好用。",
+        "kind": "post",
+        "folder": "朋友圈",
+        "hidden": false,
+        "comments": [
+          "张泽禹：我觉得你应该先睡觉",
+          "{{playerName}}回复张泽禹：你是我的健康系统吗"
+        ],
+        "time": "日常"
+      },
+      {
+        "id": "moment-owner-04",
+        "title": "我真的没有运动天赋啊啊啊",
+        "sender": "{{playerName}}",
+        "body": "我真的没有运动天赋啊啊啊",
+        "kind": "post",
+        "folder": "朋友圈",
+        "hidden": true,
+        "comments": [
+          "左航：你不是说要挑战自己吗",
+          "{{playerName}}回复左航：挑战失败了"
+        ],
+        "time": "日常"
+      },
+      {
+        "id": "moment-owner-05",
+        "title": "以前总觉得要先想清楚以后想成为什么样的人，才能往前走。现在觉得，可能走着走着就知道了。",
+        "sender": "{{playerName}}",
+        "body": "以前总觉得要先想清楚以后想成为什么样的人，才能往前走。现在觉得，可能走着走着就知道了。",
+        "kind": "post",
+        "folder": "朋友圈",
+        "hidden": true,
+        "comments": [],
+        "time": "日常"
+      },
+      {
+        "id": "ch01-moment-forward-weather",
+        "title": "转发：今天的天不错",
+        "sender": "张泽禹",
+        "body": "刚刷到朱志鑫发的：今天的天不错。\n我只想知道教学楼门口还有没有人来领饮料。",
+        "kind": "post",
+        "folder": "朋友圈",
+        "hidden": false,
+        "comments": [],
+        "time": "开学第一天"
+      }
+    ],
+    "notes": [
+      {
+        "id": "ch01-guide",
+        "title": "好天气 · 试玩指引",
+        "body": "从微信里张泽禹的「散场了没」开始。\n轻触最新的聊天气泡继续，出现选项时选一句回复。对方有时会稍等片刻才回。\n聊天之后去微信「发现 → 朋友圈」，点开张泽禹《转发：今天的天不错》。再去备忘录读《开学第一天》，然后回微信看看左航。\n每个选择都会保存。朋友圈其他日常可以自由浏览，不影响主线。\n本章没有学长主动私聊，四人群也不在你的手机里。",
+        "kind": "note",
+        "time": "试玩指引"
+      },
+      {
+        "id": "ch01-note-first-day",
+        "title": "开学第一天",
+        "body": "开学典礼站到后面，小腿发酸，早上那道没做完的题也一直没想出结果。\n\n学生代表上台以后，倒听进去了一点。朱志鑫，名字是散场后找哥哥问的。其实讲话的内容没记住多少，先记住了人。\n\n长得好看，站在那里也很从容。我忍不住多问了两句，哥哥回得倒快，不知道是不是已经看出来了。现在想想，只见过这么一面，连他平时怎么跟人说话都不知道，我却已经觉得他应该什么都做得不错。\n\n饮料还是哥哥买的，拿到手时冰得握不住，喝完连声谢谢都忘了。明天见面补一句。新课表也还没抄，先把书包收好。",
+        "kind": "note",
+        "hidden": true,
+        "time": "开学第一天"
+      },
+      {
+        "id": "ch01-note-ending",
+        "title": "好像也没那么无聊",
+        "body": "开学第一天。\n\n好像也没那么无聊。",
+        "kind": "note",
+        "hidden": true,
+        "time": "开学第一天"
+      }
+    ]
+  },
+  "chats": [
+    {
+      "id": "ch01-chat-brother",
+      "app": "wechat",
+      "title": "张泽禹",
+      "participants": [
+        "brother",
+        "owner"
+      ],
+      "messages": [
+        {
+          "id": "ch01-b-01",
+          "body": "散场了没",
+          "senderId": "brother",
+          "hidden": false,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-greeting-msg-a",
+          "body": "刚散 你人呢",
+          "senderId": "owner",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-greeting-msg-b",
+          "body": "早散了 你又去哪了",
+          "senderId": "owner",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-b-02",
+          "body": "教学楼门口",
+          "senderId": "brother",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-b-03",
+          "body": "给你带了喝的",
+          "senderId": "brother",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-b-04",
+          "body": "再不来我喝了",
+          "senderId": "brother",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-b-05",
+          "body": "你敢",
+          "senderId": "owner",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-b-06",
+          "body": "问你个事",
+          "senderId": "owner",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-b-07",
+          "body": "说",
+          "senderId": "brother",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-b-08",
+          "body": "今天上台讲话那个学长你认识吗",
+          "senderId": "owner",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-b-09",
+          "body": "哪个",
+          "senderId": "brother",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-b-10",
+          "body": "就学生代表那个",
+          "senderId": "owner",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-b-11",
+          "body": "朱志鑫？",
+          "senderId": "brother",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-b-12",
+          "body": "嗯",
+          "senderId": "owner",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-b-13",
+          "body": "认识啊",
+          "senderId": "brother",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-b-14",
+          "body": "怎么了",
+          "senderId": "brother",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-expression-msg-hide-feelings",
+          "body": "没什么 就随便问问",
+          "senderId": "owner",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-expression-answer-hide-feelings",
+          "body": "哦 随便问问还绕这么大个弯",
+          "senderId": "brother",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-expression-msg-praise-speech",
+          "body": "感觉他讲话还挺好的",
+          "senderId": "owner",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-expression-answer-praise-speech",
+          "body": "你今天居然听进去了",
+          "senderId": "brother",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-expression-msg-admit-attraction",
+          "body": "长得还挺帅的",
+          "senderId": "owner",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-expression-answer-admit-attraction",
+          "body": "评价还挺直接",
+          "senderId": "brother",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-b-15",
+          "body": "你什么时候开始关心学生代表了",
+          "senderId": "brother",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-b-16",
+          "body": "以前开学典礼你不是最先喊困的吗",
+          "senderId": "brother",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-b-17",
+          "body": "我随便问问不行吗",
+          "senderId": "owner",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-b-18",
+          "body": "行行行",
+          "senderId": "brother",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-b-19",
+          "body": "我又没说什么",
+          "senderId": "brother",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-b-20",
+          "body": "你急什么",
+          "senderId": "brother",
+          "hidden": true,
+          "time": "开学第一天"
+        }
+      ]
+    },
+    {
+      "id": "ch01-chat-zuohang",
+      "app": "wechat",
+      "title": "左航",
+      "participants": [
+        "zuohang",
+        "owner"
+      ],
+      "messages": [
+        {
+          "id": "ch01-z-01",
+          "body": "你哥说你今天开学典礼差点睡着",
+          "senderId": "zuohang",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-z-02",
+          "body": "真的假的",
+          "senderId": "zuohang",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-zuo-msg-a",
+          "body": "假的 他造谣",
+          "senderId": "owner",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-zuo-answer-a",
+          "body": "行 我就当没听见",
+          "senderId": "zuohang",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-zuo-msg-b",
+          "body": "差一点点而已",
+          "senderId": "owner",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-zuo-answer-b",
+          "body": "那下次坐靠后一点 别被老师看见",
+          "senderId": "zuohang",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-zuo-msg-c",
+          "body": "你怎么什么都知道",
+          "senderId": "owner",
+          "hidden": true,
+          "time": "开学第一天"
+        },
+        {
+          "id": "ch01-zuo-answer-c",
+          "body": "你哥刚说的 想不知道都难",
+          "senderId": "zuohang",
+          "hidden": true,
+          "time": "开学第一天"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "ch01-start",
+      "label": "ch01-start",
+      "type": "start",
+      "actions": [
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信：张泽禹发来消息。点开聊天，轻触最新气泡继续。"
+        }
+      ]
+    },
+    {
+      "id": "ch01-first-read",
+      "label": "ch01-first-read",
+      "event": "read",
+      "target": "ch01-b-01",
+      "next": [
+        "ch01-greeting-choice"
+      ]
+    },
+    {
+      "id": "ch01-greeting-choice",
+      "label": "怎么回复哥哥？",
+      "type": "choice",
+      "next": [
+        "ch01-greeting-a",
+        "ch01-greeting-b"
+      ]
+    },
+    {
+      "id": "ch01-greeting-a",
+      "label": "刚散 你人呢",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-greeting-msg-a",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch01.greeting",
+          "value": "a"
+        }
+      ],
+      "next": [
+        "ch01-greeting-wait"
+      ]
+    },
+    {
+      "id": "ch01-greeting-b",
+      "label": "早散了 你又去哪了",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-greeting-msg-b",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch01.greeting",
+          "value": "b"
+        }
+      ],
+      "next": [
+        "ch01-greeting-wait"
+      ]
+    },
+    {
+      "id": "ch01-greeting-wait",
+      "label": "ch01-greeting-wait",
+      "type": "delay",
+      "delayMs": 700,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-b-02",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch01-read-ch01-b-02",
+      "label": "ch01-read-ch01-b-02",
+      "event": "read",
+      "target": "ch01-b-02",
+      "next": [
+        "ch01-wait-ch01-b-02"
+      ]
+    },
+    {
+      "id": "ch01-wait-ch01-b-02",
+      "label": "ch01-wait-ch01-b-02",
+      "type": "delay",
+      "delayMs": 600,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-b-03",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch01-read-ch01-b-03",
+      "label": "ch01-read-ch01-b-03",
+      "event": "read",
+      "target": "ch01-b-03",
+      "next": [
+        "ch01-wait-ch01-b-03"
+      ]
+    },
+    {
+      "id": "ch01-wait-ch01-b-03",
+      "label": "ch01-wait-ch01-b-03",
+      "type": "delay",
+      "delayMs": 600,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-b-04",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch01-read-ch01-b-04",
+      "label": "ch01-read-ch01-b-04",
+      "event": "read",
+      "target": "ch01-b-04",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-b-05",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch01-read-ch01-b-05",
+      "label": "ch01-read-ch01-b-05",
+      "event": "read",
+      "target": "ch01-b-05",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-b-06",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch01-read-ch01-b-06",
+      "label": "ch01-read-ch01-b-06",
+      "event": "read",
+      "target": "ch01-b-06",
+      "next": [
+        "ch01-wait-ch01-b-06"
+      ]
+    },
+    {
+      "id": "ch01-wait-ch01-b-06",
+      "label": "ch01-wait-ch01-b-06",
+      "type": "delay",
+      "delayMs": 600,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-b-07",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch01-read-ch01-b-07",
+      "label": "ch01-read-ch01-b-07",
+      "event": "read",
+      "target": "ch01-b-07",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-b-08",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch01-read-ch01-b-08",
+      "label": "ch01-read-ch01-b-08",
+      "event": "read",
+      "target": "ch01-b-08",
+      "next": [
+        "ch01-wait-ch01-b-08"
+      ]
+    },
+    {
+      "id": "ch01-wait-ch01-b-08",
+      "label": "ch01-wait-ch01-b-08",
+      "type": "delay",
+      "delayMs": 600,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-b-09",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch01-read-ch01-b-09",
+      "label": "ch01-read-ch01-b-09",
+      "event": "read",
+      "target": "ch01-b-09",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-b-10",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch01-read-ch01-b-10",
+      "label": "ch01-read-ch01-b-10",
+      "event": "read",
+      "target": "ch01-b-10",
+      "next": [
+        "ch01-wait-ch01-b-10"
+      ]
+    },
+    {
+      "id": "ch01-wait-ch01-b-10",
+      "label": "ch01-wait-ch01-b-10",
+      "type": "delay",
+      "delayMs": 600,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-b-11",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch01-read-ch01-b-11",
+      "label": "ch01-read-ch01-b-11",
+      "event": "read",
+      "target": "ch01-b-11",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-b-12",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch01-read-ch01-b-12",
+      "label": "ch01-read-ch01-b-12",
+      "event": "read",
+      "target": "ch01-b-12",
+      "next": [
+        "ch01-wait-ch01-b-12"
+      ]
+    },
+    {
+      "id": "ch01-wait-ch01-b-12",
+      "label": "ch01-wait-ch01-b-12",
+      "type": "delay",
+      "delayMs": 600,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-b-13",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch01-read-ch01-b-13",
+      "label": "ch01-read-ch01-b-13",
+      "event": "read",
+      "target": "ch01-b-13",
+      "next": [
+        "ch01-wait-ch01-b-13"
+      ]
+    },
+    {
+      "id": "ch01-wait-ch01-b-13",
+      "label": "ch01-wait-ch01-b-13",
+      "type": "delay",
+      "delayMs": 600,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-b-14",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch01-evaluation-read",
+      "label": "ch01-evaluation-read",
+      "event": "read",
+      "target": "ch01-b-14",
+      "next": [
+        "ch01-expression-choice"
+      ]
+    },
+    {
+      "id": "ch01-expression-choice",
+      "label": "你想怎么说？",
+      "type": "choice",
+      "next": [
+        "ch01-hide-feelings",
+        "ch01-praise-speech",
+        "ch01-admit-attraction"
+      ]
+    },
+    {
+      "id": "ch01-hide-feelings",
+      "label": "没什么 就随便问问",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-expression-msg-hide-feelings",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch01.expression",
+          "value": "hide-feelings"
+        }
+      ],
+      "next": [
+        "ch01-expression-wait-hide-feelings"
+      ]
+    },
+    {
+      "id": "ch01-expression-wait-hide-feelings",
+      "label": "ch01-expression-wait-hide-feelings",
+      "type": "delay",
+      "delayMs": 700,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-expression-answer-hide-feelings",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch01-read-ch01-expression-answer-hide-feelings",
+      "label": "ch01-read-ch01-expression-answer-hide-feelings",
+      "event": "read",
+      "target": "ch01-expression-answer-hide-feelings",
+      "next": [
+        "ch01-wait-ch01-expression-answer-hide-feelings"
+      ]
+    },
+    {
+      "id": "ch01-wait-ch01-expression-answer-hide-feelings",
+      "label": "ch01-wait-ch01-expression-answer-hide-feelings",
+      "type": "delay",
+      "delayMs": 600,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-b-15",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch01-praise-speech",
+      "label": "感觉他讲话还挺好的",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-expression-msg-praise-speech",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch01.expression",
+          "value": "praise-speech"
+        }
+      ],
+      "next": [
+        "ch01-expression-wait-praise-speech"
+      ]
+    },
+    {
+      "id": "ch01-expression-wait-praise-speech",
+      "label": "ch01-expression-wait-praise-speech",
+      "type": "delay",
+      "delayMs": 700,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-expression-answer-praise-speech",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch01-read-ch01-expression-answer-praise-speech",
+      "label": "ch01-read-ch01-expression-answer-praise-speech",
+      "event": "read",
+      "target": "ch01-expression-answer-praise-speech",
+      "next": [
+        "ch01-wait-ch01-expression-answer-praise-speech"
+      ]
+    },
+    {
+      "id": "ch01-wait-ch01-expression-answer-praise-speech",
+      "label": "ch01-wait-ch01-expression-answer-praise-speech",
+      "type": "delay",
+      "delayMs": 600,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-b-15",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch01-admit-attraction",
+      "label": "长得还挺帅的",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-expression-msg-admit-attraction",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch01.expression",
+          "value": "admit-attraction"
+        }
+      ],
+      "next": [
+        "ch01-expression-wait-admit-attraction"
+      ]
+    },
+    {
+      "id": "ch01-expression-wait-admit-attraction",
+      "label": "ch01-expression-wait-admit-attraction",
+      "type": "delay",
+      "delayMs": 700,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-expression-answer-admit-attraction",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch01-read-ch01-expression-answer-admit-attraction",
+      "label": "ch01-read-ch01-expression-answer-admit-attraction",
+      "event": "read",
+      "target": "ch01-expression-answer-admit-attraction",
+      "next": [
+        "ch01-wait-ch01-expression-answer-admit-attraction"
+      ]
+    },
+    {
+      "id": "ch01-wait-ch01-expression-answer-admit-attraction",
+      "label": "ch01-wait-ch01-expression-answer-admit-attraction",
+      "type": "delay",
+      "delayMs": 600,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-b-15",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch01-read-ch01-b-15",
+      "label": "ch01-read-ch01-b-15",
+      "event": "read",
+      "target": "ch01-b-15",
+      "next": [
+        "ch01-wait-ch01-b-15"
+      ]
+    },
+    {
+      "id": "ch01-wait-ch01-b-15",
+      "label": "ch01-wait-ch01-b-15",
+      "type": "delay",
+      "delayMs": 600,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-b-16",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch01-read-ch01-b-16",
+      "label": "ch01-read-ch01-b-16",
+      "event": "read",
+      "target": "ch01-b-16",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-b-17",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch01-read-ch01-b-17",
+      "label": "ch01-read-ch01-b-17",
+      "event": "read",
+      "target": "ch01-b-17",
+      "next": [
+        "ch01-wait-ch01-b-17"
+      ]
+    },
+    {
+      "id": "ch01-wait-ch01-b-17",
+      "label": "ch01-wait-ch01-b-17",
+      "type": "delay",
+      "delayMs": 600,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-b-18",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch01-read-ch01-b-18",
+      "label": "ch01-read-ch01-b-18",
+      "event": "read",
+      "target": "ch01-b-18",
+      "next": [
+        "ch01-wait-ch01-b-18"
+      ]
+    },
+    {
+      "id": "ch01-wait-ch01-b-18",
+      "label": "ch01-wait-ch01-b-18",
+      "type": "delay",
+      "delayMs": 600,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-b-19",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch01-read-ch01-b-19",
+      "label": "ch01-read-ch01-b-19",
+      "event": "read",
+      "target": "ch01-b-19",
+      "next": [
+        "ch01-wait-ch01-b-19"
+      ]
+    },
+    {
+      "id": "ch01-wait-ch01-b-19",
+      "label": "ch01-wait-ch01-b-19",
+      "type": "delay",
+      "delayMs": 600,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-b-20",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch01-explore",
+      "label": "ch01-explore",
+      "event": "read",
+      "target": "ch01-b-20",
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch01.phase",
+          "value": "explore"
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信：哥哥转发了一条动态。去「发现 → 朋友圈」看看张泽禹的《转发：今天的天不错》。"
+        }
+      ],
+      "next": [
+        "ch01-memo-gate",
+        "ch01-forward-memo-gate"
+      ]
+    },
+    {
+      "id": "ch01-read-weather",
+      "label": "ch01-read-weather",
+      "event": "read",
+      "target": "moment-zhu-01",
+      "next": [
+        "ch01-memo-gate"
+      ]
+    },
+    {
+      "id": "ch01-memo-gate",
+      "label": "ch01-memo-gate",
+      "type": "condition",
+      "conditions": [
+        {
+          "key": "ch01.phase",
+          "op": "eq",
+          "value": "explore"
+        },
+        {
+          "key": "read:moment-zhu-01",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "unlocked:ch01-note-first-day",
+          "op": "neq",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-note-first-day",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "备忘录：你写下了《开学第一天》。"
+        }
+      ]
+    },
+    {
+      "id": "ch01-after-memo",
+      "label": "ch01-after-memo",
+      "event": "read",
+      "target": "ch01-note-first-day",
+      "next": [
+        "ch01-zuo-wait"
+      ]
+    },
+    {
+      "id": "ch01-zuo-wait",
+      "label": "ch01-zuo-wait",
+      "type": "delay",
+      "delayMs": 1000,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-z-01",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信：左航发来消息。"
+        }
+      ]
+    },
+    {
+      "id": "ch01-read-ch01-z-01",
+      "label": "ch01-read-ch01-z-01",
+      "event": "read",
+      "target": "ch01-z-01",
+      "next": [
+        "ch01-wait-ch01-z-01"
+      ]
+    },
+    {
+      "id": "ch01-wait-ch01-z-01",
+      "label": "ch01-wait-ch01-z-01",
+      "type": "delay",
+      "delayMs": 600,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-z-02",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch01-zuo-read",
+      "label": "ch01-zuo-read",
+      "event": "read",
+      "target": "ch01-z-02",
+      "next": [
+        "ch01-zuo-choice"
+      ]
+    },
+    {
+      "id": "ch01-zuo-choice",
+      "label": "怎么回左航？",
+      "type": "choice",
+      "next": [
+        "ch01-zuo-a",
+        "ch01-zuo-b",
+        "ch01-zuo-c"
+      ]
+    },
+    {
+      "id": "ch01-zuo-a",
+      "label": "假的 他造谣",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-zuo-msg-a",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch01.zuoReply",
+          "value": "a"
+        }
+      ],
+      "next": [
+        "ch01-zuo-reply-wait-a"
+      ]
+    },
+    {
+      "id": "ch01-zuo-reply-wait-a",
+      "label": "ch01-zuo-reply-wait-a",
+      "type": "delay",
+      "delayMs": 700,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-zuo-answer-a",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch01-zuo-read-a",
+      "label": "ch01-zuo-read-a",
+      "event": "read",
+      "target": "ch01-zuo-answer-a",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-note-ending",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "备忘录：写下今天最后的一句话。"
+        }
+      ]
+    },
+    {
+      "id": "ch01-zuo-b",
+      "label": "差一点点而已",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-zuo-msg-b",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch01.zuoReply",
+          "value": "b"
+        }
+      ],
+      "next": [
+        "ch01-zuo-reply-wait-b"
+      ]
+    },
+    {
+      "id": "ch01-zuo-reply-wait-b",
+      "label": "ch01-zuo-reply-wait-b",
+      "type": "delay",
+      "delayMs": 700,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-zuo-answer-b",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch01-zuo-read-b",
+      "label": "ch01-zuo-read-b",
+      "event": "read",
+      "target": "ch01-zuo-answer-b",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-note-ending",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "备忘录：写下今天最后的一句话。"
+        }
+      ]
+    },
+    {
+      "id": "ch01-zuo-c",
+      "label": "你怎么什么都知道",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-zuo-msg-c",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch01.zuoReply",
+          "value": "c"
+        }
+      ],
+      "next": [
+        "ch01-zuo-reply-wait-c"
+      ]
+    },
+    {
+      "id": "ch01-zuo-reply-wait-c",
+      "label": "ch01-zuo-reply-wait-c",
+      "type": "delay",
+      "delayMs": 700,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-zuo-answer-c",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch01-zuo-read-c",
+      "label": "ch01-zuo-read-c",
+      "event": "read",
+      "target": "ch01-zuo-answer-c",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-note-ending",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "备忘录：写下今天最后的一句话。"
+        }
+      ]
+    },
+    {
+      "id": "ch01-complete",
+      "label": "ch01-complete",
+      "event": "read",
+      "target": "ch01-note-ending",
+      "type": "ending",
+      "actions": [
+        {
+          "type": "variable",
+          "key": "chapter.chapter-01-good-weather.completed",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch01.phase",
+          "value": "completed"
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "第一章《好天气》已完成 · 进度已自动保存"
+        },
+        {
+          "type": "ending",
+          "key": "",
+          "value": "第一章《好天气》已完成。新学期，好像有点不一样。"
+        }
+      ]
+    },
+    {
+      "id": "ch01-read-forward-weather",
+      "label": "阅读哥哥转发的天气动态",
+      "event": "read",
+      "target": "ch01-moment-forward-weather",
+      "next": [
+        "ch01-forward-memo-gate"
+      ]
+    },
+    {
+      "id": "ch01-forward-memo-gate",
+      "label": "ch01-forward-memo-gate",
+      "type": "condition",
+      "conditions": [
+        {
+          "key": "ch01.phase",
+          "op": "eq",
+          "value": "explore"
+        },
+        {
+          "key": "read:ch01-moment-forward-weather",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "unlocked:ch01-note-first-day",
+          "op": "neq",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch01-note-first-day",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "备忘录：你写下了《开学第一天》。"
+        }
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "ch01-a-hide-feelings-a",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        }
+      ],
+      "ending": "第一章《好天气》已完成。新学期，好像有点不一样。",
+      "expectUnlocked": [
+        "ch01-note-first-day",
+        "ch01-note-ending",
+        "ch01-z-01"
+      ]
+    },
+    {
+      "name": "ch01-a-hide-feelings-b",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-b"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-b"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        }
+      ],
+      "ending": "第一章《好天气》已完成。新学期，好像有点不一样。",
+      "expectUnlocked": [
+        "ch01-note-first-day",
+        "ch01-note-ending",
+        "ch01-z-01"
+      ]
+    },
+    {
+      "name": "ch01-a-hide-feelings-c",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-c"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-c"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        }
+      ],
+      "ending": "第一章《好天气》已完成。新学期，好像有点不一样。",
+      "expectUnlocked": [
+        "ch01-note-first-day",
+        "ch01-note-ending",
+        "ch01-z-01"
+      ]
+    },
+    {
+      "name": "ch01-a-praise-speech-a",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-praise-speech"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-praise-speech"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        }
+      ],
+      "ending": "第一章《好天气》已完成。新学期，好像有点不一样。",
+      "expectUnlocked": [
+        "ch01-note-first-day",
+        "ch01-note-ending",
+        "ch01-z-01"
+      ]
+    },
+    {
+      "name": "ch01-a-praise-speech-b",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-praise-speech"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-praise-speech"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-b"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-b"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        }
+      ],
+      "ending": "第一章《好天气》已完成。新学期，好像有点不一样。",
+      "expectUnlocked": [
+        "ch01-note-first-day",
+        "ch01-note-ending",
+        "ch01-z-01"
+      ]
+    },
+    {
+      "name": "ch01-a-praise-speech-c",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-praise-speech"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-praise-speech"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-c"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-c"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        }
+      ],
+      "ending": "第一章《好天气》已完成。新学期，好像有点不一样。",
+      "expectUnlocked": [
+        "ch01-note-first-day",
+        "ch01-note-ending",
+        "ch01-z-01"
+      ]
+    },
+    {
+      "name": "ch01-a-admit-attraction-a",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-admit-attraction"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-admit-attraction"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        }
+      ],
+      "ending": "第一章《好天气》已完成。新学期，好像有点不一样。",
+      "expectUnlocked": [
+        "ch01-note-first-day",
+        "ch01-note-ending",
+        "ch01-z-01"
+      ]
+    },
+    {
+      "name": "ch01-a-admit-attraction-b",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-admit-attraction"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-admit-attraction"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-b"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-b"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        }
+      ],
+      "ending": "第一章《好天气》已完成。新学期，好像有点不一样。",
+      "expectUnlocked": [
+        "ch01-note-first-day",
+        "ch01-note-ending",
+        "ch01-z-01"
+      ]
+    },
+    {
+      "name": "ch01-a-admit-attraction-c",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-admit-attraction"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-admit-attraction"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-c"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-c"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        }
+      ],
+      "ending": "第一章《好天气》已完成。新学期，好像有点不一样。",
+      "expectUnlocked": [
+        "ch01-note-first-day",
+        "ch01-note-ending",
+        "ch01-z-01"
+      ]
+    },
+    {
+      "name": "ch01-b-hide-feelings-a",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-b"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        }
+      ],
+      "ending": "第一章《好天气》已完成。新学期，好像有点不一样。",
+      "expectUnlocked": [
+        "ch01-note-first-day",
+        "ch01-note-ending",
+        "ch01-z-01"
+      ]
+    },
+    {
+      "name": "ch01-b-hide-feelings-b",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-b"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-b"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-b"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        }
+      ],
+      "ending": "第一章《好天气》已完成。新学期，好像有点不一样。",
+      "expectUnlocked": [
+        "ch01-note-first-day",
+        "ch01-note-ending",
+        "ch01-z-01"
+      ]
+    },
+    {
+      "name": "ch01-b-hide-feelings-c",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-b"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-c"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-c"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        }
+      ],
+      "ending": "第一章《好天气》已完成。新学期，好像有点不一样。",
+      "expectUnlocked": [
+        "ch01-note-first-day",
+        "ch01-note-ending",
+        "ch01-z-01"
+      ]
+    },
+    {
+      "name": "ch01-b-praise-speech-a",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-b"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-praise-speech"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-praise-speech"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        }
+      ],
+      "ending": "第一章《好天气》已完成。新学期，好像有点不一样。",
+      "expectUnlocked": [
+        "ch01-note-first-day",
+        "ch01-note-ending",
+        "ch01-z-01"
+      ]
+    },
+    {
+      "name": "ch01-b-praise-speech-b",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-b"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-praise-speech"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-praise-speech"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-b"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-b"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        }
+      ],
+      "ending": "第一章《好天气》已完成。新学期，好像有点不一样。",
+      "expectUnlocked": [
+        "ch01-note-first-day",
+        "ch01-note-ending",
+        "ch01-z-01"
+      ]
+    },
+    {
+      "name": "ch01-b-praise-speech-c",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-b"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-praise-speech"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-praise-speech"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-c"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-c"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        }
+      ],
+      "ending": "第一章《好天气》已完成。新学期，好像有点不一样。",
+      "expectUnlocked": [
+        "ch01-note-first-day",
+        "ch01-note-ending",
+        "ch01-z-01"
+      ]
+    },
+    {
+      "name": "ch01-b-admit-attraction-a",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-b"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-admit-attraction"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-admit-attraction"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        }
+      ],
+      "ending": "第一章《好天气》已完成。新学期，好像有点不一样。",
+      "expectUnlocked": [
+        "ch01-note-first-day",
+        "ch01-note-ending",
+        "ch01-z-01"
+      ]
+    },
+    {
+      "name": "ch01-b-admit-attraction-b",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-b"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-admit-attraction"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-admit-attraction"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-b"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-b"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        }
+      ],
+      "ending": "第一章《好天气》已完成。新学期，好像有点不一样。",
+      "expectUnlocked": [
+        "ch01-note-first-day",
+        "ch01-note-ending",
+        "ch01-z-01"
+      ]
+    },
+    {
+      "name": "ch01-b-admit-attraction-c",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-b"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-admit-attraction"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-admit-attraction"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-c"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-c"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        }
+      ],
+      "ending": "第一章《好天气》已完成。新学期，好像有点不一样。",
+      "expectUnlocked": [
+        "ch01-note-first-day",
+        "ch01-note-ending",
+        "ch01-z-01"
+      ]
+    }
+  ]
+}

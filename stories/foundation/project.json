@@ -1,0 +1,692 @@
+{
+  "version": 1,
+  "id": "campus-authoring",
+  "sourceFile": "stories/foundation/chapter-01.json",
+  "charactersFile": "stories/foundation/characters.json",
+  "assetsFile": "stories/foundation/assets.json",
+  "extensionsFile": "stories/foundation/chapter-01.extensions.json",
+  "fictionNotice": "完全架空校园同人。人物姓名仅为灵感，家庭、情感及性取向设定不对应现实人物。",
+  "dateLabel": "开学第一天 · 正式年份、生日、学校待定。底层默认日期仅用于手机时钟。",
+  "chapters": [
+    {
+      "id": "chapter-01-good-weather",
+      "title": "好天气",
+      "kind": "main",
+      "date": null,
+      "characterIds": [
+        "owner",
+        "zhuzhixin",
+        "zhangjunhao",
+        "zhangzeyu",
+        "zuohang"
+      ],
+      "eventIds": [
+        "ch01-start",
+        "ch01-first-read",
+        "ch01-greeting-choice",
+        "ch01-greeting-a",
+        "ch01-greeting-b",
+        "ch01-greeting-wait",
+        "ch01-read-ch01-b-02",
+        "ch01-wait-ch01-b-02",
+        "ch01-read-ch01-b-03",
+        "ch01-wait-ch01-b-03",
+        "ch01-read-ch01-b-04",
+        "ch01-read-ch01-b-05",
+        "ch01-read-ch01-b-06",
+        "ch01-wait-ch01-b-06",
+        "ch01-read-ch01-b-07",
+        "ch01-read-ch01-b-08",
+        "ch01-wait-ch01-b-08",
+        "ch01-read-ch01-b-09",
+        "ch01-read-ch01-b-10",
+        "ch01-wait-ch01-b-10",
+        "ch01-read-ch01-b-11",
+        "ch01-read-ch01-b-12",
+        "ch01-wait-ch01-b-12",
+        "ch01-read-ch01-b-13",
+        "ch01-wait-ch01-b-13",
+        "ch01-evaluation-read",
+        "ch01-expression-choice",
+        "ch01-hide-feelings",
+        "ch01-expression-wait-hide-feelings",
+        "ch01-read-ch01-expression-answer-hide-feelings",
+        "ch01-wait-ch01-expression-answer-hide-feelings",
+        "ch01-praise-speech",
+        "ch01-expression-wait-praise-speech",
+        "ch01-read-ch01-expression-answer-praise-speech",
+        "ch01-wait-ch01-expression-answer-praise-speech",
+        "ch01-admit-attraction",
+        "ch01-expression-wait-admit-attraction",
+        "ch01-read-ch01-expression-answer-admit-attraction",
+        "ch01-wait-ch01-expression-answer-admit-attraction",
+        "ch01-read-ch01-b-15",
+        "ch01-wait-ch01-b-15",
+        "ch01-read-ch01-b-16",
+        "ch01-read-ch01-b-17",
+        "ch01-wait-ch01-b-17",
+        "ch01-read-ch01-b-18",
+        "ch01-wait-ch01-b-18",
+        "ch01-read-ch01-b-19",
+        "ch01-wait-ch01-b-19",
+        "ch01-explore",
+        "ch01-read-weather",
+        "ch01-memo-gate",
+        "ch01-after-memo",
+        "ch01-zuo-wait",
+        "ch01-read-ch01-z-01",
+        "ch01-wait-ch01-z-01",
+        "ch01-zuo-read",
+        "ch01-zuo-choice",
+        "ch01-zuo-a",
+        "ch01-zuo-reply-wait-a",
+        "ch01-zuo-read-a",
+        "ch01-zuo-b",
+        "ch01-zuo-reply-wait-b",
+        "ch01-zuo-read-b",
+        "ch01-zuo-c",
+        "ch01-zuo-reply-wait-c",
+        "ch01-zuo-read-c",
+        "ch01-complete"
+      ],
+      "entry": {
+        "event": "read",
+        "target": "ch01-b-01"
+      },
+      "completeWhen": [
+        {
+          "key": "chapter.chapter-01-good-weather.completed",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "completeLogic": "all",
+      "next": [
+        "chapter-02-small-crush"
+      ]
+    },
+    {
+      "id": "chapter-02-small-crush",
+      "title": "关于喜欢这件小事（可修改初稿）",
+      "kind": "main",
+      "date": null,
+      "characterIds": [
+        "owner",
+        "zhuzhixin",
+        "zhangjunhao",
+        "zhangzeyu",
+        "zuohang"
+      ],
+      "eventIds": [
+        "ch02-start",
+        "ch02-complete",
+        "flow-ch02-secret",
+        "flow-ch02-zuo",
+        "flow-ch02-plan",
+        "flow-ch02-group-intro",
+        "flow-ch02-junhao",
+        "flow-ch02-group-talk",
+        "flow-ch02-star-optional"
+      ],
+      "entry": {
+        "event": "read",
+        "target": "ch02-entry"
+      },
+      "completeWhen": [
+        {
+          "key": "chapter.chapter-02-small-crush.completed",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "completeLogic": "all",
+      "next": [
+        "chapter-03-beyond-form"
+      ]
+    },
+    {
+      "id": "chapter-03-beyond-form",
+      "title": "报名表之外",
+      "kind": "main",
+      "date": null,
+      "characterIds": [
+        "owner",
+        "zhuzhixin",
+        "zhangjunhao",
+        "zhangzeyu",
+        "zuohang",
+        "lifei",
+        "zhujiaqi"
+      ],
+      "eventIds": [
+        "ch03-start",
+        "ch03-complete",
+        "flow-ch03-task",
+        "flow-ch03-work"
+      ],
+      "entry": {
+        "event": "read",
+        "target": "ch03-entry"
+      },
+      "completeWhen": [
+        {
+          "key": "chapter.chapter-03-beyond-form.completed",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "completeLogic": "all",
+      "next": [
+        "chapter-04-unfinished-melody"
+      ]
+    },
+    {
+      "id": "chapter-04-unfinished-melody",
+      "title": "未完成的旋律",
+      "kind": "main",
+      "date": null,
+      "characterIds": [
+        "owner",
+        "zhuzhixin",
+        "zhangjunhao",
+        "zhangzeyu",
+        "zuohang"
+      ],
+      "eventIds": [
+        "ch04-start",
+        "ch04-complete",
+        "flow-ch04-task",
+        "flow-ch04-demo-talk",
+        "flow-ch04-wrap"
+      ],
+      "entry": {
+        "event": "read",
+        "target": "ch04-entry"
+      },
+      "completeWhen": [
+        {
+          "key": "chapter.chapter-04-unfinished-melody.completed",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "completeLogic": "all",
+      "next": [
+        "chapter-05-pending"
+      ]
+    },
+    {
+      "id": "chapter-05-pending",
+      "title": "如果你再争取一下",
+      "kind": "main",
+      "date": null,
+      "characterIds": [
+        "owner",
+        "zhuzhixin",
+        "zhangjunhao",
+        "zhangzeyu",
+        "zuohang",
+        "lifei",
+        "zhujiaqi"
+      ],
+      "eventIds": [
+        "ch05-start",
+        "ch05-start-from-note",
+        "ch05-read-memo",
+        "ch05-complete",
+        "flow-ch05-brother-open",
+        "flow-ch05-work",
+        "flow-ch05-brother-end"
+      ],
+      "entry": {
+        "event": "read",
+        "target": "ch05-entry"
+      },
+      "completeWhen": [
+        {
+          "key": "chapter.chapter-05-pending.completed",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "completeLogic": "all",
+      "next": [
+        "chapter-06-pending"
+      ]
+    },
+    {
+      "id": "chapter-06-pending",
+      "title": "今晚谁都不许装",
+      "kind": "main",
+      "date": null,
+      "characterIds": [
+        "owner",
+        "zhuzhixin",
+        "zhangjunhao",
+        "zhangzeyu",
+        "zuohang",
+        "lifei",
+        "zhujiaqi"
+      ],
+      "eventIds": [
+        "ch06-start",
+        "ch06-start-note",
+        "ch06-read-photo",
+        "ch06-read-memo",
+        "ch06-complete",
+        "flow-ch06-invite",
+        "flow-ch06-restaurant",
+        "flow-ch06-ktv",
+        "flow-ch06-truth",
+        "flow-ch06-zuo"
+      ],
+      "entry": {
+        "event": "read",
+        "target": "ch06-entry"
+      },
+      "completeWhen": [
+        {
+          "key": "chapter.chapter-06-pending.completed",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "completeLogic": "all",
+      "next": []
+    },
+    {
+      "id": "chapter-07-pending",
+      "title": "差一点就赢了",
+      "kind": "main",
+      "date": null,
+      "characterIds": [
+        "owner",
+        "zhuzhixin",
+        "zhangjunhao",
+        "zhangzeyu",
+        "zuohang"
+      ],
+      "eventIds": [
+        "ch07-start",
+        "ch07-start-note",
+        "ch07-read-photo",
+        "ch07-read-memo",
+        "ch07-complete",
+        "flow-ch07-signup",
+        "flow-ch07-score-low",
+        "flow-ch07-score-mid",
+        "flow-ch07-score-high",
+        "flow-ch07-wrap"
+      ],
+      "entry": {
+        "event": "read",
+        "target": "ch07-entry"
+      },
+      "completeWhen": [
+        {
+          "key": "chapter.chapter-07-pending.completed",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "completeLogic": "all",
+      "next": []
+    }
+  ],
+  "bindings": [
+    {
+      "assetId": "group-after-class",
+      "target": "groupAvatar",
+      "targetId": "ch02-activity"
+    },
+    {
+      "assetId": "photo-ceremony",
+      "target": "itemMedia",
+      "targetId": "ch02-ceremony-photo"
+    },
+    {
+      "assetId": "photo-snacks",
+      "target": "itemMedia",
+      "targetId": "moment-owner-01"
+    },
+    {
+      "assetId": "photo-exam",
+      "target": "itemMedia",
+      "targetId": "moment-zeyu-01"
+    },
+    {
+      "assetId": "photo-library",
+      "target": "itemMedia",
+      "targetId": "moment-zuo-01"
+    },
+    {
+      "assetId": "photo-festival-poster",
+      "target": "itemMedia",
+      "targetId": "ch02-moment-activity"
+    },
+    {
+      "assetId": "photo-sunset",
+      "target": "itemMedia",
+      "targetId": "moment-zuo-03"
+    },
+    {
+      "assetId": "sticker-calm",
+      "target": "itemMedia",
+      "targetId": "ch02-brother-12"
+    },
+    {
+      "assetId": "sticker-temporary",
+      "target": "itemMedia",
+      "targetId": "ch02-zuo-07"
+    },
+    {
+      "assetId": "sticker-grin",
+      "target": "itemMedia",
+      "targetId": "ch02-activity-03"
+    },
+    {
+      "assetId": "sticker-bitter",
+      "target": "itemMedia",
+      "targetId": "ch02-activity-11"
+    },
+    {
+      "assetId": "sticker-confused",
+      "target": "itemMedia",
+      "targetId": "ch02-activity-21"
+    },
+    {
+      "assetId": "group-after-class",
+      "target": "groupAvatar",
+      "targetId": "ch03-work"
+    },
+    {
+      "assetId": "audio-junhao-demo",
+      "target": "itemMedia",
+      "targetId": "ch04-demo"
+    },
+    {
+      "assetId": "group-after-class",
+      "target": "groupAvatar",
+      "targetId": "ch04-work"
+    },
+    {
+      "assetId": "group-after-class",
+      "target": "groupAvatar",
+      "targetId": "ch05-work"
+    },
+    {
+      "assetId": "sticker-calm",
+      "target": "itemMedia",
+      "targetId": "ch05-brother-03"
+    },
+    {
+      "assetId": "photo-party-evening",
+      "target": "itemMedia",
+      "targetId": "ch06-zuo-01"
+    },
+    {
+      "assetId": "group-after-class",
+      "target": "groupAvatar",
+      "targetId": "ch06-party"
+    },
+    {
+      "assetId": "photo-party-evening",
+      "target": "itemMedia",
+      "targetId": "ch06-photo"
+    },
+    {
+      "assetId": "audio-junhao-demo",
+      "target": "itemMedia",
+      "targetId": "ch06-demo-replay"
+    },
+    {
+      "assetId": "sticker-confused",
+      "target": "itemMedia",
+      "targetId": "ch06-party-sticker"
+    },
+    {
+      "assetId": "video-ktv-star",
+      "target": "itemMedia",
+      "targetId": "ch06-ktv-star"
+    },
+    {
+      "assetId": "video-ktv-junhao",
+      "target": "itemMedia",
+      "targetId": "ch06-ktv-junhao"
+    },
+    {
+      "assetId": "video-ktv-brother",
+      "target": "itemMedia",
+      "targetId": "ch06-ktv-brother"
+    },
+    {
+      "assetId": "video-ktv-zuohang",
+      "target": "itemMedia",
+      "targetId": "ch06-ktv-zuohang"
+    },
+    {
+      "assetId": "photo-library",
+      "target": "itemMedia",
+      "targetId": "community-post-library"
+    },
+    {
+      "assetId": "audio-junhao-demo",
+      "target": "itemMedia",
+      "targetId": "community-post-stage-demo"
+    },
+    {
+      "assetId": "photo-snacks",
+      "target": "itemMedia",
+      "targetId": "market-snacks"
+    },
+    {
+      "assetId": "photo-exam",
+      "target": "itemMedia",
+      "targetId": "market-snacks-photo2"
+    },
+    {
+      "assetId": "photo-exam",
+      "target": "itemMedia",
+      "targetId": "market-draft"
+    },
+    {
+      "assetId": "xianyu-app-icon",
+      "target": "appIcon",
+      "targetId": "xianyu"
+    },
+    {
+      "assetId": "xianyu-avatar-hanbing-sheshou",
+      "target": "itemAvatar",
+      "targetId": "seller-hanbing-sheshou"
+    },
+    {
+      "assetId": "xianyu-product-hanbing-sheshou-shoes",
+      "target": "itemMedia",
+      "targetId": "market-hanbing-sheshou-shoes"
+    },
+    {
+      "assetId": "xianyu-product-hanbing-sheshou-record",
+      "target": "itemMedia",
+      "targetId": "market-hanbing-sheshou-record"
+    },
+    {
+      "assetId": "xianyu-product-hanbing-sheshou-contact",
+      "target": "itemMedia",
+      "targetId": "market-hanbing-sheshou-contact"
+    },
+    {
+      "assetId": "xianyu-avatar-houmi-yeye",
+      "target": "itemAvatar",
+      "targetId": "seller-houmi-yeye"
+    },
+    {
+      "assetId": "xianyu-product-houmi-yeye-stone",
+      "target": "itemMedia",
+      "targetId": "market-houmi-yeye-stone"
+    },
+    {
+      "assetId": "xianyu-product-houmi-yeye-book",
+      "target": "itemMedia",
+      "targetId": "market-houmi-yeye-book"
+    },
+    {
+      "assetId": "xianyu-product-houmi-yeye-map",
+      "target": "itemMedia",
+      "targetId": "market-houmi-yeye-map"
+    },
+    {
+      "assetId": "xianyu-avatar-xinan-yujie",
+      "target": "itemAvatar",
+      "targetId": "seller-xinan-yujie"
+    },
+    {
+      "assetId": "xianyu-product-xinan-yujie-notes",
+      "target": "itemMedia",
+      "targetId": "market-xinan-yujie-notes"
+    },
+    {
+      "assetId": "xianyu-product-xinan-yujie-revision",
+      "target": "itemMedia",
+      "targetId": "market-xinan-yujie-revision"
+    },
+    {
+      "assetId": "xianyu-product-xinan-yujie-essay",
+      "target": "itemMedia",
+      "targetId": "market-xinan-yujie-essay"
+    },
+    {
+      "assetId": "xianyu-avatar-tutucha-mengmengda",
+      "target": "itemAvatar",
+      "targetId": "seller-tutucha-mengmengda"
+    },
+    {
+      "assetId": "xianyu-product-tutucha-mengmengda-lamp",
+      "target": "itemMedia",
+      "targetId": "market-tutucha-mengmengda-lamp"
+    },
+    {
+      "assetId": "xianyu-product-tutucha-mengmengda-book",
+      "target": "itemMedia",
+      "targetId": "market-tutucha-mengmengda-book"
+    },
+    {
+      "assetId": "xianyu-product-tutucha-mengmengda-storage",
+      "target": "itemMedia",
+      "targetId": "market-tutucha-mengmengda-storage"
+    },
+    {
+      "assetId": "xianyu-avatar-bobo-baba",
+      "target": "itemAvatar",
+      "targetId": "seller-bobo-baba"
+    },
+    {
+      "assetId": "xianyu-product-bobo-baba-qq",
+      "target": "itemMedia",
+      "targetId": "market-bobo-baba-qq"
+    },
+    {
+      "assetId": "xianyu-product-bobo-baba-weibo",
+      "target": "itemMedia",
+      "targetId": "market-bobo-baba-weibo"
+    },
+    {
+      "assetId": "xianyu-avatar-suuuu",
+      "target": "itemAvatar",
+      "targetId": "seller-suuuu"
+    },
+    {
+      "assetId": "xianyu-product-suuuu-iphone",
+      "target": "itemMedia",
+      "targetId": "market-suuuu-iphone"
+    },
+    {
+      "assetId": "xianyu-product-suuuu-airpods",
+      "target": "itemMedia",
+      "targetId": "market-suuuu-airpods"
+    },
+    {
+      "assetId": "xianyu-product-suuuu-charger",
+      "target": "itemMedia",
+      "targetId": "market-suuuu-charger"
+    },
+    {
+      "assetId": "xianyu-avatar-cr7-only-god",
+      "target": "itemAvatar",
+      "targetId": "seller-cr7-only-god"
+    },
+    {
+      "assetId": "xianyu-product-cr7-only-god-figure",
+      "target": "itemMedia",
+      "targetId": "market-cr7-only-god-figure"
+    },
+    {
+      "assetId": "xianyu-product-cr7-only-god-card",
+      "target": "itemMedia",
+      "targetId": "market-cr7-only-god-card"
+    },
+    {
+      "assetId": "xianyu-product-suuuu-airpods",
+      "target": "itemMedia",
+      "targetId": "market-suuuu-charger-photo2"
+    },
+    {
+      "assetId": "group-after-class",
+      "target": "groupAvatar",
+      "targetId": "ch07-sports"
+    },
+    {
+      "assetId": "photo-sports-day",
+      "target": "itemMedia",
+      "targetId": "ch07-photo"
+    },
+    {
+      "assetId": "photo-library",
+      "target": "itemMedia",
+      "targetId": "personal-zuohang-01"
+    },
+    {
+      "assetId": "weibo-ent-trousers",
+      "target": "itemMedia",
+      "targetId": "ent-post-trousers"
+    },
+    {
+      "assetId": "weibo-ent-bad-blood",
+      "target": "itemMedia",
+      "targetId": "ent-post-bad-blood"
+    },
+    {
+      "assetId": "weibo-ent-sweet-venom",
+      "target": "itemMedia",
+      "targetId": "ent-post-sweet-venom"
+    },
+    {
+      "assetId": "weibo-ent-apology",
+      "target": "itemMedia",
+      "targetId": "ent-post-apology"
+    },
+    {
+      "assetId": "weibo-ent-luelue",
+      "target": "itemMedia",
+      "targetId": "ent-post-luelue"
+    },
+    {
+      "assetId": "weibo-ent-football",
+      "target": "itemMedia",
+      "targetId": "ent-post-football"
+    }
+  ],
+  "minigames": [],
+  "additionalExtensionsFiles": [
+    "stories/foundation/chapter-02.json",
+    "stories/foundation/chapter-03.json",
+    "stories/foundation/chapter-04.json",
+    "stories/foundation/chapter-05.json",
+    "stories/foundation/chapter-06.json",
+    "stories/foundation/community-market.json",
+    "stories/foundation/xianyu-sellers.json",
+    "stories/foundation/chapter-07.json",
+    "stories/foundation/weibo-personal.json",
+    "stories/foundation/weibo-entertainment.json"
+  ],
+  "interactionsFile": "stories/foundation/interactions.json"
+}

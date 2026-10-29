@@ -1,0 +1,873 @@
+{
+  "scriptVersion": 1,
+  "id": "shoukun-foundation",
+  "title": "捡手机",
+  "description": "校园 AU · 你通过私聊、群聊和朋友圈，发现学长没有说出口的在意。",
+  "revision": 3,
+  "phone": {
+    "owner": "{{playerName}}",
+    "date": "2026-10-28",
+    "time": "16:45",
+    "battery": 94,
+    "network": "5G",
+    "wallpaper": "apple-wwdc26"
+  },
+  "installedApps": [
+    "phone",
+    "messages",
+    "wechat",
+    "photos",
+    "instagram",
+    "weibo",
+    "contacts",
+    "notes",
+    "calendar",
+    "mail",
+    "safari",
+    "files",
+    "appstore",
+    "settings"
+  ],
+  "contacts": [
+    {
+      "id": "star",
+      "name": "{{starName}}",
+      "bio": "高二学长 · 外冷内热，话少但细心"
+    },
+    {
+      "id": "junhao",
+      "name": "张峻豪",
+      "bio": "学长的朋友 · 开朗直率，气氛担当"
+    },
+    {
+      "id": "brother",
+      "name": "张泽禹",
+      "bio": "你的哥哥 · 嘴上嫌弃，实际很护妹"
+    },
+    {
+      "id": "zuohang",
+      "name": "左航",
+      "bio": "哥哥的朋友 · 幽默，熟悉学校里的人和事"
+    }
+  ],
+  "chats": [
+    {
+      "id": "chat-star",
+      "app": "wechat",
+      "title": "{{starName}}",
+      "participants": [
+        "star",
+        "owner"
+      ],
+      "messages": [
+        {
+          "id": "wx-invitation",
+          "body": "{{playerName}}，你哥让我顺路接你。下课了就到旧教学楼旁边的长椅，不用急。",
+          "senderId": "star",
+          "hidden": true
+        },
+        {
+          "id": "wx-reply-warm",
+          "body": "知道啦。真的是“顺路”吗？",
+          "senderId": "owner",
+          "hidden": true
+        },
+        {
+          "id": "wx-reply-shy",
+          "body": "我自己可以回去，不用这么麻烦。",
+          "senderId": "owner",
+          "hidden": true
+        },
+        {
+          "id": "wx-answer-warm",
+          "body": "……嗯。走廊风大，把校服穿好。",
+          "senderId": "star",
+          "hidden": true
+        },
+        {
+          "id": "wx-answer-shy",
+          "body": "不麻烦。我已经到了。",
+          "senderId": "star",
+          "hidden": true
+        }
+      ]
+    },
+    {
+      "id": "chat-brother",
+      "app": "wechat",
+      "title": "张泽禹",
+      "participants": [
+        "brother",
+        "owner"
+      ],
+      "messages": [
+        {
+          "id": "wx-brother",
+          "body": "{{playerName}}，我今天值日。你在{{playerClass}}门口等一会儿，别自己乱跑。有人问你，就说我让他来的。",
+          "senderId": "brother",
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "id": "chat-junhao",
+      "app": "wechat",
+      "title": "张峻豪",
+      "participants": [
+        "junhao",
+        "owner"
+      ],
+      "messages": [
+        {
+          "id": "wx-junhao",
+          "body": "学妹，你知道吗，有人今天训练提前结束了。算了，你自己去问他，我什么也没说。",
+          "senderId": "junhao",
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "id": "chat-zuohang",
+      "app": "wechat",
+      "title": "左航",
+      "participants": [
+        "zuohang",
+        "owner"
+      ],
+      "messages": [
+        {
+          "id": "wx-zuohang",
+          "body": "你哥托我们照看你。放心，都是自己人。群里那张照片你看了没？",
+          "senderId": "zuohang",
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "id": "chat-group",
+      "app": "wechat",
+      "title": "放学别走（5）",
+      "participants": [
+        "star",
+        "junhao",
+        "brother",
+        "zuohang",
+        "owner"
+      ],
+      "messages": [
+        {
+          "id": "group-brother",
+          "body": "今天值日走不开，谁路过高一那边？帮我接一下{{playerName}}。",
+          "senderId": "brother",
+          "hidden": false
+        },
+        {
+          "id": "group-junhao",
+          "body": "@{{starName}} 你今天不是说没空吗？",
+          "senderId": "junhao",
+          "hidden": false
+        },
+        {
+          "id": "group-star",
+          "body": "我顺路。",
+          "senderId": "star",
+          "hidden": false
+        },
+        {
+          "id": "group-zuohang",
+          "body": "篮球场到高一教学楼，这个“顺路”还挺远。",
+          "senderId": "zuohang",
+          "hidden": false
+        },
+        {
+          "id": "group-meeting",
+          "body": "{{playerName}}，照片给你存相册里了。你看看，是不是有人一直在往你们班的方向看？",
+          "senderId": "junhao",
+          "hidden": false
+        }
+      ]
+    }
+  ],
+  "content": {
+    "weibo": [
+      {
+        "id": "wb-aftershow",
+        "title": "今天的篮球场",
+        "sender": "张峻豪",
+        "body": "某人今天训练结束特别早。问就是顺路，懂的都懂。\n@{{playerName}} 看看相册里那张照片？",
+        "kind": "post",
+        "likes": 1286,
+        "comments": [
+          "左航：确实，绕半个学校也叫顺路。"
+        ],
+        "meta": {
+          "handle": "校园日常 · 放学前"
+        }
+      }
+    ],
+    "photos": [
+      {
+        "id": "photo-light",
+        "title": "篮球场边的背影",
+        "body": "放学前，张峻豪发来的照片。\n画面里的人站在篮球场边，视线却落向高一教学楼。校服袖口挽了一截，手里拎着另一件外套。\n你忽然想起：今天下课时，走廊上好像见过他。",
+        "kind": "image",
+        "hidden": true
+      }
+    ],
+    "instagram": [
+      {
+        "id": "ig-night",
+        "title": "放学以后",
+        "sender": "{{starName}}",
+        "kind": "post",
+        "body": "今天的风有点大。\n有人明明怕冷，还非说自己不冷。\n下次，把外套穿好。",
+        "hidden": true,
+        "likes": 23,
+        "meta": {
+          "handle": "after.class"
+        },
+        "comments": []
+      }
+    ],
+    "notes": [
+      {
+        "id": "note-guide",
+        "title": "第一天 · 放学后的手机",
+        "kind": "note",
+        "body": "你是{{playerClass}}的学妹，哥哥张泽禹和高年级的朋友们建了一个群。\n先打开微信，进入「放学别走（5）」，点开最后一条消息。\n去相册查看解锁的照片，再回微信看朱志鑫的私聊，并点开消息选择回复。\n稍后会有一通模拟来电，接听或拒接都能继续。之后去 Instagram，点开《放学以后》。\n也可以看看朋友们的私聊和微信「发现 → 朋友圈」，那里有可选线索。\n这是基础交互演示，具体关系线与后续章节留待补充。"
+      },
+      {
+        "id": "note-draft",
+        "title": "没发出去的话",
+        "body": "想问他是不是等了很久。\n打了又删，最后只回了一个“好”。\n也许明天，可以多说一句。",
+        "kind": "note",
+        "hidden": true
+      }
+    ],
+    "phone": [
+      {
+        "id": "call-star",
+        "title": "{{starName}}",
+        "sender": "{{starName}}",
+        "kind": "call",
+        "body": "“{{playerName}}，出来了吗？……嗯，不催你。长椅这边有风，我在教学楼门口等。看见我了就过来，别光顾着看手机。”"
+      }
+    ],
+    "wechat": [
+      {
+        "id": "moment-zhu",
+        "title": "今天下课有点晚",
+        "body": "有个人走得慢。\n那就再等一会儿。",
+        "sender": "{{starName}}",
+        "folder": "朋友圈",
+        "kind": "post",
+        "likes": 12,
+        "comments": [
+          "张峻豪：你最好说的是我。",
+          "左航：今天的顺路文学。"
+        ]
+      },
+      {
+        "id": "moment-brother",
+        "title": "值日的一天",
+        "body": "有些人不要仗着我值日，就带我妹去吃冰的。",
+        "sender": "张泽禹",
+        "folder": "朋友圈",
+        "kind": "post",
+        "likes": 8,
+        "comments": [
+          "张峻豪：收到，我会监督某人的。"
+        ]
+      }
+    ]
+  },
+  "variables": {},
+  "events": [
+    {
+      "id": "welcome-fan",
+      "label": "先看看群消息",
+      "type": "start",
+      "actions": [
+        {
+          "type": "notification",
+          "key": "",
+          "value": "张峻豪：群里有新消息。打开微信，进入「放学别走（5）」，点开最后一句。"
+        }
+      ]
+    },
+    {
+      "id": "read-weibo",
+      "label": "照片里的视线",
+      "event": "read",
+      "target": "wb-aftershow",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "photo-light",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "相册：看看《篮球场边的背影》。"
+        }
+      ]
+    },
+    {
+      "id": "read-photo",
+      "label": "学长发来的消息",
+      "event": "read",
+      "target": "photo-light",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "wx-invitation",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信：{{starName}} 发来一条消息。点开消息气泡后选择回复。"
+        }
+      ]
+    },
+    {
+      "id": "read-invitation",
+      "label": "选择你的回复",
+      "event": "read",
+      "target": "wx-invitation",
+      "next": [
+        "reply-choice"
+      ]
+    },
+    {
+      "id": "reply-choice",
+      "label": "要怎么回复学长？",
+      "type": "choice",
+      "next": [
+        "reply-warm",
+        "reply-shy"
+      ]
+    },
+    {
+      "id": "reply-warm",
+      "label": "问他：真的是“顺路”吗？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "wx-reply-warm",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "wx-answer-warm",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "connection",
+          "value": "坦率的回应"
+        }
+      ],
+      "next": [
+        "call-delay"
+      ]
+    },
+    {
+      "id": "reply-shy",
+      "label": "说：我自己也可以回去",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "wx-reply-shy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "wx-answer-shy",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "connection",
+          "value": "慢慢靠近"
+        }
+      ],
+      "next": [
+        "call-delay"
+      ]
+    },
+    {
+      "id": "call-delay",
+      "label": "来自学长的电话",
+      "type": "delay",
+      "delayMs": 6000,
+      "actions": [
+        {
+          "type": "call",
+          "key": "call-star",
+          "value": "{{starName}}"
+        }
+      ]
+    },
+    {
+      "id": "call-finished",
+      "label": "通话后的动态",
+      "event": "callEnded",
+      "target": "call-star",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ig-night",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "Instagram：{{starName}} 更新了《放学以后》。"
+        }
+      ]
+    },
+    {
+      "id": "call-declined",
+      "label": "没关系，改用文字",
+      "event": "callDeclined",
+      "target": "call-star",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ig-night",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "Instagram：没接到也没关系，学长发了新动态《放学以后》。"
+        }
+      ]
+    },
+    {
+      "id": "read-instagram",
+      "label": "晚安之前",
+      "event": "read",
+      "target": "ig-night",
+      "next": [
+        "last-choice"
+      ]
+    },
+    {
+      "id": "last-choice",
+      "label": "见到他以前，你想怎么回复？",
+      "type": "choice",
+      "next": [
+        "ending-reply",
+        "ending-save"
+      ]
+    },
+    {
+      "id": "ending-reply",
+      "label": "回复：知道了，明天也一起走吗？",
+      "type": "ending",
+      "actions": [
+        {
+          "type": "ending",
+          "key": "",
+          "value": "{{playerName}}，你终于走到他面前。他没有多说，只把外套递了过来。第一天，到这里；有些话，留到明天。"
+        }
+      ]
+    },
+    {
+      "id": "ending-save",
+      "label": "把手机收起来，走向等你的人",
+      "type": "ending",
+      "actions": [
+        {
+          "type": "ending",
+          "key": "",
+          "value": "你收起手机，朝教学楼门口走去。{{starName}}抬头看见你，脚步也慢了下来。第一天的心事，悄悄留在放学以后。"
+        }
+      ]
+    },
+    {
+      "id": "read-group-photo",
+      "label": "群聊里的照片线索",
+      "event": "read",
+      "target": "group-meeting",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "photo-light",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "相册：张峻豪发来了《篮球场边的背影》。"
+        }
+      ]
+    },
+    {
+      "id": "read-moment-draft",
+      "label": "朋友圈里的未尽之意",
+      "event": "read",
+      "target": "moment-zhu",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "note-draft",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "备忘录：你写下了一段《没发出去的话》。"
+        }
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "reply-warm-ending-reply-callEnded",
+      "steps": [
+        {
+          "event": "read",
+          "target": "wb-aftershow"
+        },
+        {
+          "event": "read",
+          "target": "moment-zhu"
+        },
+        {
+          "event": "read",
+          "target": "photo-light"
+        },
+        {
+          "event": "read",
+          "target": "wx-invitation"
+        },
+        {
+          "choose": "reply-warm"
+        },
+        {
+          "advanceMs": 6000
+        },
+        {
+          "event": "callAnswered",
+          "target": "call-star"
+        },
+        {
+          "event": "callEnded",
+          "target": "call-star"
+        },
+        {
+          "event": "read",
+          "target": "ig-night"
+        },
+        {
+          "choose": "ending-reply"
+        }
+      ],
+      "ending": "{{playerName}}，你终于走到他面前。他没有多说，只把外套递了过来。第一天，到这里；有些话，留到明天。",
+      "expectUnlocked": [
+        "photo-light",
+        "wx-invitation",
+        "ig-night",
+        "note-draft"
+      ]
+    },
+    {
+      "name": "reply-warm-ending-reply-callDeclined",
+      "steps": [
+        {
+          "event": "read",
+          "target": "group-meeting"
+        },
+        {
+          "event": "read",
+          "target": "photo-light"
+        },
+        {
+          "event": "read",
+          "target": "wx-invitation"
+        },
+        {
+          "choose": "reply-warm"
+        },
+        {
+          "advanceMs": 6000
+        },
+        {
+          "event": "callDeclined",
+          "target": "call-star"
+        },
+        {
+          "event": "read",
+          "target": "ig-night"
+        },
+        {
+          "choose": "ending-reply"
+        }
+      ],
+      "ending": "{{playerName}}，你终于走到他面前。他没有多说，只把外套递了过来。第一天，到这里；有些话，留到明天。",
+      "expectUnlocked": [
+        "photo-light",
+        "wx-invitation",
+        "ig-night"
+      ]
+    },
+    {
+      "name": "reply-warm-ending-save-callEnded",
+      "steps": [
+        {
+          "event": "read",
+          "target": "group-meeting"
+        },
+        {
+          "event": "read",
+          "target": "photo-light"
+        },
+        {
+          "event": "read",
+          "target": "wx-invitation"
+        },
+        {
+          "choose": "reply-warm"
+        },
+        {
+          "advanceMs": 6000
+        },
+        {
+          "event": "callAnswered",
+          "target": "call-star"
+        },
+        {
+          "event": "callEnded",
+          "target": "call-star"
+        },
+        {
+          "event": "read",
+          "target": "ig-night"
+        },
+        {
+          "choose": "ending-save"
+        }
+      ],
+      "ending": "你收起手机，朝教学楼门口走去。{{starName}}抬头看见你，脚步也慢了下来。第一天的心事，悄悄留在放学以后。",
+      "expectUnlocked": [
+        "photo-light",
+        "wx-invitation",
+        "ig-night"
+      ]
+    },
+    {
+      "name": "reply-warm-ending-save-callDeclined",
+      "steps": [
+        {
+          "event": "read",
+          "target": "group-meeting"
+        },
+        {
+          "event": "read",
+          "target": "photo-light"
+        },
+        {
+          "event": "read",
+          "target": "wx-invitation"
+        },
+        {
+          "choose": "reply-warm"
+        },
+        {
+          "advanceMs": 6000
+        },
+        {
+          "event": "callDeclined",
+          "target": "call-star"
+        },
+        {
+          "event": "read",
+          "target": "ig-night"
+        },
+        {
+          "choose": "ending-save"
+        }
+      ],
+      "ending": "你收起手机，朝教学楼门口走去。{{starName}}抬头看见你，脚步也慢了下来。第一天的心事，悄悄留在放学以后。",
+      "expectUnlocked": [
+        "photo-light",
+        "wx-invitation",
+        "ig-night"
+      ]
+    },
+    {
+      "name": "reply-shy-ending-reply-callEnded",
+      "steps": [
+        {
+          "event": "read",
+          "target": "group-meeting"
+        },
+        {
+          "event": "read",
+          "target": "photo-light"
+        },
+        {
+          "event": "read",
+          "target": "wx-invitation"
+        },
+        {
+          "choose": "reply-shy"
+        },
+        {
+          "advanceMs": 6000
+        },
+        {
+          "event": "callAnswered",
+          "target": "call-star"
+        },
+        {
+          "event": "callEnded",
+          "target": "call-star"
+        },
+        {
+          "event": "read",
+          "target": "ig-night"
+        },
+        {
+          "choose": "ending-reply"
+        }
+      ],
+      "ending": "{{playerName}}，你终于走到他面前。他没有多说，只把外套递了过来。第一天，到这里；有些话，留到明天。",
+      "expectUnlocked": [
+        "photo-light",
+        "wx-invitation",
+        "ig-night"
+      ]
+    },
+    {
+      "name": "reply-shy-ending-reply-callDeclined",
+      "steps": [
+        {
+          "event": "read",
+          "target": "group-meeting"
+        },
+        {
+          "event": "read",
+          "target": "photo-light"
+        },
+        {
+          "event": "read",
+          "target": "wx-invitation"
+        },
+        {
+          "choose": "reply-shy"
+        },
+        {
+          "advanceMs": 6000
+        },
+        {
+          "event": "callDeclined",
+          "target": "call-star"
+        },
+        {
+          "event": "read",
+          "target": "ig-night"
+        },
+        {
+          "choose": "ending-reply"
+        }
+      ],
+      "ending": "{{playerName}}，你终于走到他面前。他没有多说，只把外套递了过来。第一天，到这里；有些话，留到明天。",
+      "expectUnlocked": [
+        "photo-light",
+        "wx-invitation",
+        "ig-night"
+      ]
+    },
+    {
+      "name": "reply-shy-ending-save-callEnded",
+      "steps": [
+        {
+          "event": "read",
+          "target": "group-meeting"
+        },
+        {
+          "event": "read",
+          "target": "photo-light"
+        },
+        {
+          "event": "read",
+          "target": "wx-invitation"
+        },
+        {
+          "choose": "reply-shy"
+        },
+        {
+          "advanceMs": 6000
+        },
+        {
+          "event": "callAnswered",
+          "target": "call-star"
+        },
+        {
+          "event": "callEnded",
+          "target": "call-star"
+        },
+        {
+          "event": "read",
+          "target": "ig-night"
+        },
+        {
+          "choose": "ending-save"
+        }
+      ],
+      "ending": "你收起手机，朝教学楼门口走去。{{starName}}抬头看见你，脚步也慢了下来。第一天的心事，悄悄留在放学以后。",
+      "expectUnlocked": [
+        "photo-light",
+        "wx-invitation",
+        "ig-night"
+      ]
+    },
+    {
+      "name": "reply-shy-ending-save-callDeclined",
+      "steps": [
+        {
+          "event": "read",
+          "target": "group-meeting"
+        },
+        {
+          "event": "read",
+          "target": "photo-light"
+        },
+        {
+          "event": "read",
+          "target": "wx-invitation"
+        },
+        {
+          "choose": "reply-shy"
+        },
+        {
+          "advanceMs": 6000
+        },
+        {
+          "event": "callDeclined",
+          "target": "call-star"
+        },
+        {
+          "event": "read",
+          "target": "ig-night"
+        },
+        {
+          "choose": "ending-save"
+        }
+      ],
+      "ending": "你收起手机，朝教学楼门口走去。{{starName}}抬头看见你，脚步也慢了下来。第一天的心事，悄悄留在放学以后。",
+      "expectUnlocked": [
+        "photo-light",
+        "wx-invitation",
+        "ig-night"
+      ]
+    }
+  ]
+}

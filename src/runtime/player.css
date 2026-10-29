@@ -21,3 +21,29 @@
     background: #000;
   }
 }
+
+.runtime-recovery {
+  max-width: 320px;
+  margin: 20px;
+  padding: 24px;
+  background: #f8faf4;
+  border-radius: 16px;
+  color: #293b2c;
+}
+.runtime-recovery h2 {
+  font-size: 19px;
+  margin: 0 0 12px;
+}
+.runtime-recovery p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+.runtime-recovery button {
+  background: #287043;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.content-update-notice{position:fixed;bottom:calc(16px + env(safe-area-inset-bottom));left:16px;z-index:10000;max-width:220px;padding:10px 15px;border:1px solid #cedbd0;border-radius:12px;background:#f5faf3;color:#294b35;font:inherit;font-size:14px;box-shadow:0 3px 18px #0002;cursor:pointer;text-align:left}.content-update-notice small{font-size:11px;color:#58725d}

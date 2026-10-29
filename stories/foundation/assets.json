@@ -1,0 +1,439 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "avatar-owner",
+      "category": "characters",
+      "file": "assets/characters/avatar-owner.jpg",
+      "required": false,
+      "description": "{{playerName}}的统一头像"
+    },
+    {
+      "id": "avatar-zhuzhixin",
+      "category": "characters",
+      "file": "assets/characters/avatar-zhuzhixin.jpg",
+      "required": false,
+      "description": "朱志鑫的统一头像"
+    },
+    {
+      "id": "avatar-zhangjunhao",
+      "category": "characters",
+      "file": "assets/characters/avatar-zhangjunhao.jpg",
+      "required": false,
+      "description": "张峻豪的统一头像"
+    },
+    {
+      "id": "avatar-zhangzeyu",
+      "category": "characters",
+      "file": "assets/characters/avatar-zhangzeyu.jpg",
+      "required": false,
+      "description": "张泽禹的统一头像"
+    },
+    {
+      "id": "avatar-zuohang",
+      "category": "characters",
+      "file": "assets/characters/avatar-zuohang.jpg",
+      "required": false,
+      "description": "左航的统一头像"
+    },
+    {
+      "id": "group-after-class",
+      "category": "characters",
+      "file": "assets/characters/group-after-class.jpg",
+      "required": false,
+      "description": "放学别走群头像"
+    },
+    {
+      "id": "gallery-court",
+      "category": "gallery",
+      "file": null,
+      "required": false,
+      "description": "篮球场照片占位，暂无实际图片"
+    },
+    {
+      "id": "moment-school",
+      "category": "moments",
+      "file": null,
+      "required": false,
+      "description": "朋友圈图片占位"
+    },
+    {
+      "id": "photo-ceremony",
+      "category": "gallery",
+      "file": "assets/gallery/开学典礼.pic.jpg",
+      "required": true,
+      "description": "开学典礼那天的人物侧影"
+    },
+    {
+      "id": "photo-snacks",
+      "category": "gallery",
+      "file": "assets/gallery/零食.pic.jpg",
+      "required": true,
+      "description": "新学期的零食购物车"
+    },
+    {
+      "id": "photo-exam",
+      "category": "gallery",
+      "file": "assets/gallery/试卷.pic.jpg",
+      "required": true,
+      "description": "桌上的试卷"
+    },
+    {
+      "id": "photo-library",
+      "category": "gallery",
+      "file": "assets/gallery/图书馆.pic.jpg",
+      "required": true,
+      "description": "图书馆里的书本"
+    },
+    {
+      "id": "photo-festival-poster",
+      "category": "gallery",
+      "file": "assets/gallery/文化节海报.pic.jpg",
+      "required": true,
+      "description": "文化节招募配图"
+    },
+    {
+      "id": "photo-sunset",
+      "category": "gallery",
+      "file": "assets/gallery/夕阳.pic.jpg",
+      "required": true,
+      "description": "校园操场的夕阳"
+    },
+    {
+      "id": "sticker-calm",
+      "category": "chat-images",
+      "file": "assets/chat-images/表情包-不烧心.pic.jpg",
+      "required": true,
+      "description": "不烧心"
+    },
+    {
+      "id": "sticker-confused",
+      "category": "chat-images",
+      "file": "assets/chat-images/表情包-反应不过来 .pic.jpg",
+      "required": true,
+      "description": "每日反应不过来"
+    },
+    {
+      "id": "sticker-temporary",
+      "category": "chat-images",
+      "file": "assets/chat-images/表情包-好的坏的都是暂时的.pic.jpg",
+      "required": true,
+      "description": "好的坏的都是暂时的"
+    },
+    {
+      "id": "sticker-grin",
+      "category": "chat-images",
+      "file": "assets/chat-images/表情包-奸笑.pic.jpg",
+      "required": true,
+      "description": "奸笑"
+    },
+    {
+      "id": "sticker-bitter",
+      "category": "chat-images",
+      "file": "assets/chat-images/表情包—苦涩.pic.jpg",
+      "required": true,
+      "description": "虽然我打不倒，但也不能一直打我吧"
+    },
+    {
+      "id": "avatar-lifei",
+      "category": "characters",
+      "file": null,
+      "required": false,
+      "description": "原创NPC首字占位头像"
+    },
+    {
+      "id": "avatar-zhujiaqi",
+      "category": "characters",
+      "file": null,
+      "required": false,
+      "description": "原创NPC首字占位头像"
+    },
+    {
+      "id": "audio-junhao-demo",
+      "category": "audio",
+      "file": "assets/audio/junhao-demo.MP4",
+      "required": false,
+      "description": "作者提供的作品草稿视频 Demo，沿用稳定素材 ID"
+    },
+    {
+      "id": "photo-party-evening",
+      "category": "gallery",
+      "file": null,
+      "required": false,
+      "description": "第六章聚会合照；待作者上传，不用无关照片替代。"
+    },
+    {
+      "id": "video-party-sing",
+      "category": "audio",
+      "file": null,
+      "required": false,
+      "description": "第六章 KTV 现场合唱 MP4；与旧作品 Demo 分开。"
+    },
+    {
+      "id": "video-ktv-star",
+      "category": "audio",
+      "file": "assets/ktv/朱志鑫ktv.MP4",
+      "required": true,
+      "description": "朱志鑫 KTV演唱视频，作者上传"
+    },
+    {
+      "id": "video-ktv-junhao",
+      "category": "audio",
+      "file": "assets/ktv/张峻豪ktv.MP4",
+      "required": true,
+      "description": "张峻豪 KTV演唱视频，作者上传"
+    },
+    {
+      "id": "video-ktv-brother",
+      "category": "audio",
+      "file": "assets/ktv/张泽禹ktv.MP4",
+      "required": true,
+      "description": "张泽禹 KTV演唱视频，作者上传"
+    },
+    {
+      "id": "video-ktv-zuohang",
+      "category": "audio",
+      "file": "assets/ktv/左航ktv.MP4",
+      "required": true,
+      "description": "左航 KTV演唱视频，作者上传"
+    },
+    {
+      "id": "xianyu-app-icon",
+      "category": "events",
+      "file": "assets/xianyu/icon/xianyu-app-icon.pic.jpg",
+      "required": false,
+      "description": "闲鱼可替换App图标；未上传时使用原占位图标"
+    },
+    {
+      "id": "xianyu-avatar-hanbing-sheshou",
+      "category": "characters",
+      "file": "assets/xianyu/avatars/seller-hanbing-sheshou.pic.jpg",
+      "required": false,
+      "description": "寒冰射手专用闲鱼头像，与微信头像分开"
+    },
+    {
+      "id": "xianyu-product-hanbing-sheshou-shoes",
+      "category": "gallery",
+      "file": "assets/xianyu/products/hanbing-sheshou/鞋子.pic.jpg",
+      "required": false,
+      "description": "寒冰射手：只穿过几次的球鞋，鞋盒还在"
+    },
+    {
+      "id": "xianyu-product-hanbing-sheshou-record",
+      "category": "gallery",
+      "file": "assets/xianyu/products/hanbing-sheshou/唱片.pic.jpg",
+      "required": false,
+      "description": "寒冰射手：重复买的唱片，便宜出"
+    },
+    {
+      "id": "xianyu-product-hanbing-sheshou-contact",
+      "category": "gallery",
+      "file": "assets/xianyu/products/hanbing-sheshou/联系方式.jpg",
+      "required": false,
+      "description": "寒冰射手：朱志鑫微信号，买到就是赚到【整蛊纸条】"
+    },
+    {
+      "id": "xianyu-avatar-houmi-yeye",
+      "category": "characters",
+      "file": "assets/xianyu/avatars/seller-houmi-yeye.pic.jpg",
+      "required": false,
+      "description": "厚米爷爷专用闲鱼头像，与微信头像分开"
+    },
+    {
+      "id": "xianyu-product-houmi-yeye-stone",
+      "category": "gallery",
+      "file": "assets/xianyu/products/houmi-yeye/石头.pic.jpg",
+      "required": false,
+      "description": "厚米爷爷：一块很有思想的石头"
+    },
+    {
+      "id": "xianyu-product-houmi-yeye-book",
+      "category": "gallery",
+      "file": "assets/xianyu/products/houmi-yeye/旧书.pic.jpg",
+      "required": false,
+      "description": "厚米爷爷：写满批注但看不懂的旧书"
+    },
+    {
+      "id": "xianyu-product-houmi-yeye-map",
+      "category": "gallery",
+      "file": "assets/xianyu/products/houmi-yeye/地图.pic.jpg",
+      "required": false,
+      "description": "厚米爷爷：不知道是谁留下的半张地图"
+    },
+    {
+      "id": "xianyu-avatar-xinan-yujie",
+      "category": "characters",
+      "file": "assets/xianyu/avatars/seller-xinan-yujie.pic.jpg",
+      "required": false,
+      "description": "西南禹姐专用闲鱼头像，与微信头像分开"
+    },
+    {
+      "id": "xianyu-product-xinan-yujie-notes",
+      "category": "gallery",
+      "file": "assets/xianyu/products/xinan-yujie/专业抄写.pic.jpg",
+      "required": false,
+      "description": "西南禹姐：高中数学错题整理，救一个算一个"
+    },
+    {
+      "id": "xianyu-product-xinan-yujie-revision",
+      "category": "gallery",
+      "file": "assets/xianyu/products/xinan-yujie/专业抄写.pic.jpg",
+      "required": false,
+      "description": "西南禹姐：文科复习笔记，知识点比我命还全"
+    },
+    {
+      "id": "xianyu-product-xinan-yujie-essay",
+      "category": "gallery",
+      "file": "assets/xianyu/products/xinan-yujie/专业抄写.pic.jpg",
+      "required": false,
+      "description": "西南禹姐：作文修改／学习讲解，先看原稿再说"
+    },
+    {
+      "id": "xianyu-avatar-tutucha-mengmengda",
+      "category": "characters",
+      "file": "assets/xianyu/avatars/seller-tutucha-mengmengda.pic.jpg",
+      "required": false,
+      "description": "兔兔叉萌萌哒专用闲鱼头像，与微信头像分开"
+    },
+    {
+      "id": "xianyu-product-tutucha-mengmengda-lamp",
+      "category": "gallery",
+      "file": "assets/xianyu/products/tutucha-mengmengda/台灯.pic.jpg",
+      "required": false,
+      "description": "兔兔叉萌萌哒：台灯，正常使用，换了一个所以出"
+    },
+    {
+      "id": "xianyu-product-tutucha-mengmengda-book",
+      "category": "gallery",
+      "file": "assets/xianyu/products/tutucha-mengmengda/字典.pic.jpg",
+      "required": false,
+      "description": "兔兔叉萌萌哒：旧字典，书角有一点折痕"
+    },
+    {
+      "id": "xianyu-product-tutucha-mengmengda-storage",
+      "category": "gallery",
+      "file": "assets/xianyu/products/tutucha-mengmengda/收纳盒.pic.jpg",
+      "required": false,
+      "description": "兔兔叉萌萌哒：收纳盒两个，打包便宜"
+    },
+    {
+      "id": "xianyu-avatar-bobo-baba",
+      "category": "characters",
+      "file": "assets/xianyu/avatars/seller-bobo-baba.pic.jpg",
+      "required": false,
+      "description": "啵啵爸爸专用闲鱼头像，与微信头像分开"
+    },
+    {
+      "id": "xianyu-product-bobo-baba-qq",
+      "category": "gallery",
+      "file": "assets/xianyu/products/bobo-baba/qq号.pic.jpg",
+      "required": false,
+      "description": "啵啵爸爸：Justin Bieber QQ号【虚构整蛊卡】"
+    },
+    {
+      "id": "xianyu-product-bobo-baba-weibo",
+      "category": "gallery",
+      "file": "assets/xianyu/products/bobo-baba/微博.pic.jpg",
+      "required": false,
+      "description": "啵啵爸爸：Justin Bieber 微博号【虚构整蛊卡】"
+    },
+    {
+      "id": "xianyu-avatar-suuuu",
+      "category": "characters",
+      "file": "assets/xianyu/avatars/seller-suuuu.pic.jpg",
+      "required": false,
+      "description": "Suuuu专用闲鱼头像，与微信头像分开"
+    },
+    {
+      "id": "xianyu-product-suuuu-iphone",
+      "category": "gallery",
+      "file": "assets/xianyu/products/suuuu/苹果.pic.jpg",
+      "required": false,
+      "description": "Suuuu：脆苹果，三个一袋"
+    },
+    {
+      "id": "xianyu-product-suuuu-airpods",
+      "category": "gallery",
+      "file": "assets/xianyu/products/suuuu/苹果汁.pic.jpg",
+      "required": false,
+      "description": "Suuuu：苹果汁一瓶，拧开就能喝"
+    },
+    {
+      "id": "xianyu-product-suuuu-charger",
+      "category": "gallery",
+      "file": "assets/xianyu/products/suuuu/苹果.pic.jpg",
+      "required": false,
+      "description": "Suuuu：苹果和苹果汁小套餐"
+    },
+    {
+      "id": "xianyu-avatar-cr7-only-god",
+      "category": "characters",
+      "file": "assets/xianyu/avatars/seller-cr7-only-god.pic.jpg",
+      "required": false,
+      "description": "C罗唯一真神专用闲鱼头像，与微信头像分开"
+    },
+    {
+      "id": "xianyu-product-cr7-only-god-figure",
+      "category": "gallery",
+      "file": "assets/xianyu/products/cr7-only-god/cr7-only-god-figure-01.jpg",
+      "required": false,
+      "description": "C罗唯一真神：足球球星小手办，展示柜挪位置"
+    },
+    {
+      "id": "xianyu-product-cr7-only-god-card",
+      "category": "gallery",
+      "file": "assets/xianyu/products/cr7-only-god/球星卡.pic.jpg",
+      "required": false,
+      "description": "C罗唯一真神：重复的球员卡，保护套一起"
+    },
+    {
+      "id": "photo-sports-day",
+      "category": "gallery",
+      "file": "assets/gallery/运动会.pic.jpg",
+      "required": false,
+      "description": "第七章运动会照片，待作者上传"
+    },
+    {
+      "id": "weibo-ent-trousers",
+      "category": "gallery",
+      "file": "assets/weibo/entertainment/trousers-01.jpg",
+      "required": false,
+      "description": "娱乐候选话题配图，待作者提供有权使用的原始素材"
+    },
+    {
+      "id": "weibo-ent-bad-blood",
+      "category": "gallery",
+      "file": "assets/weibo/entertainment/bad-blood-01.jpg",
+      "required": false,
+      "description": "娱乐候选话题配图，待作者提供有权使用的原始素材"
+    },
+    {
+      "id": "weibo-ent-sweet-venom",
+      "category": "gallery",
+      "file": "assets/weibo/entertainment/sweet-venom-01.jpg",
+      "required": false,
+      "description": "娱乐候选话题配图，待作者提供有权使用的原始素材"
+    },
+    {
+      "id": "weibo-ent-apology",
+      "category": "gallery",
+      "file": "assets/weibo/entertainment/apology-01.jpg",
+      "required": false,
+      "description": "娱乐候选话题配图，待作者提供有权使用的原始素材"
+    },
+    {
+      "id": "weibo-ent-luelue",
+      "category": "gallery",
+      "file": "assets/weibo/entertainment/luelue-01.jpg",
+      "required": false,
+      "description": "娱乐候选话题配图，待作者提供有权使用的原始素材"
+    },
+    {
+      "id": "weibo-ent-football",
+      "category": "gallery",
+      "file": "assets/weibo/entertainment/football-01.jpg",
+      "required": false,
+      "description": "娱乐候选话题配图，待作者提供有权使用的原始素材"
+    }
+  ]
+}

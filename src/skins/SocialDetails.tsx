@@ -33,6 +33,7 @@ export function SocialDetail(p: {
   owner: string;
   ui?: Record<string, UiValue>;
   onUi?: (key: string, value: UiValue) => void;
+  onProfile?: () => void;
 }) {
   const { item } = p,
     weibo = p.app === "weibo";
@@ -62,7 +63,7 @@ export function SocialDetail(p: {
   };
   const submit = () => {
     if (!draft.trim()) return;
-    setExtra([...extra, (p.owner || "机主") + "：" + draft.trim()]);
+    setExtra([...extra, (p.owner || "机主") + "：" + (target ? `回复 @${target}：` : "") + draft.trim()]);
     setDraft("");
     setTarget("");
     setTab("评论");
@@ -127,7 +128,7 @@ export function SocialDetail(p: {
         <div className="post-detail-author">
           <Avatar name={item.sender} src={item.avatar} />
           <div>
-            <strong>{item.sender || "用户"}</strong>
+            {p.onProfile ? <button className="community-author-link" onClick={p.onProfile}>{item.sender || "用户"}</button> : <strong>{item.sender || "用户"}</strong>}
             <small>
               {weibo
                 ? item.time + " " + meta(item, "location")

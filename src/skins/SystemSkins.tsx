@@ -155,7 +155,7 @@ export function ContactsSkin(p: Props) {
             else if (p.creator) p.onAdd();
           }}
         >
-          <Avatar name={p.owner ?? "我"} />
+          <Avatar name={p.owner ?? "我"} src={p.ownerAvatar} />
           <span>
             <strong>{p.owner ?? "我的名片"}</strong>
             <small>我的名片</small>
@@ -172,7 +172,7 @@ export function ContactsSkin(p: Props) {
                   key={i.id}
                   item={i}
                   onItem={p.onItem}
-                  leading={<Avatar name={i.title} />}
+                  leading={<Avatar name={i.title} src={i.avatar} />}
                 />
               ))}
           </section>
@@ -921,7 +921,7 @@ export function FindSkin(p: Props) {
             key={i.id}
             item={i}
             onItem={p.onItem}
-            leading={<Avatar name={i.title} />}
+            leading={<Avatar name={i.title} src={i.avatar} />}
           >
             {meta(i, "status", "位置记录")}
           </Row>

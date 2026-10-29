@@ -1,0 +1,1766 @@
+{
+  "variables": {
+    "chapter.chapter-04-unfinished-melody.started": false,
+    "chapter.chapter-04-unfinished-melody.completed": false,
+    "ch04.stage": "locked",
+    "ch04.demoReply": "unset",
+    "ch04.demoReviewed": false,
+    "ch04.onsiteDone": false,
+    "ch04.wrapDone": false,
+    "ch04.memoRead": false,
+    "ch04.demoAssetId": "audio-junhao-demo",
+    "ch04.demoActualSeconds": "unconfirmed",
+    "ch04.demoDeclaredSeconds": "unconfirmed",
+    "ch05.durationCheck.status": "pending-media"
+  },
+  "chats": [
+    {
+      "id": "ch04-work",
+      "app": "wechat",
+      "title": "文化节 · 表单核对",
+      "participants": [
+        "owner",
+        "lifei",
+        "jiaqi",
+        "brother",
+        "junhao",
+        "star",
+        "zuohang"
+      ],
+      "messages": [
+        {
+          "id": "ch04-work-01",
+          "senderId": "lifei",
+          "body": "上一版核对单可以用了。今天只补附件和版本，别再给我重抄一遍名单。",
+          "hidden": true,
+          "time": "草稿提交日"
+        },
+        {
+          "id": "ch04-work-02",
+          "senderId": "junhao",
+          "body": "那我先交草稿。节目还没写完，能先占个坑吗？",
+          "hidden": true,
+          "time": "草稿提交日"
+        },
+        {
+          "id": "ch04-work-03",
+          "senderId": "brother",
+          "body": "能。文件名写清楚，别最后交上来三个最终版。",
+          "hidden": true,
+          "time": "草稿提交日"
+        },
+        {
+          "id": "ch04-work-04",
+          "senderId": "junhao",
+          "body": "放心，目前只有一个草稿版。连我自己都不敢叫它最终版。",
+          "hidden": true,
+          "time": "草稿提交日"
+        },
+        {
+          "id": "ch04-work-05",
+          "senderId": "brother",
+          "body": "谁拿了门口的胶带？还有我的数学卷子。",
+          "hidden": true,
+          "time": "草稿提交日"
+        },
+        {
+          "id": "ch04-work-06",
+          "senderId": "junhao",
+          "body": "我只拿了笔。胶带和数学卷子都不在我的创作范围内。",
+          "hidden": true,
+          "time": "草稿提交日"
+        },
+        {
+          "id": "ch04-work-07",
+          "senderId": "zuohang",
+          "body": "数学卷子在文件夹第二层。胶带我去买，普通透明的，对吧？",
+          "hidden": true,
+          "time": "草稿提交日"
+        },
+        {
+          "id": "ch04-work-08",
+          "senderId": "junhao",
+          "body": "找到了？我还特意给他留了张没折角的。",
+          "hidden": true,
+          "time": "草稿提交日"
+        },
+        {
+          "id": "ch04-work-09",
+          "senderId": "brother",
+          "body": "谢谢。你俩对我的卷子比对文化节还上心。",
+          "hidden": true,
+          "time": "草稿提交日"
+        },
+        {
+          "id": "ch04-work-10",
+          "senderId": "zuohang",
+          "body": "毕竟文化节不会因为少一道大题扣你分。",
+          "hidden": true,
+          "time": "草稿提交日"
+        },
+        {
+          "id": "ch04-work-11",
+          "senderId": "junhao",
+          "body": "附件我放文件夹里了。中间那段还没接好，先按草稿登记。",
+          "hidden": true,
+          "time": "草稿提交日"
+        },
+        {
+          "id": "ch04-work-12",
+          "senderId": "brother",
+          "body": "收到。你负责把旋律写完，我负责把文件名看懂。",
+          "hidden": true,
+          "time": "草稿提交日"
+        }
+      ]
+    },
+    {
+      "id": "ch04-junhao",
+      "app": "wechat",
+      "title": "张峻豪",
+      "participants": [
+        "owner",
+        "junhao"
+      ],
+      "messages": [
+        {
+          "id": "ch04-junhao-01",
+          "senderId": "junhao",
+          "body": "草稿你看到了吧？中间有一段我还没接上。",
+          "hidden": true,
+          "time": "草稿提交日"
+        },
+        {
+          "id": "ch04-junhao-02",
+          "senderId": "junhao",
+          "body": "我本来想了两个接法，听了几遍，两个都觉得差点意思。",
+          "hidden": true,
+          "time": "草稿提交日"
+        },
+        {
+          "id": "ch04-junhao-03",
+          "senderId": "junhao",
+          "body": "不过先报名再说。等我把它改到满意，文化节估计都结束了。",
+          "hidden": true,
+          "time": "草稿提交日"
+        },
+        {
+          "id": "ch04-junhao-04",
+          "senderId": "junhao",
+          "body": "你听的时候有没有哪一段觉得还不错？别客气，也别为了鼓励我全夸一遍。",
+          "hidden": true,
+          "time": "草稿提交日"
+        },
+        {
+          "id": "ch04-junhao-05",
+          "senderId": "junhao",
+          "body": "有时候自己改久了，只剩下哪儿不满意，反而忘了最开始为什么想写它。",
+          "hidden": true,
+          "time": "草稿提交日"
+        },
+        {
+          "id": "ch04-junhao-06",
+          "senderId": "junhao",
+          "body": "你先忙你的。附件我补齐，旋律我自己再折腾一会儿。",
+          "hidden": true,
+          "time": "草稿提交日"
+        },
+        {
+          "id": "ch04-junhao-07",
+          "senderId": "junhao",
+          "body": "对了，晚点我在排练室。核完的表放门口文件夹就行，别专门跑一趟。",
+          "hidden": true,
+          "time": "草稿提交日"
+        }
+      ]
+    }
+  ],
+  "content": {
+    "notes": [
+      {
+        "id": "ch04-entry",
+        "title": "第四章 · 未完成的旋律",
+        "body": "文化节的报名表终于核完了。\n\n张峻豪交来一份还没写完的作品草稿，中间留着一段空白。他倒不急着把它藏起来，反而先报名，打算一边争取机会一边继续改。\n\n原来有些事情，不必等到万事俱备才开始。",
+        "kind": "note",
+        "hidden": false,
+        "time": "草稿提交日",
+        "unlock": "chapter.chapter-03-beyond-form.completed"
+      },
+      {
+        "id": "ch04-memo-question",
+        "title": "没接上的那一段",
+        "body": "附件总算整理好了。张峻豪说中间有两个接法，他都不满意。我本来以为他早就知道整首曲子该是什么样，问完才知道，他也在试。\n\n聊这件事的时候，我倒没怎么想自己有没有说错。门口碰见朱志鑫，却又只顾着点头。明明他只是来放东西，我连一句普通招呼都要想半天。\n\n哥哥叫我去吃饭，我应了两声还坐着。他说再晚点只能给我留葱。\n\n先下楼，今天不想连汤都喝不到。",
+        "kind": "note",
+        "hidden": true,
+        "time": "草稿提交日"
+      },
+      {
+        "id": "ch04-memo-like",
+        "title": "还想等后面",
+        "body": "我说喜欢那段留着空白的感觉，张峻豪没有顺口回句谢谢，而是问我具体是哪一处。\n\n差点又说“都挺好的”。后来把话讲完，他听懂了，还记了下来。我反而有点不好意思，怕他真照着改。\n\n也不是想替他决定，只是确实有自己想听下去的地方。有人肯认真问，我就愿意再说一点。\n\n跟朱志鑫还是只打了个招呼。回来以后记得最清楚的，竟然是自己当时手里一直攥着附件单，边角都折了。",
+        "kind": "note",
+        "hidden": true,
+        "time": "草稿提交日"
+      },
+      {
+        "id": "ch04-memo-work",
+        "title": "先把手头的做完",
+        "body": "今天先核完附件，没接着聊旋律。张峻豪说行，就去补他缺的材料了。\n\n我倒是在发送前犹豫了一会儿，怕显得自己不耐烦。结果他根本没往那里想，晚点见面照样能说话。\n\n总是这样，别人还没开口，我已经替人家想了好几种不高兴的理由。挺累的。\n\n至少今晚不用再对着文件名猜版本了。剩下那道题也得看一眼，明天再拖着问，自己都不好意思。",
+        "kind": "note",
+        "hidden": true,
+        "time": "草稿提交日"
+      }
+    ],
+    "files": [
+      {
+        "id": "ch04-attachment",
+        "title": "节目附件登记 · 草稿版",
+        "body": "提交人：张峻豪。\n项目：器乐合奏意向，尚未转为正式节目。\n当前版本：未完成草稿。\n附件：未完成的旋律（草稿）。\n\n实际音频时长：尚未确认。\n申报时长：尚未确认。\n\n备注：本次仅登记草稿与附件，待正式材料提交后再核对时长。",
+        "kind": "note",
+        "hidden": true,
+        "time": "草稿提交日"
+      },
+      {
+        "id": "ch04-demo",
+        "title": "未完成的旋律 · 试听记录",
+        "body": "【作品草稿 · 视频 Demo】\n\n张峻豪提交了一份尚未完成的作品草稿，计划先争取文化节的展示机会，再继续修改。\n\n点击上方播放器观看。查看《节目附件登记 · 草稿版》后，可以选择给他的回应。",
+        "kind": "note",
+        "hidden": true,
+        "time": "草稿提交日",
+        "meta": {
+          "activityDocument": "ch04-demo",
+          "reviewMedia": "audio",
+          "mediaAssetId": "audio-junhao-demo"
+        }
+      },
+      {
+        "id": "ch04-onsite",
+        "title": "排练室门口 · 草稿之后",
+        "body": "午后，我把核好的附件单送到排练室门口。\n\n张峻豪抱着文件夹给我让了个位置。\n\n“先放这儿。草稿还得改，等我弄好了再给你听。”\n\n他把门边的椅子挪开，低头又看了一眼手里的纸。",
+        "kind": "note",
+        "hidden": true,
+        "time": "草稿提交日",
+        "meta": {
+          "activityDocument": "ch04-onsite"
+        }
+      }
+    ],
+    "wechat": [
+      {
+        "id": "ch04-moment-draft",
+        "title": "草稿也先占一页",
+        "body": "文化节进度：表格快齐了，节目还在长大。\n\n另外，谁把胶带带走了？",
+        "kind": "post",
+        "hidden": true,
+        "time": "草稿提交日",
+        "folder": "朋友圈",
+        "sender": "张泽禹",
+        "comments": [
+          "张峻豪：节目还在发育期，请勿催熟。",
+          "左航：胶带我买了。数学卷子建议也买一份新的。"
+        ]
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "ch04-start",
+      "label": "开始第四章《未完成的旋律》",
+      "event": "chapterStart",
+      "target": "chapter-04-unfinished-melody",
+      "conditions": [
+        {
+          "key": "chapter.chapter-03-beyond-form.completed",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "chapter.chapter-04-unfinished-melody.started",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "chapter.chapter-04-unfinished-melody.started",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch04.stage",
+          "value": "task"
+        },
+        {
+          "type": "variable",
+          "key": "story.dayLabel",
+          "value": "草稿提交日"
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信：文化节工作群有了新的草稿。"
+        }
+      ]
+    },
+    {
+      "id": "ch04-start-from-note",
+      "label": "开始第四章《未完成的旋律》",
+      "event": "read",
+      "target": "ch04-entry",
+      "conditions": [
+        {
+          "key": "chapter.chapter-03-beyond-form.completed",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "chapter.chapter-04-unfinished-melody.started",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "chapter.chapter-04-unfinished-melody.started",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch04.stage",
+          "value": "task"
+        },
+        {
+          "type": "variable",
+          "key": "story.dayLabel",
+          "value": "草稿提交日"
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信：文化节工作群有了新的草稿。"
+        }
+      ]
+    },
+    {
+      "id": "ch04-unlock-memo-question",
+      "label": "解锁本次选择对应的私人记录",
+      "event": "variable",
+      "target": "ch04.wrapDone",
+      "conditions": [
+        {
+          "key": "ch04.wrapDone",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch04.demoReply",
+          "op": "eq",
+          "value": "question"
+        }
+      ],
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch04-memo-question",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch04-read-memo-question",
+      "label": "阅读今晚的私人记录",
+      "event": "read",
+      "target": "ch04-memo-question",
+      "conditions": [
+        {
+          "key": "ch04.wrapDone",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch04.demoReply",
+          "op": "eq",
+          "value": "question"
+        },
+        {
+          "key": "unlocked:ch04-memo-question",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch04.memoRead",
+          "value": true
+        }
+      ],
+      "next": [
+        "ch04-complete"
+      ]
+    },
+    {
+      "id": "ch04-unlock-memo-like",
+      "label": "解锁本次选择对应的私人记录",
+      "event": "variable",
+      "target": "ch04.wrapDone",
+      "conditions": [
+        {
+          "key": "ch04.wrapDone",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch04.demoReply",
+          "op": "eq",
+          "value": "like"
+        }
+      ],
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch04-memo-like",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch04-read-memo-like",
+      "label": "阅读今晚的私人记录",
+      "event": "read",
+      "target": "ch04-memo-like",
+      "conditions": [
+        {
+          "key": "ch04.wrapDone",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch04.demoReply",
+          "op": "eq",
+          "value": "like"
+        },
+        {
+          "key": "unlocked:ch04-memo-like",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch04.memoRead",
+          "value": true
+        }
+      ],
+      "next": [
+        "ch04-complete"
+      ]
+    },
+    {
+      "id": "ch04-unlock-memo-work",
+      "label": "解锁本次选择对应的私人记录",
+      "event": "variable",
+      "target": "ch04.wrapDone",
+      "conditions": [
+        {
+          "key": "ch04.wrapDone",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch04.demoReply",
+          "op": "eq",
+          "value": "work"
+        }
+      ],
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ch04-memo-work",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch04-read-memo-work",
+      "label": "阅读今晚的私人记录",
+      "event": "read",
+      "target": "ch04-memo-work",
+      "conditions": [
+        {
+          "key": "ch04.wrapDone",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch04.demoReply",
+          "op": "eq",
+          "value": "work"
+        },
+        {
+          "key": "unlocked:ch04-memo-work",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch04.memoRead",
+          "value": true
+        }
+      ],
+      "next": [
+        "ch04-complete"
+      ]
+    },
+    {
+      "id": "ch04-complete",
+      "label": "第四章完成",
+      "type": "ending",
+      "conditions": [
+        {
+          "key": "ch04.onsiteDone",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch04.wrapDone",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch04.memoRead",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "chapter.chapter-04-unfinished-melody.completed",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch04.stage",
+          "value": "completed"
+        },
+        {
+          "type": "variable",
+          "key": "chapter.next",
+          "value": "chapter-05-pending"
+        },
+        {
+          "type": "ending",
+          "key": "",
+          "value": "第四章《未完成的旋律》已完成。草稿还没写完，今天先记到这里。"
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "第四章《未完成的旋律》已完成，进度已保存。"
+        }
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "第四章-demo-question",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        }
+      ],
+      "ending": "第四章《未完成的旋律》已完成。草稿还没写完，今天先记到这里。",
+      "expectUnlocked": [
+        "ch04-demo",
+        "ch04-onsite",
+        "ch04-memo-question",
+        "ch04-moment-draft"
+      ]
+    },
+    {
+      "name": "第四章-demo-like",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-like"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-like"
+        }
+      ],
+      "ending": "第四章《未完成的旋律》已完成。草稿还没写完，今天先记到这里。",
+      "expectUnlocked": [
+        "ch04-demo",
+        "ch04-onsite",
+        "ch04-memo-like",
+        "ch04-moment-draft"
+      ]
+    },
+    {
+      "name": "第四章-demo-work",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-work"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-work"
+        }
+      ],
+      "ending": "第四章《未完成的旋律》已完成。草稿还没写完，今天先记到这里。",
+      "expectUnlocked": [
+        "ch04-demo",
+        "ch04-onsite",
+        "ch04-memo-work",
+        "ch04-moment-draft"
+      ]
+    }
+  ]
+}

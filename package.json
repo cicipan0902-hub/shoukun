@@ -16,7 +16,21 @@
     "story:validate": "node scripts/story.mjs validate",
     "story:build": "node scripts/story.mjs build",
     "story:preview": "npm run dev",
-    "story:test": "node scripts/story.mjs test"
+    "story:test": "node scripts/story.mjs test",
+    "foundation:dev": "node scripts/foundation.mjs dev",
+    "foundation:build": "node scripts/foundation.mjs build",
+    "foundation:validate": "node scripts/foundation.mjs validate",
+    "foundation:test": "node scripts/foundation.mjs test",
+    "preview:lan": "vite preview --config vite.runtime.config.ts --host 0.0.0.0 --port 4173 --strictPort",
+    "campus:serve": "node server/index.mjs",
+    "test:server": "node --test server/chat.test.mjs",
+    "author:check": "node scripts/prepare-campus.mjs",
+    "author:dev": "node scripts/foundation.mjs dev",
+    "author:build": "node scripts/foundation.mjs build",
+    "test:assets": "node --test scripts/lib/author-assets.test.mjs",
+    "test:authoring:e2e": "node node_modules/@playwright/test/cli.js test --config playwright.authoring.config.ts",
+    "public:prepare": "npm run author:build && node scripts/prepare-public-site.mjs",
+    "release:check": "node scripts/check-runtime-artifact.mjs"
   },
   "dependencies": {
     "@tiptap/react": "^3.0.0",

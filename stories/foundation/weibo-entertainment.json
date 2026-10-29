@@ -1,0 +1,301 @@
+{
+  "content": {
+    "weibo": [
+      {
+        "id": "ent-topic-trousers",
+        "title": "TOP都穿长裤不告诉朱志鑫",
+        "body": "拟整理公开足球环节中的服装画面对照。当前未取得原片，不补写成员台词或“事先约好”等原因。",
+        "folder": "娱乐热搜",
+        "time": "本地候选话题 · 非实时",
+        "meta": {
+          "community": "true",
+          "topic": "TOP都穿长裤不告诉朱志鑫",
+          "topicId": "ent-topic-trousers",
+          "sourceUrl": "",
+          "sourceNote": "拟整理公开足球环节中的服装画面对照。当前未取得原片，不补写成员台词或“事先约好”等原因。",
+          "verificationStatus": "pending",
+          "imagePath": "assets/weibo/entertainment/trousers-01.jpg",
+          "referenceUrl": "https://weibo.com/2/detail/5338402138360391",
+          "referenceNote": "检索线索或检索入口，非已核验的官方物料",
+          "simulation": "true",
+          "category": "综艺、搞笑",
+          "type": "topic"
+        }
+      },
+      {
+        "id": "ent-post-trousers",
+        "title": "#TOP都穿长裤不告诉朱志鑫#",
+        "body": "【游戏内模拟讨论 · 待补原始素材】\n还没找到原片，先留个位置。补截图时希望把前后镜头放在一起，别只留一个表情。",
+        "sender": "舞台资料夹",
+        "folder": "娱乐热搜",
+        "kind": "post",
+        "time": "本地资料征集 · 非实时",
+        "likes": 0,
+        "comments": [
+          "【虚构示例】模拟讨论员甲：有原片的话，想看穿着差异出现前后的完整一小段。"
+        ],
+        "meta": {
+          "community": "true",
+          "topic": "TOP都穿长裤不告诉朱志鑫",
+          "topicId": "ent-topic-trousers",
+          "sourceUrl": "",
+          "sourceNote": "拟整理公开足球环节中的服装画面对照。当前未取得原片，不补写成员台词或“事先约好”等原因。",
+          "verificationStatus": "pending",
+          "imagePath": "assets/weibo/entertainment/trousers-01.jpg",
+          "referenceUrl": "https://weibo.com/2/detail/5338402138360391",
+          "referenceNote": "检索线索或检索入口，非已核验的官方物料",
+          "simulation": "true",
+          "category": "综艺、搞笑",
+          "type": "post",
+          "accountId": "stage"
+        }
+      },
+      {
+        "id": "ent-topic-bad-blood",
+        "title": "朱志鑫BAD BLOOD个人舞台",
+        "body": "个人舞台资料整理候选。具体场次、编排和制作署名待官方视频或节目单核实。",
+        "folder": "娱乐热搜",
+        "time": "本地候选话题 · 非实时",
+        "meta": {
+          "community": "true",
+          "topic": "朱志鑫BAD BLOOD个人舞台",
+          "topicId": "ent-topic-bad-blood",
+          "sourceUrl": "",
+          "sourceNote": "个人舞台资料整理候选。具体场次、编排和制作署名待官方视频或节目单核实。",
+          "verificationStatus": "pending",
+          "imagePath": "assets/weibo/entertainment/bad-blood-01.jpg",
+          "referenceUrl": "",
+          "referenceNote": "检索线索或检索入口，非已核验的官方物料",
+          "simulation": "true",
+          "category": "舞台、成员",
+          "type": "topic"
+        }
+      },
+      {
+        "id": "ent-post-bad-blood",
+        "title": "#朱志鑫BAD BLOOD个人舞台#",
+        "body": "【游戏内模拟讨论 · 待补原始素材】\n准备按舞台版本做个小索引，灯光、走位和镜头分开记。先等准确场次，不把不同场的片段拼成一次演出。",
+        "sender": "舞台资料夹",
+        "folder": "娱乐热搜",
+        "kind": "post",
+        "time": "本地资料征集 · 非实时",
+        "likes": 0,
+        "comments": [
+          "【虚构示例】模拟讨论员甲：我会先看完整舞台，再看单个动作的剪辑。"
+        ],
+        "meta": {
+          "community": "true",
+          "topic": "朱志鑫BAD BLOOD个人舞台",
+          "topicId": "ent-topic-bad-blood",
+          "sourceUrl": "",
+          "sourceNote": "个人舞台资料整理候选。具体场次、编排和制作署名待官方视频或节目单核实。",
+          "verificationStatus": "pending",
+          "imagePath": "assets/weibo/entertainment/bad-blood-01.jpg",
+          "referenceUrl": "",
+          "referenceNote": "检索线索或检索入口，非已核验的官方物料",
+          "simulation": "true",
+          "category": "舞台、成员",
+          "type": "post",
+          "accountId": "stage"
+        }
+      },
+      {
+        "id": "ent-topic-sweet-venom",
+        "title": "朱志鑫张桂源Sweet Venom合作舞台",
+        "body": "检索到同名合作舞台的转载条目，未核验官方原始视频；日期、场次和动作细节待补。",
+        "folder": "娱乐热搜",
+        "time": "本地候选话题 · 非实时",
+        "meta": {
+          "community": "true",
+          "topic": "朱志鑫张桂源Sweet Venom合作舞台",
+          "topicId": "ent-topic-sweet-venom",
+          "sourceUrl": "",
+          "sourceNote": "检索到同名合作舞台的转载条目，未核验官方原始视频；日期、场次和动作细节待补。",
+          "verificationStatus": "pending",
+          "imagePath": "assets/weibo/entertainment/sweet-venom-01.jpg",
+          "referenceUrl": "https://www.bilibili.com/video/BV1f3rTBpEck/",
+          "referenceNote": "检索线索或检索入口，非已核验的官方物料",
+          "simulation": "true",
+          "category": "舞台、合作",
+          "type": "topic"
+        }
+      },
+      {
+        "id": "ent-post-sweet-venom",
+        "title": "#朱志鑫张桂源Sweet Venom合作舞台#",
+        "body": "【游戏内模拟讨论 · 待补原始素材】\n这里预留合作舞台的讨论。拿到完整原片后，可以分别聊两个人的动作处理和同框配合，先不按短剪辑下结论。",
+        "sender": "舞台资料夹",
+        "folder": "娱乐热搜",
+        "kind": "post",
+        "time": "本地资料征集 · 非实时",
+        "likes": 0,
+        "comments": [
+          "【虚构示例】模拟讨论员甲：想把全景和个人机位分开收藏，看的重点不一样。"
+        ],
+        "meta": {
+          "community": "true",
+          "topic": "朱志鑫张桂源Sweet Venom合作舞台",
+          "topicId": "ent-topic-sweet-venom",
+          "sourceUrl": "",
+          "sourceNote": "检索到同名合作舞台的转载条目，未核验官方原始视频；日期、场次和动作细节待补。",
+          "verificationStatus": "pending",
+          "imagePath": "assets/weibo/entertainment/sweet-venom-01.jpg",
+          "referenceUrl": "https://www.bilibili.com/video/BV1f3rTBpEck/",
+          "referenceNote": "检索线索或检索入口，非已核验的官方物料",
+          "simulation": "true",
+          "category": "舞台、合作",
+          "type": "post",
+          "accountId": "stage"
+        }
+      },
+      {
+        "id": "ent-topic-apology",
+        "title": "张峻豪参与笨小孩的道歉信合唱",
+        "body": "参与版本和具体演出场次待核实。发行音源、音乐会和转载标题不能互相代替，不据此填出演出阵容。",
+        "folder": "娱乐热搜",
+        "time": "本地候选话题 · 非实时",
+        "meta": {
+          "community": "true",
+          "topic": "张峻豪参与笨小孩的道歉信合唱",
+          "topicId": "ent-topic-apology",
+          "sourceUrl": "",
+          "sourceNote": "参与版本和具体演出场次待核实。发行音源、音乐会和转载标题不能互相代替，不据此填出演出阵容。",
+          "verificationStatus": "pending",
+          "imagePath": "assets/weibo/entertainment/apology-01.jpg",
+          "referenceUrl": "https://www.youtube.com/watch?v=QEJwuTSZN6w",
+          "referenceNote": "检索线索或检索入口，非已核验的官方物料",
+          "simulation": "true",
+          "category": "音乐、回忆",
+          "type": "topic"
+        }
+      },
+      {
+        "id": "ent-post-apology",
+        "title": "#张峻豪参与笨小孩的道歉信合唱#",
+        "body": "【游戏内模拟讨论 · 待补原始素材】\n先收资料，不急着写回忆帖。请补官方节目单或完整演出视频，再确认是哪一版合唱、有哪些参与者。",
+        "sender": "舞台资料夹",
+        "folder": "娱乐热搜",
+        "kind": "post",
+        "time": "本地资料征集 · 非实时",
+        "likes": 0,
+        "comments": [
+          "【虚构示例】模拟讨论员甲：旧收藏里有几个版本，先核对片头和节目单，别靠记忆填。"
+        ],
+        "meta": {
+          "community": "true",
+          "topic": "张峻豪参与笨小孩的道歉信合唱",
+          "topicId": "ent-topic-apology",
+          "sourceUrl": "",
+          "sourceNote": "参与版本和具体演出场次待核实。发行音源、音乐会和转载标题不能互相代替，不据此填出演出阵容。",
+          "verificationStatus": "pending",
+          "imagePath": "assets/weibo/entertainment/apology-01.jpg",
+          "referenceUrl": "https://www.youtube.com/watch?v=QEJwuTSZN6w",
+          "referenceNote": "检索线索或检索入口，非已核验的官方物料",
+          "simulation": "true",
+          "category": "音乐、回忆",
+          "type": "post",
+          "accountId": "stage"
+        }
+      },
+      {
+        "id": "ent-topic-luelue",
+        "title": "登陆少年新歌略略略略略歌词讨论",
+        "body": "检索到歌曲及MV的公开条目，官方原片、准确发行信息和歌词文本尚待核对；不引用未核验歌词。",
+        "folder": "娱乐热搜",
+        "time": "本地候选话题 · 非实时",
+        "meta": {
+          "community": "true",
+          "topic": "登陆少年新歌略略略略略歌词讨论",
+          "topicId": "ent-topic-luelue",
+          "sourceUrl": "",
+          "sourceNote": "检索到歌曲及MV的公开条目，官方原片、准确发行信息和歌词文本尚待核对；不引用未核验歌词。",
+          "verificationStatus": "pending",
+          "imagePath": "assets/weibo/entertainment/luelue-01.jpg",
+          "referenceUrl": "",
+          "referenceNote": "检索线索或检索入口，非已核验的官方物料",
+          "simulation": "true",
+          "category": "音乐、讨论",
+          "type": "topic"
+        }
+      },
+      {
+        "id": "ent-post-luelue",
+        "title": "#登陆少年新歌略略略略略歌词讨论#",
+        "body": "【游戏内模拟讨论 · 待补原始素材】\n这里预留旋律、歌词和创作方向的不同听感。素材到齐再聊具体段落，不把一个人的喜好写成大家都认同。",
+        "sender": "舞台资料夹",
+        "folder": "娱乐热搜",
+        "kind": "post",
+        "time": "本地资料征集 · 非实时",
+        "likes": 0,
+        "comments": [
+          "【虚构示例】模拟讨论员甲：我平时先听旋律，歌词经常第二遍才留意。",
+          "【虚构示例】模拟讨论员乙：我相反，会先看表达的意思。具体这首等原片补齐再聊。"
+        ],
+        "meta": {
+          "community": "true",
+          "topic": "登陆少年新歌略略略略略歌词讨论",
+          "topicId": "ent-topic-luelue",
+          "sourceUrl": "",
+          "sourceNote": "检索到歌曲及MV的公开条目，官方原片、准确发行信息和歌词文本尚待核对；不引用未核验歌词。",
+          "verificationStatus": "pending",
+          "imagePath": "assets/weibo/entertainment/luelue-01.jpg",
+          "referenceUrl": "",
+          "referenceNote": "检索线索或检索入口，非已核验的官方物料",
+          "simulation": "true",
+          "category": "音乐、讨论",
+          "type": "post",
+          "accountId": "stage"
+        }
+      },
+      {
+        "id": "ent-topic-football",
+        "title": "朱志鑫和队友足球环节名场面",
+        "body": "公开足球物料回顾候选。节目名、期数与时间点待补；不推测真实人物的私人关系。",
+        "folder": "娱乐热搜",
+        "time": "本地候选话题 · 非实时",
+        "meta": {
+          "community": "true",
+          "topic": "朱志鑫和队友足球环节名场面",
+          "topicId": "ent-topic-football",
+          "sourceUrl": "",
+          "sourceNote": "公开足球物料回顾候选。节目名、期数与时间点待补；不推测真实人物的私人关系。",
+          "verificationStatus": "pending",
+          "imagePath": "assets/weibo/entertainment/football-01.jpg",
+          "referenceUrl": "https://www.douyin.com/",
+          "referenceNote": "检索线索或检索入口，非已核验的官方物料",
+          "simulation": "true",
+          "category": "综艺、趣味互动",
+          "type": "topic"
+        }
+      },
+      {
+        "id": "ent-post-football",
+        "title": "#朱志鑫和队友足球环节名场面#",
+        "body": "【游戏内模拟讨论 · 待补原始素材】\n想建一个按时间点找片段的小目录。传球、跑位、场边反应可以分开收，先留完整片段出处，再做趣味截帧。",
+        "sender": "舞台资料夹",
+        "folder": "娱乐热搜",
+        "kind": "post",
+        "time": "本地资料征集 · 非实时",
+        "likes": 0,
+        "comments": [
+          "【虚构示例】模拟讨论员甲：如果截到没接住球，最好也留前面怎么传的，单帧容易误会。"
+        ],
+        "meta": {
+          "community": "true",
+          "topic": "朱志鑫和队友足球环节名场面",
+          "topicId": "ent-topic-football",
+          "sourceUrl": "",
+          "sourceNote": "公开足球物料回顾候选。节目名、期数与时间点待补；不推测真实人物的私人关系。",
+          "verificationStatus": "pending",
+          "imagePath": "assets/weibo/entertainment/football-01.jpg",
+          "referenceUrl": "https://www.douyin.com/",
+          "referenceNote": "检索线索或检索入口，非已核验的官方物料",
+          "simulation": "true",
+          "category": "综艺、趣味互动",
+          "type": "post",
+          "accountId": "stage"
+        }
+      }
+    ]
+  }
+}

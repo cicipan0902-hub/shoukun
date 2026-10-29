@@ -1,0 +1,42 @@
+.author-devtools {
+  position: fixed;
+  left: 8px;
+  top: 8px;
+  z-index: 200;
+  font-size: 12px;
+  max-width: min(380px, 96vw);
+  color: #eee;
+}
+.author-devtools > div {
+  padding: 12px;
+  background: #1e222af5;
+  border: 1px solid #777;
+  max-height: 76dvh;
+  overflow: auto;
+  border-radius: 8px;
+}
+.author-devtools button,
+.author-devtools input,
+.author-devtools select {
+  font-size: 12px;
+  background: #303843;
+  border: 1px solid #555;
+  color: #eee;
+  padding: 7px;
+  border-radius: 5px;
+  margin: 4px;
+}
+.author-devtools label {
+  display: block;
+}
+.author-devtools pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 10px;
+}
+.author-devtools img {
+  height: 24px;
+  width: 24px;
+  object-fit: cover;
+  vertical-align: middle;
+}

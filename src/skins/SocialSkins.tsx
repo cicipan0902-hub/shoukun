@@ -1,4 +1,5 @@
 import { useSkinState } from "../skinState";
+import { CampusWeiboSkin } from "./CommunitySkins";
 import {
   ArrowDown,
   ArrowUp,
@@ -57,7 +58,7 @@ function Actions({ p, item }: { p: Props; item: Item }) {
 function PostHeader({ item, p }: { item: Item; p: Props }) {
   return (
     <button className="social-author" onClick={() => p.onItem(item)}>
-      <Avatar name={item.sender} />
+      <Avatar name={item.sender} src={item.avatar} />
       <span>
         <strong>{item.sender}</strong>
         <small>{meta(item, "handle", item.time)}</small>
@@ -89,6 +90,9 @@ function WeiboActions({ p, item }: { p: Props; item: Item }) {
   );
 }
 export function WeiboSkin(p: Props) {
+  return p.items.some((item) => item.meta.community === "true") ? <CampusWeiboSkin {...p} /> : <LegacyWeiboSkin {...p} />;
+}
+function LegacyWeiboSkin(p: Props) {
   const { tab, setTab, q, setQ, items } = useContent(p, "关注");
   const [feed, setFeed] = useState("全部");
   const list = feed === "全部" ? items : items.filter((i) => i.folder === feed);
@@ -109,7 +113,7 @@ export function WeiboSkin(p: Props) {
       <div className="catalog-scroll">
         {tab === "我" ? (
           <div className="weibo-profile">
-            <Avatar name={p.owner ?? "我"} />
+            <Avatar name={p.owner ?? "我"} src={p.ownerAvatar} />
             <h2>{p.owner ?? "我"}</h2>
             <span>{items.length} 条微博</span>
           </div>
@@ -167,7 +171,7 @@ export function XSkin(p: Props) {
           .filter((i) => tab === "为你推荐" || i.folder === "正在关注")
           .map((i) => (
             <article className="x-post" key={i.id}>
-              <Avatar name={i.sender} />
+              <Avatar name={i.sender} src={i.avatar} />
               <div>
                 <button className="x-byline" onClick={() => p.onItem(i)}>
                   <strong>{i.sender}</strong>
@@ -213,7 +217,7 @@ export function ThreadsSkin(p: Props) {
         ).map((i) => (
           <article className="threads-post" key={i.id}>
             <div className="thread-avatar">
-              <Avatar name={i.sender} />
+              <Avatar name={i.sender} src={i.avatar} />
               <i />
             </div>
             <div>
@@ -264,7 +268,7 @@ export function FacebookSkin(p: Props) {
               disabled={!p.creator}
               onClick={p.onAdd}
             >
-              <Avatar name={p.owner ?? "我"} />
+              <Avatar name={p.owner ?? "我"} src={p.ownerAvatar} />
               分享新动态
             </button>
             <div className="fb-stories">
@@ -304,7 +308,7 @@ export function FacebookSkin(p: Props) {
           <>
             <div className="fb-cover" />
             <div className="fb-profile">
-              <Avatar name={p.owner ?? "我"} />
+              <Avatar name={p.owner ?? "我"} src={p.ownerAvatar} />
               <h1>{p.owner ?? "我"}</h1>
             </div>
             {items
@@ -355,7 +359,7 @@ export function RedbookSkin(p: Props) {
               <Media item={i} />
               <strong>{i.title}</strong>
               <div>
-                <Avatar name={i.sender} />
+                <Avatar name={i.sender} src={i.avatar} />
                 <small>{i.sender}</small>
                 <Heart size={12} />
                 <small>{i.likes}</small>
@@ -614,7 +618,7 @@ export function SnapchatSkin(p: Props) {
           <div className="snap-chats">
             {list.map((x) => (
               <button key={x.id} onClick={() => p.onItem(x)}>
-                <Avatar name={x.sender} />
+                <Avatar name={x.sender} src={x.avatar} />
                 <div>
                   <strong>{x.sender}</strong>
                   <small>{x.body}</small>
@@ -627,7 +631,7 @@ export function SnapchatSkin(p: Props) {
           <>
             <Media item={i} />
             <button className="snap-author" onClick={() => p.onItem(i)}>
-              <Avatar name={i.sender} />
+              <Avatar name={i.sender} src={i.avatar} />
               {i.sender}
             </button>
             <button

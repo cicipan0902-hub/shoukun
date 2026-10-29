@@ -1,0 +1,62 @@
+{
+  "scriptVersion": 1,
+  "installedApps": [
+    "phone",
+    "messages",
+    "wechat",
+    "photos",
+    "instagram",
+    "weibo",
+    "contacts",
+    "notes",
+    "calendar",
+    "mail",
+    "safari",
+    "files",
+    "appstore",
+    "settings"
+  ],
+  "contacts": [
+    {
+      "id": "star",
+      "name": "{{starName}}",
+      "bio": "高二学长 · 外冷内热，话少但细心"
+    },
+    {
+      "id": "junhao",
+      "name": "张峻豪",
+      "bio": "学长的朋友 · 开朗直率，气氛担当"
+    },
+    {
+      "id": "brother",
+      "name": "张泽禹",
+      "bio": "你的哥哥 · 嘴上嫌弃，实际很护妹"
+    },
+    {
+      "id": "zuohang",
+      "name": "左航",
+      "bio": "哥哥的朋友 · 幽默，熟悉学校里的人和事"
+    }
+  ],
+  "id": "shoukun-good-weather",
+  "title": "好天气 · 校园群像手机",
+  "description": "第一章试玩：开学典礼后，从哥哥的一条微信开始。完全架空校园 AU。",
+  "revision": 1,
+  "phone": {
+    "owner": "{{playerName}}",
+    "time": "16:00",
+    "wallpaper": "apple-wwdc26"
+  },
+  "variables": {
+    "ch01.greeting": "unselected",
+    "ch01.expression": "unselected",
+    "ch01.zuoReply": "unselected",
+    "ch01.phase": "arrival",
+    "chapter.chapter-01-good-weather.completed": false,
+    "story.dayLabel": "开学第一天"
+  },
+  "chats": [],
+  "content": {},
+  "events": [],
+  "tests": []
+}

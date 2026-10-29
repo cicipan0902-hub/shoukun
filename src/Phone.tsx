@@ -1,3 +1,20 @@
+import {
+  chatItemAllowed,
+  canSubmitChoice,
+  contactAllowed,
+  continuation,
+  interactionConfig,
+} from "./personalization/chatRuntime";
+import { type ChatDestination, CampusPlayContext } from "./personalization/CampusPlayContext";
+import { ActivityDocumentView } from "./personalization/ActivityDocumentView";
+import { activityDocument } from "./personalization/activityDocuments";
+import { StoryGuide } from "./personalization/ChapterHelp";
+import { AvatarImage } from "./media/AvatarImage";
+import { restoreSave } from "./saveRestore";
+import { lazy, useContext } from "react";
+const AuthorDevTools = import.meta.env.DEV
+  ? lazy(() => import("./authoring/DevTools"))
+  : null;
 import { StatusGlyph } from "./ios/StatusGlyph";
 import { SocialDetail, socialDetailApps } from "./skins/SocialDetails";
 import { NativeCalculator } from "./ios/Calculator";
@@ -80,15 +97,17 @@ export function AppIcon({
   time?: string;
 }) {
   const a = getApp(id);
+  const play = useContext(CampusPlayContext);
+  const artwork = custom || String(play?.work.variables[`author.appIcon.${id}`] || "");
   const Icon = a.icon;
   return (
     <span className={`app-icon-wrap ${small ? "small" : ""}`}>
       <span className="app-icon" style={{ background: a.color }}>
-        {custom ? (
-          safeMedia(custom) ? (
-            <img src={safeMedia(custom)} alt="自定义图标" />
+        {artwork ? (
+          safeMedia(artwork) ? (
+            <img src={safeMedia(artwork)} alt="自定义图标" />
           ) : (
-            <span>{custom.slice(0, 2)}</span>
+            <span>{artwork.slice(0, 2)}</span>
           )
         ) : hasNativeArtwork(id) ? (
           <AppArtwork id={id} date={date} time={time} />
@@ -133,6 +152,7 @@ function PhoneRuntime({
   onRuntime?: (s: Runtime) => void;
 }) {
   const [app, setApp] = useState("");
+  const [destination, setDestination] = useState<ChatDestination & { sequence: number }>({ sequence: 0 });
   const [homeRequest, setHomeRequest] = useState(0);
   const [locked, setLocked] = useState(!creator);
   const [pinOpen, setPinOpen] = useState(false);
@@ -203,8 +223,8 @@ function PhoneRuntime({
       .get(work.id)
       .then((saved) => {
         if (!active) return;
-        if (saved && saved.state.revision === work.updatedAt)
-          setOwn(saved.state);
+        const restored = saved ? restoreSave(work, saved.state) : null;
+        if (restored) setOwn(restored);
         else {
           setOwn(dispatch(work, initialRuntime(work), "start"));
           if (saved) setLoadError("作品已更新，已开始新的进度。");
@@ -265,8 +285,9 @@ function PhoneRuntime({
     for (const id of appSnapshots.current.keys())
       if (!recent.includes(id) && id !== app) appSnapshots.current.delete(id);
   };
-  const open = (id: string) => {
+  const open = (id: string, target?: ChatDestination) => {
     if (!work.apps.some((a) => a.id === id && a.installed)) return;
+    setDestination((previous) => ({ ...target, sequence: previous.sequence + 1 }));
     setApp(id);
     setKeyboard(false);
     setRecent((v) => [id, ...v.filter((a) => a !== id)].slice(0, 8));
@@ -317,482 +338,592 @@ function PhoneRuntime({
       className={`phone-shell ios18 ${work.phone.theme === "dark" ? "dark-phone" : ""}`}
     >
       <KeyboardContext.Provider value={setKeyboard}>
-        <div
-          className={`phone-screen wallpaper-${work.phone.wallpaper} ${locked ? "is-locked" : ""} ${app ? "in-app" : ""} ${keyboard ? "keyboard-open" : ""}`}
-          data-app={app}
-          onDragStart={(e) => e.preventDefault()}
-          onPointerDown={(e) => {
-            gestureConsumed.current = false;
-            const button = (e.target as HTMLElement).closest<HTMLElement>(
-              "[data-app-id]",
-            );
-            if (button) {
-              pressTimer.current = setTimeout(() => {
-                gestureConsumed.current = true;
-                setContextApp(button.dataset.appId || "");
-              }, 550);
-            }
-            const box = e.currentTarget.getBoundingClientRect(),
-              x = (e.clientX - box.left) / deviceScale,
-              y = (e.clientY - box.top) / deviceScale;
-            gesture.current = {
-              x,
-              y,
-              time: Date.now(),
-              zone: y < 58 ? "top" : y > 818 ? "bottom" : locked ? "lock" : "",
-            };
-          }}
-          onPointerMove={(e) => {
-            if (Math.abs(e.movementX) > 5 || Math.abs(e.movementY) > 5)
-              clearTimeout(pressTimer.current);
-          }}
-          onPointerCancel={() => clearTimeout(pressTimer.current)}
-          onPointerUp={(e) => {
-            clearTimeout(pressTimer.current);
-            const box = e.currentTarget.getBoundingClientRect(),
-              y = (e.clientY - box.top) / deviceScale,
-              g = gesture.current;
-            const dy = y - g.y;
-            if (g.zone === "top" && dy > 65)
-              setPanel(g.x > 230 ? "control" : "notification");
-            else if ((g.zone === "bottom" || g.zone === "lock") && dy < -55) {
-              gestureConsumed.current = true;
-              if (!locked) captureApp();
-              setKeyboard(false);
-              if (panel) {
-                setPanel("");
-              } else if (locked) {
-                beginUnlock();
-              } else if (g.zone === "bottom" && Date.now() - g.time > 450) {
-                captureApp();
-                setPanel("switcher");
-              } else {
-                setApp("");
-                setPanel("");
-                setFolder("");
-              }
-            }
-          }}
-          onClickCapture={(e) => {
-            const target = (e.target as HTMLElement).closest(
-              ".home-app-grid button,.dock button",
-            );
-            if (target) {
-              setLaunchOrigin(
-                readLauncherOrigin(target as HTMLElement, e.currentTarget),
-              );
-            }
+        <CampusPlayContext.Provider
+          value={{
+            work,
+            state: s,
+            read: (id) => event("read", id),
+            choose: (id) => {
+              if (canSubmitChoice(work, runtimeRef.current, id))
+                update(choose(work, runtimeRef.current, id));
+            },
+            navigate: open,
+            event,
           }}
         >
-          <div className="wallpaper-orb orb-one" />
-          <div className="wallpaper-orb orb-two" />
-          <div className="status-bar">
-            <button
-              onClick={() =>
-                setPanel(panel === "notification" ? "" : "notification")
-              }
-              className="status-time"
-              aria-label="通知中心"
-            >
-              {displayTime}
-              <StatusGlyph kind="silent" />
-            </button>
-            <div className="dynamic-island" />
-            <button
-              className="signals"
-              onClick={() => setPanel(panel === "control" ? "" : "control")}
-              aria-label="控制中心"
-            >
-              <StatusGlyph kind="cellular" />
-              <StatusGlyph kind="wifi" />
-              <span
-                className={`ios-battery${work.phone.battery <= 20 ? " low-battery" : ""}`}
-              >
-                <span style={{ width: `${work.phone.battery}%` }} />
-                <b>{work.phone.battery}</b>
-              </span>
-            </button>
-          </div>
-          <AnimatePresence mode="wait">
-            {locked && !(quickCamera && app === "camera") ? (
-              <DeviceLock
-                work={
-                  s.date
-                    ? { ...work, phone: { ...work.phone, date: s.date } }
-                    : work
-                }
-                time={displayTime}
-                notices={s.notifications}
-                onDismiss={dismissNotice}
-                pinOpen={pinOpen}
-                setPinOpen={setPinOpen}
-                error={pinError}
-                onUnlock={unlock}
-                onLight={() => setPanel("light")}
-                onCamera={() => {
-                  setQuickCamera(true);
-                  open("camera");
-                }}
-              />
-            ) : app && app !== "appstore" ? (
-              <AppWindow
-                key={app}
-                className={`app-screen engine-${plugin.engine} skin-${app}`}
-                creator={creator}
-                origin={launchOrigin}
-              >
-                <AppContent
-                  app={plugin}
-                  name={
-                    work.apps.find((a) => a.id === app)?.name ?? plugin.name
+          <div
+            style={
+              safeMedia(work.phone.wallpaper).startsWith("data:image/")
+                ? {
+                    backgroundImage: `url("${safeMedia(work.phone.wallpaper)}")`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
                   }
-                  items={[
-                    ...(work.data[app] ?? []),
-                    ...(s.messages[app] ?? []),
-                  ]}
-                  creator={creator}
-                  state={s}
-                  onRead={(id) => event("read", id)}
-                  onEdit={(item) => onEdit?.(app, item)}
-                  onAdd={() => onAdd?.(app)}
-                  onBack={() => setApp("")}
-                  onSettings={onSettings}
-                  onUi={(key, value) => {
-                    const current = runtimeRef.current;
-                    update(
-                      dispatch(
-                        work,
-                        {
-                          ...current,
-                          ui: {
-                            ...current.ui,
-                            [app]: { ...current.ui?.[app], [key]: value },
-                          },
-                        },
-                        "variable",
-                        `ui:${app}:${key}`,
-                      ),
-                    );
-                  }}
-                  work={work}
-                />
-              </AppWindow>
-            ) : (
-              <HomeLauncher
-                key={
-                  "home-" + homeRequest + (app === "appstore" ? "store" : "")
-                }
-                storeOpen={app === "appstore"}
-                closeStore={() => setApp("")}
-                work={work}
-                layout={deviceLayout.layout}
-                change={deviceLayout.change}
-                importLayout={deviceLayout.importLayout}
-                error={deviceLayout.error}
-                open={open}
-                onFolder={setFolder}
-                search={() => setPanel("search")}
-                time={displayTime}
-                icon={(a, small) => (
-                  <AppIcon
-                    key={a.id}
-                    id={a.id}
-                    name={small ? undefined : a.name}
-                    small={small}
-                    custom={a.icon}
-                    date={s.date || work.phone.date}
-                    time={s.time}
-                  />
-                )}
-                clearApp={(id) =>
-                  update({
-                    ...runtimeRef.current,
-                    messages: Object.fromEntries(
-                      Object.entries(runtimeRef.current.messages).filter(
-                        ([app]) => app !== id,
-                      ),
-                    ),
-                  })
-                }
-              />
-            )}
-          </AnimatePresence>
-          {folder && (
-            <div className="folder-overlay" onClick={() => setFolder("")}>
-              <h2>{folder}</h2>
-              <div className="folder-apps" onClick={(e) => e.stopPropagation()}>
-                {apps
-                  .filter((a) => a.folder === folder)
-                  .map((a) => (
-                    <button key={a.id} onClick={() => open(a.id)}>
-                      <AppIcon id={a.id} name={a.name} custom={a.icon} />
-                    </button>
-                  ))}
-              </div>
-              <button className="glass-btn" onClick={() => setFolder("")}>
-                关闭文件夹
-              </button>
-            </div>
-          )}
-          {panel === "control" && (
-            <ControlCenter
-              battery={work.phone.battery}
-              network={work.phone.network}
-              close={() => setPanel("")}
-            />
-          )}
-          {panel && panel !== "control" && panel !== "switcher" && (
-            <div
-              className={`system-panel ${panel === "light" ? "flash-on" : ""}`}
-            >
-              <button className="panel-close" onClick={() => setPanel("")}>
-                关闭 <ChevronLeft size={14} />
-              </button>
-              {panel === "notification" ? (
-                <>
-                  <h2>通知中心</h2>
-                  {work.phone.notifications && s.notifications.length ? (
-                    <SystemNotifications
-                      notices={s.notifications}
-                      apps={work.apps}
-                      onOpen={() => {
-                        setPanel("");
-                        if (locked) beginUnlock();
-                        else if (installedApps.some((a) => a.id === "messages"))
-                          open("messages");
-                      }}
-                      onDismiss={dismissNotice}
-                    />
-                  ) : (
-                    <p>没有新通知</p>
-                  )}
-                </>
-              ) : panel === "search" ? (
-                <>
-                  <h2>搜索 App</h2>
-                  <AppSearch apps={installedApps} open={open} />
-                </>
-              ) : (
-                <h2>手电筒已打开</h2>
-              )}
-            </div>
-          )}
-          {!creator && s.choices.length > 0 && !locked && (
-            <div className="story-overlay">
-              <span className="eyebrow">故事来到一个岔路口</span>
-              <h3>你会如何选择？</h3>
-              {s.choices.map((c) => (
-                <button
-                  key={c.target}
-                  onClick={() => update(choose(work, s, c.target))}
-                >
-                  {c.label}
-                  <ArrowUp size={15} />
-                </button>
-              ))}
-            </div>
-          )}
-          {!creator && s.endings.length > 0 && !locked && (
-            <div className="story-overlay ending">
-              <span className="eyebrow">ENDING · {s.endings.length}</span>
-              <h2>故事在这里停泊。</h2>
-              <p>{s.endings[s.endings.length - 1]}</p>
-              <button
-                onClick={() => {
-                  update(dispatch(work, initialRuntime(work), "start"));
+                : undefined
+            }
+            className={`phone-screen ${safeMedia(work.phone.wallpaper) ? "" : `wallpaper-${work.phone.wallpaper}`} ${locked ? "is-locked" : ""} ${app ? "in-app" : ""} ${keyboard ? "keyboard-open" : ""}`}
+            data-app={app}
+            onDragStart={(e) => e.preventDefault()}
+            onPointerDown={(e) => {
+              gestureConsumed.current = false;
+              const button = (e.target as HTMLElement).closest<HTMLElement>(
+                "[data-app-id]",
+              );
+              if (button) {
+                pressTimer.current = setTimeout(() => {
+                  gestureConsumed.current = true;
+                  setContextApp(button.dataset.appId || "");
+                }, 550);
+              }
+              const box = e.currentTarget.getBoundingClientRect(),
+                x = (e.clientX - box.left) / deviceScale,
+                y = (e.clientY - box.top) / deviceScale;
+              gesture.current = {
+                x,
+                y,
+                time: Date.now(),
+                zone:
+                  y < 58 ? "top" : y > 818 ? "bottom" : locked ? "lock" : "",
+              };
+            }}
+            onPointerMove={(e) => {
+              if (Math.abs(e.movementX) > 5 || Math.abs(e.movementY) > 5)
+                clearTimeout(pressTimer.current);
+            }}
+            onPointerCancel={() => clearTimeout(pressTimer.current)}
+            onPointerUp={(e) => {
+              clearTimeout(pressTimer.current);
+              const box = e.currentTarget.getBoundingClientRect(),
+                y = (e.clientY - box.top) / deviceScale,
+                g = gesture.current;
+              const dy = y - g.y;
+              if (g.zone === "top" && dy > 65)
+                setPanel(g.x > 230 ? "control" : "notification");
+              else if ((g.zone === "bottom" || g.zone === "lock") && dy < -55) {
+                gestureConsumed.current = true;
+                if (!locked) captureApp();
+                setKeyboard(false);
+                if (panel) {
+                  setPanel("");
+                } else if (locked) {
+                  beginUnlock();
+                } else if (g.zone === "bottom" && Date.now() - g.time > 450) {
+                  captureApp();
+                  setPanel("switcher");
+                } else {
                   setApp("");
-                  setLocked(true);
-                }}
+                  setPanel("");
+                  setFolder("");
+                }
+              }
+            }}
+            onClickCapture={(e) => {
+              const target = (e.target as HTMLElement).closest(
+                ".home-app-grid button,.dock button",
+              );
+              if (target) {
+                setLaunchOrigin(
+                  readLauncherOrigin(target as HTMLElement, e.currentTarget),
+                );
+              }
+            }}
+          >
+            <div className="wallpaper-orb orb-one" />
+            <div className="wallpaper-orb orb-two" />
+            <div className="status-bar">
+              <button
+                onClick={() =>
+                  setPanel(panel === "notification" ? "" : "notification")
+                }
+                className="status-time"
+                aria-label="通知中心"
               >
-                重新开始
+                {displayTime}
+                <StatusGlyph kind="silent" />
+              </button>
+              <div className="dynamic-island" />
+              <button
+                className="signals"
+                onClick={() => setPanel(panel === "control" ? "" : "control")}
+                aria-label="控制中心"
+              >
+                <StatusGlyph kind="cellular" />
+                <StatusGlyph kind="wifi" />
+                <span
+                  className={`ios-battery${work.phone.battery <= 20 ? " low-battery" : ""}`}
+                >
+                  <span style={{ width: `${work.phone.battery}%` }} />
+                  <b>{work.phone.battery}</b>
+                </span>
               </button>
             </div>
-          )}
-          {!creator && s.incomingCall && (
-            <div className="incoming-call-screen">
-              <small>
-                {s.incomingCall.status === "ringing" ? "来电" : "通话中"} ·
-                作品内模拟
-              </small>
-              <div className="incoming-avatar">
-                {s.incomingCall.caller.slice(0, 1)}
-              </div>
-              <h2>{s.incomingCall.caller}</h2>
-              {s.incomingCall.status === "answered" &&
-                (() => {
-                  const record = work.data.phone?.find(
-                    (i) => i.id === s.incomingCall?.target,
-                  );
-                  return record?.kind === "audio" && safeMedia(record.media) ? (
-                    <audio controls src={safeMedia(record.media)} />
-                  ) : (
-                    <p>这是一通虚构来电。</p>
-                  );
-                })()}
-              <div className="incoming-actions">
-                <button
-                  className="decline-call"
-                  onClick={() => {
-                    const call = runtimeRef.current.incomingCall;
-                    if (call)
+            <AnimatePresence mode="wait">
+              {locked && !(quickCamera && app === "camera") ? (
+                <DeviceLock
+                  work={
+                    s.date
+                      ? {
+                          ...work,
+                          variables: s.variables,
+                          phone: { ...work.phone, date: s.date },
+                        }
+                      : work
+                  }
+                  time={displayTime}
+                  notices={s.notifications}
+                  onDismiss={dismissNotice}
+                  pinOpen={pinOpen}
+                  setPinOpen={setPinOpen}
+                  error={pinError}
+                  onUnlock={unlock}
+                  onLight={() => setPanel("light")}
+                  onCamera={() => {
+                    setQuickCamera(true);
+                    open("camera");
+                  }}
+                />
+              ) : app && app !== "appstore" ? (
+                <AppWindow
+                  key={app}
+                  className={`app-screen engine-${plugin.engine} skin-${app}`}
+                  creator={creator}
+                  origin={launchOrigin}
+                >
+                  <AppContent
+                    key={`${app}-${destination.sequence}`}
+                    destination={destination}
+                    app={plugin}
+                    name={
+                      work.apps.find((a) => a.id === app)?.name ?? plugin.name
+                    }
+                    items={[
+                      ...(work.data[app] ?? []),
+                      ...(s.messages[app] ?? []),
+                    ]}
+                    creator={creator}
+                    state={s}
+                    onRead={(id) => event("read", id)}
+                    onEdit={(item) => onEdit?.(app, item)}
+                    onAdd={() => onAdd?.(app)}
+                    onBack={() => setApp("")}
+                    onSettings={onSettings}
+                    onUi={(key, value) => {
+                      const current = runtimeRef.current;
                       update(
                         dispatch(
                           work,
-                          { ...runtimeRef.current, incomingCall: null },
-                          call.status === "ringing"
-                            ? "callDeclined"
-                            : "callEnded",
-                          call.target || call.caller,
+                          {
+                            ...current,
+                            ui: {
+                              ...current.ui,
+                              [app]: { ...current.ui?.[app], [key]: value },
+                            },
+                          },
+                          "variable",
+                          `ui:${app}:${key}`,
                         ),
                       );
-                  }}
+                    }}
+                    work={work}
+                  />
+                </AppWindow>
+              ) : (
+                <HomeLauncher
+                  key={
+                    "home-" + homeRequest + (app === "appstore" ? "store" : "")
+                  }
+                  storeOpen={app === "appstore"}
+                  closeStore={() => setApp("")}
+                  work={work}
+                  layout={deviceLayout.layout}
+                  change={deviceLayout.change}
+                  importLayout={deviceLayout.importLayout}
+                  error={deviceLayout.error}
+                  open={open}
+                  onFolder={setFolder}
+                  search={() => setPanel("search")}
+                  time={displayTime}
+                  icon={(a, small) => (
+                    <AppIcon
+                      key={a.id}
+                      id={a.id}
+                      name={small ? undefined : a.name}
+                      small={small}
+                      custom={a.icon}
+                      date={s.date || work.phone.date}
+                      time={s.time}
+                    />
+                  )}
+                  clearApp={(id) =>
+                    update({
+                      ...runtimeRef.current,
+                      messages: Object.fromEntries(
+                        Object.entries(runtimeRef.current.messages).filter(
+                          ([app]) => app !== id,
+                        ),
+                      ),
+                    })
+                  }
+                />
+              )}
+            </AnimatePresence>
+            {folder && (
+              <div className="folder-overlay" onClick={() => setFolder("")}>
+                <h2>{folder}</h2>
+                <div
+                  className="folder-apps"
+                  onClick={(e) => e.stopPropagation()}
                 >
-                  <PhoneIcon size={25} />
-                  <span>
-                    {s.incomingCall.status === "ringing" ? "拒接" : "挂断"}
-                  </span>
+                  {apps
+                    .filter((a) => a.folder === folder)
+                    .map((a) => (
+                      <button key={a.id} onClick={() => open(a.id)}>
+                        <AppIcon id={a.id} name={a.name} custom={a.icon} />
+                      </button>
+                    ))}
+                </div>
+                <button className="glass-btn" onClick={() => setFolder("")}>
+                  关闭文件夹
                 </button>
-                {s.incomingCall.status === "ringing" && (
+              </div>
+            )}
+            {panel === "control" && (
+              <ControlCenter
+                battery={work.phone.battery}
+                network={work.phone.network}
+                close={() => setPanel("")}
+              />
+            )}
+            {panel && panel !== "control" && panel !== "switcher" && (
+              <div
+                className={`system-panel ${panel === "light" ? "flash-on" : ""}`}
+              >
+                <button className="panel-close" onClick={() => setPanel("")}>
+                  关闭 <ChevronLeft size={14} />
+                </button>
+                {panel === "notification" ? (
+                  <>
+                    <h2>通知中心</h2>
+                    {work.phone.notifications && s.notifications.length ? (
+                      <SystemNotifications
+                        notices={s.notifications}
+                        apps={work.apps}
+                        onOpen={() => {
+                          setPanel("");
+                          if (locked) beginUnlock();
+                          else if (
+                            installedApps.some((a) => a.id === "messages")
+                          )
+                            open("messages");
+                        }}
+                        onDismiss={dismissNotice}
+                      />
+                    ) : (
+                      <p>没有新通知</p>
+                    )}
+                  </>
+                ) : panel === "search" ? (
+                  <>
+                    <h2>搜索 App</h2>
+                    <AppSearch apps={installedApps} open={open} />
+                  </>
+                ) : (
+                  <h2>手电筒已打开</h2>
+                )}
+              </div>
+            )}
+            {!creator &&
+              !work.id.startsWith("shoukun-good-weather") &&
+              s.choices.length > 0 &&
+              !locked && (
+                <div className="story-overlay">
+                  <span className="eyebrow">故事来到一个岔路口</span>
+                  <h3>你会如何选择？</h3>
+                  {s.choices.map((c) => (
+                    <button
+                      key={c.target}
+                      onClick={() => update(choose(work, s, c.target))}
+                    >
+                      {c.label}
+                      <ArrowUp size={15} />
+                    </button>
+                  ))}
+                </div>
+              )}
+            {!creator && !locked && !panel && <StoryGuide />}
+            {!creator &&
+              s.endings.length > 0 &&
+              (!s.ui?.story?.dismissedEnding ||
+                s.endings.length > Number(s.ui?.story?.dismissedCount || 1)) &&
+              !locked && (
+                <div className="story-overlay ending">
+                  <span className="eyebrow">ENDING · {s.endings.length}</span>
+                  <h2>故事在这里停泊。</h2>
+                  <p>{s.endings[s.endings.length - 1]}</p>
+                  {continuation(work, s) && (
+                    <button
+                      onClick={() => {
+                        const c = continuation(work, runtimeRef.current);
+                        if (!c) return;
+                        const current = runtimeRef.current;
+                        update(
+                          dispatch(
+                            work,
+                            {
+                              ...current,
+                              ui: {
+                                ...current.ui,
+                                story: {
+                                  ...current.ui?.story,
+                                  dismissedEnding: true,
+                                  dismissedCount: current.endings.length,
+                                },
+                              },
+                            },
+                            c.event,
+                            c.target,
+                          ),
+                        );
+                        setApp("wechat");
+                      }}
+                    >
+                      {continuation(work, s)!.label}
+                    </button>
+                  )}
+                  {interactionConfig(work) && (
+                    <button
+                      onClick={() =>
+                        update({
+                          ...runtimeRef.current,
+                          ui: {
+                            ...runtimeRef.current.ui,
+                            story: {
+                              ...runtimeRef.current.ui?.story,
+                              dismissedEnding: true,
+                              dismissedCount: runtimeRef.current.endings.length,
+                            },
+                          },
+                        })
+                      }
+                    >
+                      返回手机
+                    </button>
+                  )}
                   <button
-                    className="accept-call"
+                    onClick={() => {
+                      update(dispatch(work, initialRuntime(work), "start"));
+                      setApp("");
+                      setLocked(true);
+                    }}
+                  >
+                    重新开始
+                  </button>
+                </div>
+              )}
+            {!creator && s.incomingCall && (
+              <div className="incoming-call-screen">
+                <small>
+                  {s.incomingCall.status === "ringing" ? "来电" : "通话中"} ·
+                  作品内模拟
+                </small>
+                <div className="incoming-avatar">
+                  <AvatarImage
+                    name={s.incomingCall.caller}
+                    src={
+                      work.data.contacts?.find(
+                        (i) => i.title === s.incomingCall?.caller,
+                      )?.avatar
+                    }
+                  />
+                </div>
+                <h2>{s.incomingCall.caller}</h2>
+                {s.incomingCall.status === "answered" &&
+                  (() => {
+                    const record = work.data.phone?.find(
+                      (i) => i.id === s.incomingCall?.target,
+                    );
+                    return record?.kind === "audio" &&
+                      safeMedia(record.media) ? (
+                      <audio controls src={safeMedia(record.media)} />
+                    ) : (
+                      <p>{record?.body || "这是一通虚构来电。"}</p>
+                    );
+                  })()}
+                <div className="incoming-actions">
+                  <button
+                    className="decline-call"
                     onClick={() => {
                       const call = runtimeRef.current.incomingCall;
                       if (call)
                         update(
                           dispatch(
                             work,
-                            {
-                              ...runtimeRef.current,
-                              incomingCall: { ...call, status: "answered" },
-                            },
-                            "callAnswered",
+                            { ...runtimeRef.current, incomingCall: null },
+                            call.status === "ringing"
+                              ? "callDeclined"
+                              : "callEnded",
                             call.target || call.caller,
                           ),
                         );
                     }}
                   >
                     <PhoneIcon size={25} />
-                    <span>接听</span>
+                    <span>
+                      {s.incomingCall.status === "ringing" ? "拒接" : "挂断"}
+                    </span>
                   </button>
-                )}
-              </div>
-            </div>
-          )}
-          {banner && !locked && (
-            <button
-              className="device-banner"
-              onClick={() => {
-                setBanner("");
-                setPanel("notification");
-              }}
-            >
-              <AppIcon
-                id={notificationContent(banner, work.apps).appId}
-                small
-              />
-              <span>
-                <strong>{notificationContent(banner, work.apps).title}</strong>
-                <span>{notificationContent(banner, work.apps).body}</span>
-              </span>
-            </button>
-          )}
-          {panel === "switcher" && (
-            <div className="device-switcher">
-              <div className="switcher-cards">
-                {recent
-                  .filter(
-                    (id) =>
-                      installedApps.some((a) => a.id === id) &&
-                      appSnapshots.current.has(id),
-                  )
-                  .map((id) => (
+                  {s.incomingCall.status === "ringing" && (
                     <button
-                      className="recent-app-card"
-                      key={id}
-                      onClick={() => open(id)}
+                      className="accept-call"
+                      onClick={() => {
+                        const call = runtimeRef.current.incomingCall;
+                        if (call)
+                          update(
+                            dispatch(
+                              work,
+                              {
+                                ...runtimeRef.current,
+                                incomingCall: { ...call, status: "answered" },
+                              },
+                              "callAnswered",
+                              call.target || call.caller,
+                            ),
+                          );
+                      }}
                     >
-                      <span className="recent-app-label">
-                        <AppIcon id={id} small />
-                        <strong>
-                          {work.apps.find((a) => a.id === id)?.name}
-                        </strong>
-                      </span>
-                      <span className="recent-app-window">
-                        <span
-                          className="recent-app-snapshot"
-                          aria-hidden="true"
-                          inert
-                          ref={(el) => {
-                            const snapshot = appSnapshots.current.get(id);
-                            if (el && snapshot)
-                              el.replaceChildren(snapshot.cloneNode(true));
-                          }}
-                        />
-                      </span>
+                      <PhoneIcon size={25} />
+                      <span>接听</span>
                     </button>
-                  ))}
+                  )}
+                </div>
               </div>
-              <button className="switcher-done" onClick={() => setPanel("")}>
-                完成
+            )}
+            {banner && !locked && (
+              <button
+                className="device-banner"
+                onClick={() => {
+                  setBanner("");
+                  setPanel("notification");
+                }}
+              >
+                <AppIcon
+                  id={notificationContent(banner, work.apps).appId}
+                  small
+                />
+                <span>
+                  <strong>
+                    {notificationContent(banner, work.apps).title}
+                  </strong>
+                  <span>{notificationContent(banner, work.apps).body}</span>
+                </span>
               </button>
-            </div>
-          )}
-          {contextApp && (
-            <div
-              className="home-context-shade"
-              onClick={() => setContextApp("")}
-            >
-              <div className="home-context-menu">
-                <AppIcon id={contextApp} />
-                <strong>
-                  {work.apps.find((a) => a.id === contextApp)?.name}
-                </strong>
-                <button
-                  onClick={() => {
-                    open(contextApp);
-                    setContextApp("");
-                  }}
-                >
-                  打开 App
+            )}
+            {panel === "switcher" && (
+              <div className="device-switcher">
+                <div className="switcher-cards">
+                  {recent
+                    .filter(
+                      (id) =>
+                        installedApps.some((a) => a.id === id) &&
+                        appSnapshots.current.has(id),
+                    )
+                    .map((id) => (
+                      <button
+                        className="recent-app-card"
+                        key={id}
+                        onClick={() => open(id)}
+                      >
+                        <span className="recent-app-label">
+                          <AppIcon id={id} small />
+                          <strong>
+                            {work.apps.find((a) => a.id === id)?.name}
+                          </strong>
+                        </span>
+                        <span className="recent-app-window">
+                          <span
+                            className="recent-app-snapshot"
+                            aria-hidden="true"
+                            inert
+                            ref={(el) => {
+                              const snapshot = appSnapshots.current.get(id);
+                              if (el && snapshot)
+                                el.replaceChildren(snapshot.cloneNode(true));
+                            }}
+                          />
+                        </span>
+                      </button>
+                    ))}
+                </div>
+                <button className="switcher-done" onClick={() => setPanel("")}>
+                  完成
                 </button>
-                <button
-                  onClick={() => {
-                    setContextApp("");
-                    setPanel("search");
-                  }}
-                >
-                  在 App 库中查看
-                </button>
-                <button onClick={() => setContextApp("")}>取消</button>
               </div>
-            </div>
+            )}
+            {contextApp && (
+              <div
+                className="home-context-shade"
+                onClick={() => setContextApp("")}
+              >
+                <div className="home-context-menu">
+                  <AppIcon id={contextApp} />
+                  <strong>
+                    {work.apps.find((a) => a.id === contextApp)?.name}
+                  </strong>
+                  <button
+                    onClick={() => {
+                      open(contextApp);
+                      setContextApp("");
+                    }}
+                  >
+                    打开 App
+                  </button>
+                  <button
+                    onClick={() => {
+                      setContextApp("");
+                      setPanel("search");
+                    }}
+                  >
+                    在 App 库中查看
+                  </button>
+                  <button onClick={() => setContextApp("")}>取消</button>
+                </div>
+              </div>
+            )}
+            {keyboard && <DeviceKeyboard close={() => setKeyboard(false)} />}
+            {loadError && (
+              <button
+                className="runtime-error"
+                onClick={() => setLoadError("")}
+              >
+                {loadError}
+              </button>
+            )}
+            <button
+              className="home-indicator"
+              aria-label="返回桌面"
+              onClick={() => {
+                if (gestureConsumed.current) return;
+                if (locked) {
+                  beginUnlock();
+                  return;
+                }
+                captureApp();
+                setHomeRequest((n) => n + 1);
+                setKeyboard(false);
+                setApp("");
+                setFolder("");
+                setPanel("");
+              }}
+            />
+            <div className="screen-dimmer" />
+            <div className="hardware-reflection" />
+          </div>
+          {AuthorDevTools && ready && !creator && (
+            <Suspense fallback={null}>
+              <AuthorDevTools work={work} state={s} onState={update} />
+            </Suspense>
           )}
-          {keyboard && <DeviceKeyboard close={() => setKeyboard(false)} />}
-          {loadError && (
-            <button className="runtime-error" onClick={() => setLoadError("")}>
-              {loadError}
-            </button>
-          )}
-          <button
-            className="home-indicator"
-            aria-label="返回桌面"
-            onClick={() => {
-              if (gestureConsumed.current) return;
-              if (locked) {
-                beginUnlock();
-                return;
-              }
-              captureApp();
-              setHomeRequest((n) => n + 1);
-              setKeyboard(false);
-              setApp("");
-              setFolder("");
-              setPanel("");
-            }}
-          />
-          <div className="screen-dimmer" />
-          <div className="hardware-reflection" />
-        </div>
+        </CampusPlayContext.Provider>
       </KeyboardContext.Provider>
     </div>
   );
@@ -855,6 +986,7 @@ function Media({ item }: { item: Item }) {
   );
 }
 function AppContent({
+  destination,
   app,
   name,
   items,
@@ -868,6 +1000,7 @@ function AppContent({
   onUi,
   work,
 }: {
+  destination?: ChatDestination;
   app: AppPlugin;
   name: string;
   items: Item[];
@@ -882,17 +1015,40 @@ function AppContent({
   work: Work;
 }) {
   const [detail, setDetail] = useState<Item | null>(null);
-  const [thread, setThread] = useState("");
+  useEffect(() => {
+    if (!destination?.itemId) return;
+    const item = items.find((i) => i.id === destination.itemId);
+    if (item && visible(item, state) && (app.id !== "wechat" || chatItemAllowed(work, state, item))) {
+      setDetail(item);
+      onRead(item.id);
+    }
+    // A navigation destination is consumed only when this App view is mounted.
+  }, []);
+  const [thread, setThread] = useState(destination?.thread || "");
   const [tab, setTab] = useState(app.tabs[0]);
   const [q, setQ] = useState("");
   const [pw, setPw] = useState("");
-  const [unlocks, setUnlocks] = useState<string[]>([]);
+  const [unlocks, setUnlocks] = useState<string[]>(() => {
+    const saved = state.ui?.[app.id]?.passwordUnlocks;
+    return Array.isArray(saved) ? saved : [];
+  });
   const [pwError, setPwError] = useState("");
   const [likes, setLikes] = useState<string[]>([]);
   const shown = items
-    .filter((i) => creator || visible(i, state))
+    .filter(
+      (i) =>
+        creator ||
+        (visible(i, state) &&
+          (app.id !== "wechat" || chatItemAllowed(work, state, i)) &&
+          (app.id !== "contacts" || contactAllowed(work, state, i))),
+    )
     .filter((i) =>
       (i.title + i.body + i.sender).toLowerCase().includes(q.toLowerCase()),
+    )
+    .sort((a, b) =>
+      app.id === "wechat"
+        ? state.unlocked.indexOf(a.id) - state.unlocked.indexOf(b.id)
+        : 0,
     );
   const filtered =
     tab === "收藏"
@@ -925,7 +1081,10 @@ function AppContent({
       {detail.password && !creator && !unlocks.includes(detail.id) ? (
         <div className="locked-note">
           <LockKeyhole size={36} />
-          <h3>这条内容已锁定</h3>
+          <h3>{detail.meta.minigameId ? "线索解锁" : "这条内容已锁定"}</h3>
+          {detail.meta.hint && (
+            <p className="minigame-hint">{detail.meta.hint}</p>
+          )}
           <input
             type="password"
             placeholder="内容密码"
@@ -936,6 +1095,7 @@ function AppContent({
             onClick={() => {
               if (pw === detail.password) {
                 setUnlocks([...unlocks, detail.id]);
+                onUi?.("passwordUnlocks", [...unlocks, detail.id]);
                 onRead(detail.id);
                 setPwError("");
               } else setPwError("密码不正确");
@@ -980,12 +1140,16 @@ function AppContent({
       )}
     </div>
   ) : null;
+  const activityDoc = detail && activityDocument(work, state, detail);
+  if (activityDoc && detail && !creator && (!detail.password || unlocks.includes(detail.id)))
+    return <ActivityDocumentView item={detail} document={activityDoc} back={back} />;
   if (Skin)
     return (
       <>
         <div className="catalog-slot" hidden={!!detail}>
           <Suspense fallback={<div className="catalog-loading">正在打开…</div>}>
             <Skin
+              initialView={destination?.view}
               appId={app.id}
               owner={work.phone.owner}
               virtualTime={state.time}
@@ -993,6 +1157,11 @@ function AppContent({
               onUi={creator ? undefined : onUi}
               name={name}
               items={shown}
+              readIds={state.read}
+              contacts={(work.data.contacts || []).filter(
+                (i) => creator || contactAllowed(work, state, i),
+              )}
+              ownerAvatar={String(work.variables["author.ownerAvatar"] || "")}
               creator={creator}
               onRead={onRead}
               onItem={read}

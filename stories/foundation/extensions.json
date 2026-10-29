@@ -1,0 +1,122 @@
+{
+  "content": {
+    "notes": [
+      {
+        "id": "v02-tools-guide",
+        "title": "创作工具测试说明",
+        "body": "本页为开发占位，不是正式剧情。\n查看相册《篮球场边的背影》后，会解锁《测试小游戏 · 线索盒》。测试密码：1028。\n密码错误可重试，也可退出，原主线不受影响。",
+        "kind": "note",
+        "folder": "创作测试"
+      },
+      {
+        "id": "v02-game-reward",
+        "title": "小游戏完成反馈",
+        "body": "测试成功：完成状态已经保存，可用于解锁新聊天、图片或章节。",
+        "kind": "note",
+        "folder": "创作测试",
+        "hidden": true
+      }
+    ],
+    "phone": [
+      {
+        "id": "v02-call-missed",
+        "title": "{{starName}}（未接来电）",
+        "body": "模拟来电未接通。",
+        "kind": "call",
+        "sender": "{{starName}}",
+        "hidden": true,
+        "meta": {
+          "status": "未接"
+        }
+      },
+      {
+        "id": "v02-call-ended",
+        "title": "{{starName}}（已接通）",
+        "body": "模拟通话已结束。",
+        "kind": "call",
+        "sender": "{{starName}}",
+        "hidden": true,
+        "meta": {
+          "status": "已接通"
+        }
+      }
+    ]
+  },
+  "variables": {},
+  "tests": [
+    {
+      "name": "v02-password-side-path",
+      "steps": [
+        {
+          "event": "read",
+          "target": "group-meeting"
+        },
+        {
+          "event": "read",
+          "target": "photo-light"
+        },
+        {
+          "event": "read",
+          "target": "v02-clue-box",
+          "password": "1028"
+        },
+        {
+          "event": "read",
+          "target": "wx-invitation"
+        },
+        {
+          "choose": "reply-warm"
+        },
+        {
+          "advanceMs": 6000
+        },
+        {
+          "event": "callDeclined",
+          "target": "call-star"
+        },
+        {
+          "event": "read",
+          "target": "ig-night"
+        },
+        {
+          "choose": "ending-reply"
+        }
+      ],
+      "ending": "{{playerName}}，你终于走到他面前。他没有多说，只把外套递了过来。第一天，到这里；有些话，留到明天。",
+      "expectUnlocked": [
+        "photo-light",
+        "wx-invitation",
+        "ig-night",
+        "v02-game-reward"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "v02-record-missed-call",
+      "label": "记录测试未接来电",
+      "event": "callDeclined",
+      "target": "call-star",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "v02-call-missed",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "v02-record-ended-call",
+      "label": "记录测试通话",
+      "event": "callEnded",
+      "target": "call-star",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "v02-call-ended",
+          "value": true
+        }
+      ]
+    }
+  ]
+}

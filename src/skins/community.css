@@ -1,0 +1,75 @@
+.community-app { height:100%; min-height:0; display:flex; flex-direction:column; background:#f5f6f7; color:#25282b; font-size:14px; }
+.community-scroll { flex:1; min-height:0; overflow-y:auto; overscroll-behavior:contain; padding-bottom:28px; }
+.community-app button { font:inherit; cursor:pointer; }
+.community-notice { margin:0; padding:9px 14px; font-size:11px; line-height:1.5; color:#73777d; background:#fff; }
+.community-tabs { display:flex; gap:5px; padding:9px 12px; overflow-x:auto; flex-shrink:0; background:#fff; }
+.community-tabs button { border:0; padding:8px 11px; white-space:nowrap; border-radius:18px; background:#f1f2f4; color:#52565b; }
+.community-tabs button[aria-pressed=true] { background:#fff0e1; color:#a84c13; font-weight:600; }
+.community-app .catalog-search { flex-shrink:0; margin:10px 12px; }
+.community-post { background:#fff; padding:15px; margin-bottom:9px; }
+.community-author,.community-account-row { display:flex; gap:10px; align-items:center; border:0; background:none; color:inherit; text-align:left; padding:0; }
+.community-author span small,.community-account-row small { display:block; font-size:11px; color:#898e94; margin-top:4px; line-height:1.5; }
+.community-author .catalog-avatar { flex-shrink:0; }
+.community-body { display:block; width:100%; border:0; background:none; text-align:left; padding:12px 0; color:inherit; line-height:1.7; }
+.community-body p,.market-detail p { white-space:pre-wrap; overflow-wrap:anywhere; line-height:1.8; }
+.community-body p { margin:5px 0 0; }
+.community-post img,.community-post video { max-width:100%; max-height:240px; display:block; object-fit:contain; border-radius:7px; }
+.community-photo { padding:0; border:0; background:none; }
+.community-actions { display:flex; gap:15px; align-items:center; margin-top:12px; }
+.community-actions button { display:flex; gap:4px; align-items:center; border:0; background:none; color:#6b737d; padding:5px 0; font-size:12px; }
+.community-actions button[aria-pressed=true] { color:#d76b22; }
+.community-actions small { margin-left:auto; color:#9ba1a8; font-size:11px; }
+.community-topics { margin:0 0 9px; padding:12px 15px; background:#fff; }
+.community-topics h3 { margin:0 0 10px; font-size:14px; }
+.community-topics button { width:100%; display:flex; gap:10px; border:0; background:none; text-align:left; padding:10px 0; color:#bd621f; }
+.community-topics button span { flex:1; color:#333; }
+.community-topics small { color:#92989d; font-size:11px; }
+.community-account-row { width:100%; padding:15px; background:#fff; border-bottom:1px solid #eee; }
+.community-profile { background:#fff; padding:24px 18px; margin-bottom:10px; }
+.community-profile h2 { font-size:20px; margin:12px 0 5px; }
+.community-profile p { line-height:1.7; color:#73777d; }
+.community-primary { border:0; background:#f5b635; color:#332810; padding:11px 18px; border-radius:20px; }
+.community-back { display:flex; align-items:center; min-height:45px; padding:10px 14px; border:0; background:#fff; text-align:left; color:#30363d; flex-shrink:0; }
+.community-detail { position:relative; }
+.community-detail .app-post-detail { flex:1; min-height:0; }
+.community-author-link { border:0; background:none; padding:0; color:inherit; font-weight:600 !important; }
+.community-image-link { position:absolute; right:10px; top:51px; font-size:11px !important; border:0; border-radius:12px; padding:6px 9px; background:#f2f4f6; }
+.community-zoom { width:100%; height:calc(100% - 50px); object-fit:contain; background:#15191e; }
+.market-app { background:#f6f5ef; }
+.market-app .community-tabs button[aria-pressed=true] { background:#ffe66a; color:#4c4016; }
+.market-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; padding:10px; }
+.market-card { min-width:0; background:#fff; border-radius:12px; overflow:hidden; padding-bottom:8px; }
+.market-card-open { display:flex; flex-direction:column; width:100%; border:0; padding:0; background:none; text-align:left; color:inherit; }
+.market-card-open img,.market-card-open .catalog-art { width:100%; height:140px; object-fit:cover; background:#eee9db; }
+.market-card-open strong { padding:10px 10px 5px; line-height:1.5; font-size:14px; }
+.market-price { color:#cc4d27; font-size:20px; }
+.market-card .market-price,.market-card-open small { padding:3px 10px; }
+.market-card-open small { color:#969592; font-size:11px; }
+.market-card > button { border:0; background:none; padding:8px 10px 0; font-size:12px; color:#8b7140; }
+.market-detail { padding:15px; background:#fff; }
+.market-detail > img,.market-detail > .catalog-art { width:100%; max-height:300px; object-fit:contain; border-radius:10px; }
+.market-gallery-controls { display:flex; gap:8px; margin:10px 0; }
+.market-gallery-controls button { border:0; border-radius:8px; padding:6px 10px; }
+.market-gallery-controls button[aria-pressed=true] { background:#ffe66a; }
+.market-detail > small { color:#8e9397; font-size:11px; }
+.market-detail h2 { font-size:20px; line-height:1.5; }
+.market-detail-footer { display:flex; justify-content:space-between; gap:12px; padding:14px; background:#fff; border-top:1px solid #eee; }
+.market-detail-footer > button:first-child { border:0; background:none; }
+.market-chat .community-scroll { padding:15px; }
+.market-bubble { width:fit-content; max-width:87%; padding:12px; margin:10px 0; background:#fff; border-radius:10px; line-height:1.7; overflow-wrap:anywhere; }
+.market-bubble.mine { margin-left:auto; background:#ffec91; }
+.market-result { padding:12px; border-radius:8px; background:#eee9d9; line-height:1.7; }
+.market-offers { display:grid; gap:8px; padding:12px; background:#fff; }
+.market-offers button { border:1px solid #e8dec0; background:#fff9e7; padding:12px; border-radius:9px; text-align:left; }
+.market-card-seller { display:flex; align-items:center; gap:6px; }
+.market-card-seller .catalog-avatar { width:20px; height:20px; min-width:20px; font-size:10px; }
+.market-chat .community-back { gap:7px; line-height:1.5; }
+.market-chat .community-back .catalog-avatar { flex-shrink:0; width:29px; height:29px; min-width:29px; }
+.market-decisions { display:grid; grid-template-columns:1.5fr 1fr; gap:8px; border-top:1px solid #eee; padding-top:10px; }
+.market-decisions .market-buy { background:#ffe17b; border-color:#edce69; }
+.market-offers button:disabled { opacity:.5; cursor:default; }
+.market-payment { display:grid; gap:6px; background:#fff1c7; }
+.market-payment strong { font-size:14px; }
+.market-payment small,.market-typing { color:#817653; font-size:12px; }
+
+.community-source{padding:10px 15px;background:#fff7e9;color:#65553b;font-size:12px;line-height:1.6;max-height:24dvh;overflow:auto;flex-shrink:0}.community-source p{margin:5px 0}.community-source small{display:block}.community-source a{display:inline-block;margin-top:5px;color:#8c581a}.community-media-pending{display:block;color:#8a9095;font-size:12px;margin:7px 0}

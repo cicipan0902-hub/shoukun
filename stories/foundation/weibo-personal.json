@@ -1,0 +1,551 @@
+{
+  "content": {
+    "weibo": [
+      {
+        "id": "community-account-owner",
+        "title": "",
+        "sender": "",
+        "body": "有些话先放在这里。",
+        "meta": {
+          "type": "account",
+          "accountId": "owner",
+          "characterRef": "owner",
+          "personal": "true",
+          "community": "true"
+        }
+      },
+      {
+        "id": "personal-owner-01",
+        "title": "改了三遍的志愿表",
+        "body": "填兴趣那一栏，先想到的是别人说我擅长什么。改了三遍，还是那几个字。晚饭时哥哥问我想选哪个，我说都行。他就没再问。其实我有点希望他再问一句。",
+        "sender": "",
+        "time": "开学前 · 22:16",
+        "kind": "post",
+        "folder": "个人微博",
+        "comments": [],
+        "hidden": false,
+        "meta": {
+          "type": "post",
+          "accountId": "owner",
+          "characterRef": "owner",
+          "community": "true",
+          "personal": "true",
+          "sequence": "1",
+          "imagePath": ""
+        }
+      },
+      {
+        "id": "personal-owner-02",
+        "title": "绕远路",
+        "body": "今天去买本子，走了另一边楼梯，回来晚了两分钟。朋友问是不是那边比较近，我居然点头了。买回来的本子倒是喜欢的颜色，不能算白绕。",
+        "sender": "",
+        "time": "开学后 · 晚自习前",
+        "kind": "post",
+        "folder": "个人微博",
+        "comments": [],
+        "hidden": false,
+        "meta": {
+          "type": "post",
+          "accountId": "owner",
+          "characterRef": "owner",
+          "community": "true",
+          "personal": "true",
+          "sequence": "2",
+          "imagePath": ""
+        }
+      },
+      {
+        "id": "personal-owner-03",
+        "title": "没发出去",
+        "body": "替别人想了好几个理由，想完又觉得不服气。好像只要我理解得足够多，失望就显得是我的问题。今晚不想继续想理由了，先把明天要问的话写在草稿里。",
+        "sender": "",
+        "time": "文化节名单确定后 · 23:08",
+        "kind": "post",
+        "folder": "个人微博",
+        "comments": [],
+        "hidden": false,
+        "meta": {
+          "type": "post",
+          "accountId": "owner",
+          "characterRef": "owner",
+          "community": "true",
+          "personal": "true",
+          "sequence": "3",
+          "imagePath": ""
+        },
+        "unlock": "chapter.chapter-05-pending.completed"
+      },
+      {
+        "id": "personal-owner-04",
+        "title": "留一张",
+        "body": "照片里我张着嘴，手还举着，不怎么好看。刚要删，又放大看了场边。算了，不查自己到底在找谁了。今天报了名，也真的站上去了，照片归我，先留着。",
+        "sender": "",
+        "time": "运动会后 · 21:42",
+        "kind": "post",
+        "folder": "个人微博",
+        "comments": [],
+        "hidden": false,
+        "meta": {
+          "type": "post",
+          "accountId": "owner",
+          "characterRef": "owner",
+          "community": "true",
+          "personal": "true",
+          "sequence": "4",
+          "imagePath": ""
+        },
+        "unlock": "chapter.chapter-07-pending.completed"
+      },
+      {
+        "id": "personal-star-01",
+        "title": "台灯",
+        "body": "台灯开关有点接触不良，拆开按回去又好了。试着开关了十几次。原来不是每次坏了都得换。桌面也顺便收了一下，找到了去年丢的尺子。",
+        "sender": "",
+        "time": "开学前 · 18:40",
+        "kind": "post",
+        "folder": "个人微博",
+        "comments": [],
+        "hidden": false,
+        "meta": {
+          "type": "post",
+          "accountId": "star",
+          "characterRef": "star",
+          "community": "true",
+          "personal": "true",
+          "sequence": "1",
+          "imagePath": ""
+        }
+      },
+      {
+        "id": "personal-star-02",
+        "title": "发言稿",
+        "body": "练习的时候没卡，上去还是漏了一句。下来有人说挺好的，我也说还好。回家想起漏的那句，先记得的居然是自己站在上面不知道手往哪放。",
+        "sender": "",
+        "time": "开学后 · 22:05",
+        "kind": "post",
+        "folder": "个人微博",
+        "comments": [],
+        "hidden": false,
+        "meta": {
+          "type": "post",
+          "accountId": "star",
+          "characterRef": "star",
+          "community": "true",
+          "personal": "true",
+          "sequence": "2",
+          "imagePath": ""
+        }
+      },
+      {
+        "id": "personal-star-03",
+        "title": "草稿",
+        "body": "有句话删了两次，最后没发。早上再看聊天框，时间已经不对了。最难承认的不是说了也未必有用，是我当时先替自己想好了没用。",
+        "sender": "",
+        "time": "文化节名单确定后 · 00:12",
+        "kind": "post",
+        "folder": "个人微博",
+        "comments": [],
+        "hidden": false,
+        "meta": {
+          "type": "post",
+          "accountId": "star",
+          "characterRef": "star",
+          "community": "true",
+          "personal": "true",
+          "sequence": "3",
+          "imagePath": ""
+        },
+        "unlock": "chapter.chapter-05-pending.completed"
+      },
+      {
+        "id": "personal-star-04",
+        "title": "一句话",
+        "body": "今天想提醒别人，话一出口听着像挑毛病。后来又碰见，聊了两句，还是没说完。每次都觉得换个时候好一点，回头想想，合适的时候也没那么多。",
+        "sender": "",
+        "time": "运动会后 · 22:34",
+        "kind": "post",
+        "folder": "个人微博",
+        "comments": [],
+        "hidden": false,
+        "meta": {
+          "type": "post",
+          "accountId": "star",
+          "characterRef": "star",
+          "community": "true",
+          "personal": "true",
+          "sequence": "4",
+          "imagePath": ""
+        },
+        "unlock": "chapter.chapter-07-pending.completed"
+      },
+      {
+        "id": "personal-junhao-01",
+        "title": "八小节",
+        "body": "这一段听了四十遍，已经分不清好不好听了。关掉工程去刷牙，刷到一半突然想起怎么接。现在牙刷在桌上，耳机在洗手台。先别问怎么回事。",
+        "sender": "",
+        "time": "开学前 · 01:06",
+        "kind": "post",
+        "folder": "个人微博",
+        "comments": [],
+        "hidden": false,
+        "meta": {
+          "type": "post",
+          "accountId": "junhao",
+          "characterRef": "junhao",
+          "community": "true",
+          "personal": "true",
+          "sequence": "1",
+          "imagePath": ""
+        }
+      },
+      {
+        "id": "personal-junhao-02",
+        "title": "时间表",
+        "body": "给自己排了个很漂亮的时间表，写完数学就编鼓。数学比预想的多用了一个小时。最后还是开了工程，只改了两个音。很烦，但那两个音不改我睡不着。",
+        "sender": "",
+        "time": "开学后 · 23:20",
+        "kind": "post",
+        "folder": "个人微博",
+        "comments": [],
+        "hidden": false,
+        "meta": {
+          "type": "post",
+          "accountId": "junhao",
+          "characterRef": "junhao",
+          "community": "true",
+          "personal": "true",
+          "sequence": "2",
+          "imagePath": ""
+        }
+      },
+      {
+        "id": "personal-junhao-03",
+        "title": "另存为",
+        "body": "本来想说没选上也没什么，下午还是把名单看了好几遍。有点丢人。晚上把工程另存了一份，原来准备给舞台留的空拍删掉了，现在这个版本先做给自己听。",
+        "sender": "",
+        "time": "文化节名单确定后 · 20:48",
+        "kind": "post",
+        "folder": "个人微博",
+        "comments": [],
+        "hidden": false,
+        "meta": {
+          "type": "post",
+          "accountId": "junhao",
+          "characterRef": "junhao",
+          "community": "true",
+          "personal": "true",
+          "sequence": "3",
+          "imagePath": ""
+        },
+        "unlock": "chapter.chapter-05-pending.completed"
+      },
+      {
+        "id": "personal-junhao-04",
+        "title": "回去录",
+        "body": "今天捡球跑得比比赛还累。路上想到一个节奏，拿嘴录了十秒，旁边小孩一直看我。回家得先把作业写完，希望写完还能听懂自己录的什么。",
+        "sender": "",
+        "time": "运动会后 · 放学路上",
+        "kind": "post",
+        "folder": "个人微博",
+        "comments": [],
+        "hidden": false,
+        "meta": {
+          "type": "post",
+          "accountId": "junhao",
+          "characterRef": "junhao",
+          "community": "true",
+          "personal": "true",
+          "sequence": "4",
+          "imagePath": ""
+        },
+        "unlock": "chapter.chapter-07-pending.completed"
+      },
+      {
+        "id": "personal-brother-01",
+        "title": "借笔记须知",
+        "body": "笔记能借，最后一页别撕，那是我还没想明白的题。有人说学会了就该一眼看出来。我真一眼看出来，也不会在旁边写三个问号。",
+        "sender": "",
+        "time": "开学前 · 午后",
+        "kind": "post",
+        "folder": "个人微博",
+        "comments": [],
+        "hidden": false,
+        "meta": {
+          "type": "post",
+          "accountId": "brother",
+          "characterRef": "brother",
+          "community": "true",
+          "personal": "true",
+          "sequence": "1",
+          "imagePath": ""
+        }
+      },
+      {
+        "id": "personal-brother-02",
+        "title": "“为你好”",
+        "body": "今天劝我妹的时候用了句“你以后就知道了”。说完自己先烦了。这话实在方便，省得解释，也省得听她讲。晚点重新问问，她现在到底想怎么办。",
+        "sender": "",
+        "time": "开学后 · 晚饭后",
+        "kind": "post",
+        "folder": "个人微博",
+        "comments": [],
+        "hidden": false,
+        "meta": {
+          "type": "post",
+          "accountId": "brother",
+          "characterRef": "brother",
+          "community": "true",
+          "personal": "true",
+          "sequence": "2",
+          "imagePath": ""
+        }
+      },
+      {
+        "id": "personal-brother-03",
+        "title": "顺手",
+        "body": "替人查了个报名日期，又顺便查费用、材料和来回车次。越查越像要替人做决定，最后只发了日期。别人真打算走远一点，我总不能一边说支持，一边等他改主意。",
+        "sender": "",
+        "time": "文化节名单确定后 · 22:51",
+        "kind": "post",
+        "folder": "个人微博",
+        "comments": [],
+        "hidden": false,
+        "meta": {
+          "type": "post",
+          "accountId": "brother",
+          "characterRef": "brother",
+          "community": "true",
+          "personal": "true",
+          "sequence": "3",
+          "imagePath": ""
+        },
+        "unlock": "chapter.chapter-05-pending.completed"
+      },
+      {
+        "id": "personal-brother-04",
+        "title": "认领",
+        "body": "包里两件外套，三瓶水，没有一件是我的。下次得贴名字。先不说了，有人又问我外套在哪。",
+        "sender": "",
+        "time": "运动会后 · 20:19",
+        "kind": "post",
+        "folder": "个人微博",
+        "comments": [],
+        "hidden": false,
+        "meta": {
+          "type": "post",
+          "accountId": "brother",
+          "characterRef": "brother",
+          "community": "true",
+          "personal": "true",
+          "sequence": "4",
+          "imagePath": ""
+        },
+        "unlock": "chapter.chapter-07-pending.completed"
+      },
+      {
+        "id": "personal-zuohang-01",
+        "title": "借阅到期",
+        "body": "书看到一半要还了。我还没决定认不认同作者，但图书馆不接受这个续借理由。把那两页抄下来，等考试完再找。也可能到时候已经不想了。",
+        "sender": "",
+        "time": "开学前 · 16:32",
+        "kind": "post",
+        "folder": "个人微博",
+        "comments": [],
+        "hidden": false,
+        "meta": {
+          "type": "post",
+          "accountId": "zuohang",
+          "characterRef": "zuohang",
+          "community": "true",
+          "personal": "true",
+          "sequence": "1",
+          "imagePath": "assets/gallery/图书馆.pic.jpg"
+        }
+      },
+      {
+        "id": "personal-zuohang-02",
+        "title": "外地",
+        "body": "翻了几所外地学校的介绍，照片里都天晴。坐车要多久倒写得很含糊。真出去以后，会不会有一天连回家也要提前计划。先把这次考试考完，介绍册还没扔。",
+        "sender": "",
+        "time": "开学后 · 自习结束",
+        "kind": "post",
+        "folder": "个人微博",
+        "comments": [],
+        "hidden": false,
+        "meta": {
+          "type": "post",
+          "accountId": "zuohang",
+          "characterRef": "zuohang",
+          "community": "true",
+          "personal": "true",
+          "sequence": "2",
+          "imagePath": ""
+        }
+      },
+      {
+        "id": "personal-zuohang-03",
+        "title": "空半小时",
+        "body": "放学晚走半小时，教室真的很安静。看了八页书，前五页没看进去。没人来问我在干什么，挺好，又有点不习惯。",
+        "sender": "",
+        "time": "文化节筹备间隙 · 19:46",
+        "kind": "post",
+        "folder": "个人微博",
+        "comments": [],
+        "hidden": false,
+        "meta": {
+          "type": "post",
+          "accountId": "zuohang",
+          "characterRef": "zuohang",
+          "community": "true",
+          "personal": "true",
+          "sequence": "3",
+          "imagePath": ""
+        },
+        "unlock": "chapter.chapter-03-beyond-form.completed"
+      },
+      {
+        "id": "personal-zuohang-04",
+        "title": "相册",
+        "body": "今天给别人拍的都挺清楚，轮到自己跳远，只有一张脚刚离地的。先存了。原来嘴上说别删这么容易，换成自己的照片，也得犹豫一会儿。",
+        "sender": "",
+        "time": "运动会后 · 22:03",
+        "kind": "post",
+        "folder": "个人微博",
+        "comments": [],
+        "hidden": false,
+        "meta": {
+          "type": "post",
+          "accountId": "zuohang",
+          "characterRef": "zuohang",
+          "community": "true",
+          "personal": "true",
+          "sequence": "4",
+          "imagePath": ""
+        },
+        "unlock": "chapter.chapter-07-pending.completed"
+      },
+      {
+        "id": "personal-jiaqi-01",
+        "title": "眼镜",
+        "body": "试了一副圆框眼镜，店员说看起来亲切。我问原来有多不亲切，她笑了一下，没回答。没买，倒也不是因为这个，戴着夹耳朵。",
+        "sender": "",
+        "time": "开学前 · 15:07",
+        "kind": "post",
+        "folder": "个人微博",
+        "comments": [],
+        "hidden": false,
+        "meta": {
+          "type": "post",
+          "accountId": "jiaqi",
+          "characterRef": "jiaqi",
+          "community": "true",
+          "personal": "true",
+          "sequence": "1",
+          "imagePath": ""
+        }
+      },
+      {
+        "id": "personal-jiaqi-02",
+        "title": "没凶你",
+        "body": "同桌今天问我是不是不高兴。我在算那道题，真没有。解释完她说“好的好的”，看起来更怕了。下次要不先把笔放下再说话。",
+        "sender": "",
+        "time": "开学后 · 18:28",
+        "kind": "post",
+        "folder": "个人微博",
+        "comments": [],
+        "hidden": false,
+        "meta": {
+          "type": "post",
+          "accountId": "jiaqi",
+          "characterRef": "jiaqi",
+          "community": "true",
+          "personal": "true",
+          "sequence": "2",
+          "imagePath": ""
+        }
+      },
+      {
+        "id": "personal-jiaqi-03",
+        "title": "重新画",
+        "body": "海报存反了，字没法用。刚才说没事，回家还是气得把文件名改成了“别再点这个”。重新画好了以后，又舍不得删旧的，毕竟画了那么久。",
+        "sender": "",
+        "time": "文化节筹备间隙 · 21:10",
+        "kind": "post",
+        "folder": "个人微博",
+        "comments": [],
+        "hidden": false,
+        "meta": {
+          "type": "post",
+          "accountId": "jiaqi",
+          "characterRef": "jiaqi",
+          "community": "true",
+          "personal": "true",
+          "sequence": "3",
+          "imagePath": ""
+        },
+        "unlock": "chapter.chapter-03-beyond-form.completed"
+      },
+      {
+        "id": "personal-lifei-01",
+        "title": "提前到",
+        "body": "约的九点，我八点四十到了。等人的时候把旁边通知栏全读了一遍，发现有一张是去年的。以后应该先看日期。",
+        "sender": "",
+        "time": "开学前 · 09:10",
+        "kind": "post",
+        "folder": "个人微博",
+        "comments": [],
+        "hidden": false,
+        "meta": {
+          "type": "post",
+          "accountId": "lifei",
+          "characterRef": "lifei",
+          "community": "true",
+          "personal": "true",
+          "sequence": "1",
+          "imagePath": ""
+        }
+      },
+      {
+        "id": "personal-lifei-02",
+        "title": "收到",
+        "body": "同学回我“收到，长官”。我说不用这么叫，之后他一直笑。可能是在开玩笑，但我是真不知道该接什么。后来问他明天带不带尺子，这句终于正常了。",
+        "sender": "",
+        "time": "开学后 · 20:35",
+        "kind": "post",
+        "folder": "个人微博",
+        "comments": [],
+        "hidden": false,
+        "meta": {
+          "type": "post",
+          "accountId": "lifei",
+          "characterRef": "lifei",
+          "community": "true",
+          "personal": "true",
+          "sequence": "2",
+          "imagePath": ""
+        }
+      },
+      {
+        "id": "personal-lifei-03",
+        "title": "核对完了",
+        "body": "今天少了一份表，我找了三个教室，在自己文件夹最下面找到的。大家都说找到了就好，我还是有点不好意思。明天请他们喝水，不专门再提这件事了。",
+        "sender": "",
+        "time": "文化节筹备间隙 · 21:32",
+        "kind": "post",
+        "folder": "个人微博",
+        "comments": [],
+        "hidden": false,
+        "meta": {
+          "type": "post",
+          "accountId": "lifei",
+          "characterRef": "lifei",
+          "community": "true",
+          "personal": "true",
+          "sequence": "3",
+          "imagePath": ""
+        },
+        "unlock": "chapter.chapter-03-beyond-form.completed"
+      }
+    ]
+  }
+}

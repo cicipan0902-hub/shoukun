@@ -202,7 +202,10 @@ export function compileStory(raw: unknown): { story: Story; work: Work } {
             senderId === "owner"
               ? s.phone.owner
               : contacts.get(senderId || "")?.name || m.sender || s.phone.owner,
-          avatar: m.avatar || contacts.get(senderId || "")?.avatar || "",
+          avatar:
+            m.meta?.sharedAvatar === "true"
+              ? ""
+              : m.avatar || contacts.get(senderId || "")?.avatar || "",
           outgoing: senderId === "owner" || m.outgoing,
           meta: {
             ...m.meta,

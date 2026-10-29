@@ -26,7 +26,8 @@ describe("optional app lifecycle", () => {
         .map((a) => a.id)
         .sort(),
     ).toEqual([...essentialApps].sort());
-    expect(w.apps).toHaveLength(49);
+    expect(w.apps).toHaveLength(50);
+    expect(w.apps.find((a) => a.id === "xianyu")?.installed).toBe(false);
   });
   it("upgrades old format v1 app records without uninstalling existing apps", () => {
     const old = createWork();

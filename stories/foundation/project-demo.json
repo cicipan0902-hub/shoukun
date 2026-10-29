@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "id": "campus-authoring",
+  "sourceFile": "stories/foundation/story.json",
+  "charactersFile": "stories/foundation/characters.json",
+  "assetsFile": "stories/foundation/assets.json",
+  "extensionsFile": "stories/foundation/extensions.json",
+  "fictionNotice": "完全架空校园同人。人物姓名仅为灵感，家庭、情感及性取向设定不对应现实人物。",
+  "dateLabel": "现有演示日期，不代表正式时间线；年龄、年级、学校、生日均待定。",
+  "chapters": [
+    {
+      "id": "demo-after-class",
+      "title": "放学后（既有测试章节）",
+      "kind": "demo",
+      "date": null,
+      "characterIds": [
+        "owner",
+        "zhuzhixin",
+        "zhangjunhao",
+        "zhangzeyu",
+        "zuohang"
+      ],
+      "eventIds": [
+        "welcome-fan",
+        "read-weibo",
+        "read-photo",
+        "read-invitation",
+        "reply-choice",
+        "reply-warm",
+        "reply-shy",
+        "call-delay",
+        "call-finished",
+        "call-declined",
+        "read-instagram",
+        "last-choice",
+        "ending-reply",
+        "ending-save",
+        "read-group-photo",
+        "read-moment-draft",
+        "v02-record-missed-call",
+        "v02-record-ended-call"
+      ],
+      "entry": {
+        "event": "start",
+        "target": ""
+      },
+      "completeWhen": [
+        {
+          "key": "completed:ending-save",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "completed:ending-reply",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "next": [],
+      "completeLogic": "any"
+    },
+    {
+      "id": "demo-tools",
+      "title": "创作工具测试（可选）",
+      "kind": "side",
+      "date": null,
+      "characterIds": [
+        "owner"
+      ],
+      "eventIds": [
+        "game-clue-demo-start",
+        "game-clue-demo-done"
+      ],
+      "entry": {
+        "event": "read",
+        "target": "photo-light"
+      },
+      "completeWhen": [
+        {
+          "key": "minigame.clue-demo.completed",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "next": []
+    }
+  ],
+  "bindings": [
+    {
+      "assetId": "group-after-class",
+      "target": "groupAvatar",
+      "targetId": "chat-group"
+    },
+    {
+      "assetId": "gallery-court",
+      "target": "itemMedia",
+      "targetId": "photo-light"
+    },
+    {
+      "assetId": "moment-school",
+      "target": "itemMedia",
+      "targetId": "moment-zhu"
+    }
+  ],
+  "minigames": [
+    {
+      "id": "clue-demo",
+      "type": "password",
+      "title": "测试小游戏 · 线索盒",
+      "app": "notes",
+      "itemId": "v02-clue-box",
+      "prompt": "这是可选测试，密码见备忘录《创作工具测试说明》，输入错误可重试。",
+      "password": "1028",
+      "successText": "解锁成功。这是小游戏测试内容，不属于正式剧情。",
+      "start": {
+        "event": "read",
+        "target": "photo-light"
+      },
+      "conditions": [],
+      "unlockIds": [
+        "v02-game-reward"
+      ]
+    }
+  ]
+}

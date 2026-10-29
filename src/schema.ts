@@ -5,7 +5,24 @@ export const itemSchema = z.object({
   title: z.string().max(1000),
   body: z.string().max(200000),
   richText: z.string().max(400000).default(""),
-  meta: z.record(z.string().max(60), z.string().max(2000)).default({}),
+  meta: z
+    .record(z.string().max(60), z.string().max(6 * 1024 * 1024))
+    .superRefine((meta, ctx) => {
+      for (const [key, value] of Object.entries(meta)) {
+        if (
+          key === "groupAvatar" &&
+          (!value || (value.startsWith("data:image/") && safeMedia(value)))
+        )
+          continue;
+        if (value.length > 2000 || key === "groupAvatar")
+          ctx.addIssue({
+            code: "custom",
+            path: [key],
+            message: "元数据过长或群头像不是安全的内嵌图片",
+          });
+      }
+    })
+    .default({}),
   time: z.string(),
   sender: z.string(),
   avatar: z.string().default(""),
@@ -196,6 +213,7 @@ export function validateWork(input: unknown): Work {
   return workSchema.parse(input);
 }
 export function safeMedia(value: string) {
+  if (/^\.\/author-media\/[a-f0-9]{64}\.(mp4|mov)$/.test(value)) return value;
   return /^data:(image\/(png|jpeg|webp|gif)|audio\/(mpeg|mp3|wav|ogg|webm|mp4)|video\/(mp4|webm));base64,[a-zA-Z0-9+/=\s]+$/.test(
     value,
   )

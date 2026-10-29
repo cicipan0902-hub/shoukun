@@ -1,0 +1,2727 @@
+{
+  "variables": {
+    "community.noticeSeen": false,
+    "market.snacks.opened": false,
+    "market.snacks.choice": "unset",
+    "market.snacks.outcome": "unset",
+    "market.snacks.purchased": false,
+    "market.plan.opened": false,
+    "market.plan.choice": "unset",
+    "market.plan.outcome": "unset",
+    "market.plan.purchased": false,
+    "market.draft.opened": false,
+    "market.draft.choice": "unset",
+    "market.draft.outcome": "unset",
+    "market.draft.purchased": false,
+    "market.snacks.busy": false,
+    "market.snacks.chatDone": false,
+    "market.snacks.bargainDone": false,
+    "market.snacks.interacted": false,
+    "market.snacks.decision": "unset",
+    "market.snacks.currentPrice": 9.9,
+    "market.snacks.paymentSource": "",
+    "market.snacks.paymentAmount": 0,
+    "market.plan.busy": false,
+    "market.plan.chatDone": false,
+    "market.plan.bargainDone": false,
+    "market.plan.interacted": false,
+    "market.plan.decision": "unset",
+    "market.plan.currentPrice": 3.0,
+    "market.plan.paymentSource": "",
+    "market.plan.paymentAmount": 0,
+    "market.draft.busy": false,
+    "market.draft.chatDone": false,
+    "market.draft.bargainDone": false,
+    "market.draft.interacted": false,
+    "market.draft.decision": "unset",
+    "market.draft.currentPrice": 2.0,
+    "market.draft.paymentSource": "",
+    "market.draft.paymentAmount": 0
+  },
+  "chats": [
+    {
+      "id": "community-zuo",
+      "app": "wechat",
+      "title": "左航",
+      "participants": [
+        "owner",
+        "zuohang"
+      ],
+      "messages": [
+        {
+          "id": "community-zuo-01",
+          "senderId": "zuohang",
+          "body": "看到借书登记那条了？评论区比书架还热闹。",
+          "hidden": true
+        },
+        {
+          "id": "community-zuo-02",
+          "senderId": "zuohang",
+          "body": "要借的书名先记着，别到图书馆又只记得封面颜色。",
+          "hidden": true
+        }
+      ]
+    }
+  ],
+  "content": {
+    "weibo": [
+      {
+        "id": "community-account-brother",
+        "title": "张泽禹",
+        "body": "不定时出现，作业照常欠。",
+        "time": "校园日常 · 本地模拟",
+        "sender": "张泽禹",
+        "meta": {
+          "type": "account",
+          "accountId": "brother",
+          "community": "true"
+        }
+      },
+      {
+        "id": "community-account-star",
+        "title": "朱志鑫",
+        "body": "偶尔发点日常。",
+        "time": "校园日常 · 本地模拟",
+        "sender": "朱志鑫",
+        "meta": {
+          "type": "account",
+          "accountId": "star",
+          "community": "true"
+        }
+      },
+      {
+        "id": "community-account-junhao",
+        "title": "张峻豪",
+        "body": "写歌，也写作业。",
+        "time": "校园日常 · 本地模拟",
+        "sender": "张峻豪",
+        "meta": {
+          "type": "account",
+          "accountId": "junhao",
+          "community": "true"
+        }
+      },
+      {
+        "id": "community-account-zuohang",
+        "title": "左航",
+        "body": "借书记得还。",
+        "time": "校园日常 · 本地模拟",
+        "sender": "左航",
+        "meta": {
+          "type": "account",
+          "accountId": "zuohang",
+          "community": "true"
+        }
+      },
+      {
+        "id": "community-account-jiaqi",
+        "title": "朱家琪",
+        "body": "有事直说。",
+        "time": "校园日常 · 本地模拟",
+        "sender": "朱家琪",
+        "meta": {
+          "type": "account",
+          "accountId": "jiaqi",
+          "community": "true"
+        }
+      },
+      {
+        "id": "community-account-lifei",
+        "title": "礼菲",
+        "body": "活动通知请看截止时间。",
+        "time": "校园日常 · 本地模拟",
+        "sender": "礼菲",
+        "meta": {
+          "type": "account",
+          "accountId": "lifei",
+          "community": "true"
+        }
+      },
+      {
+        "id": "community-account-campus",
+        "title": "校园匿名墙",
+        "body": "投稿和传闻均属虚构校园演示。",
+        "time": "校园日常 · 本地模拟",
+        "sender": "校园匿名墙",
+        "meta": {
+          "type": "account",
+          "accountId": "campus",
+          "community": "true"
+        }
+      },
+      {
+        "id": "community-account-stage",
+        "title": "舞台资料夹",
+        "body": "本地示例账号，不代表真实粉丝或官方。",
+        "time": "校园日常 · 本地模拟",
+        "sender": "舞台资料夹",
+        "meta": {
+          "type": "account",
+          "accountId": "stage",
+          "community": "true"
+        }
+      },
+      {
+        "id": "community-post-library",
+        "title": "借书登记别只写颜色",
+        "body": "图书馆失物台：一本“封面蓝色、里面有字”的书，等主人补充一点更具体的信息。",
+        "time": "校园日常 · 本地模拟",
+        "sender": "校园匿名墙",
+        "kind": "post",
+        "folder": "校园论坛",
+        "comments": [
+          "左航：至少把书名看一眼。",
+          "礼菲：也可以提供借阅编号。这个确实比较准确。"
+        ],
+        "meta": {
+          "type": "post",
+          "accountId": "campus",
+          "community": "true",
+          "topic": "借书登记"
+        }
+      },
+      {
+        "id": "community-post-notice",
+        "title": "借书登记提醒",
+        "body": "图书馆这周整理借阅登记。欠书的记得还，想借的先查书名，别拿着一张模糊截图排队。",
+        "time": "校园日常 · 本地模拟",
+        "sender": "张泽禹",
+        "kind": "post",
+        "folder": "校园论坛",
+        "comments": [
+          "张峻豪：你先把我的耳机还了。",
+          "张泽禹：跨部门业务不在本帖处理。"
+        ],
+        "meta": {
+          "type": "post",
+          "accountId": "brother",
+          "community": "true",
+          "topic": "借书登记"
+        }
+      },
+      {
+        "id": "community-post-exam",
+        "title": "最后一道大题到底几分",
+        "body": "出考场时说“还行”的人，能不能说明一下是人还行还是题还行。",
+        "time": "校园日常 · 本地模拟",
+        "sender": "校园匿名墙",
+        "kind": "post",
+        "folder": "校园论坛",
+        "comments": [
+          "朱家琪：我名字写得挺好。",
+          "礼菲：姓名不计分。",
+          "朱家琪：谢谢，这个我知道。"
+        ],
+        "meta": {
+          "type": "post",
+          "accountId": "campus",
+          "community": "true",
+          "topic": "考试吐槽"
+        }
+      },
+      {
+        "id": "community-post-field",
+        "title": "跑完才想起忘带水",
+        "body": "今天操场的风有点大。最后一圈跑得像还没开始。",
+        "time": "校园日常 · 本地模拟",
+        "sender": "朱志鑫",
+        "kind": "post",
+        "folder": "校园论坛",
+        "comments": [
+          "张峻豪：我的水你倒没忘记。"
+        ],
+        "meta": {
+          "type": "post",
+          "accountId": "star",
+          "community": "true",
+          "topic": "操场日常"
+        }
+      },
+      {
+        "id": "community-post-stage-demo",
+        "title": "【示例】舞台讨论收集",
+        "body": "【本地示例，非实时热搜】这里预留 TF 家族三代舞台、物料与趣味讨论。当前视频仅为游戏已有作品 Demo 的播放示例，不是真实舞台物料。",
+        "time": "校园日常 · 本地模拟",
+        "sender": "舞台资料夹",
+        "kind": "video",
+        "folder": "娱乐热搜",
+        "comments": [
+          "舞台资料夹：后续由作者补充具体主题和有权使用的素材。"
+        ],
+        "meta": {
+          "type": "post",
+          "accountId": "stage",
+          "community": "true",
+          "topic": "舞台片段讨论"
+        }
+      },
+      {
+        "id": "community-topic-library",
+        "title": "借书登记",
+        "body": "本地配置话题 · 非实时榜单",
+        "time": "校园日常 · 本地模拟",
+        "folder": "校园论坛",
+        "meta": {
+          "type": "topic",
+          "community": "true",
+          "topic": "借书登记"
+        }
+      },
+      {
+        "id": "community-topic-exam",
+        "title": "考试吐槽",
+        "body": "本地配置话题 · 非实时榜单",
+        "time": "校园日常 · 本地模拟",
+        "folder": "校园论坛",
+        "meta": {
+          "type": "topic",
+          "community": "true",
+          "topic": "考试吐槽"
+        }
+      },
+      {
+        "id": "community-topic-stage",
+        "title": "舞台片段讨论",
+        "body": "本地配置话题 · 非实时榜单",
+        "time": "校园日常 · 本地模拟",
+        "folder": "娱乐热搜",
+        "meta": {
+          "type": "topic",
+          "community": "true",
+          "topic": "舞台片段讨论"
+        }
+      }
+    ],
+    "xianyu": [
+      {
+        "id": "market-snacks",
+        "title": "期末周续命套餐",
+        "body": "没拆的饼干和便签纸。便签负责计划，饼干负责你没按计划的时候。示意图使用已有校园素材。",
+        "time": "校园日常 · 本地模拟",
+        "sender": "校园匿名墙",
+        "folder": "零食",
+        "meta": {
+          "type": "product",
+          "accountId": "campus",
+          "price": "9.9",
+          "options": "[{\"id\": \"bargain\", \"text\": \"还能少一点吗？\", \"result\": \"quoted\", \"price\": 8}, {\"id\": \"chat\", \"text\": \"卖闲置遇到过什么离谱的事？\", \"result\": \"ready\", \"price\": 9.9}]",
+          "sellerBio": "投稿和传闻均属虚构校园演示。",
+          "stateKey": "market.snacks",
+          "chatVersion": "2"
+        }
+      },
+      {
+        "id": "market-snacks-hello",
+        "title": "校园匿名墙",
+        "body": "东西都没拆。便签上的计划不包执行。",
+        "time": "校园日常 · 本地模拟",
+        "sender": "校园匿名墙",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-snacks"
+        }
+      },
+      {
+        "id": "market-snacks-reply-buy",
+        "title": "校园匿名墙",
+        "body": "行，给你留着。这里只记一次虚拟成交，不收钱，也不会安排配送。",
+        "time": "校园日常 · 本地模拟",
+        "sender": "校园匿名墙",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-snacks"
+        }
+      },
+      {
+        "id": "market-snacks-reply-bargain",
+        "title": "校园匿名墙",
+        "body": "8 可以，再少我就自己留着用了。要的话点确认，不想要也没事。",
+        "time": "校园日常 · 本地模拟",
+        "sender": "校园匿名墙",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-snacks"
+        }
+      },
+      {
+        "id": "market-snacks-reply-leave",
+        "title": "校园匿名墙",
+        "body": "好，你慢慢看。东西先放着。",
+        "time": "校园日常 · 本地模拟",
+        "sender": "校园匿名墙",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-snacks"
+        }
+      },
+      {
+        "id": "market-plan",
+        "title": "用了三天的自律计划",
+        "body": "第一页写了早起，第二页改成尽量早起，第三页空白。纸很新，决心另算。",
+        "time": "校园日常 · 本地模拟",
+        "sender": "朱家琪",
+        "folder": "文具",
+        "meta": {
+          "type": "product",
+          "accountId": "jiaqi",
+          "price": "3",
+          "options": "[{\"id\": \"bargain\", \"text\": \"还能少一点吗？\", \"result\": \"quoted\", \"price\": 2}, {\"id\": \"chat\", \"text\": \"这计划你还会继续用吗？\", \"result\": \"ready\", \"price\": 3.0}]",
+          "sellerBio": "有事直说。",
+          "stateKey": "market.plan",
+          "chatVersion": "2"
+        }
+      },
+      {
+        "id": "market-plan-hello",
+        "title": "朱家琪",
+        "body": "计划写过三天，后面都能用。不是印刷瑕疵，是我没写。",
+        "time": "校园日常 · 本地模拟",
+        "sender": "朱家琪",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-plan"
+        }
+      },
+      {
+        "id": "market-plan-reply-buy",
+        "title": "朱家琪",
+        "body": "行，给你留着。这里只记一次虚拟成交，不收钱，也不会安排配送。",
+        "time": "校园日常 · 本地模拟",
+        "sender": "朱家琪",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-plan"
+        }
+      },
+      {
+        "id": "market-plan-reply-bargain",
+        "title": "朱家琪",
+        "body": "2 可以，再少我就自己留着用了。要的话点确认，不想要也没事。",
+        "time": "校园日常 · 本地模拟",
+        "sender": "朱家琪",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-plan"
+        }
+      },
+      {
+        "id": "market-plan-reply-leave",
+        "title": "朱家琪",
+        "body": "好，你慢慢看。东西先放着。",
+        "time": "校园日常 · 本地模拟",
+        "sender": "朱家琪",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-plan"
+        }
+      },
+      {
+        "id": "market-draft",
+        "title": "神秘学霸二手草稿纸",
+        "body": "一叠单面草稿纸，背面能用。正面算式不保证有参考价值，有两张写反了。",
+        "time": "校园日常 · 本地模拟",
+        "sender": "左航",
+        "folder": "学习",
+        "meta": {
+          "type": "product",
+          "accountId": "zuohang",
+          "price": "2",
+          "options": "[{\"id\": \"bargain\", \"text\": \"还能少一点吗？\", \"result\": \"quoted\", \"price\": 1}, {\"id\": \"chat\", \"text\": \"这上面的字你自己还认得吗？\", \"result\": \"ready\", \"price\": 2.0}]",
+          "sellerBio": "借书记得还。",
+          "stateKey": "market.draft",
+          "rewardItemId": "market-hidden-note",
+          "rewardApp": "notes",
+          "rewardLabel": "看看草稿背面的字",
+          "chatVersion": "2"
+        }
+      },
+      {
+        "id": "market-draft-hello",
+        "title": "左航",
+        "body": "能看懂的部分别太相信。要的话我把写了姓名的页拿掉。",
+        "time": "校园日常 · 本地模拟",
+        "sender": "左航",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-draft"
+        }
+      },
+      {
+        "id": "market-draft-reply-buy",
+        "title": "左航",
+        "body": "行，给你留着。这里只记一次虚拟成交，不收钱，也不会安排配送。",
+        "time": "校园日常 · 本地模拟",
+        "sender": "左航",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-draft"
+        }
+      },
+      {
+        "id": "market-draft-reply-bargain",
+        "title": "左航",
+        "body": "1 可以，再少我就自己留着用了。要的话点确认，不想要也没事。",
+        "time": "校园日常 · 本地模拟",
+        "sender": "左航",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-draft"
+        }
+      },
+      {
+        "id": "market-draft-reply-leave",
+        "title": "左航",
+        "body": "好，你慢慢看。东西先放着。",
+        "time": "校园日常 · 本地模拟",
+        "sender": "左航",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-draft"
+        }
+      },
+      {
+        "id": "market-snacks-photo2",
+        "title": "套餐示意图 · 便签与试卷",
+        "body": "已有校园照片作为示意，后续可替换商品实拍。",
+        "time": "校园日常 · 本地模拟",
+        "kind": "image",
+        "meta": {
+          "type": "gallery",
+          "product": "market-snacks"
+        }
+      },
+      {
+        "id": "market-snacks-buyer-chat",
+        "title": "期末周续命套餐",
+        "body": "卖闲置遇到过什么离谱的事？",
+        "sender": "",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-snacks"
+        }
+      },
+      {
+        "id": "market-snacks-buyer-bargain",
+        "title": "期末周续命套餐",
+        "body": "还能少一点吗？",
+        "sender": "",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-snacks"
+        }
+      },
+      {
+        "id": "market-snacks-buyer-buy",
+        "title": "期末周续命套餐",
+        "body": "好，我要了。",
+        "sender": "",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-snacks"
+        }
+      },
+      {
+        "id": "market-snacks-buyer-leave",
+        "title": "期末周续命套餐",
+        "body": "我先不买了，谢谢。",
+        "sender": "",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-snacks"
+        }
+      },
+      {
+        "id": "market-snacks-reply-chat-1",
+        "title": "校园匿名墙",
+        "body": "有人问便签能不能提醒自己别吃饼干。",
+        "sender": "校园匿名墙",
+        "time": "闲鱼聊天",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-snacks"
+        }
+      },
+      {
+        "id": "market-snacks-reply-chat-2",
+        "title": "校园匿名墙",
+        "body": "我说能写提醒，执行得自己来。",
+        "sender": "校园匿名墙",
+        "time": "闲鱼聊天",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-snacks"
+        }
+      },
+      {
+        "id": "market-plan-buyer-chat",
+        "title": "用了三天的自律计划",
+        "body": "这计划你还会继续用吗？",
+        "sender": "",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-plan"
+        }
+      },
+      {
+        "id": "market-plan-buyer-bargain",
+        "title": "用了三天的自律计划",
+        "body": "还能少一点吗？",
+        "sender": "",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-plan"
+        }
+      },
+      {
+        "id": "market-plan-buyer-buy",
+        "title": "用了三天的自律计划",
+        "body": "好，我要了。",
+        "sender": "",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-plan"
+        }
+      },
+      {
+        "id": "market-plan-buyer-leave",
+        "title": "用了三天的自律计划",
+        "body": "我先不买了，谢谢。",
+        "sender": "",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-plan"
+        }
+      },
+      {
+        "id": "market-plan-reply-chat-1",
+        "title": "朱家琪",
+        "body": "会，等我找到一份不用早起的。",
+        "sender": "朱家琪",
+        "time": "闲鱼聊天",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-plan"
+        }
+      },
+      {
+        "id": "market-plan-reply-chat-2",
+        "title": "朱家琪",
+        "body": "你别笑，前三天我确实按时起来了。",
+        "sender": "朱家琪",
+        "time": "闲鱼聊天",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-plan"
+        }
+      },
+      {
+        "id": "market-draft-buyer-chat",
+        "title": "神秘学霸二手草稿纸",
+        "body": "这上面的字你自己还认得吗？",
+        "sender": "",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-draft"
+        }
+      },
+      {
+        "id": "market-draft-buyer-bargain",
+        "title": "神秘学霸二手草稿纸",
+        "body": "还能少一点吗？",
+        "sender": "",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-draft"
+        }
+      },
+      {
+        "id": "market-draft-buyer-buy",
+        "title": "神秘学霸二手草稿纸",
+        "body": "好，我要了。",
+        "sender": "",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-draft"
+        }
+      },
+      {
+        "id": "market-draft-buyer-leave",
+        "title": "神秘学霸二手草稿纸",
+        "body": "我先不买了，谢谢。",
+        "sender": "",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-draft"
+        }
+      },
+      {
+        "id": "market-draft-reply-chat-1",
+        "title": "左航",
+        "body": "大部分认得。认不得的那几行，应该是当时也没算明白。",
+        "sender": "左航",
+        "time": "闲鱼聊天",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-draft"
+        }
+      },
+      {
+        "id": "market-draft-reply-chat-2",
+        "title": "左航",
+        "body": "背面能用的地方够多，不用非跟正面较劲。",
+        "sender": "左航",
+        "time": "闲鱼聊天",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-draft"
+        }
+      }
+    ],
+    "notes": [
+      {
+        "id": "market-hidden-note",
+        "title": "草稿纸背面",
+        "body": "【闲鱼模拟器隐藏内容】\n\n草稿背面有一行小字：\n“借书清单在手机里，别再抄在草稿上。”\n\n左航把题目写得密密麻麻，倒在这里给自己留了一个提醒。",
+        "time": "校园日常 · 本地模拟",
+        "kind": "note",
+        "hidden": true
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "community-read-notice",
+      "label": "校园帖子引出左航消息",
+      "event": "read",
+      "target": "community-post-notice",
+      "actions": [
+        {
+          "type": "variable",
+          "key": "community.noticeSeen",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "market-snacks-open",
+      "label": "联系模拟卖家",
+      "event": "marketOpen",
+      "target": "market-snacks",
+      "conditions": [
+        {
+          "key": "read:market-snacks",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.snacks.opened",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.snacks.opened",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-snacks-hello",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "market-snacks-select-buy",
+      "label": "按标价模拟拿下",
+      "event": "marketSelect",
+      "target": "market-snacks.buy",
+      "conditions": [
+        {
+          "key": "market.snacks.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.snacks.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.snacks.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.snacks.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.snacks.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.snacks.interacted",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.snacks.outcome",
+          "op": "neq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.snacks.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-snacks-buyer-buy",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-snacks-delay-buy"
+      ]
+    },
+    {
+      "id": "market-snacks-delay-buy",
+      "label": "卖家正在回复",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-snacks-reply-buy",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.outcome",
+          "value": "purchased"
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.purchased",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.paymentSource",
+          "value": "哥哥的亲情卡"
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.paymentAmount",
+          "value": 9.9
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-snacks-select-bargain",
+      "label": "还能少一点吗？",
+      "event": "marketSelect",
+      "target": "market-snacks.bargain",
+      "conditions": [
+        {
+          "key": "market.snacks.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.snacks.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.snacks.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.snacks.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.snacks.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.snacks.bargainDone",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.snacks.outcome",
+          "op": "neq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.snacks.choice",
+          "value": "bargain"
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-snacks-buyer-bargain",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-snacks-delay-bargain"
+      ]
+    },
+    {
+      "id": "market-snacks-delay-bargain",
+      "label": "卖家正在回复",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-snacks-reply-bargain",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.outcome",
+          "value": "quoted"
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.currentPrice",
+          "value": 8
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.bargainDone",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.interacted",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-snacks-select-leave",
+      "label": "聊完后决定不买",
+      "event": "marketDecline",
+      "target": "market-snacks",
+      "conditions": [
+        {
+          "key": "market.snacks.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.snacks.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.snacks.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.snacks.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.snacks.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.snacks.interacted",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.snacks.decision",
+          "value": "leave"
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-snacks-buyer-leave",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-snacks-delay-leave"
+      ]
+    },
+    {
+      "id": "market-snacks-delay-leave",
+      "label": "卖家正在回复",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-snacks-reply-leave",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.outcome",
+          "value": "declined"
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.decision",
+          "value": "leave"
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-snacks-confirm",
+      "label": "使用哥哥的亲情卡确认购买",
+      "event": "marketConfirm",
+      "target": "market-snacks",
+      "conditions": [
+        {
+          "key": "market.snacks.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.snacks.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.snacks.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.snacks.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.snacks.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.snacks.outcome",
+          "op": "eq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.snacks.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-snacks-buyer-buy",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-snacks-pay-quoted"
+      ]
+    },
+    {
+      "id": "market-plan-open",
+      "label": "联系模拟卖家",
+      "event": "marketOpen",
+      "target": "market-plan",
+      "conditions": [
+        {
+          "key": "read:market-plan",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.plan.opened",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.plan.opened",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-plan-hello",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "market-plan-select-buy",
+      "label": "按标价模拟拿下",
+      "event": "marketSelect",
+      "target": "market-plan.buy",
+      "conditions": [
+        {
+          "key": "market.plan.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.plan.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.plan.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.plan.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.plan.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.plan.interacted",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.plan.outcome",
+          "op": "neq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.plan.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-plan-buyer-buy",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-plan-delay-buy"
+      ]
+    },
+    {
+      "id": "market-plan-delay-buy",
+      "label": "卖家正在回复",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-plan-reply-buy",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.outcome",
+          "value": "purchased"
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.purchased",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.paymentSource",
+          "value": "哥哥的亲情卡"
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.paymentAmount",
+          "value": 3.0
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-plan-select-bargain",
+      "label": "还能少一点吗？",
+      "event": "marketSelect",
+      "target": "market-plan.bargain",
+      "conditions": [
+        {
+          "key": "market.plan.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.plan.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.plan.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.plan.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.plan.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.plan.bargainDone",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.plan.outcome",
+          "op": "neq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.plan.choice",
+          "value": "bargain"
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-plan-buyer-bargain",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-plan-delay-bargain"
+      ]
+    },
+    {
+      "id": "market-plan-delay-bargain",
+      "label": "卖家正在回复",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-plan-reply-bargain",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.outcome",
+          "value": "quoted"
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.currentPrice",
+          "value": 2
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.bargainDone",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.interacted",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-plan-select-leave",
+      "label": "聊完后决定不买",
+      "event": "marketDecline",
+      "target": "market-plan",
+      "conditions": [
+        {
+          "key": "market.plan.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.plan.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.plan.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.plan.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.plan.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.plan.interacted",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.plan.decision",
+          "value": "leave"
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-plan-buyer-leave",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-plan-delay-leave"
+      ]
+    },
+    {
+      "id": "market-plan-delay-leave",
+      "label": "卖家正在回复",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-plan-reply-leave",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.outcome",
+          "value": "declined"
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.decision",
+          "value": "leave"
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-plan-confirm",
+      "label": "使用哥哥的亲情卡确认购买",
+      "event": "marketConfirm",
+      "target": "market-plan",
+      "conditions": [
+        {
+          "key": "market.plan.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.plan.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.plan.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.plan.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.plan.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.plan.outcome",
+          "op": "eq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.plan.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-plan-buyer-buy",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-plan-pay-quoted"
+      ]
+    },
+    {
+      "id": "market-draft-open",
+      "label": "联系模拟卖家",
+      "event": "marketOpen",
+      "target": "market-draft",
+      "conditions": [
+        {
+          "key": "read:market-draft",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.draft.opened",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.draft.opened",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-draft-hello",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "market-draft-select-buy",
+      "label": "按标价模拟拿下",
+      "event": "marketSelect",
+      "target": "market-draft.buy",
+      "conditions": [
+        {
+          "key": "market.draft.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.draft.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.draft.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.draft.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.draft.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.draft.interacted",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.draft.outcome",
+          "op": "neq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.draft.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-draft-buyer-buy",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-draft-delay-buy"
+      ]
+    },
+    {
+      "id": "market-draft-delay-buy",
+      "label": "卖家正在回复",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-draft-reply-buy",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.outcome",
+          "value": "purchased"
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.purchased",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.paymentSource",
+          "value": "哥哥的亲情卡"
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.paymentAmount",
+          "value": 2.0
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.busy",
+          "value": false
+        },
+        {
+          "type": "unlock",
+          "key": "market-hidden-note",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "market-draft-select-bargain",
+      "label": "还能少一点吗？",
+      "event": "marketSelect",
+      "target": "market-draft.bargain",
+      "conditions": [
+        {
+          "key": "market.draft.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.draft.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.draft.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.draft.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.draft.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.draft.bargainDone",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.draft.outcome",
+          "op": "neq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.draft.choice",
+          "value": "bargain"
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-draft-buyer-bargain",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-draft-delay-bargain"
+      ]
+    },
+    {
+      "id": "market-draft-delay-bargain",
+      "label": "卖家正在回复",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-draft-reply-bargain",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.outcome",
+          "value": "quoted"
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.currentPrice",
+          "value": 1
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.bargainDone",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.interacted",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-draft-select-leave",
+      "label": "聊完后决定不买",
+      "event": "marketDecline",
+      "target": "market-draft",
+      "conditions": [
+        {
+          "key": "market.draft.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.draft.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.draft.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.draft.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.draft.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.draft.interacted",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.draft.decision",
+          "value": "leave"
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-draft-buyer-leave",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-draft-delay-leave"
+      ]
+    },
+    {
+      "id": "market-draft-delay-leave",
+      "label": "卖家正在回复",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-draft-reply-leave",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.outcome",
+          "value": "declined"
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.decision",
+          "value": "leave"
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-draft-confirm",
+      "label": "使用哥哥的亲情卡确认购买",
+      "event": "marketConfirm",
+      "target": "market-draft",
+      "conditions": [
+        {
+          "key": "market.draft.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.draft.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.draft.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.draft.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.draft.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.draft.outcome",
+          "op": "eq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.draft.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-draft-buyer-buy",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-draft-pay-quoted"
+      ]
+    },
+    {
+      "id": "market-snacks-select-chat",
+      "label": "卖闲置遇到过什么离谱的事？",
+      "event": "marketSelect",
+      "target": "market-snacks.chat",
+      "conditions": [
+        {
+          "key": "market.snacks.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.snacks.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.snacks.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.snacks.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.snacks.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.snacks.chatDone",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.snacks.choice",
+          "value": "chat"
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-snacks-buyer-chat",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-snacks-delay-chat-1"
+      ]
+    },
+    {
+      "id": "market-snacks-confirm-base",
+      "label": "使用哥哥的亲情卡按原价购买",
+      "event": "marketConfirm",
+      "target": "market-snacks",
+      "conditions": [
+        {
+          "key": "market.snacks.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.snacks.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.snacks.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.snacks.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.snacks.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.snacks.interacted",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.snacks.outcome",
+          "op": "neq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.snacks.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-snacks-buyer-buy",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-snacks-delay-buy"
+      ]
+    },
+    {
+      "id": "market-snacks-pay-quoted",
+      "label": "确认议价购买",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-snacks-reply-buy",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.outcome",
+          "value": "purchased"
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.purchased",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.paymentSource",
+          "value": "哥哥的亲情卡"
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.paymentAmount",
+          "value": 8
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-snacks-decline-legacy",
+      "label": "结束此前的议价",
+      "event": "marketDecline",
+      "target": "market-snacks",
+      "conditions": [
+        {
+          "key": "market.snacks.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.snacks.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.snacks.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.snacks.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.snacks.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.snacks.outcome",
+          "op": "eq",
+          "value": "quoted"
+        },
+        {
+          "key": "market.snacks.interacted",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.snacks.decision",
+          "value": "leave"
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-snacks-buyer-leave",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-snacks-delay-leave"
+      ]
+    },
+    {
+      "id": "market-snacks-delay-chat-1",
+      "label": "校园匿名墙正在回复",
+      "type": "delay",
+      "delayMs": 900,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-snacks-reply-chat-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-snacks-delay-chat-2"
+      ]
+    },
+    {
+      "id": "market-snacks-delay-chat-2",
+      "label": "校园匿名墙正在回复",
+      "type": "delay",
+      "delayMs": 900,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-snacks-reply-chat-2",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.chatDone",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.interacted",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.snacks.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-plan-select-chat",
+      "label": "这计划你还会继续用吗？",
+      "event": "marketSelect",
+      "target": "market-plan.chat",
+      "conditions": [
+        {
+          "key": "market.plan.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.plan.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.plan.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.plan.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.plan.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.plan.chatDone",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.plan.choice",
+          "value": "chat"
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-plan-buyer-chat",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-plan-delay-chat-1"
+      ]
+    },
+    {
+      "id": "market-plan-confirm-base",
+      "label": "使用哥哥的亲情卡按原价购买",
+      "event": "marketConfirm",
+      "target": "market-plan",
+      "conditions": [
+        {
+          "key": "market.plan.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.plan.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.plan.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.plan.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.plan.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.plan.interacted",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.plan.outcome",
+          "op": "neq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.plan.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-plan-buyer-buy",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-plan-delay-buy"
+      ]
+    },
+    {
+      "id": "market-plan-pay-quoted",
+      "label": "确认议价购买",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-plan-reply-buy",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.outcome",
+          "value": "purchased"
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.purchased",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.paymentSource",
+          "value": "哥哥的亲情卡"
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.paymentAmount",
+          "value": 2
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-plan-decline-legacy",
+      "label": "结束此前的议价",
+      "event": "marketDecline",
+      "target": "market-plan",
+      "conditions": [
+        {
+          "key": "market.plan.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.plan.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.plan.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.plan.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.plan.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.plan.outcome",
+          "op": "eq",
+          "value": "quoted"
+        },
+        {
+          "key": "market.plan.interacted",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.plan.decision",
+          "value": "leave"
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-plan-buyer-leave",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-plan-delay-leave"
+      ]
+    },
+    {
+      "id": "market-plan-delay-chat-1",
+      "label": "朱家琪正在回复",
+      "type": "delay",
+      "delayMs": 900,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-plan-reply-chat-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-plan-delay-chat-2"
+      ]
+    },
+    {
+      "id": "market-plan-delay-chat-2",
+      "label": "朱家琪正在回复",
+      "type": "delay",
+      "delayMs": 900,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-plan-reply-chat-2",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.chatDone",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.interacted",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.plan.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-draft-select-chat",
+      "label": "这上面的字你自己还认得吗？",
+      "event": "marketSelect",
+      "target": "market-draft.chat",
+      "conditions": [
+        {
+          "key": "market.draft.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.draft.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.draft.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.draft.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.draft.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.draft.chatDone",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.draft.choice",
+          "value": "chat"
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-draft-buyer-chat",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-draft-delay-chat-1"
+      ]
+    },
+    {
+      "id": "market-draft-confirm-base",
+      "label": "使用哥哥的亲情卡按原价购买",
+      "event": "marketConfirm",
+      "target": "market-draft",
+      "conditions": [
+        {
+          "key": "market.draft.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.draft.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.draft.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.draft.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.draft.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.draft.interacted",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.draft.outcome",
+          "op": "neq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.draft.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-draft-buyer-buy",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-draft-delay-buy"
+      ]
+    },
+    {
+      "id": "market-draft-pay-quoted",
+      "label": "确认议价购买",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-draft-reply-buy",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.outcome",
+          "value": "purchased"
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.purchased",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.paymentSource",
+          "value": "哥哥的亲情卡"
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.paymentAmount",
+          "value": 1
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.busy",
+          "value": false
+        },
+        {
+          "type": "unlock",
+          "key": "market-hidden-note",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "market-draft-decline-legacy",
+      "label": "结束此前的议价",
+      "event": "marketDecline",
+      "target": "market-draft",
+      "conditions": [
+        {
+          "key": "market.draft.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.draft.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.draft.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.draft.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.draft.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.draft.outcome",
+          "op": "eq",
+          "value": "quoted"
+        },
+        {
+          "key": "market.draft.interacted",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.draft.decision",
+          "value": "leave"
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-draft-buyer-leave",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-draft-delay-leave"
+      ]
+    },
+    {
+      "id": "market-draft-delay-chat-1",
+      "label": "左航正在回复",
+      "type": "delay",
+      "delayMs": 900,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-draft-reply-chat-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-draft-delay-chat-2"
+      ]
+    },
+    {
+      "id": "market-draft-delay-chat-2",
+      "label": "左航正在回复",
+      "type": "delay",
+      "delayMs": 900,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-draft-reply-chat-2",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.chatDone",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.interacted",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.draft.busy",
+          "value": false
+        }
+      ]
+    }
+  ],
+  "tests": []
+}

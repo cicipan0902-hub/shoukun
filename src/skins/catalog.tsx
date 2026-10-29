@@ -38,6 +38,7 @@ export const catalogSkins = {
   line: skin(messaging, "LineSkin"),
   messenger: skin(messaging, "MessengerSkin"),
   weibo: skin(social, "WeiboSkin"),
+  xianyu: skin(() => import("./CommunitySkins"), "XianyuSkin"),
   twitter: skin(mymy, "MymyX"),
   threads: skin(() => import("./ThreadsReference"), "ThreadsReference"),
   facebook: skin(social, "FacebookSkin"),

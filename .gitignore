@@ -21,3 +21,14 @@ public/blank-work.json
 *.key
 *.bundle
 
+
+# macOS metadata and generated media (rebuilt from assets.json).
+.DS_Store
+public/author-media/
+
+# Author-only planning files remain local; never commit to the public Fork.
+stories/foundation/author-reserve.json
+stories/foundation/chapter04-author-notes.json
+stories/foundation/chapter05-author-notes.json
+stories/foundation/memo-plan.json
+stories/foundation/xianyu-seller-links.author.json

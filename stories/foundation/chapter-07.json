@@ -1,0 +1,8626 @@
+{
+  "variables": {
+    "chapter.chapter-07-pending.started": false,
+    "chapter.chapter-07-pending.completed": false,
+    "ch07.stage": "locked",
+    "ch07.signed": false,
+    "ch07-basketball.shots": 0,
+    "ch07-basketball.hits": 0,
+    "ch07-basketball.settled": false,
+    "ch07.score": -1,
+    "ch07.tier": "unset",
+    "ch07.chatDone": false,
+    "ch07.photoRead": false,
+    "ch07.memoRead": false,
+    "ch07.lowReady": false,
+    "ch07.midReady": false,
+    "ch07.highReady": false,
+    "ch07.wrapReady": false
+  },
+  "chats": [
+    {
+      "id": "ch07-sports",
+      "app": "wechat",
+      "title": "运动会临时群",
+      "participants": [
+        "owner",
+        "brother",
+        "junhao",
+        "star",
+        "zuohang"
+      ],
+      "messages": [
+        {
+          "id": "ch07-intro-1",
+          "senderId": "brother",
+          "body": "趣味投篮，一人五球。谁报？某个人刚问完我报名时间，又去问体委。",
+          "hidden": true,
+          "time": "运动会"
+        },
+        {
+          "id": "ch07-intro-2",
+          "senderId": "zuohang",
+          "body": "我问了，零基础也能报。别踩线就行。我先去跳远检录，规则截图放这儿了。",
+          "hidden": true,
+          "time": "运动会"
+        },
+        {
+          "id": "ch07-intro-3",
+          "senderId": "junhao",
+          "body": "报啊，我给你捡球。五个球能有多难。",
+          "hidden": true,
+          "time": "运动会"
+        },
+        {
+          "id": "ch07-intro-4",
+          "senderId": "brother",
+          "body": "后半句截图了。前半句也算数，别到时候只顾着摆姿势。",
+          "hidden": true,
+          "time": "运动会"
+        },
+        {
+          "id": "ch07-sign-a",
+          "senderId": "junhao",
+          "body": "行。明天带双好跑的鞋，别穿那双老掉鞋带的。",
+          "hidden": true,
+          "time": "运动会"
+        },
+        {
+          "id": "ch07-sign-b",
+          "senderId": "zuohang",
+          "body": "行。我检录完过去。你哥要是在边上喊，你可以申请让他闭嘴。",
+          "hidden": true,
+          "time": "运动会"
+        },
+        {
+          "id": "ch07-score-low-0",
+          "senderId": "brother",
+          "body": "你们班刚才喊得，我差点以为进的是我妹，不是球。人没摔就行，水在外套底下。",
+          "hidden": true,
+          "time": "运动会"
+        },
+        {
+          "id": "ch07-score-low-1",
+          "senderId": "zuohang",
+          "body": "我跳远踩了两次线，没资格笑你。你后面不着急抢着投了，能看出来。",
+          "hidden": true,
+          "time": "运动会"
+        },
+        {
+          "id": "ch07-score-low-2",
+          "senderId": "star",
+          "body": "手收早了。球送出去以后，再放下来。",
+          "hidden": true,
+          "time": "运动会"
+        },
+        {
+          "id": "ch07-score-mid-0",
+          "senderId": "junhao",
+          "body": "可以啊，昨天还追着球跑，今天都敢挑角度了。下回跟我比。",
+          "hidden": true,
+          "time": "运动会"
+        },
+        {
+          "id": "ch07-score-mid-1",
+          "senderId": "brother",
+          "body": "你先把自己那球从树底下捡回来。",
+          "hidden": true,
+          "time": "运动会"
+        },
+        {
+          "id": "ch07-score-mid-2",
+          "senderId": "star",
+          "body": "比练习的时候稳。后面没急着出手。",
+          "hidden": true,
+          "time": "运动会"
+        },
+        {
+          "id": "ch07-score-high-0",
+          "senderId": "junhao",
+          "body": "你昨天是不是故意让我捡球？这命中率，不像第一次报。",
+          "hidden": true,
+          "time": "运动会"
+        },
+        {
+          "id": "ch07-score-high-1",
+          "senderId": "brother",
+          "body": "我们班喊加油的都跑过来了。你先别走，体委在找你核分。",
+          "hidden": true,
+          "time": "运动会"
+        },
+        {
+          "id": "ch07-score-high-2",
+          "senderId": "star",
+          "body": "投得很好。不是客气。",
+          "hidden": true,
+          "time": "运动会"
+        },
+        {
+          "id": "ch07-wrap-1",
+          "senderId": "junhao",
+          "body": "谁拍了我那个弹框？传原视频，别只发我捡球的。我晚上配个鼓点。",
+          "hidden": true,
+          "time": "运动会"
+        },
+        {
+          "id": "ch07-wrap-2",
+          "senderId": "brother",
+          "body": "发你了。外套拉链拉上，别又跑去对着风口站。",
+          "hidden": true,
+          "time": "运动会"
+        },
+        {
+          "id": "ch07-wrap-3",
+          "senderId": "junhao",
+          "body": "你刚才盯我那么紧，我还以为我踩线了。",
+          "hidden": true,
+          "time": "运动会"
+        },
+        {
+          "id": "ch07-wrap-4",
+          "senderId": "brother",
+          "body": "你一咳嗽就问我带没带水。现在喝，常温那瓶，蓝盖的不是你的。",
+          "hidden": true,
+          "time": "运动会"
+        },
+        {
+          "id": "ch07-wrap-5",
+          "senderId": "zuohang",
+          "body": "照片发了。{{playerName}}，先别删，我还没把跳远那几张挑出来，你别催我返工。",
+          "hidden": true,
+          "time": "运动会"
+        },
+        {
+          "id": "ch07-wrap-a",
+          "senderId": "zuohang",
+          "body": "原图给你。我也留一张，难得你没发现镜头。",
+          "hidden": true,
+          "time": "运动会"
+        },
+        {
+          "id": "ch07-wrap-b",
+          "senderId": "zuohang",
+          "body": "你当时在问球进没进。下次投完先别急着审问我。",
+          "hidden": true,
+          "time": "运动会"
+        }
+      ]
+    }
+  ],
+  "content": {
+    "notes": [
+      {
+        "id": "ch07-entry",
+        "title": "第七章 · 差一点就赢了",
+        "body": "运动会报名表传到最后一排，纸角已经卷了。趣味投篮，一人五球，不限基础。哥哥把通知发进群里，顺手圈了报名截止时间。",
+        "kind": "note",
+        "hidden": false,
+        "time": "运动会",
+        "unlock": "chapter.chapter-06-pending.completed"
+      },
+      {
+        "id": "ch07-memo",
+        "title": "五次以后",
+        "body": "袖口的灰没洗干净。妈问我是不是摔了，我说没有，投篮球弄的。说出来还有点得意，像今天干了什么很了不起的事。\n\n其实成绩贴出来的时候，我一点都不想说话。旁边的人在数班级积分，我装作找水，又绕回去看了一眼。报名时明明说随便试试，怎么连这个也要装。\n\n“你鞋带松了。”\n\n他今天第一句关心我的话，居然是这个。也可能根本算不上关心，换谁站在那儿，他都会提醒。我知道。可他后来问我手疼不疼，我还是下意识把手藏了一下，怕他看见我在笑。\n\n他问我是不是拍了张峻豪。我差一点就说，也可以给你拍。广播偏偏在那时候响了，等它停下来，他已经说让我们先看。我都没弄明白那个“你们”里有没有他。\n\n文化节那件事，我还是觉得他可以再争取一次。不能因为他今天看了我几次投篮，就替他把那一页翻过去。写到这里，又觉得自己好像很会讲道理。真站在他面前，问一句鞋带都能记到晚上。\n\n左航发来的照片里，我手伸得很高，嘴也没闭上。第一反应还是想删，放大以后却先找了场边。我到底想看清自己投得怎么样，还是想看看谁在看？\n\n先不删了。明天要是有人问，就说这张光线好。",
+        "kind": "note",
+        "hidden": true,
+        "time": "运动会"
+      }
+    ],
+    "files": [
+      {
+        "id": "ch07-practice",
+        "title": "赛前 · 球场边",
+        "body": "球又擦着篮筐落下。我追到台阶边，鞋带松开了一截。看台上有人试扩音器，“加油”两个字突然响得整片球场都回头。\n\n朱志鑫经过，伸脚挡住了快滚下去的球。",
+        "kind": "note",
+        "hidden": true,
+        "time": "运动会",
+        "meta": {
+          "activityDocument": "ch07-practice"
+        }
+      },
+      {
+        "id": "ch07-basketball",
+        "title": "五球投篮 · 轮到你了",
+        "body": "按住投篮蓄力，松开出手。五球之后可以采用成绩或重试，任何分数都能继续。",
+        "kind": "note",
+        "hidden": true,
+        "time": "运动会",
+        "meta": {
+          "activityDocument": "ch07-basketball"
+        }
+      },
+      {
+        "id": "ch07-after",
+        "title": "赛后 · 记分台旁",
+        "body": "成绩单刚贴上，记分台前就挤满了人。我看了两遍，没找到自己想要的那个名次。广播还在催接力队检录，哥哥的外套被挤到了椅子底下。\n\n我拿着水往旁边让了让。朱志鑫走过来，低头看了一眼。",
+        "kind": "note",
+        "hidden": true,
+        "time": "运动会",
+        "meta": {
+          "activityDocument": "ch07-after"
+        }
+      }
+    ],
+    "photos": [
+      {
+        "id": "ch07-photo",
+        "title": "运动会 · 出手以后",
+        "body": "【运动会照片待补】\n\n左航拍下最后一次出手。球还在半空，我的手还举着。画面边上，朱家琪举反了班级加油牌；哥哥正把张峻豪搭在椅背上的外套扔回他怀里。",
+        "kind": "image",
+        "hidden": true,
+        "time": "运动会",
+        "folder": "运动会"
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "ch07-start",
+      "label": "ch07-start",
+      "event": "chapterStart",
+      "target": "chapter-07-pending",
+      "conditions": [
+        {
+          "key": "chapter.chapter-06-pending.completed",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "chapter.chapter-07-pending.started",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "chapter.chapter-07-pending.started",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch07.stage",
+          "value": "signup"
+        },
+        {
+          "type": "variable",
+          "key": "story.dayLabel",
+          "value": "运动会"
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信：张泽禹发来了投篮赛报名通知。"
+        }
+      ]
+    },
+    {
+      "id": "ch07-start-note",
+      "label": "ch07-start-note",
+      "event": "read",
+      "target": "ch07-entry",
+      "conditions": [
+        {
+          "key": "chapter.chapter-06-pending.completed",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "chapter.chapter-07-pending.started",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "chapter.chapter-07-pending.started",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch07.stage",
+          "value": "signup"
+        },
+        {
+          "type": "variable",
+          "key": "story.dayLabel",
+          "value": "运动会"
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信：张泽禹发来了投篮赛报名通知。"
+        }
+      ]
+    },
+    {
+      "id": "ch07-shot-0-0-0",
+      "label": "ch07-shot-0-0-0",
+      "event": "basketballShot",
+      "target": "ch07-basketball.0.0.miss",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 0
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 0
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 1
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 0
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-shot-0-0-1",
+      "label": "ch07-shot-0-0-1",
+      "event": "basketballShot",
+      "target": "ch07-basketball.0.0.hit",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 0
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 0
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 1
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 1
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-shot-1-0-0",
+      "label": "ch07-shot-1-0-0",
+      "event": "basketballShot",
+      "target": "ch07-basketball.1.0.miss",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 1
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 0
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 2
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 0
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-shot-1-0-1",
+      "label": "ch07-shot-1-0-1",
+      "event": "basketballShot",
+      "target": "ch07-basketball.1.0.hit",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 1
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 0
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 2
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 1
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-shot-1-1-0",
+      "label": "ch07-shot-1-1-0",
+      "event": "basketballShot",
+      "target": "ch07-basketball.1.1.miss",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 1
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 1
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 2
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 1
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-shot-1-1-1",
+      "label": "ch07-shot-1-1-1",
+      "event": "basketballShot",
+      "target": "ch07-basketball.1.1.hit",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 1
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 1
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 2
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 2
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-shot-2-0-0",
+      "label": "ch07-shot-2-0-0",
+      "event": "basketballShot",
+      "target": "ch07-basketball.2.0.miss",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 2
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 0
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 3
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 0
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-shot-2-0-1",
+      "label": "ch07-shot-2-0-1",
+      "event": "basketballShot",
+      "target": "ch07-basketball.2.0.hit",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 2
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 0
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 3
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 1
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-shot-2-1-0",
+      "label": "ch07-shot-2-1-0",
+      "event": "basketballShot",
+      "target": "ch07-basketball.2.1.miss",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 2
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 1
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 3
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 1
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-shot-2-1-1",
+      "label": "ch07-shot-2-1-1",
+      "event": "basketballShot",
+      "target": "ch07-basketball.2.1.hit",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 2
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 1
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 3
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 2
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-shot-2-2-0",
+      "label": "ch07-shot-2-2-0",
+      "event": "basketballShot",
+      "target": "ch07-basketball.2.2.miss",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 2
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 2
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 3
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 2
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-shot-2-2-1",
+      "label": "ch07-shot-2-2-1",
+      "event": "basketballShot",
+      "target": "ch07-basketball.2.2.hit",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 2
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 2
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 3
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 3
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-shot-3-0-0",
+      "label": "ch07-shot-3-0-0",
+      "event": "basketballShot",
+      "target": "ch07-basketball.3.0.miss",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 3
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 0
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 4
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 0
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-shot-3-0-1",
+      "label": "ch07-shot-3-0-1",
+      "event": "basketballShot",
+      "target": "ch07-basketball.3.0.hit",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 3
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 0
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 4
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 1
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-shot-3-1-0",
+      "label": "ch07-shot-3-1-0",
+      "event": "basketballShot",
+      "target": "ch07-basketball.3.1.miss",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 3
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 1
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 4
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 1
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-shot-3-1-1",
+      "label": "ch07-shot-3-1-1",
+      "event": "basketballShot",
+      "target": "ch07-basketball.3.1.hit",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 3
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 1
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 4
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 2
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-shot-3-2-0",
+      "label": "ch07-shot-3-2-0",
+      "event": "basketballShot",
+      "target": "ch07-basketball.3.2.miss",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 3
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 2
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 4
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 2
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-shot-3-2-1",
+      "label": "ch07-shot-3-2-1",
+      "event": "basketballShot",
+      "target": "ch07-basketball.3.2.hit",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 3
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 2
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 4
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 3
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-shot-3-3-0",
+      "label": "ch07-shot-3-3-0",
+      "event": "basketballShot",
+      "target": "ch07-basketball.3.3.miss",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 3
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 3
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 4
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 3
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-shot-3-3-1",
+      "label": "ch07-shot-3-3-1",
+      "event": "basketballShot",
+      "target": "ch07-basketball.3.3.hit",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 3
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 3
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 4
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 4
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-shot-4-0-0",
+      "label": "ch07-shot-4-0-0",
+      "event": "basketballShot",
+      "target": "ch07-basketball.4.0.miss",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 4
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 0
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 5
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 0
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-shot-4-0-1",
+      "label": "ch07-shot-4-0-1",
+      "event": "basketballShot",
+      "target": "ch07-basketball.4.0.hit",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 4
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 0
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 5
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 1
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-shot-4-1-0",
+      "label": "ch07-shot-4-1-0",
+      "event": "basketballShot",
+      "target": "ch07-basketball.4.1.miss",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 4
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 1
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 5
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 1
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-shot-4-1-1",
+      "label": "ch07-shot-4-1-1",
+      "event": "basketballShot",
+      "target": "ch07-basketball.4.1.hit",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 4
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 1
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 5
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 2
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-shot-4-2-0",
+      "label": "ch07-shot-4-2-0",
+      "event": "basketballShot",
+      "target": "ch07-basketball.4.2.miss",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 4
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 2
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 5
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 2
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-shot-4-2-1",
+      "label": "ch07-shot-4-2-1",
+      "event": "basketballShot",
+      "target": "ch07-basketball.4.2.hit",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 4
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 2
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 5
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 3
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-shot-4-3-0",
+      "label": "ch07-shot-4-3-0",
+      "event": "basketballShot",
+      "target": "ch07-basketball.4.3.miss",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 4
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 3
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 5
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 3
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-shot-4-3-1",
+      "label": "ch07-shot-4-3-1",
+      "event": "basketballShot",
+      "target": "ch07-basketball.4.3.hit",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 4
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 3
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 5
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 4
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-shot-4-4-0",
+      "label": "ch07-shot-4-4-0",
+      "event": "basketballShot",
+      "target": "ch07-basketball.4.4.miss",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 4
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 4
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 5
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 4
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-shot-4-4-1",
+      "label": "ch07-shot-4-4-1",
+      "event": "basketballShot",
+      "target": "ch07-basketball.4.4.hit",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 4
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 4
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 5
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 5
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-reset",
+      "label": "ch07-reset",
+      "event": "basketballReset",
+      "target": "ch07-basketball",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.shots",
+          "value": 0
+        },
+        {
+          "type": "variable",
+          "key": "ch07-basketball.hits",
+          "value": 0
+        }
+      ],
+      "once": false
+    },
+    {
+      "id": "ch07-result-0",
+      "label": "ch07-result-0",
+      "event": "basketballFinish",
+      "target": "ch07-basketball.0",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 5
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 0
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.settled",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch07.score",
+          "value": 0
+        },
+        {
+          "type": "variable",
+          "key": "ch07.tier",
+          "value": "low"
+        },
+        {
+          "type": "variable",
+          "key": "ch07.lowReady",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch07-result-1",
+      "label": "ch07-result-1",
+      "event": "basketballFinish",
+      "target": "ch07-basketball.1",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 5
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 1
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.settled",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch07.score",
+          "value": 1
+        },
+        {
+          "type": "variable",
+          "key": "ch07.tier",
+          "value": "low"
+        },
+        {
+          "type": "variable",
+          "key": "ch07.lowReady",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch07-result-2",
+      "label": "ch07-result-2",
+      "event": "basketballFinish",
+      "target": "ch07-basketball.2",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 5
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 2
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.settled",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch07.score",
+          "value": 2
+        },
+        {
+          "type": "variable",
+          "key": "ch07.tier",
+          "value": "mid"
+        },
+        {
+          "type": "variable",
+          "key": "ch07.midReady",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch07-result-3",
+      "label": "ch07-result-3",
+      "event": "basketballFinish",
+      "target": "ch07-basketball.3",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 5
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 3
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.settled",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch07.score",
+          "value": 3
+        },
+        {
+          "type": "variable",
+          "key": "ch07.tier",
+          "value": "mid"
+        },
+        {
+          "type": "variable",
+          "key": "ch07.midReady",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch07-result-4",
+      "label": "ch07-result-4",
+      "event": "basketballFinish",
+      "target": "ch07-basketball.4",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 5
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 4
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.settled",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch07.score",
+          "value": 4
+        },
+        {
+          "type": "variable",
+          "key": "ch07.tier",
+          "value": "high"
+        },
+        {
+          "type": "variable",
+          "key": "ch07.highReady",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch07-result-5",
+      "label": "ch07-result-5",
+      "event": "basketballFinish",
+      "target": "ch07-basketball.5",
+      "conditions": [
+        {
+          "key": "ch07.stage",
+          "op": "eq",
+          "value": "game"
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "unlocked:ch07-basketball",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.shots",
+          "op": "eq",
+          "value": 5
+        },
+        {
+          "key": "ch07-basketball.hits",
+          "op": "eq",
+          "value": 5
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07-basketball.settled",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch07.score",
+          "value": 5
+        },
+        {
+          "type": "variable",
+          "key": "ch07.tier",
+          "value": "high"
+        },
+        {
+          "type": "variable",
+          "key": "ch07.highReady",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch07-read-photo",
+      "label": "ch07-read-photo",
+      "event": "read",
+      "target": "ch07-photo",
+      "conditions": [
+        {
+          "key": "ch07.chatDone",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "unlocked:ch07-photo",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07.photoRead",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ch07-memo",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch07.stage",
+          "value": "memo"
+        }
+      ]
+    },
+    {
+      "id": "ch07-read-memo",
+      "label": "ch07-read-memo",
+      "event": "read",
+      "target": "ch07-memo",
+      "conditions": [
+        {
+          "key": "ch07.photoRead",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "unlocked:ch07-memo",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "ch07.memoRead",
+          "value": true
+        }
+      ],
+      "next": [
+        "ch07-complete"
+      ]
+    },
+    {
+      "id": "ch07-complete",
+      "label": "第七章完成",
+      "type": "ending",
+      "conditions": [
+        {
+          "key": "ch07.memoRead",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07-basketball.settled",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch07.chatDone",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "chapter.chapter-07-pending.completed",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch07.stage",
+          "value": "completed"
+        },
+        {
+          "type": "variable",
+          "key": "chapter.next",
+          "value": "chapter-08-pending"
+        },
+        {
+          "type": "ending",
+          "key": "",
+          "value": "第七章《差一点就赢了》已完成。五次出手都算数。"
+        }
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "第七章-0球-challenge",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-dodge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-honest"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-restaurant"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-program-regret"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-truth-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch07-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch07-sign-challenge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-practice"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch07-practice.steady"
+        },
+        {
+          "event": "read",
+          "target": "ch07-basketball"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.0.0.miss"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.1.0.miss"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.2.0.miss"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.3.0.miss"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.4.0.miss"
+        },
+        {
+          "event": "basketballFinish",
+          "target": "ch07-basketball.0"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-after"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch07-after.back"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch07-keep"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch07-memo"
+        }
+      ],
+      "ending": "第七章《差一点就赢了》已完成。五次出手都算数。",
+      "expectUnlocked": [
+        "ch07-photo",
+        "ch07-memo",
+        "ch07-after"
+      ]
+    },
+    {
+      "name": "第七章-0球-try",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-dodge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-honest"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-restaurant"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-program-regret"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-truth-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch07-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch07-sign-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-practice"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch07-practice.myself"
+        },
+        {
+          "event": "read",
+          "target": "ch07-basketball"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.0.0.miss"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.1.0.miss"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.2.0.miss"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.3.0.miss"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.4.0.miss"
+        },
+        {
+          "event": "basketballFinish",
+          "target": "ch07-basketball.0"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-after"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch07-after.back"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch07-complain"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch07-memo"
+        }
+      ],
+      "ending": "第七章《差一点就赢了》已完成。五次出手都算数。",
+      "expectUnlocked": [
+        "ch07-photo",
+        "ch07-memo",
+        "ch07-after"
+      ]
+    },
+    {
+      "name": "第七章-1球-challenge",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-dodge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-honest"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-restaurant"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-program-regret"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-truth-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch07-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch07-sign-challenge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-practice"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch07-practice.steady"
+        },
+        {
+          "event": "read",
+          "target": "ch07-basketball"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.0.0.hit"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.1.1.miss"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.2.1.miss"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.3.1.miss"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.4.1.miss"
+        },
+        {
+          "event": "basketballFinish",
+          "target": "ch07-basketball.1"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-after"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch07-after.back"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch07-keep"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch07-memo"
+        }
+      ],
+      "ending": "第七章《差一点就赢了》已完成。五次出手都算数。",
+      "expectUnlocked": [
+        "ch07-photo",
+        "ch07-memo",
+        "ch07-after"
+      ]
+    },
+    {
+      "name": "第七章-1球-try",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-dodge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-honest"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-restaurant"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-program-regret"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-truth-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch07-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch07-sign-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-practice"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch07-practice.myself"
+        },
+        {
+          "event": "read",
+          "target": "ch07-basketball"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.0.0.hit"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.1.1.miss"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.2.1.miss"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.3.1.miss"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.4.1.miss"
+        },
+        {
+          "event": "basketballFinish",
+          "target": "ch07-basketball.1"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-after"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch07-after.back"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch07-complain"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch07-memo"
+        }
+      ],
+      "ending": "第七章《差一点就赢了》已完成。五次出手都算数。",
+      "expectUnlocked": [
+        "ch07-photo",
+        "ch07-memo",
+        "ch07-after"
+      ]
+    },
+    {
+      "name": "第七章-2球-challenge",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-dodge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-honest"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-restaurant"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-program-regret"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-truth-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch07-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch07-sign-challenge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-practice"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch07-practice.steady"
+        },
+        {
+          "event": "read",
+          "target": "ch07-basketball"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.0.0.hit"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.1.1.hit"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.2.2.miss"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.3.2.miss"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.4.2.miss"
+        },
+        {
+          "event": "basketballFinish",
+          "target": "ch07-basketball.2"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-after"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch07-after.back"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch07-keep"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch07-memo"
+        }
+      ],
+      "ending": "第七章《差一点就赢了》已完成。五次出手都算数。",
+      "expectUnlocked": [
+        "ch07-photo",
+        "ch07-memo",
+        "ch07-after"
+      ]
+    },
+    {
+      "name": "第七章-2球-try",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-dodge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-honest"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-restaurant"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-program-regret"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-truth-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch07-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch07-sign-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-practice"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch07-practice.myself"
+        },
+        {
+          "event": "read",
+          "target": "ch07-basketball"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.0.0.hit"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.1.1.hit"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.2.2.miss"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.3.2.miss"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.4.2.miss"
+        },
+        {
+          "event": "basketballFinish",
+          "target": "ch07-basketball.2"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-after"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch07-after.back"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch07-complain"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch07-memo"
+        }
+      ],
+      "ending": "第七章《差一点就赢了》已完成。五次出手都算数。",
+      "expectUnlocked": [
+        "ch07-photo",
+        "ch07-memo",
+        "ch07-after"
+      ]
+    },
+    {
+      "name": "第七章-3球-challenge",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-dodge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-honest"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-restaurant"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-program-regret"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-truth-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch07-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch07-sign-challenge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-practice"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch07-practice.steady"
+        },
+        {
+          "event": "read",
+          "target": "ch07-basketball"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.0.0.hit"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.1.1.hit"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.2.2.hit"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.3.3.miss"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.4.3.miss"
+        },
+        {
+          "event": "basketballFinish",
+          "target": "ch07-basketball.3"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-after"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch07-after.back"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch07-keep"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch07-memo"
+        }
+      ],
+      "ending": "第七章《差一点就赢了》已完成。五次出手都算数。",
+      "expectUnlocked": [
+        "ch07-photo",
+        "ch07-memo",
+        "ch07-after"
+      ]
+    },
+    {
+      "name": "第七章-3球-try",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-dodge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-honest"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-restaurant"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-program-regret"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-truth-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch07-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch07-sign-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-practice"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch07-practice.myself"
+        },
+        {
+          "event": "read",
+          "target": "ch07-basketball"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.0.0.hit"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.1.1.hit"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.2.2.hit"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.3.3.miss"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.4.3.miss"
+        },
+        {
+          "event": "basketballFinish",
+          "target": "ch07-basketball.3"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-after"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch07-after.back"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch07-complain"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch07-memo"
+        }
+      ],
+      "ending": "第七章《差一点就赢了》已完成。五次出手都算数。",
+      "expectUnlocked": [
+        "ch07-photo",
+        "ch07-memo",
+        "ch07-after"
+      ]
+    },
+    {
+      "name": "第七章-4球-challenge",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-dodge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-honest"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-restaurant"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-program-regret"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-truth-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch07-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch07-sign-challenge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-practice"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch07-practice.steady"
+        },
+        {
+          "event": "read",
+          "target": "ch07-basketball"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.0.0.hit"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.1.1.hit"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.2.2.hit"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.3.3.hit"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.4.4.miss"
+        },
+        {
+          "event": "basketballFinish",
+          "target": "ch07-basketball.4"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-after"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch07-after.back"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch07-keep"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch07-memo"
+        }
+      ],
+      "ending": "第七章《差一点就赢了》已完成。五次出手都算数。",
+      "expectUnlocked": [
+        "ch07-photo",
+        "ch07-memo",
+        "ch07-after"
+      ]
+    },
+    {
+      "name": "第七章-4球-try",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-dodge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-honest"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-restaurant"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-program-regret"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-truth-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch07-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch07-sign-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-practice"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch07-practice.myself"
+        },
+        {
+          "event": "read",
+          "target": "ch07-basketball"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.0.0.hit"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.1.1.hit"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.2.2.hit"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.3.3.hit"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.4.4.miss"
+        },
+        {
+          "event": "basketballFinish",
+          "target": "ch07-basketball.4"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-after"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch07-after.back"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch07-complain"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch07-memo"
+        }
+      ],
+      "ending": "第七章《差一点就赢了》已完成。五次出手都算数。",
+      "expectUnlocked": [
+        "ch07-photo",
+        "ch07-memo",
+        "ch07-after"
+      ]
+    },
+    {
+      "name": "第七章-5球-challenge",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-dodge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-honest"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-restaurant"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-program-regret"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-truth-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch07-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch07-sign-challenge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-practice"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch07-practice.steady"
+        },
+        {
+          "event": "read",
+          "target": "ch07-basketball"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.0.0.hit"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.1.1.hit"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.2.2.hit"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.3.3.hit"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.4.4.hit"
+        },
+        {
+          "event": "basketballFinish",
+          "target": "ch07-basketball.5"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-after"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch07-after.back"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch07-keep"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch07-memo"
+        }
+      ],
+      "ending": "第七章《差一点就赢了》已完成。五次出手都算数。",
+      "expectUnlocked": [
+        "ch07-photo",
+        "ch07-memo",
+        "ch07-after"
+      ]
+    },
+    {
+      "name": "第七章-5球-try",
+      "steps": [
+        {
+          "event": "read",
+          "target": "ch01-b-01"
+        },
+        {
+          "choose": "ch01-greeting-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-02"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-03"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-04"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-05"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-06"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-07"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-08"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-09"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-10"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-11"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-12"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-13"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-14"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "choose": "ch01-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-expression-answer-hide-feelings"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-15"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-16"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-17"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-18"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-19"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-b-20"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-moment-forward-weather"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-first-day"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-01"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-z-02"
+        },
+        {
+          "choose": "ch01-zuo-a"
+        },
+        {
+          "advanceMs": 2000
+        },
+        {
+          "event": "read",
+          "target": "ch01-zuo-answer-a"
+        },
+        {
+          "event": "read",
+          "target": "ch01-note-ending"
+        },
+        {
+          "event": "read",
+          "target": "ch02-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-secret-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-moment-activity"
+        },
+        {
+          "event": "read",
+          "target": "ch02-ceremony-photo"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-zuo-book"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-plan"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-role-data"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "friendAccept",
+          "target": "ch02-junhao-request"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-junhao-04"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-question-file"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch02-wrap-careful"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch02-ending-note"
+        },
+        {
+          "event": "read",
+          "target": "ch03-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-task-direct"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-roster"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zhu"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.junhao"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.brother"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.zuo"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.lifei"
+        },
+        {
+          "event": "documentInspect",
+          "target": "ch03-roster.jiaqi"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-roster.submit"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch03-plan-verify"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch03-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.hand-in"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch03-onsite.work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-updated"
+        },
+        {
+          "event": "read",
+          "target": "ch03-moment-work"
+        },
+        {
+          "event": "read",
+          "target": "ch03-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch04-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-attachment"
+        },
+        {
+          "event": "read",
+          "target": "ch04-demo"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-demo.review"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch04-demo-question"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-onsite"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch04-onsite.finish"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch04-memo-question"
+        },
+        {
+          "event": "read",
+          "target": "ch05-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-tease-dodge"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-ask-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch05-confide-honest"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch05-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-restaurant"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-program-regret"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch06-truth-deny"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch06-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch06-memo"
+        },
+        {
+          "event": "read",
+          "target": "ch07-entry"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch07-sign-try"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-practice"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch07-practice.myself"
+        },
+        {
+          "event": "read",
+          "target": "ch07-basketball"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.0.0.hit"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.1.1.hit"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.2.2.hit"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.3.3.hit"
+        },
+        {
+          "event": "basketballShot",
+          "target": "ch07-basketball.4.4.hit"
+        },
+        {
+          "event": "basketballFinish",
+          "target": "ch07-basketball.5"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-after"
+        },
+        {
+          "event": "documentAction",
+          "target": "ch07-after.back"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "choose": "ch07-complain"
+        },
+        {
+          "advanceMs": 60000
+        },
+        {
+          "event": "read",
+          "target": "ch07-photo"
+        },
+        {
+          "event": "read",
+          "target": "ch07-memo"
+        }
+      ],
+      "ending": "第七章《差一点就赢了》已完成。五次出手都算数。",
+      "expectUnlocked": [
+        "ch07-photo",
+        "ch07-memo",
+        "ch07-after"
+      ]
+    }
+  ]
+}

@@ -113,14 +113,15 @@ export function DeviceLock({
           <div className="lock-clock-block">
             <LockKeyhole size={18} />
             <p>
-              {new Intl.DateTimeFormat("zh-CN", {
-                month: "long",
-                day: "numeric",
-                weekday: "long",
-                timeZone: "UTC",
-              }).format(
-                new Date((work.phone.date || "2026-09-01") + "T12:00:00Z"),
-              )}
+              {String(work.variables["story.dayLabel"] || "") ||
+                new Intl.DateTimeFormat("zh-CN", {
+                  month: "long",
+                  day: "numeric",
+                  weekday: "long",
+                  timeZone: "UTC",
+                }).format(
+                  new Date((work.phone.date || "2026-09-01") + "T12:00:00Z"),
+                )}
             </p>
             <h1>{time}</h1>
           </div>
