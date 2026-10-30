@@ -1,5 +1,6 @@
 import type { Action, Condition, Runtime, StoryNode, Work } from "./schema";
 import { makeItem } from "./schema";
+import { marketEffects } from "./personalization/marketRuntime";
 export function testCondition(c: Condition, s: Runtime): boolean {
   const [scope, ...rest] = c.key.split(":");
   const key = rest.join(":");
@@ -142,6 +143,12 @@ function runQueue(
             .map((n) => n.id),
         );
     }
+    for (const a of marketEffects(w, s, n.actions)) {
+      const previous = s.variables[a.key];
+      apply(a, s, w);
+      if (a.type === "variable" && previous !== s.variables[a.key])
+        queue.push(...w.nodes.filter(node => node.event === "variable" && (!node.target || node.target === a.key)).map(node => node.id));
+    }
     if (
       n.type === "ending" &&
       !n.actions.some((a) => a.type === "ending") &&
@@ -167,7 +174,11 @@ export function dispatch(
   target = "",
 ): Runtime {
   const s = structuredClone(previous);
-  if (event === "choose") s.choices = [];
+  if (event === "choose") {
+    // Separate conversations may wait for replies at the same time.
+    const siblings = new Set(w.nodes.filter(n => n.type === "choice" && n.next.includes(target)).flatMap(n => n.next));
+    s.choices = siblings.size ? s.choices.filter(c => !siblings.has(c.target)) : [];
+  }
   if (event === "openApp" && !s.visited.includes(target))
     s.visited.push(target);
   if (event === "read" && !s.read.includes(target)) s.read.push(target);

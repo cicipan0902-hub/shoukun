@@ -46,14 +46,14 @@
     {
       "id": "gallery-court",
       "category": "gallery",
-      "file": null,
+      "file": "assets/gallery/basketball-court-01.pic.jpg",
       "required": false,
       "description": "篮球场照片占位，暂无实际图片"
     },
     {
       "id": "moment-school",
       "category": "moments",
-      "file": null,
+      "file": "assets/moments/school-01.jpg",
       "required": false,
       "description": "朋友圈图片占位"
     },
@@ -137,14 +137,14 @@
     {
       "id": "avatar-lifei",
       "category": "characters",
-      "file": "assets/characters/avatar-lifei.png",
+      "file": "assets/characters/avatar-lifei.pic.jpg",
       "required": false,
       "description": "原创NPC首字占位头像"
     },
     {
       "id": "avatar-zhujiaqi",
       "category": "characters",
-      "file": "assets/characters/avatar-zhujiaqi.png",
+      "file": "assets/characters/avatar-zhujiaqi.pic.jpg",
       "required": false,
       "description": "原创NPC首字占位头像"
     },
@@ -158,14 +158,14 @@
     {
       "id": "photo-party-evening",
       "category": "gallery",
-      "file": "assets/gallery/party-evening-01.jpg",
+      "file": "assets/gallery/party-evening-01.pic.jpg",
       "required": false,
       "description": "第六章聚会合照；待作者上传，不用无关照片替代。"
     },
     {
       "id": "video-party-sing",
       "category": "audio",
-      "file": null,
+      "file": "assets/ktv/party-sing-01.mp4",
       "required": false,
       "description": "第六章 KTV 现场合唱 MP4；与旧作品 Demo 分开。"
     },
@@ -375,7 +375,7 @@
     {
       "id": "xianyu-product-cr7-only-god-figure",
       "category": "gallery",
-      "file": "assets/xianyu/products/cr7-only-god/cr7-only-god-figure-01.jpg",
+      "file": "assets/xianyu/products/cr7-only-god/手办.pic.jpg",
       "required": false,
       "description": "C罗唯一真神：足球球星小手办，展示柜挪位置"
     },
@@ -438,9 +438,121 @@
     {
       "id": "photo-ch08-book-exchange",
       "category": "events",
-      "file": "assets/events/ch08-book-exchange-01.jpg",
+      "file": "assets/events/ch08-book-exchange-01.pic.jpg",
       "required": false,
       "description": "第八章旧书交换活动照片，可选，不阻断主线"
+    },
+    {
+      "id": "photo-ch09-group",
+      "category": "events",
+      "file": "assets/events/ch09-snack-shop-group-01.pic.jpg",
+      "required": false,
+      "description": "第九章小吃店合照；缺图保留明确占位，不阻断对话"
+    },
+    {
+      "id": "photo-ch09-candid",
+      "category": "events",
+      "file": "assets/events/ch09-star-candid-01.pic.jpg",
+      "required": false,
+      "description": "第九章小吃店抓拍原图；缺图保留明确占位，不阻断对话"
+    },
+    {
+      "id": "background-setup",
+      "category": "backgrounds",
+      "file": "assets/backgrounds/entry-background.pic.jpg",
+      "required": false,
+      "description": "进入游戏页面的作品背景，缺图保留原有排版"
+    },
+    {
+      "id": "wallpaper-campus",
+      "category": "backgrounds",
+      "file": "assets/backgrounds/phone-wallpaper.pic.jpg",
+      "required": false,
+      "description": "虚拟手机桌面与锁屏的作品壁纸，缺图保留原有壁纸"
+    },
+    {
+      "id": "xianyu-product-hanbing-sheshou-cap",
+      "category": "gallery",
+      "file": "assets/xianyu/products/hanbing-sheshou/hanbing-sheshou-cap-01.pic.jpg",
+      "required": false,
+      "description": "奶嘴帽，戴上不保证进球，待作者上传"
+    },
+    {
+      "id": "xianyu-product-xinan-yujie-gaming",
+      "category": "gallery",
+      "file": "assets/xianyu/products/xinan-yujie/xinan-yujie-gaming-01.pic.jpg",
+      "required": false,
+      "description": "打瓦账号体验卡【虚构模拟】，待作者上传"
+    },
+    {
+      "id": "xianyu-product-tutucha-mengmengda-shirt",
+      "category": "gallery",
+      "file": "assets/xianyu/products/tutucha-mengmengda/tutucha-mengmengda-shirt-01.pic.jpg",
+      "required": false,
+      "description": "闲置衬衫，洗净收好了，待作者上传"
+    },
+    {
+      "id": "xianyu-product-cr7-only-god-career",
+      "category": "gallery",
+      "file": "assets/xianyu/products/cr7-only-god/cr7-only-god-career-01.pic.jpg",
+      "required": false,
+      "description": "事业运壁纸，先把今天的题写完，待作者上传"
+    },
+    {
+      "id": "xianyu-product-cr7-only-god-handsome",
+      "category": "gallery",
+      "file": "assets/xianyu/products/cr7-only-god/cr7-only-god-handsome-01.pic.jpg",
+      "required": false,
+      "description": "帅哥主题壁纸【图片待补】，待作者上传"
+    },
+    {
+      "id": "xianyu-product-cr7-only-god-luck",
+      "category": "gallery",
+      "file": "assets/xianyu/products/cr7-only-god/cr7-only-god-luck-01.pic.jpg",
+      "required": false,
+      "description": "好运壁纸，祝你今天顺一点，待作者上传"
+    },
+    {
+      "id": "photo-ch10-photo-cake",
+      "category": "events",
+      "file": "assets/events/ch10-birthday/cake-01.pic.jpg",
+      "required": false,
+      "description": "生日蛋糕；待作者上传，剧情可完整试玩"
+    },
+    {
+      "id": "photo-ch10-photo-camera",
+      "category": "events",
+      "file": "assets/events/ch10-birthday/camera-01.pic.jpg",
+      "required": false,
+      "description": "哥哥送的拍立得礼物；待作者上传，剧情可完整试玩"
+    },
+    {
+      "id": "photo-ch10-photo-party",
+      "category": "events",
+      "file": "assets/events/ch10-birthday/party-01.pic.jpg",
+      "required": false,
+      "description": "生日聚会现场；待作者上传，剧情可完整试玩"
+    },
+    {
+      "id": "photo-ch10-photo-group",
+      "category": "events",
+      "file": "assets/events/ch10-birthday/group-01.pic.jpg",
+      "required": false,
+      "description": "生日集体合照；待作者上传，剧情可完整试玩"
+    },
+    {
+      "id": "photo-ch10-photo-pair-a",
+      "category": "events",
+      "file": "assets/events/ch10-birthday/polaroid-a-01.pic.jpg",
+      "required": false,
+      "description": "男女主拍立得 · 女主保留；待作者上传，剧情可完整试玩"
+    },
+    {
+      "id": "photo-ch10-photo-pair-b",
+      "category": "events",
+      "file": "assets/events/ch10-birthday/polaroid-b-01.pic.jpg",
+      "required": false,
+      "description": "男女主拍立得 · 朱志鑫保留；待作者上传，剧情可完整试玩"
     }
   ]
 }

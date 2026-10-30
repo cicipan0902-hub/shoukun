@@ -1,3 +1,4 @@
+import { readPublishedWork } from "./chunkedAssets";
 import { ContentUpdateNotice } from "./ContentUpdateNotice";
 import { RuntimeBoundary } from "./RuntimeBoundary";
 import { useEffect, useState } from "react";
@@ -53,6 +54,7 @@ function StoryPlayer() {
         if (!r.ok) throw Error("缺少作品文件，请运行 npm run story:build");
         return r.json();
       })
+      .then((x) => readPublishedWork(x, abort.signal))
       .then((x) => {
         const w = validateWork(x);
         document.title =
@@ -97,6 +99,8 @@ function StoryPlayer() {
               saved={profile}
               onEnter={enter}
               chapter={work.id === "shoukun-good-weather"}
+              background={String(work.variables["author.setupBackground"] || "")}
+              defaultAvatar={String(work.variables["author.ownerAvatar"] || "")}
             />
           )
         ) : (

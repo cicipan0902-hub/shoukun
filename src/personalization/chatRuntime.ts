@@ -91,7 +91,7 @@ export function pendingChat(work: Work, s: Runtime, thread: string): boolean {
 }
 export function replyOptions(work: Work, s: Runtime, thread: string) {
   if (pendingChat(work, s, thread)) return [];
-  return s.choices.filter((c) => {
+  const available = s.choices.filter((c) => {
     const chat = choiceChat(work, c.target);
     return (work.data.wechat || []).some(
       (i) =>
@@ -100,14 +100,18 @@ export function replyOptions(work: Work, s: Runtime, thread: string) {
         chatItemAllowed(work, s, i),
     );
   });
+  const first = available[0];
+  const group = first && work.nodes.find(n => n.type === "choice" && n.next.includes(first.target));
+  return group ? available.filter(c => group.next.includes(c.target)) : available;
 }
 export function nextChatRead(work: Work, s: Runtime, thread: string) {
-  if (s.choices.length || pendingChat(work, s, thread)) return null;
+  if (pendingChat(work, s, thread)) return null;
   return (
     (work.data.wechat || []).find(
       (i) =>
         i.title === thread &&
         i.meta.conversationId &&
+        !s.choices.some(c => choiceChat(work, c.target) === i.meta.conversationId) &&
         visible(i, s) &&
         chatItemAllowed(work, s, i) &&
         work.nodes.some(

@@ -32,3 +32,6 @@ stories/foundation/chapter04-author-notes.json
 stories/foundation/chapter05-author-notes.json
 stories/foundation/memo-plan.json
 stories/foundation/xianyu-seller-links.author.json
+
+# Generated Cloudflare player export.
+dist-public/

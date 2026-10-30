@@ -32,6 +32,28 @@
     transparent 68%
   );
 }
+.setup-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+  z-index: -3;
+}
+.player-setup.has-background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background: linear-gradient(100deg, #12141ddb, #12141da8);
+  pointer-events: none;
+}
+.has-background .setup-card {
+  background: #191b22dc;
+  backdrop-filter: blur(12px);
+}
 .setup-kicker {
   display: flex;
   align-items: center;
@@ -162,6 +184,58 @@
   color: #f4aaaa;
   font-size: 12px;
 }
+.setup-avatar-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 26px;
+}
+.setup-avatar {
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #4d4544;
+  border: 1px solid #dfc2a95c;
+  font-size: 24px;
+}
+.setup-card .setup-avatar-picker {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 14px;
+  margin: 0;
+  border: 1px solid #dfc2a950;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.setup-card .setup-avatar-picker:focus-within { outline: 2px solid #dfc2a9; outline-offset: 3px; }
+.setup-card .setup-avatar-picker input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}
+.setup-avatar-hint { margin: 8px 0 0; color: #b5adb5; font-size: 11px; line-height: 1.6; }
+.setup-card .setup-avatar-reset {
+  width: auto;
+  min-height: 32px;
+  padding: 0;
+  background: none;
+  border: 0;
+  color: #dfc2a9;
+  text-decoration: underline;
+  font-size: 11px;
+}
+.setup-card button:disabled { opacity: .55; cursor: wait; }
 .profile-control {
   position: fixed;
   right: 14px;

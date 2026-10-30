@@ -20,10 +20,11 @@ import personal from "../../stories/foundation/weibo-personal.json";
 import entertainment from "../../stories/foundation/weibo-entertainment.json";
 const build = (media: Record<string, string> = {}) => compileProject(source, project, cast, assets, foundationExtensions(), media, interactions);
 describe("independent personal Weibo and local entertainment topics", () => {
-  it("configures three to four posts per role and hides later experiences before their chapter", () => {
+  it("configures the initial personal post collection and hides later experiences before their chapter", () => {
     const { work } = build(), state = initialRuntime(work);
+    const initialIds = new Set(personal.content.weibo.map((i) => i.id));
     for (const id of ["owner", "star", "junhao", "brother", "zuohang", "jiaqi", "lifei"]) {
-      const posts = work.data.weibo.filter((i) => i.meta.personal === "true" && i.meta.type === "post" && i.meta.accountId === id);
+      const posts = work.data.weibo.filter((i) => initialIds.has(i.id) && i.meta.personal === "true" && i.meta.type === "post" && i.meta.accountId === id);
       expect(posts.length).toBeGreaterThanOrEqual(3);expect(posts.length).toBeLessThanOrEqual(5);
     }
     const late = work.data.weibo.find((i) => i.id === "personal-star-04")!;

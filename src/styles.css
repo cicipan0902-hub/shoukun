@@ -759,6 +759,7 @@ svg {
   filter: blur(3px);
   border: 1px solid #ffffff20;
 }
+.phone-screen.wallpaper-photo .wallpaper-orb { display: none; }
 .orb-one {
   width: 490px;
   height: 470px;
@@ -4918,3 +4919,8 @@ label {
   background: #e34f58;
   transform: rotate(135deg);
 }
+
+.published-video-pending { padding: 24px 16px; border-radius: 12px; background: #20242a; color: #fff; text-align: center; }
+.published-video-pending p { color: inherit; font-size: 14px; }
+.published-video-pending button { padding: 10px 18px; border: 0; border-radius: 8px; background: #fff; color: #20242a; font: inherit; }
+.published-video-pending button:disabled { opacity: .5; }

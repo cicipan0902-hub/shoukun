@@ -50,6 +50,20 @@ describe("additive authoring configuration", () => {
       r.work.data.wechat.find((i) => i.id === "group-star")?.meta.groupAvatar,
     ).toBe(pixel);
   });
+  it("binds optional entry art and wallpaper with fallback when files are absent", () => {
+    const configured = { ...project, bindings: [...project.bindings,
+      { assetId: "background-setup", target: "setupBackground", targetId: "setup" },
+      { assetId: "wallpaper-campus", target: "wallpaper", targetId: "phone" },
+    ] };
+    const missing = compileProject(source, configured, cast, assets, extra).work;
+    expect(missing.phone.wallpaper).toBe(source.phone.wallpaper);
+    expect(missing.variables["author.setupBackground"]).toBeUndefined();
+    const filled = compileProject(source, configured, cast, assets, extra, {
+      "background-setup": pixel, "wallpaper-campus": pixel,
+    }).work;
+    expect(filled.variables["author.setupBackground"]).toBe(pixel);
+    expect(filled.phone.wallpaper).toBe(pixel);
+  });
   it("supports large inline group avatar metadata without relaxing ordinary metadata limits", () => {
     const media = pixel + " ".repeat(10000);
     const r = compileProject(source, project, cast, assets, extra, {

@@ -62,6 +62,26 @@
           "value": true
         }
       ]
+    },
+    {
+      "id": "ch09-star-request",
+      "contactId": "star",
+      "direction": "outgoing",
+      "message": "照片原图发你，我是今天一起吃饭的学妹。",
+      "conditions": [
+        {
+          "key": "ch09.requestReady",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "acceptActions": [
+        {
+          "type": "variable",
+          "key": "ch09.friendReady",
+          "value": true
+        }
+      ]
     }
   ],
   "flows": [
@@ -2543,9 +2563,786 @@
           "value": "备忘录有新记录，微博也更新了。微博不影响本章完成。"
         }
       ]
+    },
+    {
+      "id": "ch09-invite",
+      "chatId": "ch09-party",
+      "trigger": {
+        "event": "variable",
+        "target": "chapter.chapter-09-pending.started",
+        "conditions": [
+          {
+            "key": "chapter.chapter-09-pending.started",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch09-invite-1"
+        },
+        {
+          "message": "ch09-invite-2"
+        },
+        {
+          "message": "ch09-invite-3"
+        },
+        {
+          "message": "ch09-invite-4"
+        },
+        {
+          "message": "ch09-invite-5"
+        },
+        {
+          "choice": "ch09-invite",
+          "prompt": "怎么回应哥哥的邀请？",
+          "options": [
+            {
+              "id": "ch09-invite-pay",
+              "text": "先问清楚，谁请？",
+              "kind": "tone",
+              "replies": [
+                {
+                  "message": "ch09-invite-pay-reply"
+                }
+              ],
+              "actions": []
+            },
+            {
+              "id": "ch09-invite-arrive",
+              "text": "我交完作业就来。别把我的位子拿去放书包。",
+              "kind": "tone",
+              "replies": [
+                {
+                  "message": "ch09-invite-arrive-reply"
+                }
+              ],
+              "actions": []
+            }
+          ]
+        },
+        {
+          "message": "ch09-invite-6"
+        },
+        {
+          "message": "ch09-invite-7"
+        },
+        {
+          "message": "ch09-invite-8"
+        }
+      ],
+      "after": [
+        {
+          "type": "variable",
+          "key": "ch09.stage",
+          "value": "dinner"
+        },
+        {
+          "type": "unlock",
+          "key": "ch09-dinner",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "文件：周五小吃店。"
+        }
+      ],
+      "onStart": [
+        {
+          "type": "variable",
+          "key": "ch09.stage",
+          "value": "invite"
+        }
+      ]
+    },
+    {
+      "id": "ch09-share",
+      "chatId": "ch09-party",
+      "trigger": {
+        "event": "variable",
+        "target": "ch09.shareReady",
+        "conditions": [
+          {
+            "key": "ch09.shareReady",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch09-share-1"
+        },
+        {
+          "message": "ch09-share-2"
+        },
+        {
+          "message": "ch09-share-3"
+        },
+        {
+          "message": "ch09-share-4"
+        },
+        {
+          "message": "ch09-share-5"
+        },
+        {
+          "message": "ch09-share-6"
+        },
+        {
+          "message": "ch09-share-7"
+        },
+        {
+          "choice": "ch09-add",
+          "prompt": "怎么把原图给他？",
+          "options": [
+            {
+              "id": "ch09-add-direct",
+              "text": "可以。我加你微信？原图单独发你。",
+              "kind": "important",
+              "replies": [
+                {
+                  "message": "ch09-add-direct-reply"
+                }
+              ],
+              "actions": []
+            },
+            {
+              "id": "ch09-add-joke",
+              "text": "可以，先加个微信。摄影师还负责售后。",
+              "kind": "important",
+              "replies": [
+                {
+                  "message": "ch09-add-joke-reply"
+                }
+              ],
+              "actions": []
+            }
+          ]
+        }
+      ],
+      "after": [
+        {
+          "type": "variable",
+          "key": "ch09.stage",
+          "value": "request"
+        },
+        {
+          "type": "variable",
+          "key": "ch09.requestReady",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信 → 通讯录 → 新的朋友，向朱志鑫发送好友申请；已是好友的存档会直接继续私聊。"
+        }
+      ]
+    },
+    {
+      "id": "ch09-private",
+      "chatId": "ch09-star",
+      "trigger": {
+        "event": "variable",
+        "target": "ch09.friendReady",
+        "conditions": [
+          {
+            "key": "ch09.friendReady",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "key": "ch09.requestReady",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "key": "friend.star.state",
+            "op": "eq",
+            "value": "accepted"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch09-private-1"
+        },
+        {
+          "choice": "ch09-photo",
+          "prompt": "发送抓拍原图。",
+          "options": [
+            {
+              "id": "ch09-photo-plain",
+              "text": "来了。没修过，你先看看。",
+              "kind": "tone",
+              "replies": [
+                {
+                  "message": "ch09-photo-original",
+                  "delayMs": 500
+                },
+                {
+                  "message": "ch09-photo-plain-reply"
+                }
+              ],
+              "actions": []
+            },
+            {
+              "id": "ch09-photo-tease",
+              "text": "先声明，表情归本人负责。",
+              "kind": "tone",
+              "replies": [
+                {
+                  "message": "ch09-photo-original",
+                  "delayMs": 500
+                },
+                {
+                  "message": "ch09-photo-tease-reply"
+                }
+              ],
+              "actions": []
+            }
+          ]
+        },
+        {
+          "message": "ch09-private-2"
+        },
+        {
+          "message": "ch09-private-3"
+        },
+        {
+          "message": "ch09-private-4"
+        },
+        {
+          "message": "ch09-private-5"
+        },
+        {
+          "message": "ch09-private-6",
+          "delayMs": 1500
+        },
+        {
+          "message": "ch09-private-7",
+          "delayMs": 2400
+        },
+        {
+          "choice": "ch09-home",
+          "prompt": "照片已经发完了，他又问了一句。",
+          "options": [
+            {
+              "id": "ch09-home-brother",
+              "text": "到了。我哥刚进门就找吃的，你们真把他脸挡饿了。",
+              "kind": "tone",
+              "replies": [
+                {
+                  "message": "ch09-home-brother-1"
+                },
+                {
+                  "message": "ch09-home-brother-2"
+                }
+              ],
+              "actions": []
+            },
+            {
+              "id": "ch09-home-self",
+              "text": "刚到。外套差点落店里，幸好出门前又看了一眼。",
+              "kind": "tone",
+              "replies": [
+                {
+                  "message": "ch09-home-self-1"
+                },
+                {
+                  "message": "ch09-home-self-2"
+                }
+              ],
+              "actions": []
+            }
+          ]
+        },
+        {
+          "message": "ch09-private-8"
+        },
+        {
+          "message": "ch09-private-9"
+        },
+        {
+          "message": "ch09-private-10"
+        },
+        {
+          "message": "ch09-private-11"
+        },
+        {
+          "message": "ch09-private-12"
+        },
+        {
+          "message": "ch09-private-13",
+          "delayMs": 2300
+        },
+        {
+          "message": "ch09-private-14"
+        },
+        {
+          "message": "ch09-private-15"
+        },
+        {
+          "message": "ch09-private-16",
+          "delayMs": 2000
+        },
+        {
+          "message": "ch09-private-17"
+        },
+        {
+          "message": "ch09-private-18",
+          "delayMs": 1800
+        },
+        {
+          "message": "ch09-private-19",
+          "delayMs": 2600
+        },
+        {
+          "choice": "ch09-book",
+          "prompt": "他还记得旧书摊的事。",
+          "options": [
+            {
+              "id": "ch09-book-honest",
+              "text": "还没。后来光顾着收书，忘了去借。",
+              "kind": "tone",
+              "replies": [
+                {
+                  "message": "ch09-book-honest-reply"
+                }
+              ],
+              "actions": []
+            },
+            {
+              "id": "ch09-book-mouthy",
+              "text": "书名倒是记全了。找书属于下一步。",
+              "kind": "tone",
+              "replies": [
+                {
+                  "message": "ch09-book-mouthy-reply"
+                }
+              ],
+              "actions": []
+            }
+          ]
+        },
+        {
+          "message": "ch09-private-20"
+        },
+        {
+          "message": "ch09-private-21"
+        },
+        {
+          "message": "ch09-private-22",
+          "delayMs": 2000
+        },
+        {
+          "message": "ch09-private-23",
+          "delayMs": 1700
+        },
+        {
+          "message": "ch09-private-24"
+        },
+        {
+          "message": "ch09-private-25"
+        },
+        {
+          "message": "ch09-private-26"
+        }
+      ],
+      "after": [
+        {
+          "type": "variable",
+          "key": "ch09.privateDone",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "ch09.stage",
+          "value": "memo"
+        },
+        {
+          "type": "unlock",
+          "key": "ch09-memo",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "备忘录有新记录。今晚的朋友圈和微博可自由浏览，不影响主线。"
+        }
+      ],
+      "onStart": [
+        {
+          "type": "variable",
+          "key": "ch09.stage",
+          "value": "private"
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信：朱志鑫发来了私聊消息。"
+        }
+      ]
+    },
+    {
+      "id": "ch09-hook",
+      "chatId": "ch09-star",
+      "trigger": {
+        "event": "variable",
+        "target": "ch09.hookReady",
+        "conditions": [
+          {
+            "key": "ch09.hookReady",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch09-next-morning",
+          "delayMs": 2400
+        }
+      ],
+      "after": [
+        {
+          "type": "variable",
+          "key": "ch09.hookDone",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信 · 朱志鑫：我找到那本书了。你今天还去图书馆吗？"
+        }
+      ],
+      "onStart": [
+        {
+          "type": "variable",
+          "key": "ch09.stage",
+          "value": "next-morning"
+        }
+      ]
+    },
+    {
+      "id": "ch10-invite",
+      "chatId": "ch10-birthday-group",
+      "trigger": {
+        "event": "variable",
+        "target": "ch10.inviteReady",
+        "conditions": [
+          {
+            "key": "ch10.inviteReady",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch10-invite-1",
+          "delayMs": 900
+        },
+        {
+          "message": "ch10-invite-2",
+          "delayMs": 900
+        },
+        {
+          "message": "ch10-invite-3",
+          "delayMs": 900
+        },
+        {
+          "message": "ch10-invite-4",
+          "delayMs": 900
+        },
+        {
+          "message": "ch10-invite-5",
+          "delayMs": 900
+        },
+        {
+          "choice": "ch10-invite-choice",
+          "prompt": "回一句群里的消息",
+          "options": [
+            {
+              "id": "ch10-invite-cake",
+              "text": "先说好，蜡烛别插得像灭火演习。",
+              "kind": "tone",
+              "actions": [],
+              "replies": [
+                {
+                  "message": "ch10-invite-cake-reply",
+                  "delayMs": 900
+                }
+              ]
+            },
+            {
+              "id": "ch10-invite-time",
+              "text": "我交完卷子就来。谁占了我的位置就让他站着吃。",
+              "kind": "tone",
+              "actions": [],
+              "replies": [
+                {
+                  "message": "ch10-invite-time-reply",
+                  "delayMs": 900
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "onStart": [
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信 · 寿星今天不准迟到：有新消息。"
+        }
+      ],
+      "after": [
+        {
+          "type": "variable",
+          "key": "ch10.stage",
+          "value": "gift"
+        },
+        {
+          "type": "unlock",
+          "key": "ch10-gift",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "文件：生日聚会开始了。"
+        }
+      ]
     }
   ],
   "guides": [
+    {
+      "conditions": [
+        {
+          "key": "ch10.stage",
+          "op": "eq",
+          "value": "last-line"
+        }
+      ],
+      "title": "还有两张相纸",
+      "detail": "文件 →《两张相纸》。",
+      "app": "files",
+      "itemId": "ch10-polaroids"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch10.stage",
+          "op": "eq",
+          "value": "return"
+        }
+      ],
+      "title": "快散场的时候",
+      "detail": "文件 →《快散场的时候》。",
+      "app": "files",
+      "itemId": "ch10-return"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch10.stage",
+          "op": "eq",
+          "value": "photos"
+        }
+      ],
+      "title": "拿起新相机",
+      "detail": "文件 →《拍立得 · 第一张合照》。",
+      "app": "files",
+      "itemId": "ch10-photos"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch10.stage",
+          "op": "eq",
+          "value": "wishes"
+        }
+      ],
+      "title": "留一句话给自己",
+      "detail": "文件 →《留给自己的愿望》。每道题都可以留白。",
+      "app": "files",
+      "itemId": "ch10-birthday"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch10.stage",
+          "op": "eq",
+          "value": "gift"
+        }
+      ],
+      "title": "拆开礼物",
+      "detail": "文件 →《生日 · 先拆这个》。",
+      "app": "files",
+      "itemId": "ch10-gift"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch10.stage",
+          "op": "eq",
+          "value": "invite"
+        }
+      ],
+      "title": "看看群消息",
+      "detail": "微信 → 寿星今天不准迟到，选一句自己的回应。",
+      "app": "wechat",
+      "thread": "寿星今天不准迟到"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch10.stage",
+          "op": "eq",
+          "value": "corridor"
+        }
+      ],
+      "title": "午休后的走廊",
+      "detail": "文件 →《走廊 · 换了壁纸》。",
+      "app": "files",
+      "itemId": "ch10-corridor"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch10.stage",
+          "op": "eq",
+          "value": "wallpaper"
+        }
+      ],
+      "title": "先挑壁纸",
+      "detail": "闲鱼 → C罗唯一真神 → 帅哥主题壁纸，购买后回文件《那张“事业运”壁纸》设置。",
+      "app": "files",
+      "itemId": "ch10-wallpaper"
+    },
+    {
+      "title": "进入第九章 · 好友申请",
+      "detail": "备忘录 → 第九章入口。",
+      "app": "notes",
+      "itemId": "ch09-entry",
+      "conditions": [
+        {
+          "key": "chapter.chapter-08-pending.completed",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "chapter.chapter-09-pending.started",
+          "op": "eq",
+          "value": false
+        }
+      ]
+    },
+    {
+      "title": "看看哥哥的晚饭邀请",
+      "detail": "按主线继续；朋友圈、微博和相册可自由浏览，不影响进度。",
+      "app": "wechat",
+      "conditions": [
+        {
+          "key": "ch09.stage",
+          "op": "eq",
+          "value": "invite"
+        }
+      ],
+      "thread": "放学先吃饭"
+    },
+    {
+      "title": "放学后，去小吃店",
+      "detail": "按主线继续；朋友圈、微博和相册可自由浏览，不影响进度。",
+      "app": "files",
+      "conditions": [
+        {
+          "key": "ch09.stage",
+          "op": "eq",
+          "value": "dinner"
+        }
+      ],
+      "itemId": "ch09-dinner"
+    },
+    {
+      "title": "把合照发到群里",
+      "detail": "按主线继续；朋友圈、微博和相册可自由浏览，不影响进度。",
+      "app": "wechat",
+      "conditions": [
+        {
+          "key": "ch09.stage",
+          "op": "eq",
+          "value": "sharing"
+        }
+      ],
+      "thread": "放学先吃饭"
+    },
+    {
+      "title": "发送好友申请",
+      "detail": "微信 → 通讯录 → 新的朋友 → 朱志鑫 → 发送申请；验证通过后打开朱志鑫私聊。",
+      "app": "wechat",
+      "conditions": [
+        {
+          "key": "ch09.stage",
+          "op": "eq",
+          "value": "request"
+        }
+      ]
+    },
+    {
+      "title": "和朱志鑫单独聊聊",
+      "detail": "按主线继续；朋友圈、微博和相册可自由浏览，不影响进度。",
+      "app": "wechat",
+      "conditions": [
+        {
+          "key": "ch09.stage",
+          "op": "eq",
+          "value": "private"
+        }
+      ],
+      "thread": "朱志鑫"
+    },
+    {
+      "title": "读完今晚的备忘录",
+      "detail": "按主线继续；朋友圈、微博和相册可自由浏览，不影响进度。",
+      "app": "notes",
+      "conditions": [
+        {
+          "key": "ch09.stage",
+          "op": "eq",
+          "value": "memo"
+        }
+      ],
+      "itemId": "ch09-memo"
+    },
+    {
+      "title": "第二天的消息",
+      "detail": "按主线继续；朋友圈、微博和相册可自由浏览，不影响进度。",
+      "app": "wechat",
+      "conditions": [
+        {
+          "key": "ch09.stage",
+          "op": "eq",
+          "value": "next-morning"
+        }
+      ],
+      "thread": "朱志鑫"
+    },
+    {
+      "title": "第九章已完成",
+      "detail": "下一章待续。朱志鑫的新消息已保留在私聊，可以返回查看。",
+      "app": "wechat",
+      "thread": "朱志鑫",
+      "conditions": [
+        {
+          "key": "chapter.chapter-09-pending.completed",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
     {
       "title": "进入第八章 · 她喜欢的人",
       "detail": "备忘录 → 第八章入口。",
@@ -3499,6 +4296,20 @@
       "label": "进入第八章 · 她喜欢的人",
       "event": "chapterStart",
       "target": "chapter-08-pending"
+    },
+    {
+      "afterKey": "chapter.chapter-08-pending.completed",
+      "startedKey": "chapter.chapter-09-pending.started",
+      "label": "进入第九章 · 好友申请",
+      "event": "chapterStart",
+      "target": "chapter-09-pending"
+    },
+    {
+      "afterKey": "chapter.chapter-09-pending.completed",
+      "startedKey": "chapter.chapter-10-pending.started",
+      "label": "进入第十章 · 留给自己的愿望",
+      "event": "chapterStart",
+      "target": "chapter-10-pending"
     }
   ],
   "documents": [
@@ -4483,6 +5294,1172 @@
           ]
         }
       ]
+    },
+    {
+      "id": "ch09-dinner",
+      "itemId": "ch09-dinner",
+      "kind": "scene",
+      "conditions": [],
+      "entries": [],
+      "sections": [
+        {
+          "text": "校服外套挤在靠墙那边，老板问了两遍谁点的红糖糍粑。张泽禹把书包从空凳子上拎起来，我坐下，正好对着朱志鑫。\n\n张峻豪：我说了我点的。\n张泽禹：你把后半句“先别上”也说给老板听啊。\n我：我那份不要葱。\n朱志鑫把菜单往我这边推了推：这儿勾一下，上回口头说他没听见。\n我：你也是受害者？\n朱志鑫：不是。我坐在受害者旁边。\n张泽禹：可以了，别再提我的葱油拌面了。",
+          "conditions": []
+        },
+        {
+          "text": "张峻豪拿走一张餐巾纸，在背面画了几条线。\n我：吃饭还做题？\n张峻豪：记下刚想到的节奏，回去就忘。\n张泽禹：那你别拿蘸过酱的手按。\n张峻豪：你当我几岁。\n他刚说完，纸边就蹭上一个油印。朱志鑫看了一眼，递过来一张干净的。\n朱志鑫：备份。\n\n桌上静了一秒，又都笑了。我举起手机的时候，他正偏头听张峻豪补那句解释，嘴角还没收回去。屏幕里有一角菜单，我没有重拍。",
+          "conditions": []
+        },
+        {
+          "text": "我给大家拍完，又低头看了会儿照片。左航把小碟子往我手边挪了一点。\n左航：你的，留了两块。再拍一轮就只能拍空盘了。\n我：你不是刚说不吃甜的？\n左航：所以给你留着。还有，我下周测验要借你的地理笔记，别又塞在最底下。\n我：先看你借出去的书什么时候还我。\n左航：这笔账怎么又翻出来了。\n\n糍粑已经没那么烫，我咬了一口，糖浆粘到筷子上。",
+          "conditions": []
+        },
+        {
+          "text": "张泽禹起身结账，张峻豪跟去拿饮料。\n张泽禹：你那杯去冰了，别拿错。\n张峻豪：我现在不怕冰。\n张泽禹：知道，你嗓子怕。昨晚谁练完一直清嗓子。\n朱志鑫：我的钱转你。\n张泽禹：说了我请。下回你请，别现在就算清。\n我：这话我替你记着。\n张泽禹：你先把自己的盘子吃完。\n\n朱志鑫把手机放回口袋，低声说了句“那下回”。我去拿外套，没好意思接这两个字。",
+          "conditions": []
+        }
+      ],
+      "controls": [
+        {
+          "id": "continue",
+          "label": "收好照片，在群里发合照",
+          "conditions": [
+            {
+              "key": "ch09.stage",
+              "op": "eq",
+              "value": "dinner"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch09.stage",
+              "value": "sharing"
+            },
+            {
+              "type": "unlock",
+              "key": "ch09-photo-group",
+              "value": true
+            },
+            {
+              "type": "unlock",
+              "key": "ch09-photo-candid",
+              "value": true
+            },
+            {
+              "type": "variable",
+              "key": "ch09.shareReady",
+              "value": true
+            },
+            {
+              "type": "unlock",
+              "key": "ch09-moment-owner",
+              "value": true
+            },
+            {
+              "type": "unlock",
+              "key": "ch09-moment-brother",
+              "value": true
+            },
+            {
+              "type": "unlock",
+              "key": "ch09-weibo-zuo",
+              "value": true
+            },
+            {
+              "type": "notification",
+              "key": "",
+              "value": "相册、朋友圈和微博有更新，可自由查看。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch10-wallpaper",
+      "itemId": "ch10-wallpaper",
+      "kind": "scene",
+      "conditions": [],
+      "entries": [],
+      "sections": [],
+      "controls": [
+        {
+          "id": "apply",
+          "label": "使用已购壁纸，回学校",
+          "conditions": [
+            {
+              "key": "ch10.stage",
+              "op": "eq",
+              "value": "wallpaper"
+            },
+            {
+              "key": "market.cr7-only-god-handsome.purchased",
+              "op": "eq",
+              "value": true
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "phone.wallpaperItem",
+              "value": "ch10-wallpaper"
+            },
+            {
+              "type": "variable",
+              "key": "ch10.stage",
+              "value": "corridor"
+            },
+            {
+              "type": "unlock",
+              "key": "ch10-corridor",
+              "value": true
+            },
+            {
+              "type": "notification",
+              "key": "",
+              "value": "文件：走廊上，朱志鑫看到了屏幕。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch10-corridor",
+      "itemId": "ch10-corridor",
+      "kind": "scene",
+      "conditions": [],
+      "entries": [],
+      "sections": [
+        {
+          "text": "朱志鑫：换壁纸了？\n我：嗯，闲鱼买的。\n他又看了一眼，像是在找图标。\n朱志鑫：还挺……丰富。\n我：是不是挺好看的？卖家说还有事业运。\n朱志鑫：数学老师知道吗？\n我：先别告诉她，万一有用。\n朱志鑫笑了一下：还行。",
+          "conditions": []
+        },
+        {
+          "text": "我把屏幕转向他一点，他却已经挪开视线。\n我：你刚是不是还有话说？\n朱志鑫：没什么。上课了。\n\n预备铃正好响。他先走了，我把刚准备点开的那张图退出来，锁了屏。",
+          "conditions": []
+        }
+      ],
+      "controls": [
+        {
+          "id": "continue",
+          "label": "收起手机，看看哥哥发了什么",
+          "conditions": [
+            {
+              "key": "ch10.stage",
+              "op": "eq",
+              "value": "corridor"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch10.stage",
+              "value": "invite"
+            },
+            {
+              "type": "variable",
+              "key": "ch10.inviteReady",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch10-gift",
+      "itemId": "ch10-gift",
+      "kind": "scene",
+      "conditions": [],
+      "entries": [],
+      "sections": [
+        {
+          "text": "张泽禹：送你个能留下证据的东西。\n我：什么证据？\n张泽禹：证明你确实过了生日，不是又在家里睡过去了。\n我：你能不能说点好听的？\n张泽禹：生日快乐，行了吧。\n\n我拆开盒子，里面是一台拍立得。他把相纸放到旁边，没再开玩笑：先看说明书，别朝太阳拍。",
+          "conditions": []
+        },
+        {
+          "text": "张峻豪：先拍我。我会摆。\n左航：你先把奶油擦了。\n张峻豪：还没切呢。\n左航：提前提醒。\n朱志鑫翻了一下盒子里的卡片：这张是保修卡，别拿去垫杯子。\n我：怎么你们已经替我安排好三种弄坏它的方法了？",
+          "conditions": []
+        },
+        {
+          "text": "张峻豪的手机震了两下，他低头记了个东西，又扣回桌面。\n张泽禹：又改伴奏？\n张峻豪：明天试一遍。今天不折磨你们耳朵。\n张泽禹把他面前的冰饮换成常温的。\n张峻豪：你拿错了。\n张泽禹：没拿错，刚从冰柜里救出来的嗓子别再送回去。\n\n左航帮我把围巾从蛋糕盒边拎开，自己去接了个家里催回去的电话。朱志鑫接过打火机，试了两次才点着。",
+          "conditions": []
+        },
+        {
+          "text": "张泽禹：许愿吧，再等蜡烛都下班了。\n张峻豪：我先闭嘴，不收愿望咨询费。\n左航刚回来：那你确实停业得很及时。\n我闭上眼。耳边还听见有人在找能放生日歌的手机。",
+          "conditions": []
+        }
+      ],
+      "controls": [
+        {
+          "id": "wish",
+          "label": "闭上眼，留一句话给自己",
+          "conditions": [
+            {
+              "key": "ch10.stage",
+              "op": "eq",
+              "value": "gift"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch10.stage",
+              "value": "wishes"
+            },
+            {
+              "type": "unlock",
+              "key": "ch10-birthday",
+              "value": true
+            },
+            {
+              "type": "notification",
+              "key": "",
+              "value": "文件：生日专题已打开。暗愿只留给自己。"
+            },
+            {
+              "type": "unlock",
+              "key": "ch10-photo-cake",
+              "value": true
+            },
+            {
+              "type": "unlock",
+              "key": "ch10-photo-camera",
+              "value": true
+            },
+            {
+              "type": "unlock",
+              "key": "ch10-photo-party",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch10-birthday",
+      "itemId": "ch10-birthday",
+      "kind": "birthday",
+      "conditions": [],
+      "entries": [],
+      "sections": [],
+      "controls": [
+        {
+          "id": "self-0",
+          "label": "找到一件真正喜欢、愿意坚持的事情。",
+          "conditions": [
+            {
+              "key": "ch10.stage",
+              "op": "eq",
+              "value": "wishes"
+            },
+            {
+              "key": "growth.birthday.self",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "growth.birthday.self",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "id": "self-1",
+          "label": "不再总是怀疑自己，能够更加自信。",
+          "conditions": [
+            {
+              "key": "ch10.stage",
+              "op": "eq",
+              "value": "wishes"
+            },
+            {
+              "key": "growth.birthday.self",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "growth.birthday.self",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "id": "self-2",
+          "label": "去更远的地方看看，拥有更大的世界。",
+          "conditions": [
+            {
+              "key": "ch10.stage",
+              "op": "eq",
+              "value": "wishes"
+            },
+            {
+              "key": "growth.birthday.self",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "growth.birthday.self",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "id": "self-3",
+          "label": "希望自己和重要的人都能平安快乐。",
+          "conditions": [
+            {
+              "key": "ch10.stage",
+              "op": "eq",
+              "value": "wishes"
+            },
+            {
+              "key": "growth.birthday.self",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "growth.birthday.self",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "id": "self-4",
+          "label": "暂时不知道，想先看看未来会发生什么。",
+          "conditions": [
+            {
+              "key": "ch10.stage",
+              "op": "eq",
+              "value": "wishes"
+            },
+            {
+              "key": "growth.birthday.self",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "growth.birthday.self",
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "id": "self-skip",
+          "label": "这次先留白。",
+          "conditions": [
+            {
+              "key": "ch10.stage",
+              "op": "eq",
+              "value": "wishes"
+            },
+            {
+              "key": "growth.birthday.self",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "growth.birthday.self",
+              "value": "skip"
+            }
+          ]
+        },
+        {
+          "id": "love-0",
+          "label": "喜欢就应该勇敢表达，不想留下遗憾。",
+          "conditions": [
+            {
+              "key": "ch10.stage",
+              "op": "eq",
+              "value": "wishes"
+            },
+            {
+              "key": "growth.birthday.love",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "growth.birthday.love",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "id": "love-1",
+          "label": "不急着得到答案，先认真了解对方。",
+          "conditions": [
+            {
+              "key": "ch10.stage",
+              "op": "eq",
+              "value": "wishes"
+            },
+            {
+              "key": "growth.birthday.love",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "growth.birthday.love",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "id": "love-2",
+          "label": "希望自己也能被坚定地选择，而不是一直追逐。",
+          "conditions": [
+            {
+              "key": "ch10.stage",
+              "op": "eq",
+              "value": "wishes"
+            },
+            {
+              "key": "growth.birthday.love",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "growth.birthday.love",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "id": "love-3",
+          "label": "如果一段关系让我失去自己，我会选择停下来。",
+          "conditions": [
+            {
+              "key": "ch10.stage",
+              "op": "eq",
+              "value": "wishes"
+            },
+            {
+              "key": "growth.birthday.love",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "growth.birthday.love",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "id": "love-4",
+          "label": "顺其自然，不想提前给感情设定答案。",
+          "conditions": [
+            {
+              "key": "ch10.stage",
+              "op": "eq",
+              "value": "wishes"
+            },
+            {
+              "key": "growth.birthday.love",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "growth.birthday.love",
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "id": "love-skip",
+          "label": "这次先留白。",
+          "conditions": [
+            {
+              "key": "ch10.stage",
+              "op": "eq",
+              "value": "wishes"
+            },
+            {
+              "key": "growth.birthday.love",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "growth.birthday.love",
+              "value": "skip"
+            }
+          ]
+        },
+        {
+          "id": "future-0",
+          "label": "不要因为害怕失败，就放弃尝试。",
+          "conditions": [
+            {
+              "key": "ch10.stage",
+              "op": "eq",
+              "value": "wishes"
+            },
+            {
+              "key": "growth.birthday.future",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "growth.birthday.future",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "id": "future-1",
+          "label": "不要为了让所有人满意而委屈自己。",
+          "conditions": [
+            {
+              "key": "ch10.stage",
+              "op": "eq",
+              "value": "wishes"
+            },
+            {
+              "key": "growth.birthday.future",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "growth.birthday.future",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "id": "future-2",
+          "label": "不要因为一段感情，就忘记原本想去的地方。",
+          "conditions": [
+            {
+              "key": "ch10.stage",
+              "op": "eq",
+              "value": "wishes"
+            },
+            {
+              "key": "growth.birthday.future",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "growth.birthday.future",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "id": "future-3",
+          "label": "不要急着成为别人期待的样子。",
+          "conditions": [
+            {
+              "key": "ch10.stage",
+              "op": "eq",
+              "value": "wishes"
+            },
+            {
+              "key": "growth.birthday.future",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "growth.birthday.future",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "id": "future-4",
+          "label": "希望你一直保留现在的好奇心。",
+          "conditions": [
+            {
+              "key": "ch10.stage",
+              "op": "eq",
+              "value": "wishes"
+            },
+            {
+              "key": "growth.birthday.future",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "growth.birthday.future",
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "id": "future-skip",
+          "label": "这次先留白。",
+          "conditions": [
+            {
+              "key": "ch10.stage",
+              "op": "eq",
+              "value": "wishes"
+            },
+            {
+              "key": "growth.birthday.future",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "growth.birthday.future",
+              "value": "skip"
+            }
+          ]
+        },
+        {
+          "id": "finish-wishes",
+          "label": "收好愿望，吹灭蜡烛",
+          "conditions": [
+            {
+              "key": "ch10.stage",
+              "op": "eq",
+              "value": "wishes"
+            },
+            {
+              "key": "growth.birthday.self",
+              "op": "neq",
+              "value": "unset"
+            },
+            {
+              "key": "growth.birthday.love",
+              "op": "neq",
+              "value": "unset"
+            },
+            {
+              "key": "growth.birthday.future",
+              "op": "neq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "growth.birthday.recorded",
+              "value": true
+            },
+            {
+              "type": "unlock",
+              "key": "ch10-wish-memo",
+              "value": true
+            },
+            {
+              "type": "unlock",
+              "key": "ch10-birthday-memo",
+              "value": true
+            },
+            {
+              "type": "variable",
+              "key": "ch10.stage",
+              "value": "photos"
+            },
+            {
+              "type": "unlock",
+              "key": "ch10-photos",
+              "value": true
+            },
+            {
+              "type": "unlock",
+              "key": "ch10-moment-owner",
+              "value": true
+            },
+            {
+              "type": "unlock",
+              "key": "ch10-moment-brother",
+              "value": true
+            },
+            {
+              "type": "unlock",
+              "key": "ch10-weibo-owner",
+              "value": true
+            },
+            {
+              "type": "notification",
+              "key": "",
+              "value": "生日愿望已存进私人备忘录。朋友圈和微博也有更新，可自由查看。"
+            }
+          ]
+        }
+      ],
+      "birthday": {
+        "blessings": [
+          {
+            "characterId": "brother",
+            "text": "又长一岁，别什么事都先往自己身上找毛病。礼物不准嫌我挑得慢，我挑的时候你还在写卷子。生日快乐。"
+          },
+          {
+            "characterId": "junhao",
+            "text": "生日快乐！下次考试少错两道，剩下的靠认真审题，不靠我这句祝福。相机借我拍一次，保证不拆。"
+          },
+          {
+            "characterId": "zuohang",
+            "text": "生日快乐。想做的事可以慢慢挑，不用今天就选出一个最正确的。照片留一张给我，别只拍别人。"
+          },
+          {
+            "characterId": "star",
+            "text": "生日快乐。新相机多用几次，拍糊了也没事。祝你今年有不少想留下的瞬间。"
+          }
+        ],
+        "memories": [
+          "ch10-photo-cake",
+          "ch10-photo-camera",
+          "ch10-photo-party",
+          "ch10-photo-group"
+        ],
+        "questions": [
+          {
+            "id": "self",
+            "key": "growth.birthday.self",
+            "prompt": "如果未来可以发生一件好事，你最希望是什么？"
+          },
+          {
+            "id": "love",
+            "key": "growth.birthday.love",
+            "prompt": "如果有一天，你真的很喜欢一个人，你希望自己怎么面对这份感情？"
+          },
+          {
+            "id": "future",
+            "key": "growth.birthday.future",
+            "prompt": "如果未来的你回头看现在，希望她不要忘记什么？"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ch10-wish-memo",
+      "itemId": "ch10-wish-memo",
+      "kind": "scene",
+      "conditions": [],
+      "entries": [],
+      "sections": [
+        {
+          "text": "我现在说不清喜欢什么，不代表以后也找不到。想留一点时间，去碰那些做完还想再做的事。",
+          "conditions": [
+            {
+              "key": "growth.birthday.self",
+              "op": "eq",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "text": "今天拆礼物时，我的第一反应居然是问贵不贵。能不能先高兴一下，别连被人认真对待都急着找理由。",
+          "conditions": [
+            {
+              "key": "growth.birthday.self",
+              "op": "eq",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "text": "吹蜡烛的时候，想到了地理书上夹着的那张车票。想去的地方还很模糊，但希望有一天能自己买票出发。",
+          "conditions": [
+            {
+              "key": "growth.birthday.self",
+              "op": "eq",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "text": "许到一半又把大家的名字挨个过了一遍。愿望是不是有点贪心？今年先不改了。",
+          "conditions": [
+            {
+              "key": "growth.birthday.self",
+              "op": "eq",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "text": "我试着想一件非实现不可的事，想了半天还是没有答案。那就先留空，也不赶着交卷。",
+          "conditions": [
+            {
+              "key": "growth.birthday.self",
+              "op": "eq",
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "text": "想到自己，反而一下说不出最想要什么。先留着这个空，不为了写满就随便选一个。",
+          "conditions": [
+            {
+              "key": "growth.birthday.self",
+              "op": "eq",
+              "value": "skip"
+            }
+          ]
+        },
+        {
+          "text": "有些话在聊天框里打完又删，删完又觉得可惜。真有那么一天，希望我至少能把自己想说的话说完整。",
+          "conditions": [
+            {
+              "key": "growth.birthday.love",
+              "op": "eq",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "text": "我太容易替一句普通的话加上后半句了。下次先听他把话说完，再看看他实际做了什么。",
+          "conditions": [
+            {
+              "key": "growth.birthday.love",
+              "op": "eq",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "text": "主动一次并不丢人。可我也想有一天，什么都没暗示，就有人认真朝我走过来。",
+          "conditions": [
+            {
+              "key": "growth.birthday.love",
+              "op": "eq",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "text": "不想再为了等一条消息，把本来要做的事一件件往后挪。我想靠近一个人，也想好好过自己的下午。",
+          "conditions": [
+            {
+              "key": "growth.birthday.love",
+              "op": "eq",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "text": "想到感情就忍不住先排练结果，其实连明天聊什么都不知道。今天不替以后的自己决定。",
+          "conditions": [
+            {
+              "key": "growth.birthday.love",
+              "op": "eq",
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "text": "关于喜欢一个人要怎么办，我这次没有写。真遇到的时候，希望能听见自己的想法。",
+          "conditions": [
+            {
+              "key": "growth.birthday.love",
+              "op": "eq",
+              "value": "skip"
+            }
+          ]
+        },
+        {
+          "text": "刚才拿相机时还怕拍坏第一张。纸总要用出去的。以后也记住这点，别一直捏在手里。",
+          "conditions": [
+            {
+              "key": "growth.birthday.future",
+              "op": "eq",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "text": "想把每个人都照顾好，最后经常连自己想吃什么都没说。下次有人问，别又答随便。",
+          "conditions": [
+            {
+              "key": "growth.birthday.future",
+              "op": "eq",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "text": "可以记得一个人的消息，也记得把那张想去的地方的明信片带着。不要为了谁，把它塞回抽屉底下。",
+          "conditions": [
+            {
+              "key": "growth.birthday.future",
+              "op": "eq",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "text": "大家祝我生日快乐的时候，没有一个人要求我今天就变得特别懂事。希望以后的我也别这么催自己。",
+          "conditions": [
+            {
+              "key": "growth.birthday.future",
+              "op": "eq",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "text": "还想翻没读过的书、坐错一次公交、学会用这台新相机。希望以后再忙，也能对没见过的东西多看一眼。",
+          "conditions": [
+            {
+              "key": "growth.birthday.future",
+              "op": "eq",
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "text": "写到给未来的那句话时停了一会儿。今晚先不叮嘱她什么了，等我有话可说再补。",
+          "conditions": [
+            {
+              "key": "growth.birthday.future",
+              "op": "eq",
+              "value": "skip"
+            }
+          ]
+        },
+        {
+          "text": "等到以后再翻到这一页，不知道我会不会改主意。可以改，但先别把今天的划掉。",
+          "conditions": []
+        }
+      ],
+      "controls": []
+    },
+    {
+      "id": "ch10-photos",
+      "itemId": "ch10-photos",
+      "kind": "scene",
+      "conditions": [],
+      "entries": [],
+      "sections": [
+        {
+          "text": "张泽禹跟我拍第一张，刚按快门就有人从后面探出半张脸。\n我：张峻豪，你是每张都要收出场费吗？\n张峻豪：生日限定。\n\n轮到他时，他终于老实站好。我把相纸拿远一点，他伸手想接，哥哥先挡了一下：手擦干，奶油指纹很有辨识度。",
+          "conditions": []
+        },
+        {
+          "text": "左航把桌上的课本收进包里，站到我旁边。\n我：你还真带了作业。\n左航：待会儿回去还得写。拍好看一点，证明我不是来补课的。\n\n相纸慢慢有了颜色，他看了一眼：这张可以。我明天再拿，别还没显出来就开始甩。",
+          "conditions": []
+        },
+        {
+          "text": "朱志鑫站在桌子另一边，正把用过的纸盘叠到一起。\n我：朱志鑫，要不要拍一张？\n他停了一下。\n朱志鑫：你们先拍吧。\n我：一起啊，人还没齐。\n朱志鑫：我帮你们拍也行。\n\n我把相机递过去，说了句好。手里忽然空下来，刚才想站的那个位置也没挪过去。",
+          "conditions": []
+        },
+        {
+          "text": "张峻豪一边喊别眨眼，一边先闭上了。\n张泽禹：你是准备听快门吗？\n朱志鑫低头看了看取景框：往左一点。不是你，我说蛋糕。\n\n我把蛋糕推过去。他抬起相机，我看向镜头。第一声没响，我多等了一会儿。\n朱志鑫：好了。\n\n照片吐出来，他捏着白边递给我，没有碰还在显影的地方。我低头接了，没再问。",
+          "conditions": []
+        }
+      ],
+      "controls": [
+        {
+          "id": "continue",
+          "label": "把照片按顺序放好",
+          "conditions": [
+            {
+              "key": "ch10.stage",
+              "op": "eq",
+              "value": "photos"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch10.stage",
+              "value": "return"
+            },
+            {
+              "type": "unlock",
+              "key": "ch10-return",
+              "value": true
+            },
+            {
+              "type": "unlock",
+              "key": "ch10-photo-group",
+              "value": true
+            },
+            {
+              "type": "notification",
+              "key": "",
+              "value": "文件：快散场的时候。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch10-return",
+      "itemId": "ch10-return",
+      "kind": "scene",
+      "conditions": [],
+      "entries": [],
+      "sections": [
+        {
+          "text": "哥哥去问老板有没有袋子。张峻豪在门边回消息，左航把落下的围巾递给我，转身去找他的书。\n\n有人在桌子旁边停下来。\n朱志鑫：刚才那张，还能再拍吗？\n我：哪张？\n朱志鑫：我们两个的。",
+          "conditions": []
+        },
+        {
+          "text": "我看了他一眼，手指还压着盒盖。\n我：你刚才不是说不拍吗？\n朱志鑫：刚才不太想。\n\n他把收了一半的外套放下来。\n朱志鑫：现在想拍了。\n\n我把相机拿起来，叫哥哥回来帮忙。他没有再往后退。",
+          "conditions": []
+        }
+      ],
+      "controls": [
+        {
+          "id": "photo",
+          "label": "请哥哥按下快门",
+          "conditions": [
+            {
+              "key": "ch10.stage",
+              "op": "eq",
+              "value": "return"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch10.stage",
+              "value": "last-line"
+            },
+            {
+              "type": "unlock",
+              "key": "ch10-polaroids",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch10-polaroids",
+      "itemId": "ch10-polaroids",
+      "kind": "photo-pair",
+      "conditions": [],
+      "entries": [],
+      "sections": [
+        {
+          "text": "朱志鑫：拍两张吧。\n我：两张干什么？",
+          "conditions": [
+            {
+              "key": "chapter.chapter-10-pending.completed",
+              "op": "eq",
+              "value": false
+            }
+          ]
+        },
+        {
+          "text": "朱志鑫：一张给你。\n另一张我自己留着。",
+          "conditions": [
+            {
+              "key": "chapter.chapter-10-pending.completed",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "id": "keep",
+          "label": "听他说完",
+          "conditions": [
+            {
+              "key": "ch10.stage",
+              "op": "eq",
+              "value": "last-line"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "chapter.chapter-10-pending.completed",
+              "value": true
+            },
+            {
+              "type": "variable",
+              "key": "ch10.stage",
+              "value": "completed"
+            },
+            {
+              "type": "variable",
+              "key": "chapter.next",
+              "value": "chapter-11-pending"
+            },
+            {
+              "type": "unlock",
+              "key": "ch10-photo-pair-a",
+              "value": true
+            },
+            {
+              "type": "unlock",
+              "key": "ch10-photo-pair-b",
+              "value": true
+            },
+            {
+              "type": "unlock",
+              "key": "ch10-weibo-star",
+              "value": true
+            },
+            {
+              "type": "variable",
+              "key": "story.inlineEnding",
+              "value": "一张给你。另一张我自己留着。"
+            },
+            {
+              "type": "ending",
+              "key": "",
+              "value": "一张给你。另一张我自己留着。"
+            }
+          ]
+        }
+      ],
+      "birthday": {
+        "memories": [
+          "ch10-photo-pair-a",
+          "ch10-photo-pair-b"
+        ]
+      }
     }
   ]
 }

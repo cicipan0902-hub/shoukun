@@ -1,0 +1,5166 @@
+{
+  "market": {
+    "settings": {
+      "highAmount": 50,
+      "mediumAmount": 20,
+      "smallProbability": 0.25,
+      "mediumProbability": 0.6,
+      "cumulativeAmount": 120,
+      "purchaseCount": 4,
+      "refundNotice": true
+    },
+    "sellers": {
+      "default": {
+        "decline": [
+          "好，那先不买，记录给你留着。"
+        ],
+        "bargain": "还能让一点，就到这里。",
+        "think": "慢慢考虑，想好再来。",
+        "silent": "",
+        "refund": "可以，这笔模拟退款原路退回。",
+        "cancel": "好，这次订单取消了，没扣款。"
+      },
+      "seller-hanbing-sheshou": {
+        "decline": [
+          "行，摄影棚级别的鞋盒先替你保管。",
+          "考虑这么久，我以为你在给它写评测。"
+        ],
+        "bargain": "你这个价再减下去，我得先问问鞋盒同不同意。",
+        "think": "行，想好了叫我，别考虑到我都忘了卖什么。",
+        "silent": "人呢？刚才不是还在给我算折旧。",
+        "refund": "行，退了。下回看准再下单，我少练一次客服。",
+        "cancel": "取消了，没扣钱。你这手速适合抢球。"
+      },
+      "seller-houmi-yeye": {
+        "decline": [
+          "没关系，不买也是很具体的选择。",
+          "好的，东西留在这里，不催你。"
+        ],
+        "bargain": "二手折旧已经算过了，剩下这点是物品本人最后的体面。",
+        "think": "好，考虑用途比考虑价格更重要。",
+        "silent": "",
+        "refund": "收到，原路退回。买错不必勉强留下。",
+        "cancel": "订单取消了，不影响你继续看。"
+      },
+      "seller-xinan-yujie": {
+        "decline": [
+          "可以，省下的钱留着买本错题本。",
+          "成交没成，数学题倒是一直等着你。"
+        ],
+        "bargain": "还价挺快，要是做题也这么果断就好了。",
+        "think": "没事，考虑不收费，讲题另算。",
+        "silent": "友情提醒：题不会自己讲，价格也不会自己往下掉。",
+        "refund": "退好了，钱回原来的亲属卡。别把退款当收入啊。",
+        "cancel": "取消了，放心，连一道口算题的钱都没扣。"
+      },
+      "seller-tutucha-mengmengda": {
+        "decline": [
+          "嗯，没关系。",
+          "好，谢谢你来问。"
+        ],
+        "bargain": "可以再少一点，不过也只能到这个价了。",
+        "think": "好，你慢慢看，不着急。",
+        "silent": "",
+        "refund": "可以，已经按原金额退回了。",
+        "cancel": "嗯，取消好了，没有扣款。"
+      },
+      "seller-bobo-baba": {
+        "decline": [
+          "错过了也没事，反正这一切本来就很虚构。"
+        ],
+        "bargain": "便宜可以，先声明：买到的是玩笑，不是真账号。",
+        "think": "慢慢想，想通了可能就不买了。",
+        "silent": "你不会真去搜那个虚构号码了吧？不用搜。",
+        "refund": "本店神秘归神秘，模拟退款不含糊。",
+        "cancel": "订单已取消，传说也暂时下班。"
+      },
+      "seller-suuuu": {
+        "decline": [
+          "好，苹果没意见，我也没意见。"
+        ],
+        "bargain": "这是能吃的苹果，别按手机的折旧率算。",
+        "think": "可以，记得想的是水果，不是电子产品。",
+        "silent": "",
+        "refund": "退好了。钱原路回去，苹果没变成电子产品。",
+        "cancel": "没扣款。苹果还在，想好再说。"
+      },
+      "seller-cr7-only-god": {
+        "decline": [
+          "好的，运势不强买，收藏也算认识了。"
+        ],
+        "bargain": "价格已经很有体育精神了，只能再让这么一点。",
+        "think": "不急，先把题写完，再研究好运。",
+        "silent": "壁纸只负责好看，不负责替你做决定。",
+        "refund": "模拟退款到账。壁纸不保证运势，退款倒是按金额来。",
+        "cancel": "取消成功，没付款，也不影响你的好运。"
+      }
+    },
+    "productTags": {
+      "market-hanbing-sheshou-contact": "contact",
+      "market-houmi-yeye-book": "book",
+      "market-tutucha-mengmengda-book": "book",
+      "market-suuuu-iphone": "fruit",
+      "market-suuuu-airpods": "fruit",
+      "market-suuuu-charger": "fruit",
+      "market-hanbing-sheshou-cap": "cap",
+      "market-xinan-yujie-gaming": "gaming",
+      "market-tutucha-mengmengda-shirt": "normal",
+      "market-cr7-only-god-career": "career",
+      "market-cr7-only-god-handsome": "normal",
+      "market-cr7-only-god-luck": "career"
+    },
+    "reactions": {
+      "normal": [
+        [
+          "亲属卡上多了“[商品]”。",
+          "这次有用得上的打算吧？别又买回来放抽屉。"
+        ],
+        [
+          "我刚看到账单，“[商品]”。",
+          "不是审你，问一下，免得回头又说买错。"
+        ]
+      ],
+      "cap": [
+        [
+          "你买了什么？",
+          "奶嘴帽？你是去运动会还是去满月酒。"
+        ],
+        [
+          "“[商品]”……",
+          "行，回来先让我看看怎么戴。"
+        ]
+      ],
+      "book": [
+        [
+          "你什么时候开始研究人生了？",
+          "这本“[商品]”，别只研究到付款那一页。"
+        ],
+        [
+          "书可以买。",
+          "要是看不懂，也别硬撑着说自己悟了。"
+        ]
+      ],
+      "career": [
+        [
+          "你准备靠换壁纸考上大学吗？",
+          "壁纸可以换，错题也记得改。"
+        ],
+        [
+          "“[商品]”，这名字挺有野心。",
+          "先问一句，今晚的作业有事业心吗？"
+        ]
+      ],
+      "fruit": [
+        [
+          "苹果这个可以，至少是正常消费。",
+          "你自己吃，别又全塞我包里。"
+        ],
+        [
+          "看见水果账单了。",
+          "吃之前记得洗，不是拿袖子蹭一下。"
+        ]
+      ],
+      "gaming": [
+        [
+          "等一下，你买的不是我的账号吧？",
+          "这个只是游戏里的虚构体验卡。真账号别找陌生人买。"
+        ],
+        [
+          "“[商品]”。",
+          "我先声明，这个不负责让你上分，作业也得自己写。"
+        ]
+      ],
+      "contact": [
+        [
+          "你花钱买朱志鑫联系方式？",
+          "你直接问我不就行了。先别高兴，那是张峻豪的整蛊纸条。"
+        ],
+        [
+          "我看见“[商品]”了。",
+          "他这售后我都想替你问两句。不会因此多一个微信好友的。"
+        ]
+      ]
+    },
+    "replyOptions": [
+      {
+        "id": "stubborn",
+        "text": "你不是还有钱吗？",
+        "tag": "stubborn",
+        "replies": [
+          "有钱和看你乱买，是两回事。",
+          "没停你的卡，买之前多看两眼说明。"
+        ]
+      },
+      {
+        "id": "sweet",
+        "text": "没事，我以后养你。",
+        "tag": "sweet",
+        "replies": [
+          "行，我记下了。",
+          "现在先把自己照顾好，别为了省钱不吃饭。"
+        ]
+      },
+      {
+        "id": "explain",
+        "text": "我看过说明了，真用得上。",
+        "tag": "explain",
+        "replies": [
+          "那就行，又不是不让你买。",
+          "拿不准的时候问一句，别自己纠结半天。"
+        ]
+      }
+    ],
+    "bankruptcy": {
+      "lines": [
+        "妹妹，有件事我必须跟你坦白。",
+        "哥哥最近经济状况不太乐观。",
+        "可能要暂时告别纸醉金迷的生活了。"
+      ],
+      "options": [
+        {
+          "id": "save",
+          "text": "那我以后少买一点。",
+          "tag": "explain",
+          "replies": [
+            "别真紧张，逗你的，卡没停。",
+            "想买的先放一放，明天还想要再说。吃饭的钱别省。"
+          ]
+        },
+        {
+          "id": "stubborn",
+          "text": "你不是还有钱吗？",
+          "tag": "stubborn",
+          "replies": [
+            "有，被你一眼看穿。",
+            "我宣布经济会议结束，会议结论是你买之前看说明。"
+          ]
+        },
+        {
+          "id": "sweet",
+          "text": "没事，我养你。",
+          "tag": "sweet",
+          "replies": [
+            "可以啊，你先把自己养好。",
+            "钱够用，卡也给你留着。我就是想找你说两句。"
+          ]
+        }
+      ]
+    },
+    "refundOptions": [
+      {
+        "id": "careful",
+        "text": "没买合适，下次我看仔细点。",
+        "tag": "explain",
+        "replies": [
+          "好，钱退了就好，别为这点事折腾一晚上。"
+        ]
+      },
+      {
+        "id": "dinner",
+        "text": "省下的钱留着请你吃饭。",
+        "tag": "sweet",
+        "replies": [
+          "你先别用我的卡请我。饭照吃，记得按时。"
+        ]
+      }
+    ]
+  },
+  "variables": {
+    "market.hanbing-sheshou-cap.opened": false,
+    "market.hanbing-sheshou-cap.choice": "unset",
+    "market.hanbing-sheshou-cap.outcome": "unset",
+    "market.hanbing-sheshou-cap.purchased": false,
+    "market.hanbing-sheshou-cap.busy": false,
+    "market.hanbing-sheshou-cap.chatDone": false,
+    "market.hanbing-sheshou-cap.bargainDone": false,
+    "market.hanbing-sheshou-cap.interacted": false,
+    "market.hanbing-sheshou-cap.decision": "unset",
+    "market.hanbing-sheshou-cap.currentPrice": 18,
+    "market.hanbing-sheshou-cap.paymentSource": "",
+    "market.hanbing-sheshou-cap.paymentAmount": 0,
+    "market.xinan-yujie-gaming.opened": false,
+    "market.xinan-yujie-gaming.choice": "unset",
+    "market.xinan-yujie-gaming.outcome": "unset",
+    "market.xinan-yujie-gaming.purchased": false,
+    "market.xinan-yujie-gaming.busy": false,
+    "market.xinan-yujie-gaming.chatDone": false,
+    "market.xinan-yujie-gaming.bargainDone": false,
+    "market.xinan-yujie-gaming.interacted": false,
+    "market.xinan-yujie-gaming.decision": "unset",
+    "market.xinan-yujie-gaming.currentPrice": 88,
+    "market.xinan-yujie-gaming.paymentSource": "",
+    "market.xinan-yujie-gaming.paymentAmount": 0,
+    "market.tutucha-mengmengda-shirt.opened": false,
+    "market.tutucha-mengmengda-shirt.choice": "unset",
+    "market.tutucha-mengmengda-shirt.outcome": "unset",
+    "market.tutucha-mengmengda-shirt.purchased": false,
+    "market.tutucha-mengmengda-shirt.busy": false,
+    "market.tutucha-mengmengda-shirt.chatDone": false,
+    "market.tutucha-mengmengda-shirt.bargainDone": false,
+    "market.tutucha-mengmengda-shirt.interacted": false,
+    "market.tutucha-mengmengda-shirt.decision": "unset",
+    "market.tutucha-mengmengda-shirt.currentPrice": 12,
+    "market.tutucha-mengmengda-shirt.paymentSource": "",
+    "market.tutucha-mengmengda-shirt.paymentAmount": 0,
+    "market.cr7-only-god-career.opened": false,
+    "market.cr7-only-god-career.choice": "unset",
+    "market.cr7-only-god-career.outcome": "unset",
+    "market.cr7-only-god-career.purchased": false,
+    "market.cr7-only-god-career.busy": false,
+    "market.cr7-only-god-career.chatDone": false,
+    "market.cr7-only-god-career.bargainDone": false,
+    "market.cr7-only-god-career.interacted": false,
+    "market.cr7-only-god-career.decision": "unset",
+    "market.cr7-only-god-career.currentPrice": 3,
+    "market.cr7-only-god-career.paymentSource": "",
+    "market.cr7-only-god-career.paymentAmount": 0,
+    "market.cr7-only-god-handsome.opened": false,
+    "market.cr7-only-god-handsome.choice": "unset",
+    "market.cr7-only-god-handsome.outcome": "unset",
+    "market.cr7-only-god-handsome.purchased": false,
+    "market.cr7-only-god-handsome.busy": false,
+    "market.cr7-only-god-handsome.chatDone": false,
+    "market.cr7-only-god-handsome.bargainDone": false,
+    "market.cr7-only-god-handsome.interacted": false,
+    "market.cr7-only-god-handsome.decision": "unset",
+    "market.cr7-only-god-handsome.currentPrice": 2,
+    "market.cr7-only-god-handsome.paymentSource": "",
+    "market.cr7-only-god-handsome.paymentAmount": 0,
+    "market.cr7-only-god-luck.opened": false,
+    "market.cr7-only-god-luck.choice": "unset",
+    "market.cr7-only-god-luck.outcome": "unset",
+    "market.cr7-only-god-luck.purchased": false,
+    "market.cr7-only-god-luck.busy": false,
+    "market.cr7-only-god-luck.chatDone": false,
+    "market.cr7-only-god-luck.bargainDone": false,
+    "market.cr7-only-god-luck.interacted": false,
+    "market.cr7-only-god-luck.decision": "unset",
+    "market.cr7-only-god-luck.currentPrice": 2,
+    "market.cr7-only-god-luck.paymentSource": "",
+    "market.cr7-only-god-luck.paymentAmount": 0
+  },
+  "content": {
+    "xianyu": [
+      {
+        "id": "market-hanbing-sheshou-cap",
+        "title": "奶嘴帽，戴上不保证进球",
+        "body": "洗过晾干，帽檐是软的。只是帽子，不附赠返老还童。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "寒冰射手",
+        "folder": "服饰",
+        "meta": {
+          "type": "product",
+          "sellerId": "seller-hanbing-sheshou",
+          "stateKey": "market.hanbing-sheshou-cap",
+          "price": "18",
+          "options": "[{\"id\": \"bargain\", \"text\": \"还能少一点吗？\", \"result\": \"quoted\", \"price\": 15}, {\"id\": \"chat\", \"text\": \"这个有什么要注意的吗？\", \"result\": \"ready\", \"price\": 18}]",
+          "sellerBio": "鞋盒、唱片和偶尔认真的闲置。整蛊商品看清说明再来。",
+          "chatVersion": "2"
+        }
+      },
+      {
+        "id": "market-hanbing-sheshou-cap-hello",
+        "title": "寒冰射手",
+        "body": "在的。先看清楚描述，有问题可以问。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "寒冰射手",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-hanbing-sheshou-cap",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-hanbing-sheshou-cap-reply-buy",
+        "title": "寒冰射手",
+        "body": "收到了，这次是本地模拟成交，留好记录。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "寒冰射手",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-hanbing-sheshou-cap",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-hanbing-sheshou-cap-reply-bargain",
+        "title": "寒冰射手",
+        "body": "32，可以。再低鞋盒可能要单独上架。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "寒冰射手",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-hanbing-sheshou-cap",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-hanbing-sheshou-cap-reply-leave",
+        "title": "寒冰射手",
+        "body": "行，先逛着，有需要再说。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "寒冰射手",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-hanbing-sheshou-cap",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-hanbing-sheshou-cap-buyer-chat",
+        "title": "只穿过几次的球鞋，鞋盒还在",
+        "body": "这个有什么要注意的吗？",
+        "sender": "{{playerName}}",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-hanbing-sheshou-cap",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-hanbing-sheshou-cap-buyer-bargain",
+        "title": "只穿过几次的球鞋，鞋盒还在",
+        "body": "还能少一点吗？",
+        "sender": "{{playerName}}",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-hanbing-sheshou-cap",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-hanbing-sheshou-cap-buyer-buy",
+        "title": "只穿过几次的球鞋，鞋盒还在",
+        "body": "好，我要了。",
+        "sender": "{{playerName}}",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-hanbing-sheshou-cap",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-hanbing-sheshou-cap-buyer-leave",
+        "title": "只穿过几次的球鞋，鞋盒还在",
+        "body": "我先不买了，谢谢。",
+        "sender": "{{playerName}}",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-hanbing-sheshou-cap",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-hanbing-sheshou-cap-reply-chat-1",
+        "title": "寒冰射手",
+        "body": "只是帽子。你要指望戴上投篮变准，我建议把钱留给练习。",
+        "sender": "寒冰射手",
+        "time": "闲鱼聊天",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-hanbing-sheshou-cap",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-hanbing-sheshou-cap-reply-chat-2",
+        "title": "寒冰射手",
+        "body": "想好了再买，不着急。",
+        "sender": "寒冰射手",
+        "time": "闲鱼聊天",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-hanbing-sheshou-cap",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-xinan-yujie-gaming",
+        "title": "打瓦账号体验卡【虚构模拟】",
+        "body": "本游戏内的文字体验卡，没有真实账号、密码、账号交接或充值。只管快乐，不包上分。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "西南禹姐",
+        "folder": "娱乐",
+        "meta": {
+          "type": "product",
+          "sellerId": "seller-xinan-yujie",
+          "stateKey": "market.xinan-yujie-gaming",
+          "price": "88",
+          "options": "[{\"id\": \"bargain\", \"text\": \"还能少一点吗？\", \"result\": \"quoted\", \"price\": 80}, {\"id\": \"chat\", \"text\": \"这个有什么要注意的吗？\", \"result\": \"ready\", \"price\": 88}]",
+          "sellerBio": "笔记、讲解和修改建议。题还是得自己做，别指望我替你上考场。",
+          "chatVersion": "2"
+        }
+      },
+      {
+        "id": "market-xinan-yujie-gaming-hello",
+        "title": "寒冰射手",
+        "body": "在的。这只是虚构体验卡，没有真账号。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "西南禹姐",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-xinan-yujie-gaming",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-xinan-yujie-gaming-reply-buy",
+        "title": "寒冰射手",
+        "body": "收到了，这次是本地模拟成交，留好记录。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "西南禹姐",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-xinan-yujie-gaming",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-xinan-yujie-gaming-reply-bargain",
+        "title": "寒冰射手",
+        "body": "32，可以。再低鞋盒可能要单独上架。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "西南禹姐",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-xinan-yujie-gaming",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-xinan-yujie-gaming-reply-leave",
+        "title": "寒冰射手",
+        "body": "行，先逛着，有需要再说。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "西南禹姐",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-xinan-yujie-gaming",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-xinan-yujie-gaming-buyer-chat",
+        "title": "只穿过几次的球鞋，鞋盒还在",
+        "body": "这个有什么要注意的吗？",
+        "sender": "{{playerName}}",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-xinan-yujie-gaming",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-xinan-yujie-gaming-buyer-bargain",
+        "title": "只穿过几次的球鞋，鞋盒还在",
+        "body": "还能少一点吗？",
+        "sender": "{{playerName}}",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-xinan-yujie-gaming",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-xinan-yujie-gaming-buyer-buy",
+        "title": "只穿过几次的球鞋，鞋盒还在",
+        "body": "好，我要了。",
+        "sender": "{{playerName}}",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-xinan-yujie-gaming",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-xinan-yujie-gaming-buyer-leave",
+        "title": "只穿过几次的球鞋，鞋盒还在",
+        "body": "我先不买了，谢谢。",
+        "sender": "{{playerName}}",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-xinan-yujie-gaming",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-xinan-yujie-gaming-reply-chat-1",
+        "title": "寒冰射手",
+        "body": "不交账号密码，这里只是体验卡的剧情。真想上分，先练自己。",
+        "sender": "西南禹姐",
+        "time": "闲鱼聊天",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-xinan-yujie-gaming",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-xinan-yujie-gaming-reply-chat-2",
+        "title": "寒冰射手",
+        "body": "想好了再买，不着急。",
+        "sender": "西南禹姐",
+        "time": "闲鱼聊天",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-xinan-yujie-gaming",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-tutucha-mengmengda-shirt",
+        "title": "闲置衬衫，洗净收好了",
+        "body": "扣子齐，袖口有正常使用痕迹。衣服洗过，尺码请先问清楚。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "兔兔叉萌萌哒",
+        "folder": "服饰",
+        "meta": {
+          "type": "product",
+          "sellerId": "seller-tutucha-mengmengda",
+          "stateKey": "market.tutucha-mengmengda-shirt",
+          "price": "12",
+          "options": "[{\"id\": \"bargain\", \"text\": \"还能少一点吗？\", \"result\": \"quoted\", \"price\": 10}, {\"id\": \"chat\", \"text\": \"这个有什么要注意的吗？\", \"result\": \"ready\", \"price\": 12}]",
+          "sellerBio": "闲置转给用得上的人。尺寸和使用情况写在详情里。",
+          "chatVersion": "2"
+        }
+      },
+      {
+        "id": "market-tutucha-mengmengda-shirt-hello",
+        "title": "寒冰射手",
+        "body": "在的。先看清楚描述，有问题可以问。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "兔兔叉萌萌哒",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-tutucha-mengmengda-shirt",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-tutucha-mengmengda-shirt-reply-buy",
+        "title": "寒冰射手",
+        "body": "收到了，这次是本地模拟成交，留好记录。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "兔兔叉萌萌哒",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-tutucha-mengmengda-shirt",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-tutucha-mengmengda-shirt-reply-bargain",
+        "title": "寒冰射手",
+        "body": "32，可以。再低鞋盒可能要单独上架。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "兔兔叉萌萌哒",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-tutucha-mengmengda-shirt",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-tutucha-mengmengda-shirt-reply-leave",
+        "title": "寒冰射手",
+        "body": "行，先逛着，有需要再说。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "兔兔叉萌萌哒",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-tutucha-mengmengda-shirt",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-tutucha-mengmengda-shirt-buyer-chat",
+        "title": "只穿过几次的球鞋，鞋盒还在",
+        "body": "这个有什么要注意的吗？",
+        "sender": "{{playerName}}",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-tutucha-mengmengda-shirt",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-tutucha-mengmengda-shirt-buyer-bargain",
+        "title": "只穿过几次的球鞋，鞋盒还在",
+        "body": "还能少一点吗？",
+        "sender": "{{playerName}}",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-tutucha-mengmengda-shirt",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-tutucha-mengmengda-shirt-buyer-buy",
+        "title": "只穿过几次的球鞋，鞋盒还在",
+        "body": "好，我要了。",
+        "sender": "{{playerName}}",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-tutucha-mengmengda-shirt",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-tutucha-mengmengda-shirt-buyer-leave",
+        "title": "只穿过几次的球鞋，鞋盒还在",
+        "body": "我先不买了，谢谢。",
+        "sender": "{{playerName}}",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-tutucha-mengmengda-shirt",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-tutucha-mengmengda-shirt-reply-chat-1",
+        "title": "寒冰射手",
+        "body": "看好描述和尺寸，不合适不用勉强。",
+        "sender": "兔兔叉萌萌哒",
+        "time": "闲鱼聊天",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-tutucha-mengmengda-shirt",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-tutucha-mengmengda-shirt-reply-chat-2",
+        "title": "寒冰射手",
+        "body": "想好了再买，不着急。",
+        "sender": "兔兔叉萌萌哒",
+        "time": "闲鱼聊天",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-tutucha-mengmengda-shirt",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-career",
+        "title": "事业运壁纸，先把今天的题写完",
+        "body": "本地数字壁纸趣味商品，不保证考试成绩或任何运势。换壁纸可以，学习也要靠自己。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "C罗唯一真神",
+        "folder": "壁纸",
+        "meta": {
+          "type": "product",
+          "sellerId": "seller-cr7-only-god",
+          "stateKey": "market.cr7-only-god-career",
+          "price": "3",
+          "options": "[{\"id\": \"bargain\", \"text\": \"还能少一点吗？\", \"result\": \"quoted\", \"price\": 2}, {\"id\": \"chat\", \"text\": \"这个有什么要注意的吗？\", \"result\": \"ready\", \"price\": 3}]",
+          "sellerBio": "足球周边收藏。可以聊球，价格也能聊，但不是无限加时。",
+          "chatVersion": "2"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-career-hello",
+        "title": "寒冰射手",
+        "body": "在的。先看清楚描述，有问题可以问。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "C罗唯一真神",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-cr7-only-god-career",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-career-reply-buy",
+        "title": "寒冰射手",
+        "body": "收到了，这次是本地模拟成交，留好记录。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "C罗唯一真神",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-cr7-only-god-career",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-career-reply-bargain",
+        "title": "寒冰射手",
+        "body": "32，可以。再低鞋盒可能要单独上架。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "C罗唯一真神",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-cr7-only-god-career",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-career-reply-leave",
+        "title": "寒冰射手",
+        "body": "行，先逛着，有需要再说。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "C罗唯一真神",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-cr7-only-god-career",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-career-buyer-chat",
+        "title": "只穿过几次的球鞋，鞋盒还在",
+        "body": "这个有什么要注意的吗？",
+        "sender": "{{playerName}}",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-cr7-only-god-career",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-career-buyer-bargain",
+        "title": "只穿过几次的球鞋，鞋盒还在",
+        "body": "还能少一点吗？",
+        "sender": "{{playerName}}",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-cr7-only-god-career",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-career-buyer-buy",
+        "title": "只穿过几次的球鞋，鞋盒还在",
+        "body": "好，我要了。",
+        "sender": "{{playerName}}",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-cr7-only-god-career",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-career-buyer-leave",
+        "title": "只穿过几次的球鞋，鞋盒还在",
+        "body": "我先不买了，谢谢。",
+        "sender": "{{playerName}}",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-cr7-only-god-career",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-career-reply-chat-1",
+        "title": "寒冰射手",
+        "body": "好运归祝福，作业归你写。",
+        "sender": "C罗唯一真神",
+        "time": "闲鱼聊天",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-cr7-only-god-career",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-career-reply-chat-2",
+        "title": "寒冰射手",
+        "body": "想好了再买，不着急。",
+        "sender": "C罗唯一真神",
+        "time": "闲鱼聊天",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-cr7-only-god-career",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-handsome",
+        "title": "帅哥主题壁纸【图片待补】",
+        "body": "桌面装饰，人物与图片由作者后续提供。这里没有陌生下载链接，也不附赠恋爱运。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "C罗唯一真神",
+        "folder": "壁纸",
+        "meta": {
+          "type": "product",
+          "sellerId": "seller-cr7-only-god",
+          "stateKey": "market.cr7-only-god-handsome",
+          "price": "2",
+          "options": "[{\"id\": \"bargain\", \"text\": \"还能少一点吗？\", \"result\": \"quoted\", \"price\": 1}, {\"id\": \"chat\", \"text\": \"这个有什么要注意的吗？\", \"result\": \"ready\", \"price\": 2}]",
+          "sellerBio": "足球周边收藏。可以聊球，价格也能聊，但不是无限加时。",
+          "chatVersion": "2"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-handsome-hello",
+        "title": "寒冰射手",
+        "body": "在的。先看清楚描述，有问题可以问。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "C罗唯一真神",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-cr7-only-god-handsome",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-handsome-reply-buy",
+        "title": "寒冰射手",
+        "body": "收到了，这次是本地模拟成交，留好记录。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "C罗唯一真神",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-cr7-only-god-handsome",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-handsome-reply-bargain",
+        "title": "寒冰射手",
+        "body": "32，可以。再低鞋盒可能要单独上架。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "C罗唯一真神",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-cr7-only-god-handsome",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-handsome-reply-leave",
+        "title": "寒冰射手",
+        "body": "行，先逛着，有需要再说。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "C罗唯一真神",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-cr7-only-god-handsome",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-handsome-buyer-chat",
+        "title": "只穿过几次的球鞋，鞋盒还在",
+        "body": "这个有什么要注意的吗？",
+        "sender": "{{playerName}}",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-cr7-only-god-handsome",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-handsome-buyer-bargain",
+        "title": "只穿过几次的球鞋，鞋盒还在",
+        "body": "还能少一点吗？",
+        "sender": "{{playerName}}",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-cr7-only-god-handsome",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-handsome-buyer-buy",
+        "title": "只穿过几次的球鞋，鞋盒还在",
+        "body": "好，我要了。",
+        "sender": "{{playerName}}",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-cr7-only-god-handsome",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-handsome-buyer-leave",
+        "title": "只穿过几次的球鞋，鞋盒还在",
+        "body": "我先不买了，谢谢。",
+        "sender": "{{playerName}}",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-cr7-only-god-handsome",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-handsome-reply-chat-1",
+        "title": "寒冰射手",
+        "body": "看好描述和尺寸，不合适不用勉强。",
+        "sender": "C罗唯一真神",
+        "time": "闲鱼聊天",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-cr7-only-god-handsome",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-handsome-reply-chat-2",
+        "title": "寒冰射手",
+        "body": "想好了再买，不着急。",
+        "sender": "C罗唯一真神",
+        "time": "闲鱼聊天",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-cr7-only-god-handsome",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-luck",
+        "title": "好运壁纸，祝你今天顺一点",
+        "body": "只是个轻松的祝福，不是算命服务，不承诺任何现实结果。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "C罗唯一真神",
+        "folder": "壁纸",
+        "meta": {
+          "type": "product",
+          "sellerId": "seller-cr7-only-god",
+          "stateKey": "market.cr7-only-god-luck",
+          "price": "2",
+          "options": "[{\"id\": \"bargain\", \"text\": \"还能少一点吗？\", \"result\": \"quoted\", \"price\": 1}, {\"id\": \"chat\", \"text\": \"这个有什么要注意的吗？\", \"result\": \"ready\", \"price\": 2}]",
+          "sellerBio": "足球周边收藏。可以聊球，价格也能聊，但不是无限加时。",
+          "chatVersion": "2"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-luck-hello",
+        "title": "寒冰射手",
+        "body": "在的。先看清楚描述，有问题可以问。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "C罗唯一真神",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-cr7-only-god-luck",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-luck-reply-buy",
+        "title": "寒冰射手",
+        "body": "收到了，这次是本地模拟成交，留好记录。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "C罗唯一真神",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-cr7-only-god-luck",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-luck-reply-bargain",
+        "title": "寒冰射手",
+        "body": "32，可以。再低鞋盒可能要单独上架。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "C罗唯一真神",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-cr7-only-god-luck",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-luck-reply-leave",
+        "title": "寒冰射手",
+        "body": "行，先逛着，有需要再说。",
+        "time": "闲鱼 · 本地模拟",
+        "sender": "C罗唯一真神",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-cr7-only-god-luck",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-luck-buyer-chat",
+        "title": "只穿过几次的球鞋，鞋盒还在",
+        "body": "这个有什么要注意的吗？",
+        "sender": "{{playerName}}",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-cr7-only-god-luck",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-luck-buyer-bargain",
+        "title": "只穿过几次的球鞋，鞋盒还在",
+        "body": "还能少一点吗？",
+        "sender": "{{playerName}}",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-cr7-only-god-luck",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-luck-buyer-buy",
+        "title": "只穿过几次的球鞋，鞋盒还在",
+        "body": "好，我要了。",
+        "sender": "{{playerName}}",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-cr7-only-god-luck",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-luck-buyer-leave",
+        "title": "只穿过几次的球鞋，鞋盒还在",
+        "body": "我先不买了，谢谢。",
+        "sender": "{{playerName}}",
+        "time": "闲鱼聊天",
+        "kind": "text",
+        "hidden": true,
+        "meta": {
+          "type": "buyer",
+          "product": "market-cr7-only-god-luck",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-luck-reply-chat-1",
+        "title": "寒冰射手",
+        "body": "好运归祝福，作业归你写。",
+        "sender": "C罗唯一真神",
+        "time": "闲鱼聊天",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-cr7-only-god-luck",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      },
+      {
+        "id": "market-cr7-only-god-luck-reply-chat-2",
+        "title": "寒冰射手",
+        "body": "想好了再买，不着急。",
+        "sender": "C罗唯一真神",
+        "time": "闲鱼聊天",
+        "hidden": true,
+        "meta": {
+          "type": "reply",
+          "product": "market-cr7-only-god-luck",
+          "sellerId": "seller-hanbing-sheshou"
+        }
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "market-hanbing-sheshou-cap-open",
+      "label": "联系寒冰射手",
+      "event": "marketOpen",
+      "target": "market-hanbing-sheshou-cap",
+      "conditions": [
+        {
+          "key": "read:market-hanbing-sheshou-cap",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.opened",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.opened",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-hanbing-sheshou-cap-hello",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "market-hanbing-sheshou-cap-select-buy",
+      "label": "按标价模拟拿下",
+      "event": "marketSelect",
+      "target": "market-hanbing-sheshou-cap.buy",
+      "conditions": [
+        {
+          "key": "market.hanbing-sheshou-cap.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.interacted",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.outcome",
+          "op": "neq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-hanbing-sheshou-cap-buyer-buy",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-hanbing-sheshou-cap-delay-buy"
+      ]
+    },
+    {
+      "id": "market-hanbing-sheshou-cap-delay-buy",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-hanbing-sheshou-cap-reply-buy",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.outcome",
+          "value": "purchased"
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.purchased",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.paymentSource",
+          "value": "哥哥的亲情卡"
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.paymentAmount",
+          "value": 18
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-hanbing-sheshou-cap-select-bargain",
+      "label": "还能少一点吗？",
+      "event": "marketSelect",
+      "target": "market-hanbing-sheshou-cap.bargain",
+      "conditions": [
+        {
+          "key": "market.hanbing-sheshou-cap.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.bargainDone",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.outcome",
+          "op": "neq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.choice",
+          "value": "bargain"
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-hanbing-sheshou-cap-buyer-bargain",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-hanbing-sheshou-cap-delay-bargain"
+      ]
+    },
+    {
+      "id": "market-hanbing-sheshou-cap-delay-bargain",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-hanbing-sheshou-cap-reply-bargain",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.outcome",
+          "value": "quoted"
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.currentPrice",
+          "value": 15
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.bargainDone",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.interacted",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-hanbing-sheshou-cap-select-leave",
+      "label": "聊完后决定不买",
+      "event": "marketDecline",
+      "target": "market-hanbing-sheshou-cap",
+      "conditions": [
+        {
+          "key": "market.hanbing-sheshou-cap.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.interacted",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.decision",
+          "value": "leave"
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-hanbing-sheshou-cap-buyer-leave",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-hanbing-sheshou-cap-delay-leave"
+      ]
+    },
+    {
+      "id": "market-hanbing-sheshou-cap-delay-leave",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-hanbing-sheshou-cap-reply-leave",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.outcome",
+          "value": "declined"
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.decision",
+          "value": "leave"
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-hanbing-sheshou-cap-confirm",
+      "label": "使用哥哥的亲情卡确认购买",
+      "event": "marketConfirm",
+      "target": "market-hanbing-sheshou-cap",
+      "conditions": [
+        {
+          "key": "market.hanbing-sheshou-cap.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.outcome",
+          "op": "eq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-hanbing-sheshou-cap-buyer-buy",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-hanbing-sheshou-cap-pay-quoted"
+      ]
+    },
+    {
+      "id": "market-hanbing-sheshou-cap-select-chat",
+      "label": "你平时也会买重东西？",
+      "event": "marketSelect",
+      "target": "market-hanbing-sheshou-cap.chat",
+      "conditions": [
+        {
+          "key": "market.hanbing-sheshou-cap.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.chatDone",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.choice",
+          "value": "chat"
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-hanbing-sheshou-cap-buyer-chat",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-hanbing-sheshou-cap-delay-chat-1"
+      ]
+    },
+    {
+      "id": "market-hanbing-sheshou-cap-confirm-base",
+      "label": "使用哥哥的亲情卡按原价购买",
+      "event": "marketConfirm",
+      "target": "market-hanbing-sheshou-cap",
+      "conditions": [
+        {
+          "key": "market.hanbing-sheshou-cap.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.interacted",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.outcome",
+          "op": "neq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-hanbing-sheshou-cap-buyer-buy",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-hanbing-sheshou-cap-delay-buy"
+      ]
+    },
+    {
+      "id": "market-hanbing-sheshou-cap-pay-quoted",
+      "label": "确认议价购买",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-hanbing-sheshou-cap-reply-buy",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.outcome",
+          "value": "purchased"
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.purchased",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.paymentSource",
+          "value": "哥哥的亲情卡"
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.paymentAmount",
+          "value": 15
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-hanbing-sheshou-cap-decline-legacy",
+      "label": "结束此前的议价",
+      "event": "marketDecline",
+      "target": "market-hanbing-sheshou-cap",
+      "conditions": [
+        {
+          "key": "market.hanbing-sheshou-cap.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.outcome",
+          "op": "eq",
+          "value": "quoted"
+        },
+        {
+          "key": "market.hanbing-sheshou-cap.interacted",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.decision",
+          "value": "leave"
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-hanbing-sheshou-cap-buyer-leave",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-hanbing-sheshou-cap-delay-leave"
+      ]
+    },
+    {
+      "id": "market-hanbing-sheshou-cap-delay-chat-1",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 900,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-hanbing-sheshou-cap-reply-chat-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-hanbing-sheshou-cap-delay-chat-2"
+      ]
+    },
+    {
+      "id": "market-hanbing-sheshou-cap-delay-chat-2",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 900,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-hanbing-sheshou-cap-reply-chat-2",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.chatDone",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.interacted",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.hanbing-sheshou-cap.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-xinan-yujie-gaming-open",
+      "label": "联系寒冰射手",
+      "event": "marketOpen",
+      "target": "market-xinan-yujie-gaming",
+      "conditions": [
+        {
+          "key": "read:market-xinan-yujie-gaming",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.xinan-yujie-gaming.opened",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.opened",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-xinan-yujie-gaming-hello",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "market-xinan-yujie-gaming-select-buy",
+      "label": "按标价模拟拿下",
+      "event": "marketSelect",
+      "target": "market-xinan-yujie-gaming.buy",
+      "conditions": [
+        {
+          "key": "market.xinan-yujie-gaming.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.xinan-yujie-gaming.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.xinan-yujie-gaming.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.xinan-yujie-gaming.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.xinan-yujie-gaming.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.xinan-yujie-gaming.interacted",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.xinan-yujie-gaming.outcome",
+          "op": "neq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-xinan-yujie-gaming-buyer-buy",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-xinan-yujie-gaming-delay-buy"
+      ]
+    },
+    {
+      "id": "market-xinan-yujie-gaming-delay-buy",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-xinan-yujie-gaming-reply-buy",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.outcome",
+          "value": "purchased"
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.purchased",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.paymentSource",
+          "value": "哥哥的亲情卡"
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.paymentAmount",
+          "value": 88
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-xinan-yujie-gaming-select-bargain",
+      "label": "还能少一点吗？",
+      "event": "marketSelect",
+      "target": "market-xinan-yujie-gaming.bargain",
+      "conditions": [
+        {
+          "key": "market.xinan-yujie-gaming.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.xinan-yujie-gaming.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.xinan-yujie-gaming.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.xinan-yujie-gaming.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.xinan-yujie-gaming.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.xinan-yujie-gaming.bargainDone",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.xinan-yujie-gaming.outcome",
+          "op": "neq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.choice",
+          "value": "bargain"
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-xinan-yujie-gaming-buyer-bargain",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-xinan-yujie-gaming-delay-bargain"
+      ]
+    },
+    {
+      "id": "market-xinan-yujie-gaming-delay-bargain",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-xinan-yujie-gaming-reply-bargain",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.outcome",
+          "value": "quoted"
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.currentPrice",
+          "value": 80
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.bargainDone",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.interacted",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-xinan-yujie-gaming-select-leave",
+      "label": "聊完后决定不买",
+      "event": "marketDecline",
+      "target": "market-xinan-yujie-gaming",
+      "conditions": [
+        {
+          "key": "market.xinan-yujie-gaming.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.xinan-yujie-gaming.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.xinan-yujie-gaming.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.xinan-yujie-gaming.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.xinan-yujie-gaming.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.xinan-yujie-gaming.interacted",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.decision",
+          "value": "leave"
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-xinan-yujie-gaming-buyer-leave",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-xinan-yujie-gaming-delay-leave"
+      ]
+    },
+    {
+      "id": "market-xinan-yujie-gaming-delay-leave",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-xinan-yujie-gaming-reply-leave",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.outcome",
+          "value": "declined"
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.decision",
+          "value": "leave"
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-xinan-yujie-gaming-confirm",
+      "label": "使用哥哥的亲情卡确认购买",
+      "event": "marketConfirm",
+      "target": "market-xinan-yujie-gaming",
+      "conditions": [
+        {
+          "key": "market.xinan-yujie-gaming.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.xinan-yujie-gaming.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.xinan-yujie-gaming.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.xinan-yujie-gaming.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.xinan-yujie-gaming.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.xinan-yujie-gaming.outcome",
+          "op": "eq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-xinan-yujie-gaming-buyer-buy",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-xinan-yujie-gaming-pay-quoted"
+      ]
+    },
+    {
+      "id": "market-xinan-yujie-gaming-select-chat",
+      "label": "你平时也会买重东西？",
+      "event": "marketSelect",
+      "target": "market-xinan-yujie-gaming.chat",
+      "conditions": [
+        {
+          "key": "market.xinan-yujie-gaming.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.xinan-yujie-gaming.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.xinan-yujie-gaming.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.xinan-yujie-gaming.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.xinan-yujie-gaming.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.xinan-yujie-gaming.chatDone",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.choice",
+          "value": "chat"
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-xinan-yujie-gaming-buyer-chat",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-xinan-yujie-gaming-delay-chat-1"
+      ]
+    },
+    {
+      "id": "market-xinan-yujie-gaming-confirm-base",
+      "label": "使用哥哥的亲情卡按原价购买",
+      "event": "marketConfirm",
+      "target": "market-xinan-yujie-gaming",
+      "conditions": [
+        {
+          "key": "market.xinan-yujie-gaming.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.xinan-yujie-gaming.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.xinan-yujie-gaming.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.xinan-yujie-gaming.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.xinan-yujie-gaming.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.xinan-yujie-gaming.interacted",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.xinan-yujie-gaming.outcome",
+          "op": "neq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-xinan-yujie-gaming-buyer-buy",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-xinan-yujie-gaming-delay-buy"
+      ]
+    },
+    {
+      "id": "market-xinan-yujie-gaming-pay-quoted",
+      "label": "确认议价购买",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-xinan-yujie-gaming-reply-buy",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.outcome",
+          "value": "purchased"
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.purchased",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.paymentSource",
+          "value": "哥哥的亲情卡"
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.paymentAmount",
+          "value": 80
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-xinan-yujie-gaming-decline-legacy",
+      "label": "结束此前的议价",
+      "event": "marketDecline",
+      "target": "market-xinan-yujie-gaming",
+      "conditions": [
+        {
+          "key": "market.xinan-yujie-gaming.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.xinan-yujie-gaming.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.xinan-yujie-gaming.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.xinan-yujie-gaming.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.xinan-yujie-gaming.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.xinan-yujie-gaming.outcome",
+          "op": "eq",
+          "value": "quoted"
+        },
+        {
+          "key": "market.xinan-yujie-gaming.interacted",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.decision",
+          "value": "leave"
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-xinan-yujie-gaming-buyer-leave",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-xinan-yujie-gaming-delay-leave"
+      ]
+    },
+    {
+      "id": "market-xinan-yujie-gaming-delay-chat-1",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 900,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-xinan-yujie-gaming-reply-chat-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-xinan-yujie-gaming-delay-chat-2"
+      ]
+    },
+    {
+      "id": "market-xinan-yujie-gaming-delay-chat-2",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 900,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-xinan-yujie-gaming-reply-chat-2",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.chatDone",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.interacted",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.xinan-yujie-gaming.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-tutucha-mengmengda-shirt-open",
+      "label": "联系寒冰射手",
+      "event": "marketOpen",
+      "target": "market-tutucha-mengmengda-shirt",
+      "conditions": [
+        {
+          "key": "read:market-tutucha-mengmengda-shirt",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.opened",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.opened",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-tutucha-mengmengda-shirt-hello",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "market-tutucha-mengmengda-shirt-select-buy",
+      "label": "按标价模拟拿下",
+      "event": "marketSelect",
+      "target": "market-tutucha-mengmengda-shirt.buy",
+      "conditions": [
+        {
+          "key": "market.tutucha-mengmengda-shirt.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.interacted",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.outcome",
+          "op": "neq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-tutucha-mengmengda-shirt-buyer-buy",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-tutucha-mengmengda-shirt-delay-buy"
+      ]
+    },
+    {
+      "id": "market-tutucha-mengmengda-shirt-delay-buy",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-tutucha-mengmengda-shirt-reply-buy",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.outcome",
+          "value": "purchased"
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.purchased",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.paymentSource",
+          "value": "哥哥的亲情卡"
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.paymentAmount",
+          "value": 12
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-tutucha-mengmengda-shirt-select-bargain",
+      "label": "还能少一点吗？",
+      "event": "marketSelect",
+      "target": "market-tutucha-mengmengda-shirt.bargain",
+      "conditions": [
+        {
+          "key": "market.tutucha-mengmengda-shirt.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.bargainDone",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.outcome",
+          "op": "neq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.choice",
+          "value": "bargain"
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-tutucha-mengmengda-shirt-buyer-bargain",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-tutucha-mengmengda-shirt-delay-bargain"
+      ]
+    },
+    {
+      "id": "market-tutucha-mengmengda-shirt-delay-bargain",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-tutucha-mengmengda-shirt-reply-bargain",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.outcome",
+          "value": "quoted"
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.currentPrice",
+          "value": 10
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.bargainDone",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.interacted",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-tutucha-mengmengda-shirt-select-leave",
+      "label": "聊完后决定不买",
+      "event": "marketDecline",
+      "target": "market-tutucha-mengmengda-shirt",
+      "conditions": [
+        {
+          "key": "market.tutucha-mengmengda-shirt.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.interacted",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.decision",
+          "value": "leave"
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-tutucha-mengmengda-shirt-buyer-leave",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-tutucha-mengmengda-shirt-delay-leave"
+      ]
+    },
+    {
+      "id": "market-tutucha-mengmengda-shirt-delay-leave",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-tutucha-mengmengda-shirt-reply-leave",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.outcome",
+          "value": "declined"
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.decision",
+          "value": "leave"
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-tutucha-mengmengda-shirt-confirm",
+      "label": "使用哥哥的亲情卡确认购买",
+      "event": "marketConfirm",
+      "target": "market-tutucha-mengmengda-shirt",
+      "conditions": [
+        {
+          "key": "market.tutucha-mengmengda-shirt.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.outcome",
+          "op": "eq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-tutucha-mengmengda-shirt-buyer-buy",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-tutucha-mengmengda-shirt-pay-quoted"
+      ]
+    },
+    {
+      "id": "market-tutucha-mengmengda-shirt-select-chat",
+      "label": "你平时也会买重东西？",
+      "event": "marketSelect",
+      "target": "market-tutucha-mengmengda-shirt.chat",
+      "conditions": [
+        {
+          "key": "market.tutucha-mengmengda-shirt.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.chatDone",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.choice",
+          "value": "chat"
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-tutucha-mengmengda-shirt-buyer-chat",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-tutucha-mengmengda-shirt-delay-chat-1"
+      ]
+    },
+    {
+      "id": "market-tutucha-mengmengda-shirt-confirm-base",
+      "label": "使用哥哥的亲情卡按原价购买",
+      "event": "marketConfirm",
+      "target": "market-tutucha-mengmengda-shirt",
+      "conditions": [
+        {
+          "key": "market.tutucha-mengmengda-shirt.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.interacted",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.outcome",
+          "op": "neq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-tutucha-mengmengda-shirt-buyer-buy",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-tutucha-mengmengda-shirt-delay-buy"
+      ]
+    },
+    {
+      "id": "market-tutucha-mengmengda-shirt-pay-quoted",
+      "label": "确认议价购买",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-tutucha-mengmengda-shirt-reply-buy",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.outcome",
+          "value": "purchased"
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.purchased",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.paymentSource",
+          "value": "哥哥的亲情卡"
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.paymentAmount",
+          "value": 10
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-tutucha-mengmengda-shirt-decline-legacy",
+      "label": "结束此前的议价",
+      "event": "marketDecline",
+      "target": "market-tutucha-mengmengda-shirt",
+      "conditions": [
+        {
+          "key": "market.tutucha-mengmengda-shirt.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.outcome",
+          "op": "eq",
+          "value": "quoted"
+        },
+        {
+          "key": "market.tutucha-mengmengda-shirt.interacted",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.decision",
+          "value": "leave"
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-tutucha-mengmengda-shirt-buyer-leave",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-tutucha-mengmengda-shirt-delay-leave"
+      ]
+    },
+    {
+      "id": "market-tutucha-mengmengda-shirt-delay-chat-1",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 900,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-tutucha-mengmengda-shirt-reply-chat-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-tutucha-mengmengda-shirt-delay-chat-2"
+      ]
+    },
+    {
+      "id": "market-tutucha-mengmengda-shirt-delay-chat-2",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 900,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-tutucha-mengmengda-shirt-reply-chat-2",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.chatDone",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.interacted",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.tutucha-mengmengda-shirt.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-career-open",
+      "label": "联系寒冰射手",
+      "event": "marketOpen",
+      "target": "market-cr7-only-god-career",
+      "conditions": [
+        {
+          "key": "read:market-cr7-only-god-career",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-career.opened",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.opened",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-career-hello",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-career-select-buy",
+      "label": "按标价模拟拿下",
+      "event": "marketSelect",
+      "target": "market-cr7-only-god-career.buy",
+      "conditions": [
+        {
+          "key": "market.cr7-only-god-career.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-career.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-career.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-career.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.cr7-only-god-career.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.cr7-only-god-career.interacted",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-career.outcome",
+          "op": "neq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-career-buyer-buy",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-cr7-only-god-career-delay-buy"
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-career-delay-buy",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-career-reply-buy",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.outcome",
+          "value": "purchased"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.purchased",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.paymentSource",
+          "value": "哥哥的亲情卡"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.paymentAmount",
+          "value": 3
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-career-select-bargain",
+      "label": "还能少一点吗？",
+      "event": "marketSelect",
+      "target": "market-cr7-only-god-career.bargain",
+      "conditions": [
+        {
+          "key": "market.cr7-only-god-career.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-career.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-career.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-career.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.cr7-only-god-career.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.cr7-only-god-career.bargainDone",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-career.outcome",
+          "op": "neq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.choice",
+          "value": "bargain"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-career-buyer-bargain",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-cr7-only-god-career-delay-bargain"
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-career-delay-bargain",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-career-reply-bargain",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.outcome",
+          "value": "quoted"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.currentPrice",
+          "value": 2
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.bargainDone",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.interacted",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-career-select-leave",
+      "label": "聊完后决定不买",
+      "event": "marketDecline",
+      "target": "market-cr7-only-god-career",
+      "conditions": [
+        {
+          "key": "market.cr7-only-god-career.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-career.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-career.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-career.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.cr7-only-god-career.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.cr7-only-god-career.interacted",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.decision",
+          "value": "leave"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-career-buyer-leave",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-cr7-only-god-career-delay-leave"
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-career-delay-leave",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-career-reply-leave",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.outcome",
+          "value": "declined"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.decision",
+          "value": "leave"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-career-confirm",
+      "label": "使用哥哥的亲情卡确认购买",
+      "event": "marketConfirm",
+      "target": "market-cr7-only-god-career",
+      "conditions": [
+        {
+          "key": "market.cr7-only-god-career.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-career.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-career.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-career.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.cr7-only-god-career.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.cr7-only-god-career.outcome",
+          "op": "eq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-career-buyer-buy",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-cr7-only-god-career-pay-quoted"
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-career-select-chat",
+      "label": "你平时也会买重东西？",
+      "event": "marketSelect",
+      "target": "market-cr7-only-god-career.chat",
+      "conditions": [
+        {
+          "key": "market.cr7-only-god-career.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-career.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-career.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-career.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.cr7-only-god-career.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.cr7-only-god-career.chatDone",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.choice",
+          "value": "chat"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-career-buyer-chat",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-cr7-only-god-career-delay-chat-1"
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-career-confirm-base",
+      "label": "使用哥哥的亲情卡按原价购买",
+      "event": "marketConfirm",
+      "target": "market-cr7-only-god-career",
+      "conditions": [
+        {
+          "key": "market.cr7-only-god-career.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-career.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-career.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-career.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.cr7-only-god-career.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.cr7-only-god-career.interacted",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-career.outcome",
+          "op": "neq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-career-buyer-buy",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-cr7-only-god-career-delay-buy"
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-career-pay-quoted",
+      "label": "确认议价购买",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-career-reply-buy",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.outcome",
+          "value": "purchased"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.purchased",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.paymentSource",
+          "value": "哥哥的亲情卡"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.paymentAmount",
+          "value": 2
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-career-decline-legacy",
+      "label": "结束此前的议价",
+      "event": "marketDecline",
+      "target": "market-cr7-only-god-career",
+      "conditions": [
+        {
+          "key": "market.cr7-only-god-career.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-career.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-career.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-career.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.cr7-only-god-career.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.cr7-only-god-career.outcome",
+          "op": "eq",
+          "value": "quoted"
+        },
+        {
+          "key": "market.cr7-only-god-career.interacted",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.decision",
+          "value": "leave"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-career-buyer-leave",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-cr7-only-god-career-delay-leave"
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-career-delay-chat-1",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 900,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-career-reply-chat-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-cr7-only-god-career-delay-chat-2"
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-career-delay-chat-2",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 900,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-career-reply-chat-2",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.chatDone",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.interacted",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-career.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-handsome-open",
+      "label": "联系寒冰射手",
+      "event": "marketOpen",
+      "target": "market-cr7-only-god-handsome",
+      "conditions": [
+        {
+          "key": "read:market-cr7-only-god-handsome",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-handsome.opened",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.opened",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-handsome-hello",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-handsome-select-buy",
+      "label": "按标价模拟拿下",
+      "event": "marketSelect",
+      "target": "market-cr7-only-god-handsome.buy",
+      "conditions": [
+        {
+          "key": "market.cr7-only-god-handsome.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-handsome.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-handsome.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-handsome.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.cr7-only-god-handsome.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.cr7-only-god-handsome.interacted",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-handsome.outcome",
+          "op": "neq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-handsome-buyer-buy",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-cr7-only-god-handsome-delay-buy"
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-handsome-delay-buy",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-handsome-reply-buy",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.outcome",
+          "value": "purchased"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.purchased",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.paymentSource",
+          "value": "哥哥的亲情卡"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.paymentAmount",
+          "value": 2
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-handsome-select-bargain",
+      "label": "还能少一点吗？",
+      "event": "marketSelect",
+      "target": "market-cr7-only-god-handsome.bargain",
+      "conditions": [
+        {
+          "key": "market.cr7-only-god-handsome.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-handsome.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-handsome.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-handsome.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.cr7-only-god-handsome.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.cr7-only-god-handsome.bargainDone",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-handsome.outcome",
+          "op": "neq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.choice",
+          "value": "bargain"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-handsome-buyer-bargain",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-cr7-only-god-handsome-delay-bargain"
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-handsome-delay-bargain",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-handsome-reply-bargain",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.outcome",
+          "value": "quoted"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.currentPrice",
+          "value": 1
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.bargainDone",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.interacted",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-handsome-select-leave",
+      "label": "聊完后决定不买",
+      "event": "marketDecline",
+      "target": "market-cr7-only-god-handsome",
+      "conditions": [
+        {
+          "key": "market.cr7-only-god-handsome.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-handsome.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-handsome.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-handsome.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.cr7-only-god-handsome.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.cr7-only-god-handsome.interacted",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.decision",
+          "value": "leave"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-handsome-buyer-leave",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-cr7-only-god-handsome-delay-leave"
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-handsome-delay-leave",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-handsome-reply-leave",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.outcome",
+          "value": "declined"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.decision",
+          "value": "leave"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-handsome-confirm",
+      "label": "使用哥哥的亲情卡确认购买",
+      "event": "marketConfirm",
+      "target": "market-cr7-only-god-handsome",
+      "conditions": [
+        {
+          "key": "market.cr7-only-god-handsome.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-handsome.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-handsome.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-handsome.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.cr7-only-god-handsome.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.cr7-only-god-handsome.outcome",
+          "op": "eq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-handsome-buyer-buy",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-cr7-only-god-handsome-pay-quoted"
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-handsome-select-chat",
+      "label": "你平时也会买重东西？",
+      "event": "marketSelect",
+      "target": "market-cr7-only-god-handsome.chat",
+      "conditions": [
+        {
+          "key": "market.cr7-only-god-handsome.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-handsome.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-handsome.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-handsome.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.cr7-only-god-handsome.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.cr7-only-god-handsome.chatDone",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.choice",
+          "value": "chat"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-handsome-buyer-chat",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-cr7-only-god-handsome-delay-chat-1"
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-handsome-confirm-base",
+      "label": "使用哥哥的亲情卡按原价购买",
+      "event": "marketConfirm",
+      "target": "market-cr7-only-god-handsome",
+      "conditions": [
+        {
+          "key": "market.cr7-only-god-handsome.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-handsome.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-handsome.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-handsome.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.cr7-only-god-handsome.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.cr7-only-god-handsome.interacted",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-handsome.outcome",
+          "op": "neq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-handsome-buyer-buy",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-cr7-only-god-handsome-delay-buy"
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-handsome-pay-quoted",
+      "label": "确认议价购买",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-handsome-reply-buy",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.outcome",
+          "value": "purchased"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.purchased",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.paymentSource",
+          "value": "哥哥的亲情卡"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.paymentAmount",
+          "value": 1
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-handsome-decline-legacy",
+      "label": "结束此前的议价",
+      "event": "marketDecline",
+      "target": "market-cr7-only-god-handsome",
+      "conditions": [
+        {
+          "key": "market.cr7-only-god-handsome.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-handsome.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-handsome.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-handsome.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.cr7-only-god-handsome.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.cr7-only-god-handsome.outcome",
+          "op": "eq",
+          "value": "quoted"
+        },
+        {
+          "key": "market.cr7-only-god-handsome.interacted",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.decision",
+          "value": "leave"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-handsome-buyer-leave",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-cr7-only-god-handsome-delay-leave"
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-handsome-delay-chat-1",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 900,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-handsome-reply-chat-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-cr7-only-god-handsome-delay-chat-2"
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-handsome-delay-chat-2",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 900,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-handsome-reply-chat-2",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.chatDone",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.interacted",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-handsome.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-luck-open",
+      "label": "联系寒冰射手",
+      "event": "marketOpen",
+      "target": "market-cr7-only-god-luck",
+      "conditions": [
+        {
+          "key": "read:market-cr7-only-god-luck",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-luck.opened",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.opened",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-luck-hello",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-luck-select-buy",
+      "label": "按标价模拟拿下",
+      "event": "marketSelect",
+      "target": "market-cr7-only-god-luck.buy",
+      "conditions": [
+        {
+          "key": "market.cr7-only-god-luck.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-luck.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-luck.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-luck.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.cr7-only-god-luck.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.cr7-only-god-luck.interacted",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-luck.outcome",
+          "op": "neq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-luck-buyer-buy",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-cr7-only-god-luck-delay-buy"
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-luck-delay-buy",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-luck-reply-buy",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.outcome",
+          "value": "purchased"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.purchased",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.paymentSource",
+          "value": "哥哥的亲情卡"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.paymentAmount",
+          "value": 2
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-luck-select-bargain",
+      "label": "还能少一点吗？",
+      "event": "marketSelect",
+      "target": "market-cr7-only-god-luck.bargain",
+      "conditions": [
+        {
+          "key": "market.cr7-only-god-luck.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-luck.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-luck.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-luck.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.cr7-only-god-luck.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.cr7-only-god-luck.bargainDone",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-luck.outcome",
+          "op": "neq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.choice",
+          "value": "bargain"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-luck-buyer-bargain",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-cr7-only-god-luck-delay-bargain"
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-luck-delay-bargain",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-luck-reply-bargain",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.outcome",
+          "value": "quoted"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.currentPrice",
+          "value": 1
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.bargainDone",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.interacted",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-luck-select-leave",
+      "label": "聊完后决定不买",
+      "event": "marketDecline",
+      "target": "market-cr7-only-god-luck",
+      "conditions": [
+        {
+          "key": "market.cr7-only-god-luck.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-luck.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-luck.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-luck.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.cr7-only-god-luck.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.cr7-only-god-luck.interacted",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.decision",
+          "value": "leave"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-luck-buyer-leave",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-cr7-only-god-luck-delay-leave"
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-luck-delay-leave",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-luck-reply-leave",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.outcome",
+          "value": "declined"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.decision",
+          "value": "leave"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-luck-confirm",
+      "label": "使用哥哥的亲情卡确认购买",
+      "event": "marketConfirm",
+      "target": "market-cr7-only-god-luck",
+      "conditions": [
+        {
+          "key": "market.cr7-only-god-luck.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-luck.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-luck.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-luck.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.cr7-only-god-luck.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.cr7-only-god-luck.outcome",
+          "op": "eq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-luck-buyer-buy",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-cr7-only-god-luck-pay-quoted"
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-luck-select-chat",
+      "label": "你平时也会买重东西？",
+      "event": "marketSelect",
+      "target": "market-cr7-only-god-luck.chat",
+      "conditions": [
+        {
+          "key": "market.cr7-only-god-luck.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-luck.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-luck.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-luck.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.cr7-only-god-luck.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.cr7-only-god-luck.chatDone",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.choice",
+          "value": "chat"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-luck-buyer-chat",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-cr7-only-god-luck-delay-chat-1"
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-luck-confirm-base",
+      "label": "使用哥哥的亲情卡按原价购买",
+      "event": "marketConfirm",
+      "target": "market-cr7-only-god-luck",
+      "conditions": [
+        {
+          "key": "market.cr7-only-god-luck.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-luck.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-luck.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-luck.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.cr7-only-god-luck.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.cr7-only-god-luck.interacted",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-luck.outcome",
+          "op": "neq",
+          "value": "quoted"
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-luck-buyer-buy",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-cr7-only-god-luck-delay-buy"
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-luck-pay-quoted",
+      "label": "确认议价购买",
+      "type": "delay",
+      "delayMs": 1100,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-luck-reply-buy",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.outcome",
+          "value": "purchased"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.purchased",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.decision",
+          "value": "buy"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.paymentSource",
+          "value": "哥哥的亲情卡"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.paymentAmount",
+          "value": 1
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.busy",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-luck-decline-legacy",
+      "label": "结束此前的议价",
+      "event": "marketDecline",
+      "target": "market-cr7-only-god-luck",
+      "conditions": [
+        {
+          "key": "market.cr7-only-god-luck.opened",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "market.cr7-only-god-luck.busy",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-luck.purchased",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "market.cr7-only-god-luck.decision",
+          "op": "eq",
+          "value": "unset"
+        },
+        {
+          "key": "market.cr7-only-god-luck.outcome",
+          "op": "neq",
+          "value": "declined"
+        },
+        {
+          "key": "market.cr7-only-god-luck.outcome",
+          "op": "eq",
+          "value": "quoted"
+        },
+        {
+          "key": "market.cr7-only-god-luck.interacted",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.decision",
+          "value": "leave"
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.busy",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-luck-buyer-leave",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-cr7-only-god-luck-delay-leave"
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-luck-delay-chat-1",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 900,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-luck-reply-chat-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "market-cr7-only-god-luck-delay-chat-2"
+      ]
+    },
+    {
+      "id": "market-cr7-only-god-luck-delay-chat-2",
+      "label": "寒冰射手正在回复",
+      "type": "delay",
+      "delayMs": 900,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "market-cr7-only-god-luck-reply-chat-2",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.chatDone",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.interacted",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "market.cr7-only-god-luck.busy",
+          "value": false
+        }
+      ]
+    }
+  ]
+}

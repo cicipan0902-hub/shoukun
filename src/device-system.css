@@ -1324,3 +1324,11 @@
   grid-template-rows: repeat(6, 99px);
   grid-auto-rows: 99px;
 }
+
+/* Keep the clock visible while entering the passcode. */
+.ios18 .device-passcode { padding-top: 54px; }
+.ios18 .passcode-clock { display: flex; flex-direction: column; align-items: center; gap: 4px; margin-bottom: 20px; color: white; }
+.ios18 .passcode-clock strong { font-size: 38px; font-weight: 400; font-variant-numeric: tabular-nums; }
+.ios18 .passcode-clock span { font-size: 14px; }
+.ios18 .device-passcode > svg { margin-bottom: 12px; }
+.ios18 .device-passcode .pin-footer button:disabled { opacity: .4; }

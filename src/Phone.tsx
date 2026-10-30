@@ -8,6 +8,7 @@ import {
 import { type ChatDestination, CampusPlayContext } from "./personalization/CampusPlayContext";
 import { ActivityDocumentView } from "./personalization/ActivityDocumentView";
 import { activityDocument } from "./personalization/activityDocuments";
+import { selectedWallpaper } from "./personalization/birthday";
 import { StoryGuide } from "./personalization/ChapterHelp";
 import { AvatarImage } from "./media/AvatarImage";
 import { restoreSave } from "./saveRestore";
@@ -209,6 +210,7 @@ function PhoneRuntime({
     };
   }, [creator, ready]);
   const s = external ?? own;
+  const wallpaper = selectedWallpaper(work, s);
   const runtimeRef = useRef(s);
   runtimeRef.current = s;
   const update = (next: Runtime) => {
@@ -353,15 +355,15 @@ function PhoneRuntime({
         >
           <div
             style={
-              safeMedia(work.phone.wallpaper).startsWith("data:image/")
+              safeMedia(wallpaper).startsWith("data:image/")
                 ? {
-                    backgroundImage: `url("${safeMedia(work.phone.wallpaper)}")`,
+                    backgroundImage: `url("${safeMedia(wallpaper)}")`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }
                 : undefined
             }
-            className={`phone-screen ${safeMedia(work.phone.wallpaper) ? "" : `wallpaper-${work.phone.wallpaper}`} ${locked ? "is-locked" : ""} ${app ? "in-app" : ""} ${keyboard ? "keyboard-open" : ""}`}
+            className={`phone-screen ${safeMedia(wallpaper) ? "wallpaper-photo" : `wallpaper-${wallpaper}`} ${locked ? "is-locked" : ""} ${app ? "in-app" : ""} ${keyboard ? "keyboard-open" : ""}`}
             data-app={app}
             onDragStart={(e) => e.preventDefault()}
             onPointerDown={(e) => {
@@ -476,6 +478,7 @@ function PhoneRuntime({
                   setPinOpen={setPinOpen}
                   error={pinError}
                   onUnlock={unlock}
+                  onInput={() => setPinError("")}
                   onLight={() => setPanel("light")}
                   onCamera={() => {
                     setQuickCamera(true);
@@ -653,6 +656,7 @@ function PhoneRuntime({
             {!creator && !locked && !panel && <StoryGuide />}
             {!creator &&
               s.endings.length > 0 &&
+              s.endings.at(-1) !== s.variables["story.inlineEnding"] &&
               (!s.ui?.story?.dismissedEnding ||
                 s.endings.length > Number(s.ui?.story?.dismissedCount || 1)) &&
               !locked && (

@@ -30,7 +30,10 @@
     "test:assets": "node --test scripts/lib/author-assets.test.mjs",
     "test:authoring:e2e": "node node_modules/@playwright/test/cli.js test --config playwright.authoring.config.ts",
     "public:prepare": "npm run author:build && node scripts/prepare-public-site.mjs",
-    "release:check": "node scripts/check-runtime-artifact.mjs"
+    "release:check": "node scripts/check-runtime-artifact.mjs",
+    "public:check": "node scripts/check-public-site.mjs",
+    "test:public": "node --test scripts/lib/public-artifact.test.mjs",
+    "public:preview": "vite preview --config vite.runtime.config.ts --outDir dist-public --host 127.0.0.1 --port 4188 --strictPort"
   },
   "dependencies": {
     "@tiptap/react": "^3.0.0",

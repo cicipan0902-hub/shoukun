@@ -1,4 +1,5 @@
 import { appendInteractions } from "./interactions";
+import { appendMarket, marketSchema } from "./market";
 import { castSchema, assetsSchema, projectSchema } from "./schema";
 import {
   compileStory,
@@ -15,6 +16,7 @@ const extensionSchema = z
     events: storySchema.shape.events.optional(),
     variables: storySchema.shape.variables.optional(),
     tests: storySchema.shape.tests.optional(),
+    market: marketSchema.optional(),
   })
   .strict();
 export function mergeExtensions(raw: unknown[]) {
@@ -28,6 +30,10 @@ export function mergeExtensions(raw: unknown[]) {
   };
   for (const input of raw) {
     const extra = extensionSchema.parse(input);
+    if (extra.market) {
+      if (merged.market) throw Error("闲鱼联动配置不能重复");
+      merged.market = extra.market;
+    }
     for (const key of ["contacts", "chats", "events", "tests"] as const)
       (merged[key] as unknown[]).push(...(extra[key] || []));
     for (const [app, items] of Object.entries(extra.content || {})) {
@@ -115,7 +121,7 @@ export function compileProject(
         phone: "",
         bio: c.publicBio,
       });
-  if (rawInteractions) appendInteractions(story, rawInteractions);
+  if (rawInteractions) appendInteractions(story, extra.market ? appendMarket(story, extra.market, rawInteractions) : rawInteractions);
   const byStoryId = new Map(cast.map((c) => [c.storyId, c]));
   const byName = new Map(
     cast.flatMap((c) =>
@@ -188,7 +194,7 @@ export function compileProject(
     ...Object.values(story.content).flat(),
   ];
   for (const binding of project.bindings) {
-    const value = ["itemAvatar", "groupAvatar", "wallpaper", "appIcon"].includes(
+    const value = ["itemAvatar", "groupAvatar", "wallpaper", "appIcon", "setupBackground"].includes(
       binding.target,
     )
       ? avatar(binding.assetId)
@@ -197,6 +203,9 @@ export function compileProject(
       if (!story.installedApps.some((app) => (typeof app === "string" ? app : app.id) === binding.targetId))
         throw Error(`图标绑定App未安装: ${binding.targetId}`);
       if (value) story.variables[`author.appIcon.${binding.targetId}`] = value;
+    } else if (binding.target === "setupBackground") {
+      if (value && !value.startsWith("data:image/")) throw Error("进入页背景必须是图片");
+      if (value) story.variables["author.setupBackground"] = value;
     } else if (binding.target === "wallpaper") {
       if (value && !value.startsWith("data:image/"))
         throw Error("壁纸必须是图片");

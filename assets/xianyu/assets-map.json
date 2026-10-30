@@ -23,6 +23,12 @@
           "title": "朱志鑫微信号，买到就是赚到【整蛊纸条】",
           "image": "assets/xianyu/products/hanbing-sheshou/联系方式.jpg",
           "assetId": "xianyu-product-hanbing-sheshou-contact"
+        },
+        {
+          "itemId": "market-hanbing-sheshou-cap",
+          "title": "奶嘴帽，戴上不保证进球",
+          "image": "assets/xianyu/products/hanbing-sheshou/hanbing-sheshou-cap-01.pic.jpg",
+          "assetId": "xianyu-product-hanbing-sheshou-cap"
         }
       ]
     },
@@ -73,6 +79,12 @@
           "title": "作文修改／学习讲解，先看原稿再说",
           "image": "assets/xianyu/products/xinan-yujie/专业抄写.pic.jpg",
           "assetId": "xianyu-product-xinan-yujie-essay"
+        },
+        {
+          "itemId": "market-xinan-yujie-gaming",
+          "title": "打瓦账号体验卡【虚构模拟】",
+          "image": "assets/xianyu/products/xinan-yujie/xinan-yujie-gaming-01.pic.jpg",
+          "assetId": "xianyu-product-xinan-yujie-gaming"
         }
       ]
     },
@@ -98,6 +110,12 @@
           "title": "收纳盒两个，打包便宜",
           "image": "assets/xianyu/products/tutucha-mengmengda/收纳盒.pic.jpg",
           "assetId": "xianyu-product-tutucha-mengmengda-storage"
+        },
+        {
+          "itemId": "market-tutucha-mengmengda-shirt",
+          "title": "闲置衬衫，洗净收好了",
+          "image": "assets/xianyu/products/tutucha-mengmengda/tutucha-mengmengda-shirt-01.pic.jpg",
+          "assetId": "xianyu-product-tutucha-mengmengda-shirt"
         }
       ]
     },
@@ -156,7 +174,7 @@
         {
           "itemId": "market-cr7-only-god-figure",
           "title": "足球球星小手办，展示柜挪位置",
-          "image": "assets/xianyu/products/cr7-only-god/cr7-only-god-figure-01.jpg",
+          "image": "assets/xianyu/products/cr7-only-god/手办.pic.jpg",
           "assetId": "xianyu-product-cr7-only-god-figure",
           "status": "待确认：上传的手办图与球星手办描述不符，暂不绑定。"
         },
@@ -165,6 +183,24 @@
           "title": "重复的球员卡，保护套一起",
           "image": "assets/xianyu/products/cr7-only-god/球星卡.pic.jpg",
           "assetId": "xianyu-product-cr7-only-god-card"
+        },
+        {
+          "itemId": "market-cr7-only-god-career",
+          "title": "事业运壁纸，先把今天的题写完",
+          "image": "assets/xianyu/products/cr7-only-god/cr7-only-god-career-01.pic.jpg",
+          "assetId": "xianyu-product-cr7-only-god-career"
+        },
+        {
+          "itemId": "market-cr7-only-god-handsome",
+          "title": "帅哥主题壁纸【图片待补】",
+          "image": "assets/xianyu/products/cr7-only-god/cr7-only-god-handsome-01.pic.jpg",
+          "assetId": "xianyu-product-cr7-only-god-handsome"
+        },
+        {
+          "itemId": "market-cr7-only-god-luck",
+          "title": "好运壁纸，祝你今天顺一点",
+          "image": "assets/xianyu/products/cr7-only-god/cr7-only-god-luck-01.pic.jpg",
+          "assetId": "xianyu-product-cr7-only-god-luck"
         }
       ]
     }

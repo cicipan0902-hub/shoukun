@@ -15,11 +15,16 @@ const source = read("story.json"),
 import { compileProject } from "../src/authoring/compile";
 const pixel =
   "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+jrWQAAAAASUVORK5CYII=";
+async function unlockPhone(page: Page) {
+  await page.getByRole("button", { name: "轻触解锁", exact: true }).click();
+  for (const n of "2580") await page.getByRole("button", { name: "密码键" + n, exact: true }).click();
+  await page.getByRole("button", { name: "确认密码", exact: true }).click();
+}
 async function enter(page: Page) {
   await page.goto("/");
   await page.getByLabel("你的昵称", { exact: true }).fill("测试同学");
   await page.getByRole("button", { name: "让故事发生", exact: true }).click();
-  await page.getByRole("button", { name: "轻触解锁", exact: true }).click();
+  await unlockPhone(page);
 }
 async function home(page: Page) {
   await page.getByRole("button", { name: "返回桌面", exact: true }).click();
@@ -42,6 +47,44 @@ test.beforeEach(async ({ page }) => {
     "avatar-zhangzeyu": pixel,
   });
   await page.route("**/work.json", (route) => route.fulfill({ json: r.work }));
+});
+test("player chooses a local avatar, keeps the save identity and sees authored backgrounds", async ({ page }) => {
+  const work = compileProject(source, project, cast, assets, extra).work;
+  work.variables["author.setupBackground"] = pixel;
+  work.phone.wallpaper = pixel;
+  await page.route("**/work.json", route => route.fulfill({ json: work }));
+  await page.goto("/");
+  await expect(page.locator("select")).toHaveCount(0);
+  await expect(page.locator(".setup-background")).toBeVisible();
+  await page.getByLabel("你的昵称", { exact: true }).fill("头像测试同学");
+  await page.getByLabel("选择你的头像", { exact: true }).setInputFiles({
+    name: "avatar.png", mimeType: "image/png", buffer: Buffer.from(pixel.split(",")[1], "base64"),
+  });
+  await expect(page.locator(".setup-avatar img")).toHaveAttribute("src", /^data:image\/jpeg;base64,/);
+  await page.getByRole("button", { name: "让故事发生", exact: true }).click();
+  await expect(page.locator(".phone-screen")).toHaveClass(/wallpaper-photo/);
+  await expect(page.locator(".wallpaper-orb").first()).toBeHidden();
+  const original = await page.evaluate(() => JSON.parse(localStorage.getItem("shoukun.campus-profile.v1")!));
+  expect(original.avatar).toMatch(/^data:image\/jpeg;base64,/);
+  await page.getByRole("button", { name: "我的设定", exact: true }).click();
+  await expect(page.locator(".setup-avatar img")).toHaveAttribute("src", original.avatar);
+  await page.getByLabel("选择你的头像", { exact: true }).setInputFiles({
+    name: "bad.svg", mimeType: "image/svg+xml", buffer: Buffer.from("<svg/>"),
+  });
+  await expect(page.getByRole("alert")).toContainText("JPG、PNG 或 WebP");
+  await page.getByLabel("你的昵称", { exact: true }).fill("新昵称");
+  await page.getByRole("button", { name: "保存设定并继续故事", exact: true }).click();
+  await expect(page.locator(".phone-screen")).toBeVisible();
+  const updated = await page.evaluate(() => JSON.parse(localStorage.getItem("shoukun.campus-profile.v1")!));
+  expect(updated.runId).toBe(original.runId);
+  expect(updated.avatar).toBe(original.avatar);
+  expect(updated.playerName).toBe("新昵称");
+  await page.reload();
+  await expect(page.locator(".setup-avatar img")).toHaveAttribute("src", original.avatar);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await expect(page.locator(".setup-card")).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
 test("image preview, consistent avatar and small-screen layout", async ({
   page,
@@ -138,7 +181,7 @@ test("chapter three roster review, restored checkmarks, scene and private memo",
   await expect(page.getByRole("status")).toContainText("4 / 4");
   await page.reload();
   await page.getByRole("button", { name: /继续.*的故事/ }).click();
-  await page.getByRole("button", { name: "轻触解锁", exact: true }).click();
+  await unlockPhone(page);
   await page.getByRole("button", { name: "剧情指引", exact: true }).click();
   await page.getByRole("dialog", { name: "当前剧情指引", exact: true }).getByRole("button", { name: "打开文件", exact: true }).click();
   await expect(page.getByRole("status")).toContainText("4 / 4");
@@ -208,7 +251,7 @@ test("chapter four text Demo, neutral work response, branch memo and save restor
   await page.getByRole("button", { name: "返回手机", exact: true }).click();
   await page.reload();
   await page.getByRole("button", { name: /继续.*的故事/ }).click();
-  await page.getByRole("button", { name: "轻触解锁", exact: true }).click();
+  await unlockPhone(page);
   await page.getByRole("button", { name: "剧情指引", exact: true }).click();
   await expect(page.getByRole("heading", { name: "第四章已完成" })).toBeVisible();
 });

@@ -6,12 +6,13 @@ export const profileSchema = z.object({
   playerName: z.string().trim().min(1, "请填写你的昵称").max(20),
   starName: z.string().trim().min(1, "请填写角色名字").max(20),
   playerClass: z.string().trim().min(1).max(20),
+  avatar: z.string().max(300000).regex(/^$|^data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/=]+$/, "头像图片格式不正确，请重新选择").optional(),
   temperament: z.enum([
     "温柔细腻，有自己的想法",
     "活泼，有点小倔强",
     "慢热，但很认真",
     "直率，喜欢开玩笑",
-  ]),
+  ]).default("温柔细腻，有自己的想法"),
 });
 export type PlayerProfile = z.infer<typeof profileSchema>;
 export function newRunId(): string {
@@ -50,6 +51,7 @@ export function personalizeWork(source: Work, input: PlayerProfile): Work {
   const w = structuredClone(source);
   w.id = `${source.id}--${p.runId}`;
   w.phone.owner = p.playerName;
+  w.phone.passcode = "2580";
   w.description = text(w.description);
   for (const items of Object.values(w.data))
     for (const item of items) {
@@ -60,6 +62,8 @@ export function personalizeWork(source: Work, input: PlayerProfile): Work {
       item.meta = Object.fromEntries(
         Object.entries(item.meta).map(([k, v]) => [k, text(v)]),
       );
+      if (p.avatar && (item.outgoing || item.meta.characterId === "owner" || item.id === "owner-card" || item.meta.characterRef === "owner" || item.meta.accountId === "owner"))
+        item.avatar = p.avatar;
     }
   for (const node of w.nodes) {
     node.label = text(node.label);
@@ -73,6 +77,7 @@ export function personalizeWork(source: Work, input: PlayerProfile): Work {
         ...c,
         name: text(String(c.name)),
         nickname: text(String(c.nickname)),
+        ...(p.avatar && c.storyId === "owner" ? { avatar: p.avatar } : {}),
       })),
     );
   } catch {
@@ -85,5 +90,6 @@ export function personalizeWork(source: Work, input: PlayerProfile): Work {
     playerClass: p.playerClass,
     temperament: p.temperament,
   };
+  if (p.avatar) w.variables["author.ownerAvatar"] = p.avatar;
   return validateWork(w);
 }

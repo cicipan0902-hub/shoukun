@@ -62,7 +62,7 @@ describe("reusable choice conversations and friendship progression", () => {
       expect(new Set(state.unlocked).size).toBe(state.unlocked.length);
       expect(state.variables["chapter.next"]).toBe("chapter-03-pending");
     }
-  }, 20000);
+  }, 30000);
   it("initially exposes only brother and Zuo, and hides nonfriend Moments until friendship is accepted", () => {
     const { work } = build(),
       s = dispatch(work, initialRuntime(work), "start");

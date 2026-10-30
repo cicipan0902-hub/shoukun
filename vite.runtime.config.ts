@@ -10,7 +10,7 @@ export default defineConfig(({ command }) => ({
   plugins: [
     localIconPlugin(command),
     react(),
-    { name: "game-release", generateBundle() { this.emitFile({ type: "asset", fileName: "release.json", source: JSON.stringify({ build: buildId }) }); } },
+    { name: "game-release", generateBundle() { this.emitFile({ type: "asset", fileName: "release.json", source: JSON.stringify({ build: buildId, commit: process.env.CF_PAGES_COMMIT_SHA || process.env.GITHUB_SHA || "" }) }); } },
     VitePWA({
       registerType: "autoUpdate",
       manifest: {

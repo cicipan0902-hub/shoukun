@@ -14,13 +14,15 @@ import { dispatch, advance, visible } from "../engine";
 import { restoreSave } from "../saveRestore";
 import { XianyuSkin, marketOffers } from "../skins/CommunitySkins";
 import type { SkinProps } from "../AppSkins";
+import initialSellers from "../../stories/foundation/xianyu-sellers.json";
 const build = (media: Record<string, string> = {}) => compileProject(source, project, cast, assets, foundationExtensions(), media, interactions);
 describe("seven local Xianyu sellers", () => {
   it("adds seven aliases, two to four products each and stable optional image paths without exposing the anonymous character", () => {
     const { work } = build();
     const accounts = work.data.xianyu.filter((i) => i.meta.type === "seller");
     expect(accounts.map((i) => i.sender)).toEqual(["寒冰射手", "厚米爷爷", "西南禹姐", "兔兔叉萌萌哒", "啵啵爸爸", "Suuuu", "C罗唯一真神"]);
-    const products = work.data.xianyu.filter((i) => i.meta.type === "product" && i.meta.sellerId);
+    const originalIds = new Set(initialSellers.content.xianyu.filter(i => i.meta.type === "product").map(i => i.id));
+    const products = work.data.xianyu.filter((i) => originalIds.has(i.id));
     expect(products).toHaveLength(19);
     expect(work.data.xianyu.some((i) => i.id === "market-draft")).toBe(true);
     for (const account of accounts) {

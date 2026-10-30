@@ -1,9 +1,11 @@
+import { PublishedVideo } from "../media/PublishedVideo";
 import { Fragment, useContext, useState } from "react";
 import { safeMedia, type Item } from "../schema";
 import type { PublicActivityDocument } from "../authoring/documents";
 import { CampusPlayContext } from "./CampusPlayContext";
 import { conditionsPass } from "./chatRuntime";
 import "./activity-documents.css";
+import { BirthdayDocumentView } from "./BirthdayDocumentView";
 import { BasketballGame } from "./BasketballGame";
 export function ActivityDocumentView({ item, document: doc, back }: {
   item: Item; document: PublicActivityDocument; back: () => void;
@@ -11,6 +13,7 @@ export function ActivityDocumentView({ item, document: doc, back }: {
   const play = useContext(CampusPlayContext);
   const [selected, setSelected] = useState("");
   if (!play) return null;
+  if (doc.kind === "birthday" || doc.kind === "photo-pair") return <BirthdayDocumentView item={item} document={doc} back={back} />;
   if (doc.kind === "basketball") return <BasketballGame item={item} document={doc} back={back} />;
   const name = (id: string) => play.work.data.contacts.find((c) => c.id === id + "-card")?.title || id;
   const inspected = (id: string) => play.state.variables[`document.${doc.id}.${id}.read`] === true;
@@ -28,7 +31,7 @@ export function ActivityDocumentView({ item, document: doc, back }: {
     <header className="app-nav"><button aria-label="返回" onClick={back}>‹ 文件</button><strong>{doc.kind === "roster" ? "报名核对" : doc.kind === "media-gallery" ? "KTV 现场" : doc.kind === "media-review" ? "试听记录" : "现场记录"}</strong><span /></header>
     <div className="activity-document-scroll">
       <small>{item.time}</small><h2>{item.title}</h2>
-      {doc.kind === "media-review" && (videoReady ? <video className="activity-video" controls playsInline preload="metadata" aria-label="Demo视频" src={audio} /> : audioReady ? <audio className="activity-audio" controls preload="metadata" aria-label="Demo音频" src={audio} /> : <p className="activity-media-pending" role="status">{item.meta.mediaPendingLabel || "音频尚未提供 · 当前为文字试听记录，没有实际音频播放。"}</p>)}
+      {doc.kind === "media-review" && (videoReady ? <PublishedVideo className="activity-video" controls playsInline preload="metadata" aria-label="Demo视频" src={audio} /> : audioReady ? <audio className="activity-audio" controls preload="metadata" aria-label="Demo音频" src={audio} /> : <p className="activity-media-pending" role="status">{item.meta.mediaPendingLabel || "音频尚未提供 · 当前为文字试听记录，没有实际音频播放。"}</p>)}
       <p>{item.body}</p>
       {doc.kind === "media-gallery" && <>
         <div className="activity-video-options" role="group" aria-label="选择演唱者">
@@ -39,7 +42,7 @@ export function ActivityDocumentView({ item, document: doc, back }: {
         </div>
         {selectedEntry && <section className="activity-video-selection" aria-label={`${name(selectedEntry.characterId)}的演唱视频`}>
           <h3>{name(selectedEntry.characterId)}</h3>
-          {selectedVideo ? <video key={selectedEntry.id} className="activity-video" controls playsInline preload="metadata" aria-label={`${name(selectedEntry.characterId)}演唱`} src={selectedMedia} /> : <p className="activity-media-pending" role="status">这段视频尚未提供，可以先看其他人或回群继续。</p>}
+          {selectedVideo ? <PublishedVideo key={selectedEntry.id} className="activity-video" controls playsInline preload="metadata" aria-label={`${name(selectedEntry.characterId)}演唱`} src={selectedMedia} /> : <p className="activity-media-pending" role="status">这段视频尚未提供，可以先看其他人或回群继续。</p>}
         </section>}
       </>}
       {doc.kind === "roster" && <>

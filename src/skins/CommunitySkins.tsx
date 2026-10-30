@@ -6,6 +6,7 @@ import { safeMedia, type Item, type Runtime } from "../schema";
 import { Header, Avatar, Media, SearchBox, Empty, type Props } from "./shared";
 import { SocialDetail } from "./SocialDetails";
 import "./community.css";
+import { marketOrders } from "../personalization/marketRuntime";
 export const communityMatch = (item: Item, query: string) => `${item.title} ${item.body} ${item.sender} ${item.meta.topic || ""}`.toLowerCase().includes(query.trim().toLowerCase());
 type Offer = { id: string; text: string; result: string; price: number };
 export function marketOffers(item: Item): Offer[] {
@@ -96,16 +97,17 @@ export function marketChatStatus(item: Item, state?: Runtime) {
   const vars = state?.variables || {};
   const selected = String(vars[key + ".choice"] || "unset");
   const outcome = String(vars[key + ".outcome"] || "unset");
-  const busy = vars[key + ".busy"] === true || !!state?.scheduled?.some((timer) => timer.nodeId.startsWith(item.id + "-") && (timer.nodeId.includes("-delay-") || timer.nodeId.includes("-pay-")));
+  const busy = vars[key + ".busy"] === true || !!state?.scheduled?.some((timer) => timer.nodeId.startsWith(item.id + "-") && (timer.nodeId.includes("-delay-") || timer.nodeId.includes("-pay-") || timer.nodeId.endsWith("-extra-think-delay") || timer.nodeId.endsWith("-extra-refund-delay")));
   const paid = vars[key + ".purchased"] === true || outcome === "purchased";
   const closed = outcome === "declined";
-  const active = vars[key + ".opened"] === true && !busy && !paid && !closed && (!vars[key + ".decision"] || vars[key + ".decision"] === "unset");
+  const orderStatus = String(vars[key + ".orderStatus"] || (paid ? "paid" : "unset"));
+  const active = vars[key + ".opened"] === true && !busy && !paid && !closed && !["cancelled", "refunded"].includes(orderStatus) && (!vars[key + ".decision"] || vars[key + ".decision"] === "unset");
   const quote = marketOffers(item).find((option) => option.id === "bargain")?.price ?? Number(item.meta.price);
   const price = outcome === "quoted" || vars[key + ".bargainDone"] === true || (!vars[key + ".paymentSource"] && selected === "bargain" && paid) ? quote : Number(item.meta.price);
   const paymentSource = String(vars[key + ".paymentSource"] || "哥哥的亲情卡");
   const paymentAmount = vars[key + ".paymentSource"] && typeof vars[key + ".paymentAmount"] === "number" ? Number(vars[key + ".paymentAmount"]) : price;
-  return { key, selected, outcome, busy, paid, closed, price, paymentSource, paymentAmount,
-    canDecide: active && (vars[key + ".interacted"] === true || outcome === "quoted"),
+  return { key, selected, outcome, busy, paid, closed, price, paymentSource, paymentAmount, orderStatus,
+    canDecide: active,
     canChat: active && vars[key + ".chatDone"] !== true,
     canBargain: active && vars[key + ".bargainDone"] !== true && outcome !== "quoted" };
 }
@@ -126,11 +128,19 @@ function SellerChat({ p, item, back }: { p: Props; item: Item; back: () => void 
       {messages.filter((i) => !i.id.endsWith("-hello")).map((i) => <p key={i.id} className={"market-bubble" + (i.meta.type === "buyer" ? " mine" : "")}>{i.body}</p>)}
       {status.busy && <p className="market-typing" role="status">卖家正在输入…</p>}
       {status.paid && <div className="market-result market-payment" role="status"><span>虚拟成交 ¥ {status.paymentAmount}</span><strong>付款方式：{status.paymentSource}</strong><small>张泽禹的虚拟亲情卡 · 不涉及真实扣款</small></div>}
+      {status.orderStatus === "refunded" && <p className="market-result" role="status">已退款 ¥ {status.paymentAmount}，原路退回哥哥的亲属卡。</p>}
+      {status.orderStatus === "cancelled" && <p className="market-result" role="status">订单已取消，没有扣款。商品仍可浏览。</p>}
       {status.closed && <p className="market-result">这次先不买。聊天记录和收藏都留着，可以继续逛。</p>}
     </div>
     <div className="market-offers">
       {!status.paid && !status.closed && options.filter((o) => o.id === "chat" ? status.canChat || status.busy : o.id === "bargain" ? status.canBargain || status.busy : false).map((o) => <button key={o.id} disabled={!play || status.busy} onClick={() => play?.event("marketSelect", item.id + "." + o.id)}>{o.id === "chat" ? "闲聊：" : "砍价："}{o.text}</button>)}
-      {status.canDecide && <div className="market-decisions"><button className="market-buy" onClick={() => play?.event("marketConfirm", item.id)}>买下 · 亲情卡 ¥ {status.price}</button><button onClick={() => play?.event("marketDecline", item.id)}>先不买了</button></div>}
+      {status.canDecide && <>
+        <div className="market-decisions"><button className="market-buy" onClick={() => play?.event("marketConfirm", item.id)}>买下 · 亲属卡 ¥ {status.price}</button><button onClick={() => play?.event("marketDecline", item.id)}>先不买了</button></div>
+        {play?.work.variables["author.market"] && <div className="market-decisions"><button disabled={play.state.variables[status.key + ".thinkDone"] === true} onClick={() => play.event("marketThink", item.id)}>再考虑一下</button><button disabled={play.state.variables[status.key + ".silentDone"] === true} onClick={() => play.event("marketSilent", item.id)}>已读不回</button></div>}
+      </>}
+      {status.closed && <button onClick={() => play?.event("marketResume", item.id)}>回来再看看</button>}
+      {status.orderStatus === "pending" && <button onClick={() => play?.event("marketCancel", item.id)}>取消订单（尚未付款）</button>}
+      {status.paid && !status.busy && status.orderStatus !== "refunded" && play?.work.variables["author.market"] && <button onClick={() => play.event("marketRefund", item.id)}>申请模拟退款</button>}
       {item.meta.rewardItemId && status.paid && <button onClick={() => play?.navigate(item.meta.rewardApp || "notes", { itemId: item.meta.rewardItemId })}>{item.meta.rewardLabel || "查看发现的内容"}</button>}
     </div>
   </div>;
@@ -150,6 +160,7 @@ export function XianyuSkin(p: Props) {
   const [chatId, setChat] = useSkinState<string>(p, "market-chat", "");
   const products = p.items.filter((i) => i.meta.type === "product");
   const sellers = p.items.filter((i) => i.meta.type === "seller");
+  const orders = play ? marketOrders(play.state, play.work) : [];
   const selected = products.find((i) => i.id === productId);
   const chat = products.find((i) => i.id === chatId);
   const open = (i: Item) => { p.onRead(i.id); setProduct(i.id); };
@@ -161,5 +172,5 @@ export function XianyuSkin(p: Props) {
   }
   if (selected) return <ProductDetail key={selected.id} p={p} item={selected} back={() => setProduct("")} seller={() => setSeller(selected.sender)} contact={() => { play?.event("marketOpen", selected.id); setChat(selected.id); }} />;
   const list = products.filter((i) => communityMatch(i, query) && (category === "全部" || (category === "收藏" ? p.ui?.["market-saved-" + i.id] === true : i.folder === category)));
-  return <div className="community-app market-app"><Header p={p} /><p className="community-notice">闲鱼娱乐模拟器 · 本地虚拟商品，不涉及真实支付</p><SearchBox value={query} set={setQuery} placeholder="搜点有用或没用的东西" /><nav className="community-tabs">{["全部", "卖家", ...new Set(products.map((i) => i.folder)), "收藏"].map((s) => <button key={s} aria-pressed={category === s} onClick={() => setCategory(s)}>{s}</button>)}</nav><div className="community-scroll">{category === "卖家" ? <>{sellers.filter((i) => communityMatch(i, query)).map((seller) => <button className="community-account-row" key={seller.id} onClick={() => setSeller(seller.sender)}><Avatar name={seller.sender} src={seller.avatar} /><span><b>{seller.title}</b><small>{seller.body}</small></span></button>)}</> : <><div className="market-grid">{list.map((i) => <ProductCard key={i.id} p={p} item={i} open={() => open(i)} />)}</div><Empty items={list} label="还没有相关闲置" /></>}</div></div>;
+  return <div className="community-app market-app"><Header p={p} /><p className="community-notice">闲鱼娱乐模拟器 · 本地虚拟商品，不涉及真实支付</p><SearchBox value={query} set={setQuery} placeholder="搜点有用或没用的东西" /><nav className="community-tabs">{["全部", "卖家", ...new Set(products.map((i) => i.folder)), "收藏", "订单"].map((s) => <button key={s} aria-pressed={category === s} onClick={() => setCategory(s)}>{s}</button>)}</nav><div className="community-scroll">{category === "订单" ? <>{orders.length ? orders.map(order => <button className="community-account-row" key={order.id} onClick={() => { const item = products.find(p => p.id === order.productId);if (item) { setCategory("全部");open(item); } }}><span><b>{order.title}</b><small>{({ pending: "待付款", paid: "已完成", cancelled: "已取消 · 未扣款", refunded: "已退款" })[order.status]} · ¥ {order.amount} · 哥哥的亲属卡</small></span></button>) : <p className="skin-empty">还没有模拟订单</p>}</> : category === "卖家" ? <>{sellers.filter((i) => communityMatch(i, query)).map((seller) => <button className="community-account-row" key={seller.id} onClick={() => setSeller(seller.sender)}><Avatar name={seller.sender} src={seller.avatar} /><span><b>{seller.title}</b><small>{seller.body}</small></span></button>)}</> : <><div className="market-grid">{list.map((i) => <ProductCard key={i.id} p={p} item={i} open={() => open(i)} />)}</div><Empty items={list} label="还没有相关闲置" /></>}</div></div>;
 }

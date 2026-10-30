@@ -1,5 +1,13 @@
 /* Calibrated against user supplied real-screen references, 2026-10-25.
    ios18 is a compatibility selector, not a restriction on system version. */
+/* The author's current photo wallpaper has a light background. */
+.ios18 .wallpaper-photo .lock-clock-block,
+.ios18 .wallpaper-photo:not(.in-app) .status-bar,
+.ios18 .wallpaper-photo .home-app-grid .app-name,
+.ios18 .wallpaper-photo .home-search {
+  color: #20232b;
+  text-shadow: 0 1px 2px #ffffffb3;
+}
 .ios18 .wallpaper-silver {
   background: #ddd;
   color: #111;

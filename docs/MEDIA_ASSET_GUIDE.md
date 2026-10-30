@@ -155,13 +155,38 @@
 **必需：无。现有文字、选项、Canvas 与占位机制足够试玩。**
 
 建议，按顺序：
-1. `assets/events/ch08-book-exchange-01.jpg`：本章旧书摊现场，勿含表白私下谈话。已预留相册/朋友圈共用映射。
-2. `assets/characters/avatar-zhujiaqi.png`、`assets/characters/avatar-lifei.png`：两位 NPC 的统一头像，已预留原 assetId 的路径。
+1. `assets/events/ch08-book-exchange-01.pic.jpg`：本章旧书摊现场，勿含表白私下谈话。已预留相册/朋友圈共用映射。
+2. `assets/characters/avatar-zhujiaqi.pic.jpg`、`assets/characters/avatar-lifei.pic.jpg`：两位 NPC 的统一头像，已预留原 assetId 的路径。
 3. `assets/gallery/运动会.pic.jpg`：第七章已有路径，保持中文文件名以兼容旧引用。
-4. `assets/gallery/party-evening-01.jpg`：第六章合照，沿用 photo-party-evening，已补预留路径。
-5. `assets/xianyu/products/cr7-only-god/cr7-only-god-figure-01.jpg`：当前商品映射缺失；先确认现有备用图片能否使用，再决定是否补图。
+4. `assets/gallery/party-evening-01.pic.jpg`：第六章合照，沿用 photo-party-evening，已补预留路径。
+5. `assets/xianyu/products/cr7-only-god/手办.pic.jpg`：当前商品映射缺失；先确认现有备用图片能否使用，再决定是否补图。
 
 可选：
 - `assets/weibo/entertainment/{trousers,bad-blood,sweet-venom,apology,luelue,football}-01.jpg`：六个已配置娱乐候选话题。具体六条路径已在上表逐项列出；需连同可核对的原始来源，不以图片代替活动核实。
 - 走廊、教室背景、篮球背景、额外音效：当前未引用，不要求上传。
 - 已有头像、微信/微博/闲鱼图标、五个已映射表情包、六张相册图、作品 Demo 和四段 KTV 视频：不需重复上传。
+
+## 第九章《好友申请》补充
+
+本章无必需新素材；人物头像沿用角色配置。以下均为可选照片，不上传也可通关：
+
+| 素材 | 准确路径 | 用途 | 当前状态 |
+| --- | --- | --- | --- |
+| 小吃店聚会合照 | `assets/events/ch09-snack-shop-group-01.pic.jpg` | 相册、女主及张泽禹朋友圈 | 待补，占位 |
+| 朱志鑫自然微笑的抓拍 | `assets/events/ch09-star-candid-01.pic.jpg` | 相册、女主发送的私聊原图 | 待补，占位 |
+
+上传到对应路径后运行 `npm run author:build`；无需改聊天组件。只使用你有权使用的素材，不需要额外二维码、微信号截图或背景图。
+
+## 进入页背景、手机壁纸与玩家头像
+
+| 用途 | 准确路径 | 建议尺寸 | 状态 |
+| --- | --- | --- | --- |
+| 进入页照片背景 | `assets/backgrounds/entry-background.pic.jpg` | 已上传 1206×1809；居中裁切 | 已接入 |
+| 手机桌面/锁屏壁纸 | `assets/backgrounds/phone-wallpaper.pic.jpg` | 已上传 1206×2102；居中裁切 | 已接入 |
+
+作品背景供所有玩家使用，文件已绑定，上传后构建即可。PNG/WebP 请使用真实后缀并修改 assets.json 中的 file。
+玩家在进入页自选头像，支持 JPG/PNG/WebP，自动居中裁成方形小图，只保存在当前浏览器；旧存档可通过“我的设定 → 保存设定并继续故事”更换头像，进度与作品 ID 不变。不再显示性格选择。
+
+## 闲鱼亲属卡更新新增素材
+
+原商品与图片保持不变；新增6件商品的准确路径见 [闲鱼亲属卡说明](./XIANYU_FAMILY_CARD.md#待补素材)。当前均为可选占位，不影响购买、退款或微信回复。

@@ -7,7 +7,7 @@ const documentAction = z.object({
   actions: z.array(actionSchema),
 }).strict();
 export const activityDocumentSchema = z.object({
-  id, itemId: id, kind: z.enum(["roster", "scene", "media-review", "media-gallery", "basketball"]),
+  id, itemId: id, kind: z.enum(["roster", "scene", "media-review", "media-gallery", "basketball", "birthday", "photo-pair"]),
   conditions: z.array(conditionSchema).default([]),
   entries: z.array(z.object({
     id, characterId: id, project: z.string(), profile: z.string(), status: z.string(),
@@ -17,6 +17,11 @@ export const activityDocumentSchema = z.object({
     text: z.string(), conditions: z.array(conditionSchema).default([]),
   }).strict()).default([]),
   controls: z.array(documentAction).default([]),
+  birthday: z.object({
+    blessings: z.array(z.object({ characterId: id, text: z.string() }).strict()).default([]),
+    memories: z.array(id).default([]),
+    questions: z.array(z.object({ id, key: z.string(), prompt: z.string() }).strict()).default([]),
+  }).strict().optional(),
 }).strict();
 export type ActivityDocument = z.infer<typeof activityDocumentSchema>;
 export type PublicActivityDocument = Omit<ActivityDocument, "controls"> & {

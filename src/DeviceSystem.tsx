@@ -67,6 +67,7 @@ export function DeviceLock({
   setPinOpen,
   error,
   onUnlock,
+  onInput,
   onCamera,
   onLight,
 }: {
@@ -78,6 +79,7 @@ export function DeviceLock({
   setPinOpen: (v: boolean) => void;
   error: string;
   onUnlock: (v: string) => void;
+  onInput: () => void;
   onCamera: () => void;
   onLight: () => void;
 }) {
@@ -88,16 +90,29 @@ export function DeviceLock({
   useEffect(() => {
     if (!pinOpen) setCode("");
   }, [pinOpen]);
-  const digit = (key: string) => {
-    const value = key === "⌫" ? code.slice(0, -1) : (code + key).slice(0, 12);
-    setCode(value);
-    if (
-      /^\d+$/.test(work.phone.passcode) &&
-      value.length === work.phone.passcode.length
-    ) {
-      onUnlock(value);
-      setCode("");
-    }
+  const [attempt, setAttempt] = useState(0);
+  const [now, setNow] = useState(() => new Date());
+  const campus = work.id.startsWith("shoukun-good-weather") || work.id.startsWith("shoukun-foundation");
+  useEffect(() => {
+    const timer = window.setInterval(() => setNow(new Date()), 1000);
+    return () => window.clearInterval(timer);
+  }, []);
+  const clock = campus ? now.toLocaleTimeString("zh-CN", { hour: "2-digit", minute: "2-digit", hour12: false }) : time;
+  const date = campus ? now.toLocaleDateString("zh-CN", { month: "long", day: "numeric", weekday: "long" }) :
+    String(work.variables["story.dayLabel"] || "") || new Intl.DateTimeFormat("zh-CN", {
+      month: "long", day: "numeric", weekday: "long", timeZone: "UTC",
+    }).format(new Date((work.phone.date || "2026-09-01") + "T12:00:00Z"));
+  const numeric = /^\d+$/.test(work.phone.passcode);
+  const input = (value: string) => {
+    onInput();
+    setCode(numeric ? value.replace(/\D/g, "").slice(0, work.phone.passcode.length) : value.slice(0, 100));
+  };
+  const digit = (key: string) => input(key === "⌫" ? code.slice(0, -1) : code + key);
+  const submit = () => {
+    if (numeric && code.length !== work.phone.passcode.length) return;
+    setAttempt((value) => value + 1);
+    onUnlock(code);
+    setCode("");
   };
   const open = () => (work.phone.passcode ? setPinOpen(true) : onUnlock(""));
   return (
@@ -113,17 +128,9 @@ export function DeviceLock({
           <div className="lock-clock-block">
             <LockKeyhole size={18} />
             <p>
-              {String(work.variables["story.dayLabel"] || "") ||
-                new Intl.DateTimeFormat("zh-CN", {
-                  month: "long",
-                  day: "numeric",
-                  weekday: "long",
-                  timeZone: "UTC",
-                }).format(
-                  new Date((work.phone.date || "2026-09-01") + "T12:00:00Z"),
-                )}
+              {date}
             </p>
-            <h1>{time}</h1>
+            <h1>{clock}</h1>
           </div>
           <div className="lock-notifications">
             {work.phone.notifications && (
@@ -145,7 +152,7 @@ export function DeviceLock({
             <button
               onClick={onCamera}
               disabled={
-                !work.apps.some((a) => a.installed && a.id === "camera")
+                campus || !work.apps.some((a) => a.installed && a.id === "camera")
               }
               aria-label="相机"
             >
@@ -155,9 +162,11 @@ export function DeviceLock({
         </>
       ) : (
         <div className="device-passcode">
+          <div className="passcode-clock"><strong>{clock}</strong><span>{date}</span></div>
           <LockKeyhole size={22} />
           <h2>输入密码</h2>
           <div
+            key={attempt}
             className={"passcode-dots " + (error ? "pin-shake" : "")}
             aria-label={"已输入" + code.length + "位密码"}
           >
@@ -176,8 +185,9 @@ export function DeviceLock({
             inputMode="numeric"
             type="password"
             value={code}
-            onChange={(e) => setCode(e.target.value)}
-            onKeyDown={(e) => e.key === "Enter" && onUnlock(code)}
+            maxLength={numeric ? work.phone.passcode.length : 100}
+            onChange={(e) => input(e.target.value)}
+            onKeyDown={(e) => { if (e.key === "Enter") { e.preventDefault(); submit(); } }}
           />
           <div className="pin-keypad">
             {["1", "2", "3", "4", "5", "6", "7", "8", "9", "", "0", ""].map(
@@ -214,17 +224,10 @@ export function DeviceLock({
           <span role="status" className="pin-error">
             {error}
           </span>
-          {!/^[0-9]+$/.test(work.phone.passcode) && (
-            <button onClick={() => onUnlock(code)}>解锁</button>
-          )}
           <div className="pin-footer">
-            <button onClick={() => setPinOpen(false)}>取消</button>
-            <button
-              aria-label="删除一位密码"
-              onClick={() => (code ? digit("⌫") : setPinOpen(false))}
-            >
-              {code ? "删除" : "取消"}
-            </button>
+            <button onClick={() => setPinOpen(false)}>返回</button>
+            <button aria-label="确认密码" disabled={numeric && code.length !== work.phone.passcode.length} onClick={submit}>确认</button>
+            <button aria-label="删除一位密码" disabled={!code} onClick={() => digit("⌫")}>删除</button>
           </div>
         </div>
       )}

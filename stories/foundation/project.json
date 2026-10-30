@@ -367,6 +367,74 @@
       ],
       "completeLogic": "all",
       "next": []
+    },
+    {
+      "id": "chapter-09-pending",
+      "title": "好友申请",
+      "kind": "main",
+      "date": null,
+      "characterIds": [
+        "owner",
+        "zhuzhixin",
+        "zhangjunhao",
+        "zhangzeyu",
+        "zuohang"
+      ],
+      "eventIds": [
+        "ch09-start",
+        "ch09-start-note",
+        "ch09-read-memo",
+        "ch09-complete",
+        "flow-ch09-invite",
+        "flow-ch09-share",
+        "flow-ch09-private",
+        "flow-ch09-hook"
+      ],
+      "entry": {
+        "event": "read",
+        "target": "ch09-entry"
+      },
+      "completeWhen": [
+        {
+          "key": "chapter.chapter-09-pending.completed",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "completeLogic": "all",
+      "next": []
+    },
+    {
+      "id": "chapter-10-pending",
+      "title": "留给自己的愿望",
+      "kind": "main",
+      "date": null,
+      "characterIds": [
+        "owner",
+        "zhuzhixin",
+        "zhangjunhao",
+        "zhangzeyu",
+        "zuohang"
+      ],
+      "eventIds": [
+        "ch10-start",
+        "ch10-start-note",
+        "flow-ch10-invite",
+        "document-ch10-polaroids-action-keep"
+      ],
+      "entry": {
+        "event": "read",
+        "target": "ch10-entry"
+      },
+      "completeWhen": [
+        {
+          "key": "chapter.chapter-10-pending.completed",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "completeLogic": "all",
+      "next": []
     }
   ],
   "bindings": [
@@ -724,6 +792,116 @@
       "assetId": "photo-ch08-book-exchange",
       "target": "itemMedia",
       "targetId": "ch08-moment-activity"
+    },
+    {
+      "assetId": "photo-ch09-group",
+      "target": "itemMedia",
+      "targetId": "ch09-photo-group"
+    },
+    {
+      "assetId": "photo-ch09-group",
+      "target": "itemMedia",
+      "targetId": "ch09-moment-owner"
+    },
+    {
+      "assetId": "photo-ch09-group",
+      "target": "itemMedia",
+      "targetId": "ch09-moment-brother"
+    },
+    {
+      "assetId": "photo-ch09-candid",
+      "target": "itemMedia",
+      "targetId": "ch09-photo-candid"
+    },
+    {
+      "assetId": "photo-ch09-candid",
+      "target": "itemMedia",
+      "targetId": "ch09-photo-original"
+    },
+    {
+      "assetId": "group-after-class",
+      "target": "groupAvatar",
+      "targetId": "ch09-party"
+    },
+    {
+      "assetId": "background-setup",
+      "target": "setupBackground",
+      "targetId": "setup"
+    },
+    {
+      "assetId": "wallpaper-campus",
+      "target": "wallpaper",
+      "targetId": "phone"
+    },
+    {
+      "assetId": "xianyu-product-hanbing-sheshou-cap",
+      "target": "itemMedia",
+      "targetId": "market-hanbing-sheshou-cap"
+    },
+    {
+      "assetId": "xianyu-product-xinan-yujie-gaming",
+      "target": "itemMedia",
+      "targetId": "market-xinan-yujie-gaming"
+    },
+    {
+      "assetId": "xianyu-product-tutucha-mengmengda-shirt",
+      "target": "itemMedia",
+      "targetId": "market-tutucha-mengmengda-shirt"
+    },
+    {
+      "assetId": "xianyu-product-cr7-only-god-career",
+      "target": "itemMedia",
+      "targetId": "market-cr7-only-god-career"
+    },
+    {
+      "assetId": "xianyu-product-cr7-only-god-handsome",
+      "target": "itemMedia",
+      "targetId": "market-cr7-only-god-handsome"
+    },
+    {
+      "assetId": "xianyu-product-cr7-only-god-luck",
+      "target": "itemMedia",
+      "targetId": "market-cr7-only-god-luck"
+    },
+    {
+      "assetId": "xianyu-product-cr7-only-god-handsome",
+      "target": "itemMedia",
+      "targetId": "ch10-wallpaper"
+    },
+    {
+      "assetId": "photo-ch10-photo-cake",
+      "target": "itemMedia",
+      "targetId": "ch10-photo-cake"
+    },
+    {
+      "assetId": "photo-ch10-photo-camera",
+      "target": "itemMedia",
+      "targetId": "ch10-photo-camera"
+    },
+    {
+      "assetId": "photo-ch10-photo-party",
+      "target": "itemMedia",
+      "targetId": "ch10-photo-party"
+    },
+    {
+      "assetId": "photo-ch10-photo-group",
+      "target": "itemMedia",
+      "targetId": "ch10-photo-group"
+    },
+    {
+      "assetId": "photo-ch10-photo-pair-a",
+      "target": "itemMedia",
+      "targetId": "ch10-photo-pair-a"
+    },
+    {
+      "assetId": "photo-ch10-photo-pair-b",
+      "target": "itemMedia",
+      "targetId": "ch10-photo-pair-b"
+    },
+    {
+      "assetId": "photo-ch10-photo-party",
+      "target": "itemMedia",
+      "targetId": "ch10-moment-owner"
     }
   ],
   "minigames": [],
@@ -738,7 +916,10 @@
     "stories/foundation/chapter-07.json",
     "stories/foundation/weibo-personal.json",
     "stories/foundation/weibo-entertainment.json",
-    "stories/foundation/chapter-08.json"
+    "stories/foundation/chapter-08.json",
+    "stories/foundation/chapter-09.json",
+    "stories/foundation/market-interactions.json",
+    "stories/foundation/chapter-10.json"
   ],
   "interactionsFile": "stories/foundation/interactions.json"
 }

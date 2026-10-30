@@ -113,6 +113,7 @@ export const projectSchema = z
             "itemAvatar",
             "groupAvatar",
             "wallpaper",
+            "setupBackground",
             "appIcon",
           ]),
           targetId: z.string(),

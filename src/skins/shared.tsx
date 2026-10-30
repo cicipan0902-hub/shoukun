@@ -1,3 +1,4 @@
+import { PublishedVideo } from "../media/PublishedVideo";
 import {
   ChevronLeft,
   ChevronRight,
@@ -112,7 +113,7 @@ export function Media({
     item.kind === "audio" ? (
       <audio className={className} controls src={src} />
     ) : item.kind === "video" ? (
-      <video
+      <PublishedVideo
         className={className}
         controls
         playsInline

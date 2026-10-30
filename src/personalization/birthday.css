@@ -1,0 +1,27 @@
+.birthday-document { background: #fbf6ed; color: #40372f; }
+.birthday-document h2 { font-family: Georgia, serif; font-size: 25px; }
+.birthday-tabs { display: flex; gap: 6px; padding: 8px 0 18px; }
+.birthday-tabs button { flex: 1; border: 1px solid #dbd0c0; padding: 10px 4px; border-radius: 18px; background: transparent; color: #685747; font: inherit; font-size: 12px; }
+.birthday-tabs button[aria-pressed=true] { background: #695745; color: white; }
+.birthday-blessing { display: flex; align-items: flex-start; gap: 12px; border-bottom: 1px solid #e8dfd1; padding: 16px 0; }
+.birthday-blessing > :first-child { flex: 0 0 40px; width: 40px; height: 40px; border-radius: 10px; object-fit: cover; overflow: hidden; }
+.birthday-blessing p { margin: 7px 0 0; }
+.birthday-wishes fieldset { border: 0; padding: 0; margin: 26px 0; min-width: 0; }
+.birthday-wishes legend { margin-bottom: 14px; font-size: 15px; line-height: 1.8; font-weight: 600; }
+.birthday-wishes fieldset button { display: block; width: 100%; margin: 9px 0; padding: 12px 14px; text-align: left; background: #fffdf8; border: 1px solid #e1d6c6; border-radius: 12px; color: inherit; font: inherit; font-size: 13px; line-height: 1.65; }
+.birthday-wishes fieldset button:disabled { opacity: .5; }
+.birthday-wishes small { display: block; line-height: 1.7; }
+.birthday-saved { padding: 14px; border-left: 2px solid #a98c65; background: #f1e8db; }
+.birthday-saved small { margin-top: 8px; }
+.birthday-continue { background: #695745; color: white; border: 0; border-radius: 12px; padding: 14px; width: 100%; font: inherit; }
+.birthday-private-note { color: #80705e; font-size: 12px; }
+.birthday-memory-grid, .birthday-photo-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.birthday-photo { margin: 0 0 16px; padding: 7px 7px 18px; background: #fff; box-shadow: 0 3px 12px #47392615; }
+.birthday-photo img, .birthday-photo-pending { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; }
+.birthday-photo-pending { display: grid; place-items: center; background: #e9e5df; color: #827b70; font-size: 12px; }
+.birthday-photo figcaption { font-size: 11px; text-align: center; padding-top: 10px; }
+.birthday-ending .birthday-photo-pair { margin: 35px 0; }
+.birthday-ending .birthday-photo:first-child { transform: rotate(-4deg); }
+.birthday-ending .birthday-photo:last-child { transform: rotate(5deg); }
+
+.birthday-avatar { position: relative; display: grid; place-items: center; background: #e5dccd; }
