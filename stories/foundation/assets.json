@@ -553,6 +553,27 @@
       "file": "assets/events/ch10-birthday/polaroid-b-01.pic.jpg",
       "required": false,
       "description": "男女主拍立得 · 朱志鑫保留；待作者上传，剧情可完整试玩"
+    },
+    {
+      "id": "photo-ch11-bookstore",
+      "category": "gallery",
+      "file": null,
+      "required": false,
+      "description": "第十一章可选素材，暂用文字占位。"
+    },
+    {
+      "id": "cover-ch11-alchemist",
+      "category": "events",
+      "file": null,
+      "required": false,
+      "description": "第十一章可选素材，暂用文字占位。"
+    },
+    {
+      "id": "wallpaper-ch12-star",
+      "category": "backgrounds",
+      "file": null,
+      "required": false,
+      "description": "朱志鑫推荐的简洁壁纸，待作者上传；无图时只记录选择，仍显示初始壁纸。"
     }
   ]
 }

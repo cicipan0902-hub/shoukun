@@ -138,7 +138,7 @@ export const workSchema = z.object({
     )
     .max(100),
   data: z.record(z.string(), z.array(itemSchema).max(20000)),
-  nodes: z.array(nodeSchema).max(2000),
+  nodes: z.array(nodeSchema).max(4000),
   variables: z.record(
     z.string(),
     z.union([z.string(), z.number(), z.boolean()]),

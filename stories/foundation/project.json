@@ -435,6 +435,70 @@
       ],
       "completeLogic": "all",
       "next": []
+    },
+    {
+      "id": "chapter-11-pending",
+      "title": "下一页",
+      "kind": "main",
+      "date": null,
+      "characterIds": [
+        "owner",
+        "zhuzhixin",
+        "zhangzeyu",
+        "zhangjunhao",
+        "zuohang"
+      ],
+      "eventIds": [
+        "ch11-start",
+        "ch11-start-note",
+        "flow-ch11-invite",
+        "flow-ch11-after"
+      ],
+      "entry": {
+        "event": "read",
+        "target": "ch11-entry"
+      },
+      "completeWhen": [
+        {
+          "key": "chapter.chapter-11-pending.completed",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "completeLogic": "all",
+      "next": []
+    },
+    {
+      "id": "chapter-12-pending",
+      "title": "你没告诉我",
+      "kind": "main",
+      "date": null,
+      "characterIds": [
+        "owner",
+        "zhuzhixin",
+        "zhangjunhao",
+        "zhangzeyu",
+        "zuohang"
+      ],
+      "eventIds": [
+        "ch12-start",
+        "ch12-start-note",
+        "flow-ch12-music",
+        "document-ch12-ending-action-finish"
+      ],
+      "entry": {
+        "event": "read",
+        "target": "ch12-entry"
+      },
+      "completeWhen": [
+        {
+          "key": "chapter.chapter-12-pending.completed",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "completeLogic": "all",
+      "next": []
     }
   ],
   "bindings": [
@@ -719,11 +783,6 @@
       "targetId": "seller-cr7-only-god"
     },
     {
-      "assetId": "xianyu-product-cr7-only-god-figure",
-      "target": "itemMedia",
-      "targetId": "market-cr7-only-god-figure"
-    },
-    {
       "assetId": "xianyu-product-cr7-only-god-card",
       "target": "itemMedia",
       "targetId": "market-cr7-only-god-card"
@@ -902,6 +961,31 @@
       "assetId": "photo-ch10-photo-party",
       "target": "itemMedia",
       "targetId": "ch10-moment-owner"
+    },
+    {
+      "assetId": "photo-ch11-bookstore",
+      "target": "itemMedia",
+      "targetId": "ch11-photo-bookstore"
+    },
+    {
+      "assetId": "cover-ch11-alchemist",
+      "target": "itemMedia",
+      "targetId": "ch11-book"
+    },
+    {
+      "assetId": "photo-ch11-bookstore",
+      "target": "itemMedia",
+      "targetId": "ch11-moment-owner"
+    },
+    {
+      "assetId": "wallpaper-ch12-star",
+      "target": "itemMedia",
+      "targetId": "ch12-wallpaper"
+    },
+    {
+      "assetId": "audio-junhao-demo",
+      "target": "itemMedia",
+      "targetId": "ch12-demo"
     }
   ],
   "minigames": [],
@@ -919,7 +1003,9 @@
     "stories/foundation/chapter-08.json",
     "stories/foundation/chapter-09.json",
     "stories/foundation/market-interactions.json",
-    "stories/foundation/chapter-10.json"
+    "stories/foundation/chapter-10.json",
+    "stories/foundation/chapter-11.json",
+    "stories/foundation/chapter-12.json"
   ],
   "interactionsFile": "stories/foundation/interactions.json"
 }

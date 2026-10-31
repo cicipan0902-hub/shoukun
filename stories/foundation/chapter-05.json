@@ -60,7 +60,7 @@
         {
           "id": "ch05-brother-06",
           "senderId": "brother",
-          "body": "不闹了。峻豪在补交节目稿，今天定名单。你核的附件可能还得改。",
+          "body": "不闹了。峻豪在补节目稿，今天定名单。你核的附件可能得再改改。",
           "hidden": true,
           "time": "名单确定日"
         },
@@ -74,42 +74,42 @@
         {
           "id": "ch05-brother-08",
           "senderId": "brother",
-          "body": "怎么，朱学长从满分卷变成待批改了？",
+          "body": "怎么，今天轮到朱学长挨批了？",
           "hidden": true,
           "time": "名单确定日"
         },
         {
           "id": "ch05-brother-09",
           "senderId": "brother",
-          "body": "喜欢也不用给人免检。你觉得别扭，可以说。",
+          "body": "你觉得不对就说，又不是夸过他就不能有意见。",
           "hidden": true,
           "time": "名单确定日"
         },
         {
           "id": "ch05-brother-10",
           "senderId": "brother",
-          "body": "但我没跟着他跑完每一趟，不能替他答。",
+          "body": "我也没一直跟着他，具体怎么回事，得问他。",
           "hidden": true,
           "time": "名单确定日"
         },
         {
           "id": "ch05-brother-11",
           "senderId": "brother",
-          "body": "你现在是生气，还顺便替自己找了个“不该生气”的理由。",
+          "body": "还气着呢，就开始想自己该不该气了？",
           "hidden": true,
           "time": "名单确定日"
         },
         {
           "id": "ch05-brother-12",
           "senderId": "brother",
-          "body": "不知道的先留着，别急着全填成好，也别全填成坏。",
+          "body": "没问清的先放着。你今晚又不用给他出评语。",
           "hidden": true,
           "time": "名单确定日"
         },
         {
           "id": "ch05-brother-13",
           "senderId": "brother",
-          "body": "我得去还耳机了。再拖下去，张峻豪要把我写进讨债歌。",
+          "body": "我得还耳机去了。再拖，张峻豪要把我写进讨债歌。",
           "hidden": true,
           "time": "名单确定日"
         }
@@ -132,7 +132,7 @@
         {
           "id": "ch05-work-01",
           "senderId": "junhao",
-          "body": "补交了。还是没写完，但这版能听出我要做什么了。",
+          "body": "补交了，还没写完。这版能听出我想做什么了。",
           "hidden": true,
           "time": "名单确定日"
         },
@@ -160,7 +160,7 @@
         {
           "id": "ch05-work-05",
           "senderId": "junhao",
-          "body": "真要调整，我去跟设备组说。给我个准话就行。",
+          "body": "真要改，我去找设备组。能不能调，给个准话就行。",
           "hidden": true,
           "time": "名单确定日"
         },
@@ -174,7 +174,7 @@
         {
           "id": "ch05-work-07",
           "senderId": "star",
-          "body": "补报已经关了。我问过登记的人，得按完整版本核。",
+          "body": "补报关了。我问过登记的人，得拿完整版本核。",
           "hidden": true,
           "time": "名单确定日"
         },
@@ -195,7 +195,7 @@
         {
           "id": "ch05-work-10",
           "senderId": "star",
-          "body": "先算了。别让他过去了还等一个不确定的答复。",
+          "body": "先算了。别让他跑过去，还得等一个不确定的答复。",
           "hidden": true,
           "time": "名单确定日"
         },
@@ -216,7 +216,7 @@
         {
           "id": "ch05-work-13",
           "senderId": "junhao",
-          "body": "知道了。白跑一轮肯定不爽，但这稿子我还要写。",
+          "body": "知道了。白跑一轮，真挺烦的。稿子还得接着写。",
           "hidden": true,
           "time": "名单确定日"
         },
@@ -251,7 +251,7 @@
         {
           "id": "ch05-work-18",
           "senderId": "star",
-          "body": "不是只差一句话。版本没核完，设备和切换也没定。",
+          "body": "不只差一句话。版本还没核完，设备和切换也没定。",
           "hidden": true,
           "time": "名单确定日"
         },
@@ -265,7 +265,7 @@
         {
           "id": "ch05-work-20",
           "senderId": "star",
-          "body": "临时改名单，会挤到别人的安排。",
+          "body": "现在改名单，别人的安排也得动。",
           "hidden": true,
           "time": "名单确定日"
         },
@@ -293,7 +293,7 @@
         {
           "id": "ch05-work-24",
           "senderId": "star",
-          "body": "截止前还没核好，不能让后面的节目一起等。",
+          "body": "截止前没核好，后面的节目不能都跟着等。",
           "hidden": true,
           "time": "名单确定日"
         },
@@ -307,7 +307,7 @@
         {
           "id": "ch05-work-26",
           "senderId": "star",
-          "body": "你很在意他这次能不能上台。",
+          "body": "你很在意他能不能上台。",
           "hidden": true,
           "time": "名单确定日"
         },
@@ -321,14 +321,14 @@
         {
           "id": "ch05-work-28",
           "senderId": "star",
-          "body": "我知道你替他着急。但我不能保证结果。",
+          "body": "我知道你替他急。但结果我保证不了。",
           "hidden": true,
           "time": "名单确定日"
         },
         {
           "id": "ch05-work-29",
           "senderId": "junhao",
-          "body": "这事我自己也在跑。没成我认，稿子不会就这么扔了。",
+          "body": "这事我也在跑。没成就没成，稿子我先留着，回头还得改。",
           "hidden": true,
           "time": "名单确定日"
         },

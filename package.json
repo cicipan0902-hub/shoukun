@@ -33,7 +33,9 @@
     "release:check": "node scripts/check-runtime-artifact.mjs",
     "public:check": "node scripts/check-public-site.mjs",
     "test:public": "node --test scripts/lib/public-artifact.test.mjs",
-    "public:preview": "vite preview --config vite.runtime.config.ts --outDir dist-public --host 127.0.0.1 --port 4188 --strictPort"
+    "public:preview": "vite preview --config vite.runtime.config.ts --outDir dist-public --host 127.0.0.1 --port 4188 --strictPort",
+    "author:review": "node scripts/dialogue-review/server.mjs",
+    "test:review": "node --test scripts/dialogue-review/model.test.mjs"
   },
   "dependencies": {
     "@tiptap/react": "^3.0.0",

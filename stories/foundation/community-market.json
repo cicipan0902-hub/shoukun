@@ -26,7 +26,7 @@
     "market.plan.bargainDone": false,
     "market.plan.interacted": false,
     "market.plan.decision": "unset",
-    "market.plan.currentPrice": 3.0,
+    "market.plan.currentPrice": 3,
     "market.plan.paymentSource": "",
     "market.plan.paymentAmount": 0,
     "market.draft.busy": false,
@@ -34,7 +34,7 @@
     "market.draft.bargainDone": false,
     "market.draft.interacted": false,
     "market.draft.decision": "unset",
-    "market.draft.currentPrice": 2.0,
+    "market.draft.currentPrice": 2,
     "market.draft.paymentSource": "",
     "market.draft.paymentAmount": 0
   },
@@ -68,7 +68,7 @@
       {
         "id": "community-account-brother",
         "title": "张泽禹",
-        "body": "不定时出现，作业照常欠。",
+        "body": "看利物浦，弹电吉他。作业也得写。",
         "time": "校园日常 · 本地模拟",
         "sender": "张泽禹",
         "meta": {
@@ -104,7 +104,7 @@
       {
         "id": "community-account-zuohang",
         "title": "左航",
-        "body": "借书记得还。",
+        "body": "厚米的铲屎官。借的书正在看，没忘。",
         "time": "校园日常 · 本地模拟",
         "sender": "左航",
         "meta": {
@@ -307,7 +307,8 @@
           "options": "[{\"id\": \"bargain\", \"text\": \"还能少一点吗？\", \"result\": \"quoted\", \"price\": 8}, {\"id\": \"chat\", \"text\": \"卖闲置遇到过什么离谱的事？\", \"result\": \"ready\", \"price\": 9.9}]",
           "sellerBio": "投稿和传闻均属虚构校园演示。",
           "stateKey": "market.snacks",
-          "chatVersion": "2"
+          "chatVersion": "2",
+          "imageCaption": "零食示意图，非本套餐实拍；数量及有效期待确认。"
         }
       },
       {
@@ -325,7 +326,7 @@
       {
         "id": "market-snacks-reply-buy",
         "title": "校园匿名墙",
-        "body": "行，给你留着。这里只记一次虚拟成交，不收钱，也不会安排配送。",
+        "body": "好，饼干和便签给你留着，成交记录里能看。",
         "time": "校园日常 · 本地模拟",
         "sender": "校园匿名墙",
         "hidden": true,
@@ -337,7 +338,7 @@
       {
         "id": "market-snacks-reply-bargain",
         "title": "校园匿名墙",
-        "body": "8 可以，再少我就自己留着用了。要的话点确认，不想要也没事。",
+        "body": "[议价] 元可以，饼干和便签一起，不能再少了。",
         "time": "校园日常 · 本地模拟",
         "sender": "校园匿名墙",
         "hidden": true,
@@ -349,7 +350,7 @@
       {
         "id": "market-snacks-reply-leave",
         "title": "校园匿名墙",
-        "body": "好，你慢慢看。东西先放着。",
+        "body": "行，先留这儿，想好了再来。",
         "time": "校园日常 · 本地模拟",
         "sender": "校园匿名墙",
         "hidden": true,
@@ -390,7 +391,7 @@
       {
         "id": "market-plan-reply-buy",
         "title": "朱家琪",
-        "body": "行，给你留着。这里只记一次虚拟成交，不收钱，也不会安排配送。",
+        "body": "行，给你留着。剩下的空白页别再跟着我闲着了。",
         "time": "校园日常 · 本地模拟",
         "sender": "朱家琪",
         "hidden": true,
@@ -402,7 +403,7 @@
       {
         "id": "market-plan-reply-bargain",
         "title": "朱家琪",
-        "body": "2 可以，再少我就自己留着用了。要的话点确认，不想要也没事。",
+        "body": "[议价] 元吧。后面的空白页都留给你发挥。",
         "time": "校园日常 · 本地模拟",
         "sender": "朱家琪",
         "hidden": true,
@@ -414,7 +415,7 @@
       {
         "id": "market-plan-reply-leave",
         "title": "朱家琪",
-        "body": "好，你慢慢看。东西先放着。",
+        "body": "行，我先放着。你要是想通怎么早起，也告诉我。",
         "time": "校园日常 · 本地模拟",
         "sender": "朱家琪",
         "hidden": true,
@@ -440,7 +441,8 @@
           "rewardItemId": "market-hidden-note",
           "rewardApp": "notes",
           "rewardLabel": "看看草稿背面的字",
-          "chatVersion": "2"
+          "chatVersion": "2",
+          "imageCaption": "现有试卷素材示意，非这叠草稿纸实拍。"
         }
       },
       {
@@ -458,7 +460,7 @@
       {
         "id": "market-draft-reply-buy",
         "title": "左航",
-        "body": "行，给你留着。这里只记一次虚拟成交，不收钱，也不会安排配送。",
+        "body": "行，留给你。草稿背面的字也一起，你可以翻翻。",
         "time": "校园日常 · 本地模拟",
         "sender": "左航",
         "hidden": true,
@@ -470,7 +472,7 @@
       {
         "id": "market-draft-reply-bargain",
         "title": "左航",
-        "body": "1 可以，再少我就自己留着用了。要的话点确认，不想要也没事。",
+        "body": "[议价] 元，可以。背面还能写，再少我就留着自己用了。",
         "time": "校园日常 · 本地模拟",
         "sender": "左航",
         "hidden": true,
@@ -482,7 +484,7 @@
       {
         "id": "market-draft-reply-leave",
         "title": "左航",
-        "body": "好，你慢慢看。东西先放着。",
+        "body": "好，先放这儿。用得上再来。",
         "time": "校园日常 · 本地模拟",
         "sender": "左航",
         "hidden": true,
@@ -506,7 +508,7 @@
         "id": "market-snacks-buyer-chat",
         "title": "期末周续命套餐",
         "body": "卖闲置遇到过什么离谱的事？",
-        "sender": "",
+        "sender": "{{playerName}}",
         "time": "闲鱼聊天",
         "kind": "text",
         "hidden": true,
@@ -519,7 +521,7 @@
         "id": "market-snacks-buyer-bargain",
         "title": "期末周续命套餐",
         "body": "还能少一点吗？",
-        "sender": "",
+        "sender": "{{playerName}}",
         "time": "闲鱼聊天",
         "kind": "text",
         "hidden": true,
@@ -532,7 +534,7 @@
         "id": "market-snacks-buyer-buy",
         "title": "期末周续命套餐",
         "body": "好，我要了。",
-        "sender": "",
+        "sender": "{{playerName}}",
         "time": "闲鱼聊天",
         "kind": "text",
         "hidden": true,
@@ -545,7 +547,7 @@
         "id": "market-snacks-buyer-leave",
         "title": "期末周续命套餐",
         "body": "我先不买了，谢谢。",
-        "sender": "",
+        "sender": "{{playerName}}",
         "time": "闲鱼聊天",
         "kind": "text",
         "hidden": true,
@@ -582,7 +584,7 @@
         "id": "market-plan-buyer-chat",
         "title": "用了三天的自律计划",
         "body": "这计划你还会继续用吗？",
-        "sender": "",
+        "sender": "{{playerName}}",
         "time": "闲鱼聊天",
         "kind": "text",
         "hidden": true,
@@ -595,7 +597,7 @@
         "id": "market-plan-buyer-bargain",
         "title": "用了三天的自律计划",
         "body": "还能少一点吗？",
-        "sender": "",
+        "sender": "{{playerName}}",
         "time": "闲鱼聊天",
         "kind": "text",
         "hidden": true,
@@ -608,7 +610,7 @@
         "id": "market-plan-buyer-buy",
         "title": "用了三天的自律计划",
         "body": "好，我要了。",
-        "sender": "",
+        "sender": "{{playerName}}",
         "time": "闲鱼聊天",
         "kind": "text",
         "hidden": true,
@@ -621,7 +623,7 @@
         "id": "market-plan-buyer-leave",
         "title": "用了三天的自律计划",
         "body": "我先不买了，谢谢。",
-        "sender": "",
+        "sender": "{{playerName}}",
         "time": "闲鱼聊天",
         "kind": "text",
         "hidden": true,
@@ -658,7 +660,7 @@
         "id": "market-draft-buyer-chat",
         "title": "神秘学霸二手草稿纸",
         "body": "这上面的字你自己还认得吗？",
-        "sender": "",
+        "sender": "{{playerName}}",
         "time": "闲鱼聊天",
         "kind": "text",
         "hidden": true,
@@ -671,7 +673,7 @@
         "id": "market-draft-buyer-bargain",
         "title": "神秘学霸二手草稿纸",
         "body": "还能少一点吗？",
-        "sender": "",
+        "sender": "{{playerName}}",
         "time": "闲鱼聊天",
         "kind": "text",
         "hidden": true,
@@ -684,7 +686,7 @@
         "id": "market-draft-buyer-buy",
         "title": "神秘学霸二手草稿纸",
         "body": "好，我要了。",
-        "sender": "",
+        "sender": "{{playerName}}",
         "time": "闲鱼聊天",
         "kind": "text",
         "hidden": true,
@@ -697,7 +699,7 @@
         "id": "market-draft-buyer-leave",
         "title": "神秘学霸二手草稿纸",
         "body": "我先不买了，谢谢。",
-        "sender": "",
+        "sender": "{{playerName}}",
         "time": "闲鱼聊天",
         "kind": "text",
         "hidden": true,
@@ -851,7 +853,7 @@
     },
     {
       "id": "market-snacks-delay-buy",
-      "label": "卖家正在回复",
+      "label": "校园匿名墙正在回复",
       "type": "delay",
       "delayMs": 1100,
       "actions": [
@@ -957,7 +959,7 @@
     },
     {
       "id": "market-snacks-delay-bargain",
-      "label": "卖家正在回复",
+      "label": "校园匿名墙正在回复",
       "type": "delay",
       "delayMs": 1100,
       "actions": [
@@ -1053,7 +1055,7 @@
     },
     {
       "id": "market-snacks-delay-leave",
-      "label": "卖家正在回复",
+      "label": "校园匿名墙正在回复",
       "type": "delay",
       "delayMs": 1100,
       "actions": [
@@ -1232,7 +1234,7 @@
     },
     {
       "id": "market-plan-delay-buy",
-      "label": "卖家正在回复",
+      "label": "朱家琪正在回复",
       "type": "delay",
       "delayMs": 1100,
       "actions": [
@@ -1264,7 +1266,7 @@
         {
           "type": "variable",
           "key": "market.plan.paymentAmount",
-          "value": 3.0
+          "value": 3
         },
         {
           "type": "variable",
@@ -1338,7 +1340,7 @@
     },
     {
       "id": "market-plan-delay-bargain",
-      "label": "卖家正在回复",
+      "label": "朱家琪正在回复",
       "type": "delay",
       "delayMs": 1100,
       "actions": [
@@ -1434,7 +1436,7 @@
     },
     {
       "id": "market-plan-delay-leave",
-      "label": "卖家正在回复",
+      "label": "朱家琪正在回复",
       "type": "delay",
       "delayMs": 1100,
       "actions": [
@@ -1613,7 +1615,7 @@
     },
     {
       "id": "market-draft-delay-buy",
-      "label": "卖家正在回复",
+      "label": "左航正在回复",
       "type": "delay",
       "delayMs": 1100,
       "actions": [
@@ -1645,7 +1647,7 @@
         {
           "type": "variable",
           "key": "market.draft.paymentAmount",
-          "value": 2.0
+          "value": 2
         },
         {
           "type": "variable",
@@ -1724,7 +1726,7 @@
     },
     {
       "id": "market-draft-delay-bargain",
-      "label": "卖家正在回复",
+      "label": "左航正在回复",
       "type": "delay",
       "delayMs": 1100,
       "actions": [
@@ -1820,7 +1822,7 @@
     },
     {
       "id": "market-draft-delay-leave",
-      "label": "卖家正在回复",
+      "label": "左航正在回复",
       "type": "delay",
       "delayMs": 1100,
       "actions": [

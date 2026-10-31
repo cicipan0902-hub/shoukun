@@ -58,11 +58,13 @@ export function appendMarket(story: Story, config: MarketConfig, rawInteractions
     for (const [suffix, value] of Object.entries({ orderStatus: "unset", thinkDone: false, silentDone: false, cancelRequested: false, refundRequested: false, refundAmount: 0 })) story.variables[`${key}.${suffix}`] = value;
     // Keep product cards and seller profiles intact; only personalize transactional speech.
     for (const item of story.content.xianyu) if (item.meta?.product === id && item.meta.type === "reply") {
-      if (item.id.endsWith("-reply-leave")) item.body = profile.decline[products.indexOf(product) % profile.decline.length];
+      if (item.id.endsWith("-reply-leave") && !item.body.trim()) item.body = profile.decline[products.indexOf(product) % profile.decline.length];
       if (item.id.endsWith("-reply-bargain")) {
         const offers = JSON.parse(product.meta?.options || "[]") as { id: string; price: number }[];
         const price = offers.find(o => o.id === "bargain")?.price ?? Number(product.meta?.price);
-        item.body = `${profile.bargain} 最低 ${price} 元，再少就先不出了。`;
+        item.body = item.body.includes("[议价]")
+          ? item.body.replaceAll("[议价]", String(price))
+          : `${profile.bargain} 最低 ${price} 元，再少就先不出了。`;
       }
     }
     // Existing base-price and quoted-price payment nodes remain authoritative.

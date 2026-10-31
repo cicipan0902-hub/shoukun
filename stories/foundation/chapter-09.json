@@ -26,7 +26,7 @@
         {
           "id": "ch09-invite-1",
           "senderId": "brother",
-          "body": "周五放学别往家跑。校门口那家小吃店，五个人，里面那张桌。",
+          "body": "周五放学一起吃点？校门口那家小吃店，五个人，里面那张桌。",
           "hidden": true,
           "time": "周五 · 放学后"
         },
@@ -61,7 +61,7 @@
         {
           "id": "ch09-invite-pay-reply",
           "senderId": "brother",
-          "body": "我请。你负责别点完又说尝一口就够了。",
+          "body": "我请。你别点完又说就尝一口啊。",
           "hidden": true,
           "time": "周五 · 放学后"
         },
@@ -75,7 +75,7 @@
         {
           "id": "ch09-invite-6",
           "senderId": "junhao",
-          "body": "行，那我先占靠门的。还得听下刚改的伴奏。",
+          "body": "行，那我先占靠门的。刚改的伴奏还得听一遍。",
           "hidden": true,
           "time": "周五 · 放学后"
         },
@@ -110,7 +110,7 @@
         {
           "id": "ch09-share-3",
           "senderId": "brother",
-          "body": "看不见我脸那张也不用发了，谢谢。",
+          "body": "挡住我脸的那张就别发了，谢谢。",
           "hidden": true,
           "time": "周五 · 放学后"
         },
@@ -177,7 +177,7 @@
         {
           "id": "ch09-photo-plain-reply",
           "senderId": "star",
-          "body": "挺清楚。原来我听他讲话是这个表情。",
+          "body": "挺清楚。我听他讲话原来是这表情。",
           "hidden": true,
           "time": "周五 · 晚间"
         },
@@ -199,7 +199,7 @@
         {
           "id": "ch09-private-2",
           "senderId": "star",
-          "body": "他当时是不是在说那个“绝对不会忘”的节奏？",
+          "body": "他当时说的，是那个“绝对不会忘”的节奏吧？",
           "hidden": true,
           "time": "周五 · 晚间"
         },
@@ -304,7 +304,7 @@
         {
           "id": "ch09-private-13",
           "senderId": "star",
-          "body": "我又不是真的只看菜单。",
+          "body": "也没一直盯着菜单。",
           "hidden": true,
           "time": "周五 · 晚间"
         },
@@ -325,7 +325,7 @@
         {
           "id": "ch09-private-16",
           "senderId": "star",
-          "body": "不过你要给张峻豪拍东西，坐那儿是方便。",
+          "body": "不过给张峻豪拍东西，坐那儿倒方便。",
           "hidden": true,
           "time": "周五 · 晚间"
         },
@@ -346,21 +346,21 @@
         {
           "id": "ch09-private-19",
           "senderId": "star",
-          "body": "上次你问的那本书，后来找到了吗？",
+          "body": "你上次问的那本书，找到了吗？",
           "hidden": true,
           "time": "周五 · 晚间"
         },
         {
           "id": "ch09-book-honest-reply",
           "senderId": "star",
-          "body": "我回去找找。搬完家里那堆书，一直没放整齐。",
+          "body": "我回去找找。家里那堆书搬完就没理过。",
           "hidden": true,
           "time": "周五 · 晚间"
         },
         {
           "id": "ch09-book-mouthy-reply",
           "senderId": "star",
-          "body": "进度比我快。我那本连放哪儿都没记。",
+          "body": "那你比我快。我连放哪儿都没记住。",
           "hidden": true,
           "time": "周五 · 晚间"
         },
@@ -490,7 +490,7 @@
       {
         "id": "ch09-weibo-zuo",
         "title": "借书单",
-        "body": "去还书，发现上次抄的借书单只找齐一本。以前会觉得来都来了，剩下的随便拿两本凑数。今天没拿。包里轻一点，也少欠两本没看完的书。",
+        "body": "借书单上只找齐一本。以前来都来了，总要凑两本回去。今天就拿这一本，包轻了不少。看完再说。",
         "hidden": true,
         "time": "周五 · 晚间",
         "kind": "post",
@@ -509,7 +509,7 @@
       {
         "id": "ch09-weibo-star",
         "title": "没急着收尾",
-        "body": "有时候会把“不知道接什么”当成“不用再说了”。省事，也不容易说错。今天试着又问了一句，发现没那么难。倒是发完了才开始想，是不是多余。先这样吧。",
+        "body": "本来想就这么聊完了，后来又问了一句。也没什么接不下去的。发完倒开始想，会不会是我问多了。先这样。",
         "hidden": true,
         "time": "周五 · 晚间",
         "kind": "post",

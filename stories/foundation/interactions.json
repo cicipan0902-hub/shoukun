@@ -3115,9 +3115,998 @@
           "value": "文件：生日聚会开始了。"
         }
       ]
+    },
+    {
+      "id": "ch11-invite",
+      "chatId": "ch11-star",
+      "trigger": {
+        "event": "variable",
+        "target": "chapter.chapter-11-pending.started",
+        "conditions": [
+          {
+            "key": "chapter.chapter-11-pending.started",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch11-invite-1",
+          "delayMs": 900
+        },
+        {
+          "message": "ch11-invite-2",
+          "delayMs": 900
+        },
+        {
+          "message": "ch11-invite-3",
+          "delayMs": 900
+        },
+        {
+          "message": "ch11-invite-4",
+          "delayMs": 900
+        },
+        {
+          "choice": "ch11-invite-choice",
+          "prompt": "怎么回他？",
+          "options": [
+            {
+              "id": "ch11-invite-work",
+              "text": "我先写完数学订正。你别看到结尾就开始给我剧透。",
+              "kind": "tone",
+              "actions": [],
+              "replies": [
+                {
+                  "message": "ch11-invite-work-reply",
+                  "delayMs": 900
+                }
+              ]
+            },
+            {
+              "id": "ch11-invite-ask",
+              "text": "可以。看不懂我会直接问，不接受“你再体会一下”。",
+              "kind": "tone",
+              "actions": [],
+              "replies": [
+                {
+                  "message": "ch11-invite-ask-reply",
+                  "delayMs": 900
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "message": "ch11-invite-5",
+          "delayMs": 900
+        },
+        {
+          "message": "ch11-invite-6",
+          "delayMs": 900
+        }
+      ],
+      "onStart": [
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信：朱志鑫发来新消息。"
+        }
+      ],
+      "after": [
+        {
+          "type": "variable",
+          "key": "ch11.stage",
+          "value": "book"
+        },
+        {
+          "type": "unlock",
+          "key": "ch11-book",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "文件：书店的位置找好了。"
+        }
+      ]
+    },
+    {
+      "id": "ch11-after",
+      "chatId": "ch11-star",
+      "trigger": {
+        "event": "variable",
+        "target": "ch11.afterReady",
+        "conditions": [
+          {
+            "key": "ch11.afterReady",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch11-after-1",
+          "delayMs": 900
+        },
+        {
+          "message": "ch11-after-2",
+          "delayMs": 900
+        },
+        {
+          "message": "ch11-after-3",
+          "delayMs": 900
+        },
+        {
+          "choice": "ch11-after-choice",
+          "prompt": "把下午没说完的话接下去",
+          "options": [
+            {
+              "id": "ch11-after-try",
+              "text": "我也不是说别去。能先试一点，总比想好一辈子再动容易。",
+              "kind": "tone",
+              "actions": [],
+              "replies": [
+                {
+                  "message": "ch11-after-try-reply",
+                  "delayMs": 900
+                }
+              ]
+            },
+            {
+              "id": "ch11-after-doubt",
+              "text": "我就是怕自己一时想去，走到一半又后悔。",
+              "kind": "tone",
+              "actions": [],
+              "replies": [
+                {
+                  "message": "ch11-after-doubt-reply",
+                  "delayMs": 900
+                },
+                {
+                  "message": "ch11-after-doubt-reply-2",
+                  "delayMs": 900
+                }
+              ]
+            },
+            {
+              "id": "ch11-after-slow",
+              "text": "我下午说得有点乱。你居然还接着看。",
+              "kind": "tone",
+              "actions": [],
+              "replies": [
+                {
+                  "message": "ch11-after-slow-reply",
+                  "delayMs": 900
+                },
+                {
+                  "message": "ch11-after-slow-reply-2",
+                  "delayMs": 900
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "message": "ch11-wallpaper-1",
+          "delayMs": 900
+        },
+        {
+          "message": "ch11-wallpaper-2",
+          "delayMs": 900
+        },
+        {
+          "choice": "ch11-wallpaper-choice",
+          "prompt": "两块钱的好运不能白买",
+          "options": [
+            {
+              "id": "ch11-wallpaper-money",
+              "text": "两块钱呢。你负责退我好运？",
+              "kind": "tone",
+              "actions": [],
+              "replies": [
+                {
+                  "message": "ch11-wallpaper-money-reply",
+                  "delayMs": 900
+                }
+              ]
+            },
+            {
+              "id": "ch11-wallpaper-proof",
+              "text": "你先证明换了能看懂书，我再考虑。",
+              "kind": "tone",
+              "actions": [],
+              "replies": [
+                {
+                  "message": "ch11-wallpaper-proof-reply",
+                  "delayMs": 900
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "message": "ch11-wallpaper-last",
+          "delayMs": 900
+        }
+      ],
+      "onStart": [
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信：朱志鑫把下午的话题接了回来。"
+        }
+      ],
+      "after": [
+        {
+          "type": "variable",
+          "key": "ch11.stage",
+          "value": "wallpaper-return"
+        },
+        {
+          "type": "unlock",
+          "key": "ch11-finish",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "文件：把壁纸换回最开始那张，再记下今天。"
+        }
+      ]
+    },
+    {
+      "id": "ch11-tail-flow",
+      "chatId": "ch11-brother",
+      "trigger": {
+        "event": "variable",
+        "target": "ch11.tailReady",
+        "conditions": [
+          {
+            "key": "ch11.tailReady",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch11-tail-1",
+          "delayMs": 900
+        },
+        {
+          "message": "ch11-tail-2",
+          "delayMs": 900
+        },
+        {
+          "message": "ch11-tail-3",
+          "delayMs": 900
+        },
+        {
+          "choice": "ch11-tail-choice",
+          "prompt": "回哥哥一句",
+          "options": [
+            {
+              "id": "ch11-tail-place",
+              "text": "书店回来的路口。咨询机构门口，他拿着音乐留学的资料。",
+              "kind": "tone",
+              "actions": [],
+              "replies": [
+                {
+                  "message": "ch11-tail-place-reply",
+                  "delayMs": 900
+                }
+              ]
+            },
+            {
+              "id": "ch11-tail-unsure",
+              "text": "我没过去问。他手上有音乐留学资料，应该只是了解情况。",
+              "kind": "tone",
+              "actions": [],
+              "replies": [
+                {
+                  "message": "ch11-tail-unsure-reply",
+                  "delayMs": 900
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "message": "ch11-tail-4",
+          "delayMs": 900
+        },
+        {
+          "message": "ch11-tail-5",
+          "delayMs": 900
+        }
+      ],
+      "onStart": [
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信：张泽禹回复了。"
+        }
+      ],
+      "after": [
+        {
+          "type": "variable",
+          "key": "ch11.tailDone",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "哥哥没有再发新的消息。"
+        },
+        {
+          "type": "unlock",
+          "key": "ch11-weibo-brother",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微博：张泽禹有一条新动态，可自由查看。"
+        }
+      ]
+    },
+    {
+      "id": "ch12-star",
+      "chatId": "ch12-star",
+      "trigger": {
+        "event": "variable",
+        "target": "ch12.starReady",
+        "conditions": [
+          {
+            "key": "ch12.starReady",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch12-star-1",
+          "delayMs": 900
+        },
+        {
+          "message": "ch12-star-2",
+          "delayMs": 900
+        },
+        {
+          "choice": "ch12-star-choice",
+          "prompt": "回他一句",
+          "options": [
+            {
+              "id": "ch12-star-work",
+              "text": "先把订正交了。现在看小说等于公开放弃数学。",
+              "kind": "tone",
+              "actions": [],
+              "replies": [
+                {
+                  "message": "ch12-star-work-reply",
+                  "delayMs": 900
+                }
+              ]
+            },
+            {
+              "id": "ch12-star-read",
+              "text": "看了一点。你先别急着证明你翻得比我快。",
+              "kind": "tone",
+              "actions": [],
+              "replies": [
+                {
+                  "message": "ch12-star-read-reply",
+                  "delayMs": 900
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "message": "ch12-star-3",
+          "delayMs": 900
+        }
+      ],
+      "onStart": [
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信：朱志鑫有新消息。"
+        }
+      ],
+      "after": [
+        {
+          "type": "variable",
+          "key": "ch12.stage",
+          "value": "music-chat"
+        },
+        {
+          "type": "variable",
+          "key": "ch12.musicReady",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ch12-music",
+      "chatId": "ch12-friends",
+      "trigger": {
+        "event": "variable",
+        "target": "ch12.musicReady",
+        "conditions": [
+          {
+            "key": "ch12.musicReady",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch12-group-1",
+          "delayMs": 900
+        },
+        {
+          "message": "ch12-group-2",
+          "delayMs": 900
+        },
+        {
+          "message": "ch12-group-3",
+          "delayMs": 900
+        },
+        {
+          "message": "ch12-group-4",
+          "delayMs": 900
+        },
+        {
+          "message": "ch12-group-5",
+          "delayMs": 900
+        },
+        {
+          "message": "ch12-group-6",
+          "delayMs": 900
+        },
+        {
+          "message": "ch12-group-7",
+          "delayMs": 900
+        },
+        {
+          "choice": "ch12-music-choice",
+          "prompt": "说一句自己的想法",
+          "options": [
+            {
+              "id": "ch12-music-compare",
+              "text": "先看看两种方向平时到底学什么？别只看名字。",
+              "kind": "tone",
+              "actions": [],
+              "replies": [
+                {
+                  "message": "ch12-music-compare-reply",
+                  "delayMs": 900
+                }
+              ]
+            },
+            {
+              "id": "ch12-music-try",
+              "text": "你是不是可以先做一段，再试着演出来？",
+              "kind": "tone",
+              "actions": [],
+              "replies": [
+                {
+                  "message": "ch12-music-try-reply",
+                  "delayMs": 900
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "onStart": [
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信：课间 · 五分钟有新消息。"
+        }
+      ],
+      "after": [
+        {
+          "type": "variable",
+          "key": "ch12.stage",
+          "value": "planning"
+        },
+        {
+          "type": "unlock",
+          "key": "ch12-plan",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "文件有新的现场记录。"
+        }
+      ]
+    },
+    {
+      "id": "ch12-wallpaper",
+      "chatId": "ch12-star",
+      "trigger": {
+        "event": "variable",
+        "target": "ch12.wallReady",
+        "conditions": [
+          {
+            "key": "ch12.wallReady",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "steps": [
+        {
+          "message": "ch12-wall-1",
+          "delayMs": 900
+        },
+        {
+          "message": "ch12-wall-2",
+          "delayMs": 900
+        },
+        {
+          "choice": "ch12-wall-choice",
+          "prompt": "壁纸先怎么放？",
+          "options": [
+            {
+              "id": "ch12-wall-new",
+              "text": "试试你推荐的。要是找不到时间还找你。",
+              "kind": "tone",
+              "actions": [
+                {
+                  "type": "variable",
+                  "key": "ch12.wallpaper",
+                  "value": "new"
+                },
+                {
+                  "type": "variable",
+                  "key": "phone.wallpaperItem",
+                  "value": "ch12-wallpaper"
+                }
+              ],
+              "replies": [
+                {
+                  "message": "ch12-wall-new-reply",
+                  "delayMs": 900
+                }
+              ]
+            },
+            {
+              "id": "ch12-wall-luck",
+              "text": "两块钱那张还得接着用，好运没用完。",
+              "kind": "tone",
+              "actions": [
+                {
+                  "type": "variable",
+                  "key": "ch12.wallpaper",
+                  "value": "luck"
+                },
+                {
+                  "type": "variable",
+                  "key": "phone.wallpaperItem",
+                  "value": "ch10-wallpaper"
+                }
+              ],
+              "replies": [
+                {
+                  "message": "ch12-wall-luck-reply",
+                  "delayMs": 900
+                }
+              ]
+            },
+            {
+              "id": "ch12-wall-save",
+              "text": "先收着。现在这张顺眼，暂时不动。",
+              "kind": "tone",
+              "actions": [
+                {
+                  "type": "variable",
+                  "key": "ch12.wallpaper",
+                  "value": "saved"
+                }
+              ],
+              "replies": [
+                {
+                  "message": "ch12-wall-save-reply",
+                  "delayMs": 900
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "message": "ch12-wall-3",
+          "delayMs": 900
+        }
+      ],
+      "onStart": [
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信：朱志鑫有新消息。"
+        }
+      ],
+      "after": [
+        {
+          "type": "variable",
+          "key": "ch12.stage",
+          "value": "ending"
+        },
+        {
+          "type": "unlock",
+          "key": "ch12-ending",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "文件有新的现场记录。"
+        },
+        {
+          "type": "unlock",
+          "key": "ch12-wallpaper",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ch12-weibo-star",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ch12-weibo-zuo",
+          "value": true
+        }
+      ]
     }
   ],
   "guides": [
+    {
+      "conditions": [
+        {
+          "key": "chapter.chapter-12-pending.completed",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "title": "第十二章已完成",
+      "detail": "下一章《没说完的话》待续。琴行见面尚未发生，记录已保存。",
+      "app": "files",
+      "itemId": "ch12-ending"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch12.stage",
+          "op": "eq",
+          "value": "morning"
+        }
+      ],
+      "title": "先交作业",
+      "detail": "可以随时返回，社交动态与人物侧页均不影响推进。",
+      "app": "files",
+      "itemId": "ch12-morning"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch12.stage",
+          "op": "eq",
+          "value": "star"
+        }
+      ],
+      "title": "看看他的消息",
+      "detail": "可以随时返回，社交动态与人物侧页均不影响推进。",
+      "app": "wechat",
+      "thread": "朱志鑫"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch12.stage",
+          "op": "eq",
+          "value": "music-chat"
+        }
+      ],
+      "title": "朋友群里有个正经问题",
+      "detail": "可以随时返回，社交动态与人物侧页均不影响推进。",
+      "app": "wechat",
+      "thread": "课间 · 五分钟"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch12.stage",
+          "op": "eq",
+          "value": "planning"
+        }
+      ],
+      "title": "看看音乐方向草稿",
+      "detail": "可以随时返回，社交动态与人物侧页均不影响推进。",
+      "app": "files",
+      "itemId": "ch12-plan"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch12.stage",
+          "op": "eq",
+          "value": "demo"
+        }
+      ],
+      "title": "这次改了哪里",
+      "detail": "可以随时返回，社交动态与人物侧页均不影响推进。",
+      "app": "files",
+      "itemId": "ch12-demo"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch12.stage",
+          "op": "eq",
+          "value": "after-school"
+        }
+      ],
+      "title": "放学以后",
+      "detail": "可以随时返回，社交动态与人物侧页均不影响推进。",
+      "app": "files",
+      "itemId": "ch12-after-school"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch12.stage",
+          "op": "eq",
+          "value": "notebook"
+        }
+      ],
+      "title": "去拿借过的书",
+      "detail": "可以随时返回，社交动态与人物侧页均不影响推进。",
+      "app": "files",
+      "itemId": "ch12-notebook"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch12.stage",
+          "op": "eq",
+          "value": "diary"
+        }
+      ],
+      "title": "眼前这一页",
+      "detail": "可以随时返回，社交动态与人物侧页均不影响推进。",
+      "app": "files",
+      "itemId": "ch12-diary"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch12.stage",
+          "op": "eq",
+          "value": "closed"
+        }
+      ],
+      "title": "把自己的书拿好",
+      "detail": "可以随时返回，社交动态与人物侧页均不影响推进。",
+      "app": "files",
+      "itemId": "ch12-closed"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch12.stage",
+          "op": "eq",
+          "value": "wallpaper"
+        }
+      ],
+      "title": "看看他发的壁纸",
+      "detail": "可以随时返回，社交动态与人物侧页均不影响推进。",
+      "app": "wechat",
+      "thread": "朱志鑫"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch12.stage",
+          "op": "eq",
+          "value": "ending"
+        }
+      ],
+      "title": "哥哥还有个问题",
+      "detail": "可以随时返回，社交动态与人物侧页均不影响推进。",
+      "app": "files",
+      "itemId": "ch12-ending"
+    },
+    {
+      "conditions": [
+        {
+          "key": "unlocked:ch11-wallpaper-last",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch11.wallpaperRestored",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "chapter.chapter-12-pending.started",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "title": "今天最后一件小事",
+      "detail": "文件 →《回到最开始的壁纸》，换回初始壁纸，再打开备忘录。",
+      "app": "files",
+      "itemId": "ch11-finish"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch11.wallpaperRestored",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch11.wrapDone",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "chapter.chapter-12-pending.started",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "title": "读完今天的最后一页",
+      "detail": "备忘录 →《没急着翻过去》，读完结束第十一章。",
+      "app": "notes",
+      "itemId": "ch11-memo"
+    },
+    {
+      "conditions": [
+        {
+          "key": "chapter.chapter-10-pending.completed",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "chapter.chapter-11-pending.started",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "title": "第十章已完成 · 进入第十一章",
+      "detail": "备忘录 →《第十一章 · 下一页》。",
+      "app": "notes",
+      "itemId": "ch11-entry"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch11.wrapDone",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch11.tailDone",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "chapter.chapter-12-pending.started",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "title": "第十一章已完成 · 进入第十二章",
+      "detail": "备忘录 →《第十二章 · 你没告诉我》。",
+      "app": "notes",
+      "itemId": "ch12-entry"
+    },
+    {
+      "conditions": [
+        {
+          "key": "chapter.chapter-11-pending.completed",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "ch11.tailDone",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "chapter.chapter-12-pending.started",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "title": "可选尾声 · 回程路上",
+      "detail": "文件里的额外记录可稍后看。它不会阻塞本章完成。",
+      "app": "files",
+      "itemId": "ch11-tail"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch11.stage",
+          "op": "eq",
+          "value": "after"
+        },
+        {
+          "key": "chapter.chapter-12-pending.started",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "title": "下午的话还没说完",
+      "detail": "微信 → 朱志鑫。社交动态和备忘录均不影响主线。",
+      "app": "wechat",
+      "thread": "朱志鑫"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch11.stage",
+          "op": "eq",
+          "value": "walk"
+        },
+        {
+          "key": "chapter.chapter-12-pending.started",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "title": "先各自回家",
+      "detail": "文件 →《书店门口 · 先各自回家》。",
+      "app": "files",
+      "itemId": "ch11-walk"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch11.stage",
+          "op": "eq",
+          "value": "book"
+        },
+        {
+          "key": "chapter.chapter-12-pending.started",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "title": "书店里，翻到下一页",
+      "detail": "文件 →《书店 · 下一页》，两处阅读选择都可以表达不同意见。",
+      "app": "files",
+      "itemId": "ch11-book"
+    },
+    {
+      "conditions": [
+        {
+          "key": "ch11.stage",
+          "op": "eq",
+          "value": "invite"
+        },
+        {
+          "key": "chapter.chapter-12-pending.started",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "title": "看看朱志鑫发来的消息",
+      "detail": "微信 → 朱志鑫，按顺序阅读并选择自己的回复。",
+      "app": "wechat",
+      "thread": "朱志鑫"
+    },
     {
       "conditions": [
         {
@@ -3331,17 +4320,22 @@
       "thread": "朱志鑫"
     },
     {
-      "title": "第九章已完成",
-      "detail": "下一章待续。朱志鑫的新消息已保留在私聊，可以返回查看。",
-      "app": "wechat",
-      "thread": "朱志鑫",
+      "title": "第九章已完成 · 进入第十章",
+      "detail": "备忘录 →《第十章 · 留给自己的愿望》。打开即可开始生日剧情。",
+      "app": "notes",
       "conditions": [
         {
           "key": "chapter.chapter-09-pending.completed",
           "op": "eq",
           "value": true
+        },
+        {
+          "key": "chapter.chapter-10-pending.started",
+          "op": "eq",
+          "value": false
         }
-      ]
+      ],
+      "itemId": "ch10-entry"
     },
     {
       "title": "进入第八章 · 她喜欢的人",
@@ -4310,6 +5304,20 @@
       "label": "进入第十章 · 留给自己的愿望",
       "event": "chapterStart",
       "target": "chapter-10-pending"
+    },
+    {
+      "afterKey": "chapter.chapter-10-pending.completed",
+      "startedKey": "chapter.chapter-11-pending.started",
+      "label": "进入第十一章 · 下一页",
+      "event": "chapterStart",
+      "target": "chapter-11-pending"
+    },
+    {
+      "afterKey": "chapter.chapter-11-pending.completed",
+      "startedKey": "chapter.chapter-12-pending.started",
+      "label": "进入第十二章 · 你没告诉我",
+      "event": "chapterStart",
+      "target": "chapter-12-pending"
     }
   ],
   "documents": [
@@ -4435,7 +5443,7 @@
               "value": true
             }
           ],
-          "text": "交完纸单，我把手机上的登记表又翻回去，朱志鑫那一行还停在屏幕中间。\n\n“有哪里填错了吗？”\n\n他回来取文件夹，看了一眼表，语气像真的在等我指出一处错误。我这才发现自己已经在这里停了好一会儿。"
+          "text": "交完纸单，我把手机上的登记表又翻回去，朱志鑫那一行还停在屏幕中间。\n\n“是有哪儿填错了？”\n\n他回来取文件夹，看了一眼表，语气像真的在等我指出一处错误。我这才发现自己已经在这里停了好一会儿。"
         },
         {
           "conditions": [
@@ -4648,7 +5656,7 @@
               "value": "question"
             }
           ],
-          "text": "我问他：“刚才说有两个接法，你是不是还舍不得删掉其中一个？”\n\n“有点。”张峻豪笑了一下，“所以先都留着。试完再说，光想也听不出来。”\n\n我说自己连写开头都能改很久。他把文件夹往我这边挪了挪：“那先交一个呗。你又不是交完就不准碰了。”"
+          "text": "我问他：“刚才说有两个接法，你是不是还舍不得删掉其中一个？”\n\n“有点。”张峻豪笑了一下，“两个我都想留。先试完再说，光想哪儿听得出来。”\n\n我说自己连写开头都能改很久。他把文件夹往我这边挪了挪：“那你先交一个。交了又不是不让改。”"
         },
         {
           "conditions": [
@@ -4658,7 +5666,7 @@
               "value": "like"
             }
           ],
-          "text": "张峻豪问：“你刚才说没填满的感觉，是中间那块？”\n\n我点头：“嗯，不是想让它一直空着，就是会等着你继续。”\n\n“懂了。这个我先记下来。”他抽了一张纸，认真写了几个字。我反而有点不好意思：“也不一定对。”\n\n“听感哪有什么标准答案。你说清楚你听见的就行。”"
+          "text": "张峻豪问：“你说没填满，是中间那块吧？”\n\n我点头：“嗯，不是想让它一直空着，就是会等着你继续。”\n\n“哦，这个我记一下。”他抽了一张纸，认真写了几个字。我反而有点不好意思：“也不一定对。”\n\n“又不是让你做题。你听着怎么样就说，具体点就行。”"
         },
         {
           "conditions": [
@@ -4668,7 +5676,7 @@
               "value": "work"
             }
           ],
-          "text": "我把附件单摊开：“草稿和正式文件分开记。时长这里先留着，别拿随口估的数去报。”\n\n“明白，空着比乱填好。”张峻豪在旁边补了个记号。\n\n我笑他终于愿意认真写文件名了。他说自己也不想半夜对着“最终版二”猜哪份能用。话题没有继续到旋律，他也没介意，只问我还缺什么。"
+          "text": "我把附件单摊开：“草稿和正式文件分开记。时长这里先留着，别拿随口估的数去报。”\n\n“行，这儿先不填。”张峻豪在旁边补了个记号。\n\n我笑他终于愿意认真写文件名了。他说半夜再对着“最终版二”猜文件，他自己也受不了。话题没有继续到旋律，他转了半圈笔，问我还缺什么。"
         },
         {
           "conditions": [],
@@ -4861,7 +5869,7 @@
       "entries": [],
       "sections": [
         {
-          "text": "朱志鑫：你出手太急了。\n我：……我知道没进。\n朱志鑫：我说脚，还没站住。\n\n我低头看了眼线，才发现鞋带散着。他把球递过来，没有笑，我反而不知道刚才那句该怎么接。",
+          "text": "朱志鑫：你出手太急了。\n我：……我知道没进。\n朱志鑫：我说脚。还没站稳。\n\n我低头看了眼线，才发现鞋带散着。他把球递过来，没有笑，我反而不知道刚才那句该怎么接。",
           "conditions": []
         },
         {
@@ -4961,7 +5969,7 @@
           "conditions": []
         },
         {
-          "text": "朱志鑫：后面几次，没往前扑了。\n我：你在看？\n朱志鑫：我等下一组。\n\n他看了一眼球场，又补了一句。\n朱志鑫：最后那次，脚站住了。\n\n我把水换到另一只手上，忍了忍，还是问：“那比昨天好一点吧？”\n朱志鑫：不止一点。",
+          "text": "朱志鑫：后面几球没往前扑了。\n我：你在看？\n朱志鑫：我等下一组。\n\n他看了一眼球场，又补了一句。\n朱志鑫：最后那球，脚站稳了。\n\n我把水换到另一只手上，忍了忍，还是问：“那比昨天好一点吧？”\n朱志鑫：不止一点。",
           "conditions": []
         },
         {
@@ -4969,7 +5977,7 @@
           "conditions": []
         },
         {
-          "text": "我：拍了。他说想看看怎么弹出去的。\n朱志鑫：你记得还挺清楚。\n\n我张了张嘴。广播突然开始报接力名单，盖过了半句“他刚刚不是说——”。我等着声音过去，他却先侧开了身。\n朱志鑫：那你们先看。我过去了。\n\n我还没来得及问，他是不是也想看。\n\n张峻豪在远处喊我发视频，哥哥抢先让他把水喝了，说他每次跑完都嫌常温的不好喝。左航从人群里钻出来，把椅子底下的外套塞给我。\n左航：拿着，别给踩了。我跳远那张要是拍得比这好，你记得发我。\n我：还挑上了。\n左航：当然。我也想留张像样的。\n\n我转过去翻相册。余光里，朱志鑫已经走到了另一边。",
+          "text": "我：拍了。他说想看看怎么弹出去的。\n朱志鑫：你记得还挺清楚。\n\n我张了张嘴。广播突然开始报接力名单，盖过了半句“他刚刚不是说——”。我等着声音过去，他却先侧开了身。\n朱志鑫：那你们看吧，我先过去。\n\n我还没来得及问，他是不是也想看。\n\n张峻豪在远处喊我发视频，哥哥抢先让他把水喝了，说他每次跑完都嫌常温的不好喝。左航从人群里钻出来，把椅子底下的外套塞给我。\n左航：拿着，别给踩了。我跳远那张要是拍得比这好，你记得发我。\n我：还挑上了。\n左航：当然。我也想留张像样的。\n\n我转过去翻相册。余光里，朱志鑫已经走到了另一边。",
           "conditions": []
         }
       ],
@@ -5129,7 +6137,7 @@
           "conditions": []
         },
         {
-          "text": "我：你平时看这类的？\n朱志鑫：以前看过一半，后来没找到。\n我：那这次能从头看了。\n朱志鑫：……好像也是。\n\n我低头整理书签，明明已经排齐，又把最上面一张挪了一下。他没有立刻走。",
+          "text": "我：你平时看这类的？\n朱志鑫：以前看了一半，后来找不着了。\n我：那这次能从头看了。\n朱志鑫：……好像也是。\n\n我低头整理书签，明明已经排齐，又把最上面一张挪了一下。他没有立刻走。",
           "conditions": []
         },
         {
@@ -5137,7 +6145,7 @@
           "conditions": []
         },
         {
-          "text": "朱志鑫把书签放回桌上。\n朱志鑫：那我先去帮他们搬箱子。\n我：好，等会儿——\n\n他回头。我指了指剪刀：“要用这个的话，别拿混了。”\n朱志鑫：嗯。\n\n收摊时我隔着书架看过去，他正跟别人核对箱数。最后一张登记表传回来，他没再过来。",
+          "text": "朱志鑫把书签放回桌上。\n朱志鑫：我先去帮他们搬箱子。\n我：好，等会儿——\n\n他回头。我指了指剪刀：“要用这个的话，别拿混了。”\n朱志鑫：嗯。\n\n收摊时我隔着书架看过去，他正跟别人核对箱数。最后一张登记表传回来，他没再过来。",
           "conditions": []
         }
       ],
@@ -5190,11 +6198,11 @@
       "entries": [],
       "sections": [
         {
-          "text": "我：朱志鑫。\n\n他停下来。我已经往前走了半步，又退回转角。\n我：昨天你看的那本书，后来换走了吗？我收摊时没看见。\n朱志鑫：在我这儿。你也想看？\n我：有点。书名没记全，查了一下没找到。\n朱志鑫：最后两个字是“往事”。",
+          "text": "我：朱志鑫。\n\n他停下来。我已经往前走了半步，又退回转角。\n我：昨天你看的那本书，后来换走了吗？我收摊时没看见。\n朱志鑫：在我这儿。你也想看？\n我：有点。书名没记全，查了一下没找到。\n朱志鑫：《牧羊少年奇幻之旅》。名字是有点长。",
           "conditions": []
         },
         {
-          "text": "我：那等你看完，我再去找。\n朱志鑫：我放回换书架。不会直接拿走。",
+          "text": "我：那等你看完，我再去找。\n朱志鑫：我会放回换书架，不直接拿走。",
           "conditions": [
             {
               "key": "ch08.approach",
@@ -5307,15 +6315,15 @@
           "conditions": []
         },
         {
-          "text": "张峻豪拿走一张餐巾纸，在背面画了几条线。\n我：吃饭还做题？\n张峻豪：记下刚想到的节奏，回去就忘。\n张泽禹：那你别拿蘸过酱的手按。\n张峻豪：你当我几岁。\n他刚说完，纸边就蹭上一个油印。朱志鑫看了一眼，递过来一张干净的。\n朱志鑫：备份。\n\n桌上静了一秒，又都笑了。我举起手机的时候，他正偏头听张峻豪补那句解释，嘴角还没收回去。屏幕里有一角菜单，我没有重拍。",
+          "text": "张峻豪拿走一张餐巾纸，在背面画了几条线。\n我：吃饭还做题？\n张峻豪：刚想到个节奏，回去准忘。\n张泽禹：手上有酱，先别往纸上按。\n张峻豪：你当我几岁。\n他刚说完，纸边就蹭上一个油印。朱志鑫看了一眼，递过来一张干净的。\n朱志鑫：备份。\n\n桌上静了一秒，又都笑了。我举起手机的时候，他正偏头听张峻豪补那句解释，嘴角还没收回去。屏幕里有一角菜单，我没有重拍。",
           "conditions": []
         },
         {
-          "text": "我给大家拍完，又低头看了会儿照片。左航把小碟子往我手边挪了一点。\n左航：你的，留了两块。再拍一轮就只能拍空盘了。\n我：你不是刚说不吃甜的？\n左航：所以给你留着。还有，我下周测验要借你的地理笔记，别又塞在最底下。\n我：先看你借出去的书什么时候还我。\n左航：这笔账怎么又翻出来了。\n\n糍粑已经没那么烫，我咬了一口，糖浆粘到筷子上。",
+          "text": "我给大家拍完，又低头看了会儿照片。左航把小碟子往我手边挪了一点。\n左航：你的，留了两块。再拍一轮就只能拍空盘了。\n我：你不是刚说不吃甜的？\n左航：所以给你留着。对了，下周测验借你地理笔记啊，别又压包底。\n我：先看你借出去的书什么时候还我。\n左航：这笔账怎么又翻出来了。\n\n糍粑已经没那么烫，我咬了一口，糖浆粘到筷子上。",
           "conditions": []
         },
         {
-          "text": "张泽禹起身结账，张峻豪跟去拿饮料。\n张泽禹：你那杯去冰了，别拿错。\n张峻豪：我现在不怕冰。\n张泽禹：知道，你嗓子怕。昨晚谁练完一直清嗓子。\n朱志鑫：我的钱转你。\n张泽禹：说了我请。下回你请，别现在就算清。\n我：这话我替你记着。\n张泽禹：你先把自己的盘子吃完。\n\n朱志鑫把手机放回口袋，低声说了句“那下回”。我去拿外套，没好意思接这两个字。",
+          "text": "张泽禹起身结账，张峻豪跟去拿饮料。\n张泽禹：你那杯去冰了，别拿错。\n张峻豪：我现在不怕冰。\n张泽禹：知道，你嗓子怕。昨晚谁练完一直清嗓子。\n朱志鑫：我的钱转你。\n张泽禹：说了我请。下回归你，别现在掏手机。\n我：这话我替你记着。\n张泽禹：你先把自己的盘子吃完。\n\n朱志鑫把手机放回口袋，低声说了句“那下回”。我去拿外套，没好意思接这两个字。",
           "conditions": []
         }
       ],
@@ -5481,7 +6489,7 @@
           "conditions": []
         },
         {
-          "text": "张峻豪的手机震了两下，他低头记了个东西，又扣回桌面。\n张泽禹：又改伴奏？\n张峻豪：明天试一遍。今天不折磨你们耳朵。\n张泽禹把他面前的冰饮换成常温的。\n张峻豪：你拿错了。\n张泽禹：没拿错，刚从冰柜里救出来的嗓子别再送回去。\n\n左航帮我把围巾从蛋糕盒边拎开，自己去接了个家里催回去的电话。朱志鑫接过打火机，试了两次才点着。",
+          "text": "张峻豪的手机震了两下，他低头记了个东西，又扣回桌面。\n张泽禹：又改伴奏？\n张峻豪：明天试一遍。今天不折磨你们耳朵。\n张泽禹把常温那杯往他手边推，顺手拿走了冰饮。\n张峻豪：你拿错了。\n张泽禹：没拿错。嗓子刚好，别又喝回去。\n\n左航帮我把围巾从蛋糕盒边拎开，自己去接了个家里催回去的电话。朱志鑫接过打火机，试了两次才点着。",
           "conditions": []
         },
         {
@@ -6035,19 +7043,19 @@
         "blessings": [
           {
             "characterId": "brother",
-            "text": "又长一岁，别什么事都先往自己身上找毛病。礼物不准嫌我挑得慢，我挑的时候你还在写卷子。生日快乐。"
+            "text": "又长一岁了，别有点什么事就先怪自己。礼物别嫌我挑得慢，我挑的时候你还在写卷子。生日快乐。"
           },
           {
             "characterId": "junhao",
-            "text": "生日快乐！下次考试少错两道，剩下的靠认真审题，不靠我这句祝福。相机借我拍一次，保证不拆。"
+            "text": "生日快乐！下次少错两道题。祝福先给了，审题还得靠你。相机借我拍一次，保证不拆。"
           },
           {
             "characterId": "zuohang",
-            "text": "生日快乐。想做的事可以慢慢挑，不用今天就选出一个最正确的。照片留一张给我，别只拍别人。"
+            "text": "生日快乐。今天先吃蛋糕，想做的事慢慢挑。照片给我留一张，别光拍别人。"
           },
           {
             "characterId": "star",
-            "text": "生日快乐。新相机多用几次，拍糊了也没事。祝你今年有不少想留下的瞬间。"
+            "text": "生日快乐。相机多用，糊了也没事。今年多拍点你想留着的。"
           }
         ],
         "memories": [
@@ -6277,11 +7285,11 @@
       "entries": [],
       "sections": [
         {
-          "text": "张泽禹跟我拍第一张，刚按快门就有人从后面探出半张脸。\n我：张峻豪，你是每张都要收出场费吗？\n张峻豪：生日限定。\n\n轮到他时，他终于老实站好。我把相纸拿远一点，他伸手想接，哥哥先挡了一下：手擦干，奶油指纹很有辨识度。",
+          "text": "张泽禹跟我拍第一张，刚按快门就有人从后面探出半张脸。\n我：张峻豪，你是每张都要收出场费吗？\n张峻豪：生日限定。\n\n轮到他时，他终于老实站好。我把相纸拿远一点，他伸手想接，哥哥先挡了一下：先擦手。奶油印上去，一眼就知道是谁。",
           "conditions": []
         },
         {
-          "text": "左航把桌上的课本收进包里，站到我旁边。\n我：你还真带了作业。\n左航：待会儿回去还得写。拍好看一点，证明我不是来补课的。\n\n相纸慢慢有了颜色，他看了一眼：这张可以。我明天再拿，别还没显出来就开始甩。",
+          "text": "左航把桌上的课本收进包里，站到我旁边。\n我：你还真带了作业。\n左航：回去还得写呢。给我拍好看点，别像来补课的。\n\n相纸慢慢有了颜色，他看了一眼：这张可以。我明天再拿，别还没显出来就开始甩。",
           "conditions": []
         },
         {
@@ -6460,6 +7468,1212 @@
           "ch10-photo-pair-b"
         ]
       }
+    },
+    {
+      "id": "ch11-book",
+      "itemId": "ch11-book",
+      "kind": "scene",
+      "conditions": [],
+      "entries": [],
+      "sections": [
+        {
+          "text": "朱志鑫：这儿。\n我：你来了多久？\n朱志鑫：刚到。\n\n他把书往旁边挪，下面压着的收银小票露出一角。纸杯上的水汽已经散了。我没拆穿，把书包放下，拉椅子的声音却比想的大。\n我：这椅子有意见。\n朱志鑫：它对谁都这样。\n\n他说只找到一本，问我要不要再去架上看看。我跟着他走了一趟，同名的那格空着。回到桌边，他把书摊在两张椅子中间。",
+          "conditions": []
+        },
+        {
+          "text": "阅读提示：下面是为本章自拟的讨论札记，不是小说原文节选，也不对应某个版本的固定页码。",
+          "conditions": []
+        },
+        {
+          "text": "第一处 · 想要什么\n\n【讨论札记】一个牧羊少年为了寻找宝藏，离开熟悉的生活。读到这里，先不替他预定成功：他想找的，和他已经有的，哪一样更清楚？\n\n朱志鑫：至少他知道往哪儿走。\n我：知道想找宝藏，算不算知道想要什么？\n朱志鑫：你觉得不算？",
+          "conditions": [
+            {
+              "key": "ch11.page",
+              "op": "eq",
+              "value": "first"
+            }
+          ]
+        },
+        {
+          "text": "我：我喜欢他至少肯去找。留在原地，也不会突然就明白。\n朱志鑫：嗯。我看到这儿也想往下翻。\n我：但我还没说换成我也能做到。\n朱志鑫：没让你明天出发。",
+          "conditions": [
+            {
+              "key": "ch11.page",
+              "op": "eq",
+              "value": "first"
+            },
+            {
+              "key": "ch11.read1",
+              "op": "eq",
+              "value": "like"
+            }
+          ]
+        },
+        {
+          "text": "我：我觉得有点理想化。不是谁都走得开。\n朱志鑫：是。但一直等，也不一定会有空。\n我：所以才难，又不是不知道这个道理。\n他看了我一眼，没有急着往下说。\n朱志鑫：嗯。不是说走就能走。",
+          "conditions": [
+            {
+              "key": "ch11.page",
+              "op": "eq",
+              "value": "first"
+            },
+            {
+              "key": "ch11.read1",
+              "op": "eq",
+              "value": "ideal"
+            }
+          ]
+        },
+        {
+          "text": "我：没完全懂，但我想看看他后面怎么选。\n朱志鑫：那先往后看。\n我：你这回答很省事。\n朱志鑫：我也没看到结尾。先别考我。",
+          "conditions": [
+            {
+              "key": "ch11.page",
+              "op": "eq",
+              "value": "first"
+            },
+            {
+              "key": "ch11.read1",
+              "op": "eq",
+              "value": "unclear"
+            }
+          ]
+        },
+        {
+          "text": "第二处 · 开始以后\n\n【讨论札记】把想去的方向说出来，只是开始。真往前走，还得面对不知道的事。今天想讨论的不是“勇不勇敢”，而是：准备到什么时候，才够开始？\n\n我指的那行在他那边。他把书转过来一点，指尖停在白边，我差点压住他的手，赶紧去拿纸杯。\n朱志鑫：我没看清你指哪儿。\n我把杯子又放回原处，重新指了一次。",
+          "conditions": [
+            {
+              "key": "ch11.page",
+              "op": "eq",
+              "value": "second"
+            }
+          ]
+        },
+        {
+          "text": "我：我想先试一点，不然永远在准备。\n朱志鑫：你上回不是还说，要再争取一下。\n我：文化节那件事，我现在也这么想。\n朱志鑫低头摸了下书角：那天我没再问。\n我：嗯。我介意的就是这个。\n\n他没有拿别的理由接上。我也没说没关系。隔了一会儿，他把卷起来的书角压平了。",
+          "conditions": [
+            {
+              "key": "ch11.page",
+              "op": "eq",
+              "value": "second"
+            },
+            {
+              "key": "ch11.read2",
+              "op": "eq",
+              "value": "small"
+            }
+          ]
+        },
+        {
+          "text": "我：得知道会失去什么，不能只看想得到的。\n朱志鑫：那你要是知道了，还想去呢？\n我：那再决定。怕是一回事，直接不问是另一回事。\n\n我停了一下。\n我：文化节也是。\n朱志鑫：我知道你说那天。\n\n他没说我只关心张峻豪，也没答应以后一定怎样。我把那句话说完了，暂时没有再追着问。",
+          "conditions": [
+            {
+              "key": "ch11.page",
+              "op": "eq",
+              "value": "second"
+            },
+            {
+              "key": "ch11.read2",
+              "op": "eq",
+              "value": "cost"
+            }
+          ]
+        },
+        {
+          "text": "我：不知道。我大概会准备很久，又怕错过。\n朱志鑫：我也会。\n我：那也不能每次都算了。文化节那次，我还没想通。\n朱志鑫：嗯。我那天停得太快。\n\n店员过来问要不要续水。他抬头说不用，我也摇头，等人走了才发现我们刚才都在看同一处折痕。",
+          "conditions": [
+            {
+              "key": "ch11.page",
+              "op": "eq",
+              "value": "second"
+            },
+            {
+              "key": "ch11.read2",
+              "op": "eq",
+              "value": "time"
+            }
+          ]
+        },
+        {
+          "text": "他先把书递给我，自己去看旁边架上的漫画。\n朱志鑫：你慢点看，我找两本别的。\n我：别拿一本书把我留这儿就跑了。\n朱志鑫回头：跑到这排尽头吗。\n\n我笑了一下，终于没再数自己翻了几页。\n\n我：可我还不知道真正想要什么。没法只靠一句“去找”就出门吧。\n朱志鑫：这个……\n\n店员提醒门口的小书车要挪位置。他把书签夹进去，说先记着。\n\n【我记下的问题】如果还不知道真正想要什么，是先去找，还是先弄清楚？今天没得出答案，页码先留着。",
+          "conditions": [
+            {
+              "key": "ch11.page",
+              "op": "eq",
+              "value": "last"
+            }
+          ]
+        },
+        {
+          "text": "生日那天给自己的话还在手机里。我翻了一下，没有拿给他看。那一页不是给别人交的答卷。",
+          "conditions": [
+            {
+              "key": "ch11.page",
+              "op": "eq",
+              "value": "last"
+            },
+            {
+              "key": "growth.birthday.self",
+              "op": "neq",
+              "value": "skip"
+            }
+          ]
+        },
+        {
+          "text": "这次的页码已经记下。我们有两处没读出同一个意思，也没有急着说服谁。书店下午的记录留在这里，微信里的话还可以接着说。",
+          "conditions": [
+            {
+              "key": "ch11.page",
+              "op": "eq",
+              "value": "closed"
+            }
+          ]
+        },
+        {
+          "text": "生日那天空着的那道愿望，我还没填。今天也没打算为了让他听懂，临时编一个答案。",
+          "conditions": [
+            {
+              "key": "ch11.page",
+              "op": "eq",
+              "value": "last"
+            },
+            {
+              "key": "growth.birthday.self",
+              "op": "eq",
+              "value": "skip"
+            }
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "id": "open",
+          "label": "翻开第一处 · 想要什么",
+          "conditions": [
+            {
+              "key": "ch11.stage",
+              "op": "eq",
+              "value": "book"
+            },
+            {
+              "key": "ch11.page",
+              "op": "eq",
+              "value": "shelf"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch11.page",
+              "value": "first"
+            }
+          ]
+        },
+        {
+          "id": "first-like",
+          "label": "“我喜欢他至少肯去找。”",
+          "conditions": [
+            {
+              "key": "ch11.page",
+              "op": "eq",
+              "value": "first"
+            },
+            {
+              "key": "ch11.read1",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch11.read1",
+              "value": "like"
+            }
+          ]
+        },
+        {
+          "id": "first-ideal",
+          "label": "“我觉得有点理想化。不是谁都走得开。”",
+          "conditions": [
+            {
+              "key": "ch11.page",
+              "op": "eq",
+              "value": "first"
+            },
+            {
+              "key": "ch11.read1",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch11.read1",
+              "value": "ideal"
+            }
+          ]
+        },
+        {
+          "id": "first-unclear",
+          "label": "“没完全懂，但我想看看他后面怎么选。”",
+          "conditions": [
+            {
+              "key": "ch11.page",
+              "op": "eq",
+              "value": "first"
+            },
+            {
+              "key": "ch11.read1",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch11.read1",
+              "value": "unclear"
+            }
+          ]
+        },
+        {
+          "id": "next",
+          "label": "往后翻一页",
+          "conditions": [
+            {
+              "key": "ch11.page",
+              "op": "eq",
+              "value": "first"
+            },
+            {
+              "key": "ch11.read1",
+              "op": "neq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch11.page",
+              "value": "second"
+            }
+          ]
+        },
+        {
+          "id": "second-small",
+          "label": "“我想先试一点，不然永远在准备。”",
+          "conditions": [
+            {
+              "key": "ch11.page",
+              "op": "eq",
+              "value": "second"
+            },
+            {
+              "key": "ch11.read2",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch11.read2",
+              "value": "small"
+            }
+          ]
+        },
+        {
+          "id": "second-cost",
+          "label": "“得知道会失去什么，不能只看想得到的。”",
+          "conditions": [
+            {
+              "key": "ch11.page",
+              "op": "eq",
+              "value": "second"
+            },
+            {
+              "key": "ch11.read2",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch11.read2",
+              "value": "cost"
+            }
+          ]
+        },
+        {
+          "id": "second-time",
+          "label": "“不知道。我大概会准备很久，又怕错过。”",
+          "conditions": [
+            {
+              "key": "ch11.page",
+              "op": "eq",
+              "value": "second"
+            },
+            {
+              "key": "ch11.read2",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch11.read2",
+              "value": "time"
+            }
+          ]
+        },
+        {
+          "id": "last",
+          "label": "先记下没讨论完的地方",
+          "conditions": [
+            {
+              "key": "ch11.page",
+              "op": "eq",
+              "value": "second"
+            },
+            {
+              "key": "ch11.read2",
+              "op": "neq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch11.page",
+              "value": "last"
+            }
+          ]
+        },
+        {
+          "id": "leave",
+          "label": "合上书，出门",
+          "conditions": [
+            {
+              "key": "ch11.stage",
+              "op": "eq",
+              "value": "book"
+            },
+            {
+              "key": "ch11.page",
+              "op": "eq",
+              "value": "last"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch11.page",
+              "value": "closed"
+            },
+            {
+              "type": "variable",
+              "key": "ch11.stage",
+              "value": "walk"
+            },
+            {
+              "type": "unlock",
+              "key": "ch11-walk",
+              "value": true
+            },
+            {
+              "type": "unlock",
+              "key": "ch11-moment-owner",
+              "value": true
+            },
+            {
+              "type": "unlock",
+              "key": "ch11-photo-bookstore",
+              "value": true
+            },
+            {
+              "type": "unlock",
+              "key": "ch11-weibo-zuo",
+              "value": true
+            },
+            {
+              "type": "notification",
+              "key": "",
+              "value": "朋友圈、相册、微博有更新，可自由查看。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch11-walk",
+      "itemId": "ch11-walk",
+      "kind": "scene",
+      "conditions": [],
+      "entries": [],
+      "sections": [
+        {
+          "text": "朱志鑫：你那张图，今天还负责看书？\n我：两块钱，不多用几次亏了。\n朱志鑫：看出来了，图标都快找不着了。\n\n我给他看刚记的页码，没让他接着嘲笑屏幕。\n我：这个我回去还想看。\n朱志鑫：嗯，我也没看完。\n\n推门出去时，左航正走到台阶边，抬手替我们扶了一下门。\n左航：你们也在这儿？\n我：刚看完。你来找什么？\n左航：漫画。那排还没撤吧？\n朱志鑫：还在，里面右边。\n\n左航点点头，目光落到我还没收进包里的书封上。\n左航：《牧羊少年奇幻之旅》？\n我：嗯。翻了一下午，也没看完。\n\n他停了半拍，才把门往里推开。\n左航：那先别跟我讲后面。我也翻翻。\n我：放心，我们还没看到能剧透的地方。\n左航：挺好，三个人都安全。\n\n我走下台阶时，隔着玻璃看见他在门口的小说架前停了一下，抽出一本书。朱志鑫问我路口往哪边，我转过身去指了指。\n\n路口我们往两边走。他说了句到家说一声，又补了半句“书别忘在店里”。我拍了拍书包。\n我：放心，你那本找不着的书，这次有人看着。\n\n他朝我晃了下手。我还得回去收明天要交的卷子，没站在原地看他走远。",
+          "conditions": []
+        }
+      ],
+      "controls": [
+        {
+          "id": "home",
+          "label": "回家后，微信又亮了",
+          "conditions": [
+            {
+              "key": "ch11.stage",
+              "op": "eq",
+              "value": "walk"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch11.stage",
+              "value": "after"
+            },
+            {
+              "type": "variable",
+              "key": "ch11.afterReady",
+              "value": true
+            },
+            {
+              "type": "unlock",
+              "key": "ch11-weibo-zuo-book",
+              "value": true
+            },
+            {
+              "type": "notification",
+              "key": "",
+              "value": "微博有新动态，可自由查看。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch11-tail",
+      "itemId": "ch11-tail",
+      "kind": "scene",
+      "conditions": [],
+      "entries": [],
+      "sections": [
+        {
+          "text": "回程经过路口时，我看见张峻豪从一家留学咨询机构出来，手里拿着一叠资料。最上面露出“音乐”和“课程咨询”几个字。\n\n他站在门口把资料折进包里，低头回了一条消息。我隔着车流，没喊他。\n\n回到家，哥哥问我今天去哪儿了。我说书店，又顺口提起路上碰见的人。\n我：张峻豪去问音乐留学的事了？我看见他从咨询机构出来。\n\n输入框安静了一会儿。没有新的消息进来。",
+          "conditions": []
+        }
+      ],
+      "controls": [
+        {
+          "id": "tell",
+          "label": "等哥哥回一句",
+          "conditions": [
+            {
+              "key": "chapter.chapter-11-pending.completed",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "key": "ch11.tailStarted",
+              "op": "eq",
+              "value": false
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch11.tailStarted",
+              "value": true
+            },
+            {
+              "type": "variable",
+              "key": "ch11.tailReady",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch11-finish",
+      "itemId": "ch11-finish",
+      "kind": "scene",
+      "conditions": [
+        {
+          "key": "unlocked:ch11-wallpaper-last",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "entries": [],
+      "sections": [
+        {
+          "text": "我：行，这回听你的。换回最开始那张。\n朱志鑫：嗯。\n我：两块钱也没白花，至少你记住了。\n朱志鑫：想忘还挺难。\n\n我打开壁纸设置，把桌面恢复成最开始的样子。图标一下清楚了，倒显得我刚才嘴硬得有点多。\n我：好了。以后先看字，再看好运。\n\n他回了个笑的表情。我把今天还没记下的那页打开。",
+          "conditions": []
+        }
+      ],
+      "controls": [
+        {
+          "id": "restore",
+          "label": "换回初始壁纸，记下今天",
+          "conditions": [
+            {
+              "key": "ch11.wallpaperRestored",
+              "op": "eq",
+              "value": false
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "phone.wallpaperItem",
+              "value": ""
+            },
+            {
+              "type": "variable",
+              "key": "ch11.wallpaperRestored",
+              "value": true
+            },
+            {
+              "type": "variable",
+              "key": "ch11.stage",
+              "value": "memo"
+            },
+            {
+              "type": "unlock",
+              "key": "ch11-memo",
+              "value": true
+            },
+            {
+              "type": "notification",
+              "key": "",
+              "value": "备忘录：今天的最后一页写好了，打开阅读后结束本章。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch12-morning",
+      "itemId": "ch12-morning",
+      "kind": "scene",
+      "conditions": [],
+      "entries": [],
+      "sections": [
+        {
+          "text": "前几天从书店回去，我提过在咨询机构门口看见张峻豪。哥哥当时说，他不知道这件事。没有接着问，我也没再发消息。",
+          "conditions": [
+            {
+              "key": "ch11.tailDone",
+              "op": "eq",
+              "value": false
+            }
+          ]
+        },
+        {
+          "text": "张泽禹：订正写完了？\n我：写完了。要不要给你盖个章？\n张泽禹：别盖，把你上回那句“下次一定”擦掉就行。\n\n他低头接着写阅读题，我把卷子抽回来。\n我：你自己的怎么还没写完？\n张泽禹：在理解出题人的心情。\n我：理解了吗？\n张泽禹：没有，想找他谈谈。\n\n铃响之前，他把还剩半页的纸折进书里，没再找我要答案。我忙着收同桌递来的作业本，也没腾出手接着笑他。",
+          "conditions": []
+        }
+      ],
+      "controls": [
+        {
+          "id": "continue",
+          "label": "交完作业，看看手机",
+          "conditions": [
+            {
+              "key": "ch12.stage",
+              "op": "eq",
+              "value": "morning"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch12.stage",
+              "value": "star"
+            },
+            {
+              "type": "variable",
+              "key": "ch12.starReady",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch12-plan",
+      "itemId": "ch12-plan",
+      "kind": "scene",
+      "conditions": [],
+      "entries": [],
+      "sections": [
+        {
+          "text": "【制作】现在能做的：把原创补完整，整理不同版本，听清自己改了什么。要问的：课程里创作、录音、编曲分别占多少。\n\n【表演】想试的：把自己的东西带到现场。要问的：练习、合奏、舞台机会到底怎么安排。\n\n【学习路径】国内、海外都先了解。课程名字相似，不一定学一样的内容。作品集要准备什么，得逐项问，不能拿一张宣传页当答案。\n\n【眼前的事】歌还没写完，英语作业也没写完。先别把哪一个都拖到最后。",
+          "conditions": []
+        },
+        {
+          "text": "张峻豪：我先把问题列着。还没定走哪条路，课程得一条条问，不能看个名字就选。\n左航：广告看完记得看课表。\n张峻豪：看了，密得我想先睡一觉。\n朱志鑫：先别睡，刚才还说今天做完一段。\n张峻豪：你怎么专记这种话。\n\n哥哥把资料往下划了一下。\n张泽禹：课程和最后做出来的东西放一块看，光看名字容易看什么都像好东西。\n张峻豪：行，你等下听一下我改的。\n张泽禹：嗯。",
+          "conditions": []
+        }
+      ],
+      "controls": [
+        {
+          "id": "listen",
+          "label": "看看这次改动的记录",
+          "conditions": [
+            {
+              "key": "ch12.stage",
+              "op": "eq",
+              "value": "planning"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch12.stage",
+              "value": "demo"
+            },
+            {
+              "type": "unlock",
+              "key": "ch12-demo",
+              "value": true
+            },
+            {
+              "type": "notification",
+              "key": "",
+              "value": "文件有新的现场记录。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch12-demo",
+      "itemId": "ch12-demo",
+      "kind": "media-review",
+      "conditions": [],
+      "entries": [],
+      "sections": [
+        {
+          "text": "张峻豪：这段鼓点重新理了，后面接起来没那么挤。先看我记的两处，原来的音频当参照。\n张泽禹：这次落点顺了。后面接那一下还是有点抢。\n张峻豪：你再听一遍？\n张泽禹：听了，这儿。\n\n他用指尖点了点时间位置，没把手机还回去就开始收旁边的卷子。\n张峻豪：后面呢？以前你能往后聊两百字。\n张泽禹：现在按字收费。\n张峻豪：熟人也收费？\n张泽禹：熟人才知道你有多少字。\n\n左航笑了一声，转身去找他落下的笔。朱志鑫问张峻豪借了哪间空教室，话题就接过去了。哥哥把卷子放好，只说听完再补一句，也没真催谁结账。",
+          "conditions": []
+        }
+      ],
+      "controls": [
+        {
+          "id": "leave",
+          "label": "下午放学了",
+          "conditions": [
+            {
+              "key": "ch12.stage",
+              "op": "eq",
+              "value": "demo"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch12.stage",
+              "value": "after-school"
+            },
+            {
+              "type": "unlock",
+              "key": "ch12-after-school",
+              "value": true
+            },
+            {
+              "type": "notification",
+              "key": "",
+              "value": "文件有新的现场记录。"
+            },
+            {
+              "type": "unlock",
+              "key": "ch12-moment-junhao",
+              "value": true
+            },
+            {
+              "type": "unlock",
+              "key": "ch12-moment-brother",
+              "value": true
+            },
+            {
+              "type": "unlock",
+              "key": "ch12-record-junhao",
+              "value": true
+            },
+            {
+              "type": "unlock",
+              "key": "ch12-record-brother",
+              "value": true
+            },
+            {
+              "type": "notification",
+              "key": "",
+              "value": "朋友圈与可选人物侧页有更新，不影响主线。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch12-after-school",
+      "itemId": "ch12-after-school",
+      "kind": "scene",
+      "conditions": [],
+      "entries": [],
+      "sections": [
+        {
+          "text": "张峻豪：走啊，买点喝的？\n张泽禹：今天不去了，我得先去还书，回家还要改那份阅读题。\n张峻豪：你最近真挺忙。昨天也没等我。\n张泽禹：我也不可能每天都等着你吧。\n张峻豪：我又不是那个意思。\n\n哥哥拉书包拉链的手停了一下。\n张泽禹：刚那句说重了。真有事，明天再说。\n张峻豪：行。书别又还错窗口。\n张泽禹：你先管好你那耳机。\n\n张峻豪把垂下来的线塞进兜里，没再叫他。我去拿班里落下的练习册，哥哥说不用等他。他们没有吵，可那句“走啊”没人接着往前走，我站了一会儿才想起自己也得赶时间。",
+          "conditions": []
+        }
+      ],
+      "controls": [
+        {
+          "id": "home",
+          "label": "回家找那本借过的书",
+          "conditions": [
+            {
+              "key": "ch12.stage",
+              "op": "eq",
+              "value": "after-school"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch12.stage",
+              "value": "notebook"
+            },
+            {
+              "type": "unlock",
+              "key": "ch12-notebook",
+              "value": true
+            },
+            {
+              "type": "notification",
+              "key": "",
+              "value": "文件有新的现场记录。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch12-notebook",
+      "itemId": "ch12-notebook",
+      "kind": "scene",
+      "conditions": [],
+      "entries": [],
+      "sections": [
+        {
+          "text": "我抽书的时候带动了本子，纸页滑下来一点。上面写着“今天”，下一行有“顺顺的新 Demo”。我扶住书脊，还没把它合回去。\n\n这是哥哥混着记阅读摘抄和随手想法的本子，不是借给我的那一本。",
+          "conditions": []
+        }
+      ],
+      "controls": [
+        {
+          "id": "read",
+          "label": "继续看这一页",
+          "conditions": [
+            {
+              "key": "ch12.stage",
+              "op": "eq",
+              "value": "notebook"
+            },
+            {
+              "key": "ch12.diary",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch12.diary",
+              "value": "read"
+            },
+            {
+              "type": "variable",
+              "key": "ch12.stage",
+              "value": "diary"
+            },
+            {
+              "type": "unlock",
+              "key": "ch12-diary",
+              "value": true
+            },
+            {
+              "type": "notification",
+              "key": "",
+              "value": "文件有新的现场记录。"
+            }
+          ]
+        },
+        {
+          "id": "close",
+          "label": "合上本子，放回原处",
+          "conditions": [
+            {
+              "key": "ch12.stage",
+              "op": "eq",
+              "value": "notebook"
+            },
+            {
+              "key": "ch12.diary",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch12.diary",
+              "value": "closed"
+            },
+            {
+              "type": "variable",
+              "key": "ch12.stage",
+              "value": "closed"
+            },
+            {
+              "type": "unlock",
+              "key": "ch12-closed",
+              "value": true
+            },
+            {
+              "type": "notification",
+              "key": "",
+              "value": "文件有新的现场记录。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch12-diary",
+      "itemId": "ch12-diary",
+      "kind": "scene",
+      "conditions": [],
+      "entries": [],
+      "sections": [
+        {
+          "text": "今天顺顺又发了新 Demo。鼓点顺了，后面那一下还抢，本来想再说两句，打到一半又删了。\n\n他说我最近话少。我也听出来了。不是他的歌突然不好听，是我每回都接得太久。\n\n前两天知道他去问国外的音乐学校，先冒出来的居然是：怎么没跟我说。\n\n这问题没法拿去问。他还没决定，当然可以先自己问。我也想知道那些课程到底教什么，他真想做音乐，早点弄清楚是好事。\n\n可我以前总觉得这些事会先听他说。现在写出来，像默认自己该排在谁前面。\n\n他跟别人聊得挺高兴，我还能替他接话，接完又不想说了。又不是只有我能跟他讲话。\n\n……算了，别往下解释了。\n\n利物浦那场还没看完。阅读题第三问得重写，今天不能再拖。",
+          "conditions": [
+            {
+              "key": "ch12.diaryPage",
+              "op": "eq",
+              "value": "one"
+            }
+          ]
+        },
+        {
+          "text": "我听见外面杯子搁下的声音，把本子合好。\n\n有点像听到别人话说到一半，我却没等他自己决定要不要继续。我把借的书抱起来，没有去问那个名字为什么写在这里。",
+          "conditions": [
+            {
+              "key": "ch12.diaryPage",
+              "op": "eq",
+              "value": "two"
+            }
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "id": "turn",
+          "label": "读到这里，合上本子",
+          "conditions": [
+            {
+              "key": "ch12.stage",
+              "op": "eq",
+              "value": "diary"
+            },
+            {
+              "key": "ch12.diaryPage",
+              "op": "eq",
+              "value": "one"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch12.diaryPage",
+              "value": "two"
+            }
+          ]
+        },
+        {
+          "id": "continue",
+          "label": "拿好自己的书，回房间",
+          "conditions": [
+            {
+              "key": "ch12.stage",
+              "op": "eq",
+              "value": "diary"
+            },
+            {
+              "key": "ch12.diaryPage",
+              "op": "eq",
+              "value": "two"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch12.stage",
+              "value": "wallpaper"
+            },
+            {
+              "type": "variable",
+              "key": "ch12.wallReady",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch12-closed",
+      "itemId": "ch12-closed",
+      "kind": "scene",
+      "conditions": [],
+      "entries": [],
+      "sections": [
+        {
+          "text": "算了，谁还没点不想给别人看的东西。\n\n哥哥在外面问找到了没有。我说找到了，拿着那本真正借过的书出门，顺手关上灯。",
+          "conditions": []
+        }
+      ],
+      "controls": [
+        {
+          "id": "continue",
+          "label": "拿好书，回自己的房间",
+          "conditions": [
+            {
+              "key": "ch12.stage",
+              "op": "eq",
+              "value": "closed"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch12.stage",
+              "value": "wallpaper"
+            },
+            {
+              "type": "variable",
+              "key": "ch12.wallReady",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch12-record-brother",
+      "itemId": "ch12-record-brother",
+      "kind": "scene",
+      "conditions": [],
+      "entries": [],
+      "sections": [
+        {
+          "text": "张泽禹划到一段利物浦集锦，手指已经点开分享。常用联系人里，张峻豪排在前面。\n\n他停了一下，退回视频，把它存进稍后再看。\n\n桌角另有几行随手写的字：\n“刚刚又差点先发给他。”\n“也不是每个东西都非得先让他看。”\n“先把第三问改了。”",
+          "conditions": []
+        }
+      ],
+      "controls": []
+    },
+    {
+      "id": "ch12-record-junhao",
+      "itemId": "ch12-record-junhao",
+      "kind": "scene",
+      "conditions": [],
+      "entries": [],
+      "sections": [
+        {
+          "text": "张峻豪把“制作”与“表演”写在两边，中间留着一大块空白。\n\n“作品集具体收什么，得按课程再问，不能都用一个文件夹糊弄。”\n“原创先补完整，英语也别一直留到明天。”\n“事情比想的多。不过也不是搞不出来。”\n\n他在清单下面写了“新版给张泽禹听”，看了一会儿，又补一行：\n“今天他是不是有别的事？以前不是听完就去写卷子的。”\n\n没有往下猜。他把琴行营业时间存好，准备明天叫人一起去，课程的事也该说说了。",
+          "conditions": []
+        }
+      ],
+      "controls": []
+    },
+    {
+      "id": "ch12-ending",
+      "itemId": "ch12-ending",
+      "kind": "scene",
+      "conditions": [],
+      "entries": [],
+      "sections": [
+        {
+          "text": "张泽禹：干嘛呢？\n我：学习，别打断我的罕见状态。\n张泽禹：那确实得保护一下。\n我：你出去。\n张泽禹：有个事。顺顺说明天放学去趟琴行。\n我：买什么？\n张泽禹：没说。就说陪他去，顺便跟我说个事。\n我：那你问他啊。\n张泽禹：他说到了再讲。\n\n哥哥手还扶着门边，没进来也没走。我把笔帽扣上，发现他这次是真的在等我说话。\n\n张泽禹：你说，他找我什么事？",
+          "conditions": []
+        },
+        {
+          "text": "本子里那几行字忽然又冒出来。我没有拿它当答案，也没有说我看过。",
+          "conditions": [
+            {
+              "key": "ch12.diary",
+              "op": "eq",
+              "value": "read"
+            }
+          ]
+        },
+        {
+          "text": "我：可能是让你听现场版，两百字不能免。\n张泽禹：那我得带张收费表。\n他说完笑了下，手仍搭在门边。",
+          "conditions": [
+            {
+              "key": "ch12.endReply",
+              "op": "eq",
+              "value": "joke"
+            }
+          ]
+        },
+        {
+          "text": "我：可能跟音乐有关，先听他怎么说呗。\n张泽禹：嗯，也可能。\n这次他没有替我把后半句话接完。",
+          "conditions": [
+            {
+              "key": "ch12.endReply",
+              "op": "eq",
+              "value": "music"
+            }
+          ]
+        },
+        {
+          "text": "我：我也猜不准，明天见了再问。\n张泽禹：行，别耽误你罕见的学习状态。\n我把卷子往边上挪了一点，他却还没急着走。",
+          "conditions": [
+            {
+              "key": "ch12.endReply",
+              "op": "eq",
+              "value": "wait"
+            }
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "id": "joke",
+          "label": "“可能是让你听现场版，两百字不能免。”",
+          "conditions": [
+            {
+              "key": "ch12.stage",
+              "op": "eq",
+              "value": "ending"
+            },
+            {
+              "key": "ch12.endReply",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch12.endReply",
+              "value": "joke"
+            }
+          ]
+        },
+        {
+          "id": "music",
+          "label": "“可能跟音乐有关，先听他怎么说呗。”",
+          "conditions": [
+            {
+              "key": "ch12.stage",
+              "op": "eq",
+              "value": "ending"
+            },
+            {
+              "key": "ch12.endReply",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch12.endReply",
+              "value": "music"
+            }
+          ]
+        },
+        {
+          "id": "wait",
+          "label": "“我也猜不准，明天见了再问。”",
+          "conditions": [
+            {
+              "key": "ch12.stage",
+              "op": "eq",
+              "value": "ending"
+            },
+            {
+              "key": "ch12.endReply",
+              "op": "eq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch12.endReply",
+              "value": "wait"
+            }
+          ]
+        },
+        {
+          "id": "finish",
+          "label": "把这个问题留到明天",
+          "conditions": [
+            {
+              "key": "ch12.stage",
+              "op": "eq",
+              "value": "ending"
+            },
+            {
+              "key": "ch12.endReply",
+              "op": "neq",
+              "value": "unset"
+            }
+          ],
+          "actions": [
+            {
+              "type": "variable",
+              "key": "ch12.stage",
+              "value": "completed"
+            },
+            {
+              "type": "variable",
+              "key": "chapter.chapter-12-pending.completed",
+              "value": true
+            },
+            {
+              "type": "variable",
+              "key": "chapter.next",
+              "value": "chapter-13-pending"
+            },
+            {
+              "type": "variable",
+              "key": "story.inlineEnding",
+              "value": "你说，他找我什么事？"
+            },
+            {
+              "type": "notification",
+              "key": "",
+              "value": "第十二章已完成。朋友圈、人物侧页和备忘录可自由查看。"
+            },
+            {
+              "type": "ending",
+              "key": "",
+              "value": "你说，他找我什么事？"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

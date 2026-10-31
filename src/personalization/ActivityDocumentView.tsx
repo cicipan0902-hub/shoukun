@@ -27,10 +27,16 @@ export function ActivityDocumentView({ item, document: doc, back }: {
   const selectedClip = selectedEntry && play.work.data.files.find((clip) => clip.id === selectedEntry.id);
   const selectedMedia = safeMedia(selectedClip?.media || "");
   const selectedVideo = selectedMedia.startsWith("data:video/") || selectedMedia.startsWith("./author-media/");
-  return <div className="activity-document">
-    <header className="app-nav"><button aria-label="返回" onClick={back}>‹ 文件</button><strong>{doc.kind === "roster" ? "报名核对" : doc.kind === "media-gallery" ? "KTV 现场" : doc.kind === "media-review" ? "试听记录" : "现场记录"}</strong><span /></header>
+  const reading = item.meta.readingTitle;
+  return <div className={"activity-document" + (reading ? " activity-reading" : "")}>
+    <header className="app-nav"><button aria-label="返回" onClick={back}>‹ 文件</button><strong>{item.meta.narrativePerspective ? "人物侧页 · 玩家视角" : reading ? item.meta.readingLabel || "书店阅读" : doc.kind === "roster" ? "报名核对" : doc.kind === "media-gallery" ? "KTV 现场" : doc.kind === "media-review" ? "试听记录" : "现场记录"}</strong><span /></header>
     <div className="activity-document-scroll">
       <small>{item.time}</small><h2>{item.title}</h2>
+      {item.meta.narrativePerspective && <aside className="activity-profile" role="note"><strong>{item.meta.narrativePerspective}</strong><p>这是手机外的叙事侧页。自愿查看，不是女主读取了私人记录，不改变她在剧情中知道的事。</p></aside>}
+      {reading && <section className="activity-reading-cover" aria-label="本次共读的书">
+        {audio.startsWith("data:image/") ? <img src={audio} alt={`${reading}封面`} /> : <div className="activity-reading-title">《{reading}》</div>}
+        <p>{item.meta.readingAuthor}</p><small>窗边的一本书 · 按自己的速度往下翻</small>
+      </section>}
       {doc.kind === "media-review" && (videoReady ? <PublishedVideo className="activity-video" controls playsInline preload="metadata" aria-label="Demo视频" src={audio} /> : audioReady ? <audio className="activity-audio" controls preload="metadata" aria-label="Demo音频" src={audio} /> : <p className="activity-media-pending" role="status">{item.meta.mediaPendingLabel || "音频尚未提供 · 当前为文字试听记录，没有实际音频播放。"}</p>)}
       <p>{item.body}</p>
       {doc.kind === "media-gallery" && <>

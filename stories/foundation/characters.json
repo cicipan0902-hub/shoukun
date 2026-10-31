@@ -196,12 +196,12 @@
     "storyId": "zuohang",
     "name": "左航",
     "nickname": "左航",
-    "persona": "温柔、照顾人，习惯沉默，具有思辨和求知倾向。 阅读、孤独与自我探索，追寻自己的理想。",
+    "persona": "温和有分寸，习惯观察，熟人面前会冷幽默和吐槽。喜欢哲学、历史、蜘蛛侠，养布偶猫厚米，喜欢独自骑行。",
     "avatarAssetId": "avatar-zuohang",
     "avatarStages": {},
     "wechat": {
       "nickname": "左航",
-      "bio": "温柔、照顾人，习惯沉默，具有思辨和求知倾向。",
+      "bio": "厚米的铲屎官，书还没看完。",
       "momentsBio": "个人资料待补充"
     },
     "tags": [
@@ -223,8 +223,8 @@
         "description": "交流与陪伴"
       }
     ],
-    "publicBio": "温柔、照顾人，习惯沉默，具有思辨和求知倾向。",
-    "authorNotes": "架空潜在线：可能对女主有好感，但不是主要恋爱角色；高考后去远方的设想尚未定稿。",
+    "publicBio": "喜欢看书，也看蜘蛛侠。家里有只布偶猫，叫厚米。",
+    "authorNotes": "长期设定以本地作者档案 docs/author-only/characters/zuohang-v1.md 为准。保留 zuo-search；未确定的最终去向不写入公开简介。",
     "placeholders": {
       "age": null,
       "grade": null,

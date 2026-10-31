@@ -33,7 +33,7 @@
         {
           "id": "ch07-intro-1",
           "senderId": "brother",
-          "body": "趣味投篮，一人五球。谁报？某个人刚问完我报名时间，又去问体委。",
+          "body": "趣味投篮，一人五球，谁报？某个人问完我报名时间，又找体委确认。是不信我记性啊。",
           "hidden": true,
           "time": "运动会"
         },
@@ -61,7 +61,7 @@
         {
           "id": "ch07-sign-a",
           "senderId": "junhao",
-          "body": "行。明天带双好跑的鞋，别穿那双老掉鞋带的。",
+          "body": "行，明天穿双好跑的。那双鞋带老掉的就算了。",
           "hidden": true,
           "time": "运动会"
         },
@@ -82,14 +82,14 @@
         {
           "id": "ch07-score-low-1",
           "senderId": "zuohang",
-          "body": "我跳远踩了两次线，没资格笑你。你后面不着急抢着投了，能看出来。",
+          "body": "我跳远还踩了两次线，哪有脸笑你。后面那几球你没急，比前面稳。",
           "hidden": true,
           "time": "运动会"
         },
         {
           "id": "ch07-score-low-2",
           "senderId": "star",
-          "body": "手收早了。球送出去以后，再放下来。",
+          "body": "手收早了。球送出去，手再放下来。",
           "hidden": true,
           "time": "运动会"
         },
@@ -166,14 +166,14 @@
         {
           "id": "ch07-wrap-5",
           "senderId": "zuohang",
-          "body": "照片发了。{{playerName}}，先别删，我还没把跳远那几张挑出来，你别催我返工。",
+          "body": "照片发了。{{playerName}}先别删啊，跳远那几张我还没挑出来，别让我再传一遍。",
           "hidden": true,
           "time": "运动会"
         },
         {
           "id": "ch07-wrap-a",
           "senderId": "zuohang",
-          "body": "原图给你。我也留一张，难得你没发现镜头。",
+          "body": "原图给你。我也存了，难得你没看镜头。",
           "hidden": true,
           "time": "运动会"
         },

@@ -115,7 +115,7 @@
         {
           "id": "ch02-brother-14",
           "senderId": "brother",
-          "body": "我报的是宣传组。真缺人，明天还要做值日",
+          "body": "我报了宣传组。人真不够，明天还得做值日",
           "hidden": true,
           "time": "校园日常"
         },
@@ -157,7 +157,7 @@
         {
           "id": "ch02-brother-20",
           "senderId": "brother",
-          "body": "先想好你愿意做哪一块，别只看哪个名字在名单上",
+          "body": "先想好想做哪块，别只看名单上有谁",
           "hidden": true,
           "time": "校园日常"
         },
@@ -185,7 +185,7 @@
         {
           "id": "ch02-brother-24",
           "senderId": "brother",
-          "body": "别第一天就以为所有事都得你扛",
+          "body": "别第一天就觉得谁的活都归你",
           "hidden": true,
           "time": "校园日常"
         },
@@ -199,14 +199,14 @@
         {
           "id": "ch02-brother-26",
           "senderId": "brother",
-          "body": "里面都是这次活动负责不同事情的人",
+          "body": "都是这回各管一摊的人",
           "hidden": true,
           "time": "校园日常"
         },
         {
           "id": "ch02-brother-27",
           "senderId": "brother",
-          "body": "不懂就问，不用假装什么都会。也不用替我撑场面",
+          "body": "不会就问，别硬装会。也不用替我撑什么场面",
           "hidden": true,
           "time": "校园日常"
         }
@@ -252,7 +252,7 @@
         {
           "id": "ch02-zuo-05",
           "senderId": "zuohang",
-          "body": "回头把书名发你。不急着看懂也行",
+          "body": "回头发你书名。看不懂的先跳过，我也没看完",
           "hidden": true,
           "time": "校园日常"
         },
@@ -284,21 +284,21 @@
         {
           "id": "ch02-zuo-09",
           "senderId": "zuohang",
-          "body": "资料组不一定总在办公室，也要跑教室。选你自己能接受的",
+          "body": "资料组也得跑教室，不是坐办公室。看你想不想干这个",
           "hidden": true,
           "time": "校园日常"
         },
         {
           "id": "ch02-zuo-10",
           "senderId": "zuohang",
-          "body": "我可以帮你找说明，不能代替你决定",
+          "body": "说明我帮你找，报哪个你再看看",
           "hidden": true,
           "time": "校园日常"
         },
         {
           "id": "ch02-zuo-11",
           "senderId": "zuohang",
-          "body": "现在先去吃饭。这句不是建议",
+          "body": "先吃饭吧，再晚真没菜了",
           "hidden": true,
           "time": "校园日常"
         }
@@ -316,7 +316,7 @@
         {
           "id": "ch02-junhao-01",
           "senderId": "junhao",
-          "body": "验证通过了吧，我是张峻豪",
+          "body": "通过了吧？我是张峻豪",
           "hidden": true,
           "time": "校园日常"
         },
@@ -330,14 +330,14 @@
         {
           "id": "ch02-junhao-03",
           "senderId": "junhao",
-          "body": "说明在群里置顶了。先看岗位那一栏",
+          "body": "说明置顶了，先看岗位那栏",
           "hidden": true,
           "time": "校园日常"
         },
         {
           "id": "ch02-junhao-04",
           "senderId": "junhao",
-          "body": "我下午还得借设备。你看完有问题就在群里说，不用等我",
+          "body": "我下午得去借设备。看完有问题直接群里问，别等我",
           "hidden": true,
           "time": "校园日常"
         }
@@ -358,7 +358,7 @@
         {
           "id": "ch02-activity-01",
           "senderId": "junhao",
-          "body": "人齐了。我先声明，这个群是干活的",
+          "body": "人齐了。先说好，这群是干活的",
           "hidden": true,
           "time": "校园日常"
         },
@@ -390,14 +390,14 @@
         {
           "id": "ch02-activity-05",
           "senderId": "junhao",
-          "body": "{{playerName}}也来了。你哥说你想试试活动筹备，欢迎",
+          "body": "{{playerName}}也来了。听你哥说想试试筹备？欢迎",
           "hidden": true,
           "time": "校园日常"
         },
         {
           "id": "ch02-activity-06",
           "senderId": "star",
-          "body": "欢迎。报名说明等下发群里。",
+          "body": "欢迎。说明等下发群里。",
           "hidden": true,
           "time": "校园日常"
         },
@@ -411,7 +411,7 @@
         {
           "id": "ch02-activity-08",
           "senderId": "junhao",
-          "body": "我加你一下，文件给你单独发一份。群里容易被我们聊没",
+          "body": "我加你，文件单发一份。不然一会儿又被我们聊没了",
           "hidden": true,
           "time": "校园日常"
         },
@@ -443,7 +443,7 @@
         {
           "id": "ch02-activity-12",
           "senderId": "star",
-          "body": "最后一问先别展开。条件里有一个范围。",
+          "body": "最后一问先别展开，条件里有个范围。",
           "hidden": true,
           "time": "校园日常"
         },
@@ -457,14 +457,14 @@
         {
           "id": "ch02-activity-14",
           "senderId": "star",
-          "body": "可以。先在表里填意向。",
+          "body": "可以，意向先填表里。",
           "hidden": true,
           "time": "校园日常"
         },
         {
           "id": "ch02-activity-15",
           "senderId": "star",
-          "body": "第一次是熟悉流程，不合适再调。别把能来的时间填满。",
+          "body": "先熟悉流程，不合适再调。能来的时间别全填上。",
           "hidden": true,
           "time": "校园日常"
         },
@@ -485,7 +485,7 @@
         {
           "id": "ch02-activity-18",
           "senderId": "star",
-          "body": "说明里写简称了，我改一下。到时候门口会贴纸。",
+          "body": "说明里用了简称，我改一下。到时候门口会贴纸。",
           "hidden": true,
           "time": "校园日常"
         },
@@ -499,7 +499,7 @@
         {
           "id": "ch02-activity-20",
           "senderId": "brother",
-          "body": "行，问题解决。谁再讨论卷子谁去搬桌子",
+          "body": "行，收。再聊卷子我都不想搬桌子了",
           "hidden": true,
           "time": "校园日常"
         },
@@ -524,14 +524,14 @@
         {
           "id": "ch02-activity-23",
           "senderId": "star",
-          "body": "好。不着急，明天再交也来得及。",
+          "body": "不急，明天交也来得及。",
           "hidden": true,
           "time": "校园日常"
         },
         {
           "id": "ch02-activity-24",
           "senderId": "star",
-          "body": "好。先看你选的岗位，其他部分不用都接。",
+          "body": "先看你选的岗位，其他的不用都接。",
           "hidden": true,
           "time": "校园日常"
         },
@@ -577,7 +577,7 @@
         {
           "id": "ch02-star-02",
           "senderId": "star",
-          "body": "活动说明在群里置顶了。岗位确认后在表里更新就行。",
+          "body": "说明在群里置顶了。岗位定了再更新表格就行。",
           "hidden": true,
           "time": "校园日常"
         }
@@ -639,7 +639,7 @@
         "id": "ch02-moment-lunch",
         "sender": "张峻豪",
         "title": "关于午饭",
-        "body": "排了半天队，发现想吃的那个窗口今天没开。\n这个故事告诉我们走路要看路，也要看门。",
+        "body": "排了半天队，想吃的窗口压根没开。门关着，我还在那儿站。服了。",
         "kind": "post",
         "folder": "朋友圈",
         "hidden": true,
@@ -653,7 +653,7 @@
         "id": "ch02-moment-zuo",
         "sender": "左航",
         "title": "图书馆借书记录",
-        "body": "书签又忘在上一本里了。\n希望下一位读者不要以为是某种阅读任务。",
+        "body": "书签又忘在上一本里了。\n下一位要是看到那页没看懂，别怪我，我也没看懂。",
         "kind": "post",
         "folder": "朋友圈",
         "hidden": true,

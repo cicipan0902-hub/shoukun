@@ -22,24 +22,24 @@
       },
       "seller-hanbing-sheshou": {
         "decline": [
-          "行，摄影棚级别的鞋盒先替你保管。",
+          "行，那我接着卖。想好了再来。",
           "考虑这么久，我以为你在给它写评测。"
         ],
-        "bargain": "你这个价再减下去，我得先问问鞋盒同不同意。",
+        "bargain": "你再往下砍，我就当你想直接来拿了。",
         "think": "行，想好了叫我，别考虑到我都忘了卖什么。",
         "silent": "人呢？刚才不是还在给我算折旧。",
         "refund": "行，退了。下回看准再下单，我少练一次客服。",
-        "cancel": "取消了，没扣钱。你这手速适合抢球。"
+        "cancel": "取消了，没扣钱。这手速留着抢球多好。"
       },
       "seller-houmi-yeye": {
         "decline": [
-          "没关系，不买也是很具体的选择。",
+          "没关系，先放这儿。",
           "好的，东西留在这里，不催你。"
         ],
-        "bargain": "二手折旧已经算过了，剩下这点是物品本人最后的体面。",
-        "think": "好，考虑用途比考虑价格更重要。",
+        "bargain": "折旧算过了，再低我就留着自己用。",
+        "think": "行，先想想用不用得上。",
         "silent": "",
-        "refund": "收到，原路退回。买错不必勉强留下。",
+        "refund": "收到，原路退回。用不上就别留着了。",
         "cancel": "订单取消了，不影响你继续看。"
       },
       "seller-xinan-yujie": {
@@ -56,13 +56,13 @@
       "seller-tutucha-mengmengda": {
         "decline": [
           "嗯，没关系。",
-          "好，谢谢你来问。"
+          "好，没事。"
         ],
-        "bargain": "可以再少一点，不过也只能到这个价了。",
-        "think": "好，你慢慢看，不着急。",
+        "bargain": "还能少一点，但最低就这个价。",
+        "think": "好，你先看看。",
         "silent": "",
-        "refund": "可以，已经按原金额退回了。",
-        "cancel": "嗯，取消好了，没有扣款。"
+        "refund": "退好了，还是原来的金额。",
+        "cancel": "嗯，取消了，没扣款。"
       },
       "seller-bobo-baba": {
         "decline": [
@@ -113,11 +113,11 @@
       "normal": [
         [
           "亲属卡上多了“[商品]”。",
-          "这次有用得上的打算吧？别又买回来放抽屉。"
+          "这回用得上吧？别又买回来放抽屉。"
         ],
         [
           "我刚看到账单，“[商品]”。",
-          "不是审你，问一下，免得回头又说买错。"
+          "随口问问，别回头又跟我说买错了。"
         ]
       ],
       "cap": [
@@ -136,14 +136,14 @@
           "这本“[商品]”，别只研究到付款那一页。"
         ],
         [
-          "书可以买。",
-          "要是看不懂，也别硬撑着说自己悟了。"
+          "书啊，行。",
+          "看不懂也别急着宣布自己悟了。"
         ]
       ],
       "career": [
         [
           "你准备靠换壁纸考上大学吗？",
-          "壁纸可以换，错题也记得改。"
+          "壁纸换了，错题可没跟着清空啊。"
         ],
         [
           "“[商品]”，这名字挺有野心。",
@@ -152,7 +152,7 @@
       ],
       "fruit": [
         [
-          "苹果这个可以，至少是正常消费。",
+          "苹果啊，这个好。",
           "你自己吃，别又全塞我包里。"
         ],
         [
@@ -163,7 +163,7 @@
       "gaming": [
         [
           "等一下，你买的不是我的账号吧？",
-          "这个只是游戏里的虚构体验卡。真账号别找陌生人买。"
+          "这就是游戏里一张虚构体验卡。真账号别找陌生人买。"
         ],
         [
           "“[商品]”。",
@@ -173,11 +173,11 @@
       "contact": [
         [
           "你花钱买朱志鑫联系方式？",
-          "你直接问我不就行了。先别高兴，那是张峻豪的整蛊纸条。"
+          "直接问我不就完了。先别乐，那是张峻豪的整蛊纸条。"
         ],
         [
           "我看见“[商品]”了。",
-          "他这售后我都想替你问两句。不会因此多一个微信好友的。"
+          "他这售后我都想问两句。买的是纸条，不是加好友名额。"
         ]
       ]
     },
@@ -187,8 +187,8 @@
         "text": "你不是还有钱吗？",
         "tag": "stubborn",
         "replies": [
-          "有钱和看你乱买，是两回事。",
-          "没停你的卡，买之前多看两眼说明。"
+          "有钱也不能这么考验我吧。",
+          "卡又没停。买之前把说明看完就行。"
         ]
       },
       {
@@ -197,7 +197,7 @@
         "tag": "sweet",
         "replies": [
           "行，我记下了。",
-          "现在先把自己照顾好，别为了省钱不吃饭。"
+          "先把你自己养好，别为了省钱不吃饭。"
         ]
       },
       {
@@ -205,8 +205,8 @@
         "text": "我看过说明了，真用得上。",
         "tag": "explain",
         "replies": [
-          "那就行，又不是不让你买。",
-          "拿不准的时候问一句，别自己纠结半天。"
+          "那就买呗，又没拦着你。",
+          "拿不准再问我，别一个人琢磨半天。"
         ]
       }
     ],
@@ -223,7 +223,7 @@
           "tag": "explain",
           "replies": [
             "别真紧张，逗你的，卡没停。",
-            "想买的先放一放，明天还想要再说。吃饭的钱别省。"
+            "先放购物车里，明天还想要再买。饭照吃，别从这儿省。"
           ]
         },
         {
@@ -232,7 +232,7 @@
           "tag": "stubborn",
           "replies": [
             "有，被你一眼看穿。",
-            "我宣布经济会议结束，会议结论是你买之前看说明。"
+            "行，经济会议结束。下单前看说明，散会。"
           ]
         },
         {
@@ -252,7 +252,7 @@
         "text": "没买合适，下次我看仔细点。",
         "tag": "explain",
         "replies": [
-          "好，钱退了就好，别为这点事折腾一晚上。"
+          "钱退了就行，别为这个折腾一晚上。"
         ]
       },
       {
@@ -353,15 +353,16 @@
           "sellerId": "seller-hanbing-sheshou",
           "stateKey": "market.hanbing-sheshou-cap",
           "price": "18",
-          "options": "[{\"id\": \"bargain\", \"text\": \"还能少一点吗？\", \"result\": \"quoted\", \"price\": 15}, {\"id\": \"chat\", \"text\": \"这个有什么要注意的吗？\", \"result\": \"ready\", \"price\": 18}]",
+          "options": "[{\"id\":\"bargain\",\"text\":\"还能少一点吗？\",\"result\":\"quoted\",\"price\":15},{\"id\":\"chat\",\"text\":\"帽子洗过了吗？\",\"result\":\"ready\",\"price\":18}]",
           "sellerBio": "鞋盒、唱片和偶尔认真的闲置。整蛊商品看清说明再来。",
-          "chatVersion": "2"
+          "chatVersion": "2",
+          "imageCaption": "帽子造型示意，不代表多顶打包；帽围待确认。"
         }
       },
       {
         "id": "market-hanbing-sheshou-cap-hello",
         "title": "寒冰射手",
-        "body": "在的。先看清楚描述，有问题可以问。",
+        "body": "在，洗过了。帽围还没补，先别急着拍。",
         "time": "闲鱼 · 本地模拟",
         "sender": "寒冰射手",
         "hidden": true,
@@ -374,7 +375,7 @@
       {
         "id": "market-hanbing-sheshou-cap-reply-buy",
         "title": "寒冰射手",
-        "body": "收到了，这次是本地模拟成交，留好记录。",
+        "body": "行，帽子给你留着。成交记录在这儿。",
         "time": "闲鱼 · 本地模拟",
         "sender": "寒冰射手",
         "hidden": true,
@@ -387,7 +388,7 @@
       {
         "id": "market-hanbing-sheshou-cap-reply-bargain",
         "title": "寒冰射手",
-        "body": "32，可以。再低鞋盒可能要单独上架。",
+        "body": "[议价] 元，就这价。别再砍了，帽子跟着我也没占多少地方。",
         "time": "闲鱼 · 本地模拟",
         "sender": "寒冰射手",
         "hidden": true,
@@ -400,7 +401,7 @@
       {
         "id": "market-hanbing-sheshou-cap-reply-leave",
         "title": "寒冰射手",
-        "body": "行，先逛着，有需要再说。",
+        "body": "行，那我接着挂着。想好了再来。",
         "time": "闲鱼 · 本地模拟",
         "sender": "寒冰射手",
         "hidden": true,
@@ -413,7 +414,7 @@
       {
         "id": "market-hanbing-sheshou-cap-buyer-chat",
         "title": "只穿过几次的球鞋，鞋盒还在",
-        "body": "这个有什么要注意的吗？",
+        "body": "帽子洗过了吗？",
         "sender": "{{playerName}}",
         "time": "闲鱼聊天",
         "kind": "text",
@@ -469,7 +470,7 @@
       {
         "id": "market-hanbing-sheshou-cap-reply-chat-1",
         "title": "寒冰射手",
-        "body": "只是帽子。你要指望戴上投篮变准，我建议把钱留给练习。",
+        "body": "洗过晾干了，软帽檐。",
         "sender": "寒冰射手",
         "time": "闲鱼聊天",
         "hidden": true,
@@ -482,7 +483,7 @@
       {
         "id": "market-hanbing-sheshou-cap-reply-chat-2",
         "title": "寒冰射手",
-        "body": "想好了再买，不着急。",
+        "body": "帽围还没补，先确认尺寸，别买回去当摆件。",
         "sender": "寒冰射手",
         "time": "闲鱼聊天",
         "hidden": true,
@@ -504,9 +505,10 @@
           "sellerId": "seller-xinan-yujie",
           "stateKey": "market.xinan-yujie-gaming",
           "price": "88",
-          "options": "[{\"id\": \"bargain\", \"text\": \"还能少一点吗？\", \"result\": \"quoted\", \"price\": 80}, {\"id\": \"chat\", \"text\": \"这个有什么要注意的吗？\", \"result\": \"ready\", \"price\": 88}]",
+          "options": "[{\"id\":\"bargain\",\"text\":\"还能少一点吗？\",\"result\":\"quoted\",\"price\":80},{\"id\":\"chat\",\"text\":\"是能登录的账号吗？\",\"result\":\"ready\",\"price\":88}]",
           "sellerBio": "笔记、讲解和修改建议。题还是得自己做，别指望我替你上考场。",
-          "chatVersion": "2"
+          "chatVersion": "2",
+          "imageCaption": "体验卡封面示意，不提供游戏账号或登录入口。"
         }
       },
       {
@@ -519,52 +521,52 @@
         "meta": {
           "type": "reply",
           "product": "market-xinan-yujie-gaming",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-xinan-yujie"
         }
       },
       {
         "id": "market-xinan-yujie-gaming-reply-buy",
         "title": "寒冰射手",
-        "body": "收到了，这次是本地模拟成交，留好记录。",
+        "body": "收到了，成交记录留着。别把体验卡当真账号去登啊。",
         "time": "闲鱼 · 本地模拟",
         "sender": "西南禹姐",
         "hidden": true,
         "meta": {
           "type": "reply",
           "product": "market-xinan-yujie-gaming",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-xinan-yujie"
         }
       },
       {
         "id": "market-xinan-yujie-gaming-reply-bargain",
         "title": "寒冰射手",
-        "body": "32，可以。再低鞋盒可能要单独上架。",
+        "body": "[议价] 元，还是那张虚构体验卡。降价也不会变成真账号。",
         "time": "闲鱼 · 本地模拟",
         "sender": "西南禹姐",
         "hidden": true,
         "meta": {
           "type": "reply",
           "product": "market-xinan-yujie-gaming",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-xinan-yujie"
         }
       },
       {
         "id": "market-xinan-yujie-gaming-reply-leave",
         "title": "寒冰射手",
-        "body": "行，先逛着，有需要再说。",
+        "body": "行，省下的先放好，别一转头又买重了。",
         "time": "闲鱼 · 本地模拟",
         "sender": "西南禹姐",
         "hidden": true,
         "meta": {
           "type": "reply",
           "product": "market-xinan-yujie-gaming",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-xinan-yujie"
         }
       },
       {
         "id": "market-xinan-yujie-gaming-buyer-chat",
         "title": "只穿过几次的球鞋，鞋盒还在",
-        "body": "这个有什么要注意的吗？",
+        "body": "是能登录的账号吗？",
         "sender": "{{playerName}}",
         "time": "闲鱼聊天",
         "kind": "text",
@@ -572,7 +574,7 @@
         "meta": {
           "type": "buyer",
           "product": "market-xinan-yujie-gaming",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-xinan-yujie"
         }
       },
       {
@@ -586,7 +588,7 @@
         "meta": {
           "type": "buyer",
           "product": "market-xinan-yujie-gaming",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-xinan-yujie"
         }
       },
       {
@@ -600,7 +602,7 @@
         "meta": {
           "type": "buyer",
           "product": "market-xinan-yujie-gaming",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-xinan-yujie"
         }
       },
       {
@@ -614,39 +616,39 @@
         "meta": {
           "type": "buyer",
           "product": "market-xinan-yujie-gaming",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-xinan-yujie"
         }
       },
       {
         "id": "market-xinan-yujie-gaming-reply-chat-1",
         "title": "寒冰射手",
-        "body": "不交账号密码，这里只是体验卡的剧情。真想上分，先练自己。",
+        "body": "不是，就游戏里一张文字体验卡。没有账号密码。",
         "sender": "西南禹姐",
         "time": "闲鱼聊天",
         "hidden": true,
         "meta": {
           "type": "reply",
           "product": "market-xinan-yujie-gaming",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-xinan-yujie"
         }
       },
       {
         "id": "market-xinan-yujie-gaming-reply-chat-2",
         "title": "寒冰射手",
-        "body": "想好了再买，不着急。",
+        "body": "也不包上分。八十八买个梗，想清楚再拍。",
         "sender": "西南禹姐",
         "time": "闲鱼聊天",
         "hidden": true,
         "meta": {
           "type": "reply",
           "product": "market-xinan-yujie-gaming",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-xinan-yujie"
         }
       },
       {
         "id": "market-tutucha-mengmengda-shirt",
         "title": "闲置衬衫，洗净收好了",
-        "body": "扣子齐，袖口有正常使用痕迹。衣服洗过，尺码请先问清楚。",
+        "body": "扣子齐，袖口有正常使用痕迹，洗过。对应款式、尺码待确认，配图不代表全部打包。",
         "time": "闲鱼 · 本地模拟",
         "sender": "兔兔叉萌萌哒",
         "folder": "服饰",
@@ -655,67 +657,68 @@
           "sellerId": "seller-tutucha-mengmengda",
           "stateKey": "market.tutucha-mengmengda-shirt",
           "price": "12",
-          "options": "[{\"id\": \"bargain\", \"text\": \"还能少一点吗？\", \"result\": \"quoted\", \"price\": 10}, {\"id\": \"chat\", \"text\": \"这个有什么要注意的吗？\", \"result\": \"ready\", \"price\": 12}]",
+          "options": "[{\"id\":\"bargain\",\"text\":\"还能少一点吗？\",\"result\":\"quoted\",\"price\":10},{\"id\":\"chat\",\"text\":\"尺码和款式能确认一下吗？\",\"result\":\"ready\",\"price\":12}]",
           "sellerBio": "闲置转给用得上的人。尺寸和使用情况写在详情里。",
-          "chatVersion": "2"
+          "chatVersion": "2",
+          "imageCaption": "衣物款式示意，具体哪件和尺码待确认。"
         }
       },
       {
         "id": "market-tutucha-mengmengda-shirt-hello",
         "title": "寒冰射手",
-        "body": "在的。先看清楚描述，有问题可以问。",
+        "body": "在。洗过了，袖口有使用痕迹，尺码还没补清楚。",
         "time": "闲鱼 · 本地模拟",
         "sender": "兔兔叉萌萌哒",
         "hidden": true,
         "meta": {
           "type": "reply",
           "product": "market-tutucha-mengmengda-shirt",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-tutucha-mengmengda"
         }
       },
       {
         "id": "market-tutucha-mengmengda-shirt-reply-buy",
         "title": "寒冰射手",
-        "body": "收到了，这次是本地模拟成交，留好记录。",
+        "body": "收到了。成交记录留着就行。",
         "time": "闲鱼 · 本地模拟",
         "sender": "兔兔叉萌萌哒",
         "hidden": true,
         "meta": {
           "type": "reply",
           "product": "market-tutucha-mengmengda-shirt",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-tutucha-mengmengda"
         }
       },
       {
         "id": "market-tutucha-mengmengda-shirt-reply-bargain",
         "title": "寒冰射手",
-        "body": "32，可以。再低鞋盒可能要单独上架。",
+        "body": "[议价] 元可以，尺码款式先确认。不能再少了。",
         "time": "闲鱼 · 本地模拟",
         "sender": "兔兔叉萌萌哒",
         "hidden": true,
         "meta": {
           "type": "reply",
           "product": "market-tutucha-mengmengda-shirt",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-tutucha-mengmengda"
         }
       },
       {
         "id": "market-tutucha-mengmengda-shirt-reply-leave",
         "title": "寒冰射手",
-        "body": "行，先逛着，有需要再说。",
+        "body": "嗯，没事。",
         "time": "闲鱼 · 本地模拟",
         "sender": "兔兔叉萌萌哒",
         "hidden": true,
         "meta": {
           "type": "reply",
           "product": "market-tutucha-mengmengda-shirt",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-tutucha-mengmengda"
         }
       },
       {
         "id": "market-tutucha-mengmengda-shirt-buyer-chat",
         "title": "只穿过几次的球鞋，鞋盒还在",
-        "body": "这个有什么要注意的吗？",
+        "body": "尺码和款式能确认一下吗？",
         "sender": "{{playerName}}",
         "time": "闲鱼聊天",
         "kind": "text",
@@ -723,7 +726,7 @@
         "meta": {
           "type": "buyer",
           "product": "market-tutucha-mengmengda-shirt",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-tutucha-mengmengda"
         }
       },
       {
@@ -737,7 +740,7 @@
         "meta": {
           "type": "buyer",
           "product": "market-tutucha-mengmengda-shirt",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-tutucha-mengmengda"
         }
       },
       {
@@ -751,7 +754,7 @@
         "meta": {
           "type": "buyer",
           "product": "market-tutucha-mengmengda-shirt",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-tutucha-mengmengda"
         }
       },
       {
@@ -765,39 +768,39 @@
         "meta": {
           "type": "buyer",
           "product": "market-tutucha-mengmengda-shirt",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-tutucha-mengmengda"
         }
       },
       {
         "id": "market-tutucha-mengmengda-shirt-reply-chat-1",
         "title": "寒冰射手",
-        "body": "看好描述和尺寸，不合适不用勉强。",
+        "body": "尺码还没补，先别急着拍。",
         "sender": "兔兔叉萌萌哒",
         "time": "闲鱼聊天",
         "hidden": true,
         "meta": {
           "type": "reply",
           "product": "market-tutucha-mengmengda-shirt",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-tutucha-mengmengda"
         }
       },
       {
         "id": "market-tutucha-mengmengda-shirt-reply-chat-2",
         "title": "寒冰射手",
-        "body": "想好了再买，不着急。",
+        "body": "扣子齐，袖口有穿过的痕迹。图里几件不代表一起出。",
         "sender": "兔兔叉萌萌哒",
         "time": "闲鱼聊天",
         "hidden": true,
         "meta": {
           "type": "reply",
           "product": "market-tutucha-mengmengda-shirt",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-tutucha-mengmengda"
         }
       },
       {
         "id": "market-cr7-only-god-career",
         "title": "事业运壁纸，先把今天的题写完",
-        "body": "本地数字壁纸趣味商品，不保证考试成绩或任何运势。换壁纸可以，学习也要靠自己。",
+        "body": "本地数字壁纸趣味商品，配图可预览。不保证成绩或运势，成交只留本地记录，不会自动更换手机壁纸。",
         "time": "闲鱼 · 本地模拟",
         "sender": "C罗唯一真神",
         "folder": "壁纸",
@@ -806,7 +809,7 @@
           "sellerId": "seller-cr7-only-god",
           "stateKey": "market.cr7-only-god-career",
           "price": "3",
-          "options": "[{\"id\": \"bargain\", \"text\": \"还能少一点吗？\", \"result\": \"quoted\", \"price\": 2}, {\"id\": \"chat\", \"text\": \"这个有什么要注意的吗？\", \"result\": \"ready\", \"price\": 3}]",
+          "options": "[{\"id\":\"bargain\",\"text\":\"还能少一点吗？\",\"result\":\"quoted\",\"price\":2},{\"id\":\"chat\",\"text\":\"买完会自动换壁纸吗？\",\"result\":\"ready\",\"price\":3}]",
           "sellerBio": "足球周边收藏。可以聊球，价格也能聊，但不是无限加时。",
           "chatVersion": "2"
         }
@@ -814,59 +817,59 @@
       {
         "id": "market-cr7-only-god-career-hello",
         "title": "寒冰射手",
-        "body": "在的。先看清楚描述，有问题可以问。",
+        "body": "在，就当换个心情。图能预览，考试不包过。",
         "time": "闲鱼 · 本地模拟",
         "sender": "C罗唯一真神",
         "hidden": true,
         "meta": {
           "type": "reply",
           "product": "market-cr7-only-god-career",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       },
       {
         "id": "market-cr7-only-god-career-reply-buy",
         "title": "寒冰射手",
-        "body": "收到了，这次是本地模拟成交，留好记录。",
+        "body": "记下了。壁纸看预览，今天的题还得你写。",
         "time": "闲鱼 · 本地模拟",
         "sender": "C罗唯一真神",
         "hidden": true,
         "meta": {
           "type": "reply",
           "product": "market-cr7-only-god-career",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       },
       {
         "id": "market-cr7-only-god-career-reply-bargain",
         "title": "寒冰射手",
-        "body": "32，可以。再低鞋盒可能要单独上架。",
+        "body": "[议价] 元。便宜的是壁纸，不是考试难度。",
         "time": "闲鱼 · 本地模拟",
         "sender": "C罗唯一真神",
         "hidden": true,
         "meta": {
           "type": "reply",
           "product": "market-cr7-only-god-career",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       },
       {
         "id": "market-cr7-only-god-career-reply-leave",
         "title": "寒冰射手",
-        "body": "行，先逛着，有需要再说。",
+        "body": "行，不强求，想好再说。",
         "time": "闲鱼 · 本地模拟",
         "sender": "C罗唯一真神",
         "hidden": true,
         "meta": {
           "type": "reply",
           "product": "market-cr7-only-god-career",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       },
       {
         "id": "market-cr7-only-god-career-buyer-chat",
         "title": "只穿过几次的球鞋，鞋盒还在",
-        "body": "这个有什么要注意的吗？",
+        "body": "买完会自动换壁纸吗？",
         "sender": "{{playerName}}",
         "time": "闲鱼聊天",
         "kind": "text",
@@ -874,7 +877,7 @@
         "meta": {
           "type": "buyer",
           "product": "market-cr7-only-god-career",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       },
       {
@@ -888,7 +891,7 @@
         "meta": {
           "type": "buyer",
           "product": "market-cr7-only-god-career",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       },
       {
@@ -902,7 +905,7 @@
         "meta": {
           "type": "buyer",
           "product": "market-cr7-only-god-career",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       },
       {
@@ -916,39 +919,39 @@
         "meta": {
           "type": "buyer",
           "product": "market-cr7-only-god-career",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       },
       {
         "id": "market-cr7-only-god-career-reply-chat-1",
         "title": "寒冰射手",
-        "body": "好运归祝福，作业归你写。",
+        "body": "不会，这里只留一笔本地交易记录。",
         "sender": "C罗唯一真神",
         "time": "闲鱼聊天",
         "hidden": true,
         "meta": {
           "type": "reply",
           "product": "market-cr7-only-god-career",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       },
       {
         "id": "market-cr7-only-god-career-reply-chat-2",
         "title": "寒冰射手",
-        "body": "想好了再买，不着急。",
+        "body": "图能预览，事业运管不了。题还得自己写。",
         "sender": "C罗唯一真神",
         "time": "闲鱼聊天",
         "hidden": true,
         "meta": {
           "type": "reply",
           "product": "market-cr7-only-god-career",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       },
       {
         "id": "market-cr7-only-god-handsome",
-        "title": "帅哥主题壁纸【图片待补】",
-        "body": "桌面装饰，人物与图片由作者后续提供。这里没有陌生下载链接，也不附赠恋爱运。",
+        "title": "帅哥主题壁纸",
+        "body": "桌面装饰，现有配图可预览。没有陌生下载链接，不附赠恋爱运；成交只留本地记录，不会自动更换手机壁纸。",
         "time": "闲鱼 · 本地模拟",
         "sender": "C罗唯一真神",
         "folder": "壁纸",
@@ -957,7 +960,7 @@
           "sellerId": "seller-cr7-only-god",
           "stateKey": "market.cr7-only-god-handsome",
           "price": "2",
-          "options": "[{\"id\": \"bargain\", \"text\": \"还能少一点吗？\", \"result\": \"quoted\", \"price\": 1}, {\"id\": \"chat\", \"text\": \"这个有什么要注意的吗？\", \"result\": \"ready\", \"price\": 2}]",
+          "options": "[{\"id\":\"bargain\",\"text\":\"还能少一点吗？\",\"result\":\"quoted\",\"price\":1},{\"id\":\"chat\",\"text\":\"是预览图里这个吗？\",\"result\":\"ready\",\"price\":2}]",
           "sellerBio": "足球周边收藏。可以聊球，价格也能聊，但不是无限加时。",
           "chatVersion": "2"
         }
@@ -965,59 +968,59 @@
       {
         "id": "market-cr7-only-god-handsome-hello",
         "title": "寒冰射手",
-        "body": "在的。先看清楚描述，有问题可以问。",
+        "body": "在，预览图已经有了。只看图，不附赠恋爱运。",
         "time": "闲鱼 · 本地模拟",
         "sender": "C罗唯一真神",
         "hidden": true,
         "meta": {
           "type": "reply",
           "product": "market-cr7-only-god-handsome",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       },
       {
         "id": "market-cr7-only-god-handsome-reply-buy",
         "title": "寒冰射手",
-        "body": "收到了，这次是本地模拟成交，留好记录。",
+        "body": "行，记录留好了。预览图就是这张。",
         "time": "闲鱼 · 本地模拟",
         "sender": "C罗唯一真神",
         "hidden": true,
         "meta": {
           "type": "reply",
           "product": "market-cr7-only-god-handsome",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       },
       {
         "id": "market-cr7-only-god-handsome-reply-bargain",
         "title": "寒冰射手",
-        "body": "32，可以。再低鞋盒可能要单独上架。",
+        "body": "[议价] 元，预览就是这张，不再少了。",
         "time": "闲鱼 · 本地模拟",
         "sender": "C罗唯一真神",
         "hidden": true,
         "meta": {
           "type": "reply",
           "product": "market-cr7-only-god-handsome",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       },
       {
         "id": "market-cr7-only-god-handsome-reply-leave",
         "title": "寒冰射手",
-        "body": "行，先逛着，有需要再说。",
+        "body": "行，不强求，想好再说。",
         "time": "闲鱼 · 本地模拟",
         "sender": "C罗唯一真神",
         "hidden": true,
         "meta": {
           "type": "reply",
           "product": "market-cr7-only-god-handsome",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       },
       {
         "id": "market-cr7-only-god-handsome-buyer-chat",
         "title": "只穿过几次的球鞋，鞋盒还在",
-        "body": "这个有什么要注意的吗？",
+        "body": "是预览图里这个吗？",
         "sender": "{{playerName}}",
         "time": "闲鱼聊天",
         "kind": "text",
@@ -1025,7 +1028,7 @@
         "meta": {
           "type": "buyer",
           "product": "market-cr7-only-god-handsome",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       },
       {
@@ -1039,7 +1042,7 @@
         "meta": {
           "type": "buyer",
           "product": "market-cr7-only-god-handsome",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       },
       {
@@ -1053,7 +1056,7 @@
         "meta": {
           "type": "buyer",
           "product": "market-cr7-only-god-handsome",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       },
       {
@@ -1067,39 +1070,39 @@
         "meta": {
           "type": "buyer",
           "product": "market-cr7-only-god-handsome",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       },
       {
         "id": "market-cr7-only-god-handsome-reply-chat-1",
         "title": "寒冰射手",
-        "body": "看好描述和尺寸，不合适不用勉强。",
+        "body": "就看这张预览，不另外发陌生下载链接。",
         "sender": "C罗唯一真神",
         "time": "闲鱼聊天",
         "hidden": true,
         "meta": {
           "type": "reply",
           "product": "market-cr7-only-god-handsome",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       },
       {
         "id": "market-cr7-only-god-handsome-reply-chat-2",
         "title": "寒冰射手",
-        "body": "想好了再买，不着急。",
+        "body": "这笔交易不自动换手机壁纸，也不包恋爱运。",
         "sender": "C罗唯一真神",
         "time": "闲鱼聊天",
         "hidden": true,
         "meta": {
           "type": "reply",
           "product": "market-cr7-only-god-handsome",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       },
       {
         "id": "market-cr7-only-god-luck",
         "title": "好运壁纸，祝你今天顺一点",
-        "body": "只是个轻松的祝福，不是算命服务，不承诺任何现实结果。",
+        "body": "只是个轻松的祝福，不是算命服务，不承诺现实结果。配图可预览，成交只留本地记录，不会自动更换手机壁纸。",
         "time": "闲鱼 · 本地模拟",
         "sender": "C罗唯一真神",
         "folder": "壁纸",
@@ -1108,7 +1111,7 @@
           "sellerId": "seller-cr7-only-god",
           "stateKey": "market.cr7-only-god-luck",
           "price": "2",
-          "options": "[{\"id\": \"bargain\", \"text\": \"还能少一点吗？\", \"result\": \"quoted\", \"price\": 1}, {\"id\": \"chat\", \"text\": \"这个有什么要注意的吗？\", \"result\": \"ready\", \"price\": 2}]",
+          "options": "[{\"id\":\"bargain\",\"text\":\"还能少一点吗？\",\"result\":\"quoted\",\"price\":1},{\"id\":\"chat\",\"text\":\"这个好运具体管什么？\",\"result\":\"ready\",\"price\":2}]",
           "sellerBio": "足球周边收藏。可以聊球，价格也能聊，但不是无限加时。",
           "chatVersion": "2"
         }
@@ -1116,59 +1119,59 @@
       {
         "id": "market-cr7-only-god-luck-hello",
         "title": "寒冰射手",
-        "body": "在的。先看清楚描述，有问题可以问。",
+        "body": "在，祝福型壁纸，不是算命。先看预览。",
         "time": "闲鱼 · 本地模拟",
         "sender": "C罗唯一真神",
         "hidden": true,
         "meta": {
           "type": "reply",
           "product": "market-cr7-only-god-luck",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       },
       {
         "id": "market-cr7-only-god-luck-reply-buy",
         "title": "寒冰射手",
-        "body": "收到了，这次是本地模拟成交，留好记录。",
+        "body": "记下了，祝你今天顺一点。",
         "time": "闲鱼 · 本地模拟",
         "sender": "C罗唯一真神",
         "hidden": true,
         "meta": {
           "type": "reply",
           "product": "market-cr7-only-god-luck",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       },
       {
         "id": "market-cr7-only-god-luck-reply-bargain",
         "title": "寒冰射手",
-        "body": "32，可以。再低鞋盒可能要单独上架。",
+        "body": "[议价] 元。祝福照给，结果不包。",
         "time": "闲鱼 · 本地模拟",
         "sender": "C罗唯一真神",
         "hidden": true,
         "meta": {
           "type": "reply",
           "product": "market-cr7-only-god-luck",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       },
       {
         "id": "market-cr7-only-god-luck-reply-leave",
         "title": "寒冰射手",
-        "body": "行，先逛着，有需要再说。",
+        "body": "行，不强求，想好再说。",
         "time": "闲鱼 · 本地模拟",
         "sender": "C罗唯一真神",
         "hidden": true,
         "meta": {
           "type": "reply",
           "product": "market-cr7-only-god-luck",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       },
       {
         "id": "market-cr7-only-god-luck-buyer-chat",
         "title": "只穿过几次的球鞋，鞋盒还在",
-        "body": "这个有什么要注意的吗？",
+        "body": "这个好运具体管什么？",
         "sender": "{{playerName}}",
         "time": "闲鱼聊天",
         "kind": "text",
@@ -1176,7 +1179,7 @@
         "meta": {
           "type": "buyer",
           "product": "market-cr7-only-god-luck",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       },
       {
@@ -1190,7 +1193,7 @@
         "meta": {
           "type": "buyer",
           "product": "market-cr7-only-god-luck",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       },
       {
@@ -1204,7 +1207,7 @@
         "meta": {
           "type": "buyer",
           "product": "market-cr7-only-god-luck",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       },
       {
@@ -1218,33 +1221,33 @@
         "meta": {
           "type": "buyer",
           "product": "market-cr7-only-god-luck",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       },
       {
         "id": "market-cr7-only-god-luck-reply-chat-1",
         "title": "寒冰射手",
-        "body": "好运归祝福，作业归你写。",
+        "body": "管一句祝你顺利，不管具体结果。",
         "sender": "C罗唯一真神",
         "time": "闲鱼聊天",
         "hidden": true,
         "meta": {
           "type": "reply",
           "product": "market-cr7-only-god-luck",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       },
       {
         "id": "market-cr7-only-god-luck-reply-chat-2",
         "title": "寒冰射手",
-        "body": "想好了再买，不着急。",
+        "body": "壁纸能预览，买了也不会自动换上。",
         "sender": "C罗唯一真神",
         "time": "闲鱼聊天",
         "hidden": true,
         "meta": {
           "type": "reply",
           "product": "market-cr7-only-god-luck",
-          "sellerId": "seller-hanbing-sheshou"
+          "sellerId": "seller-cr7-only-god"
         }
       }
     ]
@@ -1633,7 +1636,7 @@
     },
     {
       "id": "market-hanbing-sheshou-cap-select-chat",
-      "label": "你平时也会买重东西？",
+      "label": "帽子洗过了吗？",
       "event": "marketSelect",
       "target": "market-hanbing-sheshou-cap.chat",
       "conditions": [
@@ -1997,7 +2000,7 @@
     },
     {
       "id": "market-xinan-yujie-gaming-delay-buy",
-      "label": "寒冰射手正在回复",
+      "label": "西南禹姐正在回复",
       "type": "delay",
       "delayMs": 1100,
       "actions": [
@@ -2103,7 +2106,7 @@
     },
     {
       "id": "market-xinan-yujie-gaming-delay-bargain",
-      "label": "寒冰射手正在回复",
+      "label": "西南禹姐正在回复",
       "type": "delay",
       "delayMs": 1100,
       "actions": [
@@ -2199,7 +2202,7 @@
     },
     {
       "id": "market-xinan-yujie-gaming-delay-leave",
-      "label": "寒冰射手正在回复",
+      "label": "西南禹姐正在回复",
       "type": "delay",
       "delayMs": 1100,
       "actions": [
@@ -2285,7 +2288,7 @@
     },
     {
       "id": "market-xinan-yujie-gaming-select-chat",
-      "label": "你平时也会买重东西？",
+      "label": "是能登录的账号吗？",
       "event": "marketSelect",
       "target": "market-xinan-yujie-gaming.chat",
       "conditions": [
@@ -2512,7 +2515,7 @@
     },
     {
       "id": "market-xinan-yujie-gaming-delay-chat-1",
-      "label": "寒冰射手正在回复",
+      "label": "西南禹姐正在回复",
       "type": "delay",
       "delayMs": 900,
       "actions": [
@@ -2528,7 +2531,7 @@
     },
     {
       "id": "market-xinan-yujie-gaming-delay-chat-2",
-      "label": "寒冰射手正在回复",
+      "label": "西南禹姐正在回复",
       "type": "delay",
       "delayMs": 900,
       "actions": [
@@ -2649,7 +2652,7 @@
     },
     {
       "id": "market-tutucha-mengmengda-shirt-delay-buy",
-      "label": "寒冰射手正在回复",
+      "label": "兔兔叉萌萌哒正在回复",
       "type": "delay",
       "delayMs": 1100,
       "actions": [
@@ -2755,7 +2758,7 @@
     },
     {
       "id": "market-tutucha-mengmengda-shirt-delay-bargain",
-      "label": "寒冰射手正在回复",
+      "label": "兔兔叉萌萌哒正在回复",
       "type": "delay",
       "delayMs": 1100,
       "actions": [
@@ -2851,7 +2854,7 @@
     },
     {
       "id": "market-tutucha-mengmengda-shirt-delay-leave",
-      "label": "寒冰射手正在回复",
+      "label": "兔兔叉萌萌哒正在回复",
       "type": "delay",
       "delayMs": 1100,
       "actions": [
@@ -2937,7 +2940,7 @@
     },
     {
       "id": "market-tutucha-mengmengda-shirt-select-chat",
-      "label": "你平时也会买重东西？",
+      "label": "尺码和款式能确认一下吗？",
       "event": "marketSelect",
       "target": "market-tutucha-mengmengda-shirt.chat",
       "conditions": [
@@ -3164,7 +3167,7 @@
     },
     {
       "id": "market-tutucha-mengmengda-shirt-delay-chat-1",
-      "label": "寒冰射手正在回复",
+      "label": "兔兔叉萌萌哒正在回复",
       "type": "delay",
       "delayMs": 900,
       "actions": [
@@ -3180,7 +3183,7 @@
     },
     {
       "id": "market-tutucha-mengmengda-shirt-delay-chat-2",
-      "label": "寒冰射手正在回复",
+      "label": "兔兔叉萌萌哒正在回复",
       "type": "delay",
       "delayMs": 900,
       "actions": [
@@ -3301,7 +3304,7 @@
     },
     {
       "id": "market-cr7-only-god-career-delay-buy",
-      "label": "寒冰射手正在回复",
+      "label": "C罗唯一真神正在回复",
       "type": "delay",
       "delayMs": 1100,
       "actions": [
@@ -3407,7 +3410,7 @@
     },
     {
       "id": "market-cr7-only-god-career-delay-bargain",
-      "label": "寒冰射手正在回复",
+      "label": "C罗唯一真神正在回复",
       "type": "delay",
       "delayMs": 1100,
       "actions": [
@@ -3503,7 +3506,7 @@
     },
     {
       "id": "market-cr7-only-god-career-delay-leave",
-      "label": "寒冰射手正在回复",
+      "label": "C罗唯一真神正在回复",
       "type": "delay",
       "delayMs": 1100,
       "actions": [
@@ -3589,7 +3592,7 @@
     },
     {
       "id": "market-cr7-only-god-career-select-chat",
-      "label": "你平时也会买重东西？",
+      "label": "买完会自动换壁纸吗？",
       "event": "marketSelect",
       "target": "market-cr7-only-god-career.chat",
       "conditions": [
@@ -3816,7 +3819,7 @@
     },
     {
       "id": "market-cr7-only-god-career-delay-chat-1",
-      "label": "寒冰射手正在回复",
+      "label": "C罗唯一真神正在回复",
       "type": "delay",
       "delayMs": 900,
       "actions": [
@@ -3832,7 +3835,7 @@
     },
     {
       "id": "market-cr7-only-god-career-delay-chat-2",
-      "label": "寒冰射手正在回复",
+      "label": "C罗唯一真神正在回复",
       "type": "delay",
       "delayMs": 900,
       "actions": [
@@ -3953,7 +3956,7 @@
     },
     {
       "id": "market-cr7-only-god-handsome-delay-buy",
-      "label": "寒冰射手正在回复",
+      "label": "C罗唯一真神正在回复",
       "type": "delay",
       "delayMs": 1100,
       "actions": [
@@ -4059,7 +4062,7 @@
     },
     {
       "id": "market-cr7-only-god-handsome-delay-bargain",
-      "label": "寒冰射手正在回复",
+      "label": "C罗唯一真神正在回复",
       "type": "delay",
       "delayMs": 1100,
       "actions": [
@@ -4155,7 +4158,7 @@
     },
     {
       "id": "market-cr7-only-god-handsome-delay-leave",
-      "label": "寒冰射手正在回复",
+      "label": "C罗唯一真神正在回复",
       "type": "delay",
       "delayMs": 1100,
       "actions": [
@@ -4241,7 +4244,7 @@
     },
     {
       "id": "market-cr7-only-god-handsome-select-chat",
-      "label": "你平时也会买重东西？",
+      "label": "是预览图里这个吗？",
       "event": "marketSelect",
       "target": "market-cr7-only-god-handsome.chat",
       "conditions": [
@@ -4468,7 +4471,7 @@
     },
     {
       "id": "market-cr7-only-god-handsome-delay-chat-1",
-      "label": "寒冰射手正在回复",
+      "label": "C罗唯一真神正在回复",
       "type": "delay",
       "delayMs": 900,
       "actions": [
@@ -4484,7 +4487,7 @@
     },
     {
       "id": "market-cr7-only-god-handsome-delay-chat-2",
-      "label": "寒冰射手正在回复",
+      "label": "C罗唯一真神正在回复",
       "type": "delay",
       "delayMs": 900,
       "actions": [
@@ -4605,7 +4608,7 @@
     },
     {
       "id": "market-cr7-only-god-luck-delay-buy",
-      "label": "寒冰射手正在回复",
+      "label": "C罗唯一真神正在回复",
       "type": "delay",
       "delayMs": 1100,
       "actions": [
@@ -4711,7 +4714,7 @@
     },
     {
       "id": "market-cr7-only-god-luck-delay-bargain",
-      "label": "寒冰射手正在回复",
+      "label": "C罗唯一真神正在回复",
       "type": "delay",
       "delayMs": 1100,
       "actions": [
@@ -4807,7 +4810,7 @@
     },
     {
       "id": "market-cr7-only-god-luck-delay-leave",
-      "label": "寒冰射手正在回复",
+      "label": "C罗唯一真神正在回复",
       "type": "delay",
       "delayMs": 1100,
       "actions": [
@@ -4893,7 +4896,7 @@
     },
     {
       "id": "market-cr7-only-god-luck-select-chat",
-      "label": "你平时也会买重东西？",
+      "label": "这个好运具体管什么？",
       "event": "marketSelect",
       "target": "market-cr7-only-god-luck.chat",
       "conditions": [
@@ -5120,7 +5123,7 @@
     },
     {
       "id": "market-cr7-only-god-luck-delay-chat-1",
-      "label": "寒冰射手正在回复",
+      "label": "C罗唯一真神正在回复",
       "type": "delay",
       "delayMs": 900,
       "actions": [
@@ -5136,7 +5139,7 @@
     },
     {
       "id": "market-cr7-only-god-luck-delay-chat-2",
-      "label": "寒冰射手正在回复",
+      "label": "C罗唯一真神正在回复",
       "type": "delay",
       "delayMs": 900,
       "actions": [

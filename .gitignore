@@ -35,3 +35,10 @@ stories/foundation/xianyu-seller-links.author.json
 
 # Generated Cloudflare player export.
 dist-public/
+
+# Local dialogue review backups (never publish).
+work/dialogue-review-backups/
+*.review-tmp
+
+# Local character bibles: private author context, excluded from the public repository.
+docs/author-only/

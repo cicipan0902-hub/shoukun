@@ -32,7 +32,7 @@
         {
           "id": "ch06-party-01",
           "senderId": "brother",
-          "body": "今晚出来坐坐。安慰一下没入选的音乐人，费用各自承担。",
+          "body": "今晚出来坐坐，安慰一下没入选的音乐人。先说好，各付各的。",
           "hidden": true,
           "time": "聚会当晚"
         },
@@ -46,7 +46,7 @@
         {
           "id": "ch06-party-03",
           "senderId": "brother",
-          "body": "你还肯回嘴，说明问题不大。",
+          "body": "还有劲怼我，那就出来。",
           "hidden": true,
           "time": "聚会当晚"
         },
@@ -74,7 +74,7 @@
         {
           "id": "ch06-party-07",
           "senderId": "zuohang",
-          "body": "{{playerName}}不吃生葱。别只把面上那点挑走，汤里也别加。",
+          "body": "{{playerName}}那份别放生葱，汤里也别加。",
           "hidden": true,
           "time": "聚会当晚"
         },
@@ -95,14 +95,14 @@
         {
           "id": "ch06-party-10",
           "senderId": "junhao",
-          "body": "少辣，嗓子还要用。其他我没要求。",
+          "body": "少辣，嗓子还得用。别的随便。",
           "hidden": true,
           "time": "聚会当晚"
         },
         {
           "id": "ch06-party-11",
           "senderId": "brother",
-          "body": "给你单点了清汤。冰的别碰，今天没人跟你抢。",
+          "body": "清汤单给你点了。别跟冰的较劲，今天又没人抢。",
           "hidden": true,
           "time": "聚会当晚"
         },
@@ -123,7 +123,7 @@
         {
           "id": "ch06-party-14",
           "senderId": "star",
-          "body": "这道先别下单，家琪不是说不吃香菜？",
+          "body": "这道先别点，家琪不是不吃香菜吗？",
           "hidden": true,
           "time": "聚会当晚"
         },
@@ -193,7 +193,7 @@
         {
           "id": "ch06-party-24",
           "senderId": "star",
-          "body": "不用。你跟着原唱进就行。",
+          "body": "不用，跟着原唱进就行。",
           "hidden": true,
           "time": "聚会当晚"
         },
@@ -221,14 +221,14 @@
         {
           "id": "ch06-party-28",
           "senderId": "brother",
-          "body": "你嗓子刚好，别一口气唱完歌单。温水在左手边。",
+          "body": "别一口气把歌单唱完，嗓子刚好。左边有温水。",
           "hidden": true,
           "time": "聚会当晚"
         },
         {
           "id": "ch06-party-29",
           "senderId": "junhao",
-          "body": "知道。唱完这首先歇。",
+          "body": "知道，唱完这首就歇。",
           "hidden": true,
           "time": "聚会当晚"
         },
@@ -298,7 +298,7 @@
         {
           "id": "ch06-party-39",
           "senderId": "junhao",
-          "body": "下一轮认真点吧。问我。",
+          "body": "下一轮问我，来点认真的。",
           "hidden": true,
           "time": "聚会当晚"
         },
@@ -312,28 +312,28 @@
         {
           "id": "ch06-party-41",
           "senderId": "junhao",
-          "body": "去。但先把要学什么、花多少钱问清楚。我想去，不等于闭着眼就去。",
+          "body": "去。先问清楚学什么、要多少钱，不能光听着好就跑。",
           "hidden": true,
           "time": "聚会当晚"
         },
         {
           "id": "ch06-party-42",
           "senderId": "junhao",
-          "body": "真选了，落下的课和钱也不能全推给家里。反正不能一直等条件齐了才动。",
+          "body": "真去了，落下的课我得补，钱也不能全让家里出。先打听着，别等什么都齐了再动。",
           "hidden": true,
           "time": "聚会当晚"
         },
         {
           "id": "ch06-party-43",
           "senderId": "brother",
-          "body": "申请时间你别记岔。上回附件是我催到最后一天才齐的。",
+          "body": "申请时间你看准。上回那份附件拖到最后一天，我催得都快背下来了。",
           "hidden": true,
           "time": "聚会当晚"
         },
         {
           "id": "ch06-party-44",
           "senderId": "junhao",
-          "body": "你替我存着呢？",
+          "body": "你还替我存着？",
           "hidden": true,
           "time": "聚会当晚"
         },
@@ -347,7 +347,7 @@
         {
           "id": "ch06-party-46",
           "senderId": "zuohang",
-          "body": "我下学期想报竞赛，周末估计没这么好叫了。你真找学校，资料我可以帮着看，钱别找我。",
+          "body": "我下学期想报竞赛，周末不一定有空。资料能帮你看，钱就别找我了。",
           "hidden": true,
           "time": "聚会当晚"
         },
@@ -361,21 +361,21 @@
         {
           "id": "ch06-party-48",
           "senderId": "junhao",
-          "body": "是可惜。但下次我带能上台的完整版本，不靠大家替我惋惜。",
+          "body": "可惜啊。下回我拿完整的来，别光顾着替我叹气。",
           "hidden": true,
           "time": "聚会当晚"
         },
         {
           "id": "ch06-party-49",
           "senderId": "junhao",
-          "body": "当然。名单上没我名字，文件上还写着我的名字呢。",
+          "body": "名单没写我，文件总还归我吧。",
           "hidden": true,
           "time": "聚会当晚"
         },
         {
           "id": "ch06-party-50",
           "senderId": "star",
-          "body": "你把他这几版都记得挺清楚。",
+          "body": "他这几版，你都记得挺清楚。",
           "hidden": true,
           "time": "聚会当晚"
         },
@@ -396,7 +396,7 @@
         {
           "id": "ch06-party-53",
           "senderId": "zuohang",
-          "body": "轮到你了，{{playerName}}。如果你喜欢的人和你想象中完全不一样，你还会喜欢他吗？",
+          "body": "轮到你了，{{playerName}}。喜欢的人跟原来想的不一样，还喜欢吗？",
           "hidden": true,
           "time": "聚会当晚"
         },
@@ -458,7 +458,7 @@
         {
           "id": "ch06-zuo-02",
           "senderId": "zuohang",
-          "body": "到家了？你那张没看镜头的，我也留着。",
+          "body": "到家没？你没看镜头那张，我也留着了。",
           "hidden": true,
           "time": "聚会当晚"
         },
@@ -472,7 +472,7 @@
         {
           "id": "ch06-zuo-04",
           "senderId": "zuohang",
-          "body": "叫了。你在清点自己的伞、杯子和充电线，像来检查失物招领的。",
+          "body": "叫了。你忙着数伞、杯子、充电线，跟检查失物招领似的。",
           "hidden": true,
           "time": "聚会当晚"
         },
@@ -486,7 +486,7 @@
         {
           "id": "ch06-zuo-06",
           "senderId": "zuohang",
-          "body": "挺好。照片也给你放相册了，别等我清手机才来要原图。",
+          "body": "存好啊。相册里也放了一份，别等我清手机了才来找原图。",
           "hidden": true,
           "time": "聚会当晚"
         },
@@ -500,14 +500,14 @@
         {
           "id": "ch06-zuo-08",
           "senderId": "zuohang",
-          "body": "你可以不答。现在也不用补。",
+          "body": "没事，那题就过了，不用补答。",
           "hidden": true,
           "time": "聚会当晚"
         },
         {
           "id": "ch06-zuo-09",
           "senderId": "zuohang",
-          "body": "我去看题了，明早别拿“昨晚太晚”当迟到理由。",
+          "body": "我看题去了。明早可别拿这个当迟到理由。",
           "hidden": true,
           "time": "聚会当晚"
         }

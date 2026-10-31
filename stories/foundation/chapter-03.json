@@ -84,7 +84,7 @@
         {
           "id": "ch03-work-09",
           "senderId": "brother",
-          "body": "对，接活之前问时间，这次比我强。",
+          "body": "对，先问时间。比我接活的时候清醒。",
           "hidden": true,
           "time": "文化节筹备日"
         },
@@ -119,14 +119,14 @@
         {
           "id": "ch03-work-14",
           "senderId": "junhao",
-          "body": "那行我先写的。我想试着组个乐队，但还在问大家。",
+          "body": "那行我填的。想组个乐队，人还没问齐。",
           "hidden": true,
           "time": "文化节筹备日"
         },
         {
           "id": "ch03-work-15",
           "senderId": "brother",
-          "body": "总感觉我是“大家”之一。。。",
+          "body": "我怎么听着，我也是“大家”里一个……",
           "hidden": true,
           "time": "文化节筹备日"
         },
@@ -140,28 +140,28 @@
         {
           "id": "ch03-work-17",
           "senderId": "zuohang",
-          "body": "两个男的别这样",
+          "body": "你俩差不多行了",
           "hidden": true,
           "time": "文化节筹备日"
         },
         {
           "id": "ch03-work-18",
           "senderId": "star",
-          "body": "报名什么时候截止？设备和能用的场地先问一下。",
+          "body": "什么时候截止？先问问设备和场地能不能用。",
           "hidden": true,
           "time": "文化节筹备日"
         },
         {
           "id": "ch03-work-19",
           "senderId": "junhao",
-          "body": "场地我去问。前两天写了一点旋律，还没弄完。",
+          "body": "场地我问去。前两天写了点旋律，还没弄完。",
           "hidden": true,
           "time": "文化节筹备日"
         },
         {
           "id": "ch03-work-20",
           "senderId": "brother",
-          "body": "我可以帮你问人，但别先把我写成主唱。虽然我有预感。。",
+          "body": "人我能帮你问，先别把我填成主唱。我都能猜到你下一句。",
           "hidden": true,
           "time": "文化节筹备日"
         },
@@ -196,14 +196,14 @@
         {
           "id": "ch03-work-25",
           "senderId": "star",
-          "body": "这样很合适。场地没定之前别先占别人的时段。",
+          "body": "这样就行。场地没定，先别占别人的时段。",
           "hidden": true,
           "time": "文化节筹备日"
         },
         {
           "id": "ch03-work-28",
           "senderId": "junhao",
-          "body": "设备我自己继续问。你们先忙各自的。",
+          "body": "设备我接着问，你们先忙。",
           "hidden": true,
           "time": "文化节筹备日"
         },
@@ -238,7 +238,7 @@
         {
           "id": "ch03-work-33",
           "senderId": "star",
-          "body": "材料我会回来拿。先放文件夹里就行。",
+          "body": "材料我回来拿，先放文件夹里就行。",
           "hidden": true,
           "time": "文化节筹备日"
         }
@@ -309,7 +309,7 @@
       {
         "id": "ch03-moment-work",
         "title": "今天先把待定写清楚",
-        "body": "纸单核了一下午，总算不再把“想试试”印成“已报名”。\n多谢今天帮忙核对的人。\n\n晚饭先吃，打印机明天再修。",
+        "body": "核了一下午纸单。总算能看明白谁是想试试，谁是真报了名。谢谢今天一起核对的。\n\n先吃饭，打印机明天再管。",
         "kind": "post",
         "hidden": true,
         "time": "文化节筹备日",

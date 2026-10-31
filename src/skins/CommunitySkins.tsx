@@ -35,7 +35,8 @@ function Follow({ p, account }: { p: Props; account: Item }) {
 export function resolveWeiboItems(items: Item[], contacts: Item[], owner: string, ownerAvatar: string): Item[] {
   return items.map((item) => {
     const ref = item.meta.characterRef || item.meta.accountId;
-    const contact = contacts.find((c) => c.id === ref + "-card");
+    const contact = contacts.find((c) => c.id === ref + "-card")
+      || contacts.find((c) => c.id === item.meta.accountId + "-card");
     if (ref !== "owner" && !contact) return item;
     const name = ref === "owner" ? owner || "我" : contact!.title;
     return { ...item, sender: name, avatar: ref === "owner" ? ownerAvatar : contact!.avatar,
@@ -90,7 +91,9 @@ export function marketSeller(p: Pick<Props, "items">, item: Item) {
 }
 function ProductCard({ p, item, open }: { p: Props; item: Item; open: () => void }) {
   const [saved, save] = useSkinState<boolean>(p, "market-saved-" + item.id, false);
-  return <article className="market-card"><button className="market-card-open" onClick={open}><Media item={item} /><strong>{item.title}</strong><span className="market-price">¥ {item.meta.price}</span><small className="market-card-seller"><Avatar name={item.sender} src={marketSeller(p, item)?.avatar || item.avatar} />{item.sender}</small></button><button aria-pressed={saved} onClick={() => save(!saved)}>{saved ? "已收藏" : "收藏"}</button></article>;
+  const play = useContext(CampusPlayContext);
+  const status = marketChatStatus(item, play?.state);
+  return <article className="market-card"><button className="market-card-open" onClick={open}><Media item={item} /><strong>{item.title}</strong><span className="market-price">¥ {item.meta.price}</span>{(status.paid || status.orderStatus === "cancelled") && <small role="status">{status.orderStatus === "refunded" ? "已退款 · 交易记录" : status.paid ? "已售出 · 仅供查看" : "本次订单已取消"}</small>}<small className="market-card-seller"><Avatar name={item.sender} src={marketSeller(p, item)?.avatar || item.avatar} />{item.sender}</small></button><button aria-pressed={saved} onClick={() => save(!saved)}>{saved ? "已收藏" : "收藏"}</button></article>;
 }
 export function marketChatStatus(item: Item, state?: Runtime) {
   const key = item.meta.stateKey || "market." + item.id.slice(7);
@@ -147,9 +150,11 @@ function SellerChat({ p, item, back }: { p: Props; item: Item; back: () => void 
 }
 function ProductDetail({ p, item, back, seller, contact }: { p: Props; item: Item; back: () => void; seller: () => void; contact: () => void }) {
   const [saved, save] = useSkinState<boolean>(p, "market-saved-" + item.id, false);
+  const play = useContext(CampusPlayContext);
+  const status = marketChatStatus(item, play?.state);
   const photos = [item, ...p.items.filter((i) => i.meta.type === "gallery" && i.meta.product === item.id)];
   const [index, setIndex] = useState(0);
-  return <div className="community-app"><button className="community-back" onClick={back}>‹ 返回商品</button><div className="community-scroll"><section className="market-detail"><Media item={photos[index] || item} /><div className="market-gallery-controls">{photos.map((photo, i) => <button key={photo.id} aria-pressed={index === i} onClick={() => setIndex(i)}>图片 {i + 1}</button>)}</div><small>{safeMedia((photos[index] || item).media) ? (item.meta.imageCaption || (item.meta.sellerId ? "卖家提供的商品图片" : "现有素材示意配图")) : "商品图片待补"}</small><h2>{item.title}</h2><strong className="market-price">¥ {item.meta.price}</strong><p>{item.body}</p><button className="community-author" onClick={seller}><Avatar name={item.sender} src={marketSeller(p, item)?.avatar || item.avatar} /><span>{item.sender} · 查看卖家</span></button></section></div><footer className="market-detail-footer"><button aria-pressed={saved} onClick={() => save(!saved)}>{saved ? "已收藏" : "收藏"}</button><button className="community-primary" onClick={contact}>联系卖家／砍价</button></footer></div>;
+  return <div className="community-app"><button className="community-back" onClick={back}>‹ 返回商品</button><div className="community-scroll"><section className="market-detail"><Media item={photos[index] || item} /><div className="market-gallery-controls">{photos.map((photo, i) => <button key={photo.id} aria-pressed={index === i} onClick={() => setIndex(i)}>图片 {i + 1}</button>)}</div><small>{safeMedia((photos[index] || item).media) ? (item.meta.imageCaption || (item.meta.sellerId ? "卖家提供的商品图片" : "现有素材示意配图")) : "商品图片待补"}</small><h2>{item.title}</h2><strong className="market-price">¥ {item.meta.price}</strong>{status.paid && <p role="status">{status.orderStatus === "refunded" ? "已退款，当前仅保留交易记录。" : "已售出，当前仅供查看交易记录。"}</p>}<p>{item.body}</p><button className="community-author" onClick={seller}><Avatar name={item.sender} src={marketSeller(p, item)?.avatar || item.avatar} /><span>{item.sender} · 查看卖家</span></button></section></div><footer className="market-detail-footer"><button aria-pressed={saved} onClick={() => save(!saved)}>{saved ? "已收藏" : "收藏"}</button><button className="community-primary" onClick={contact}>{status.paid || ["cancelled", "refunded"].includes(status.orderStatus) ? "查看交易记录" : "联系卖家／砍价"}</button></footer></div>;
 }
 export function XianyuSkin(p: Props) {
   const play = useContext(CampusPlayContext);

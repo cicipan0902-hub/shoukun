@@ -38,21 +38,21 @@
         {
           "id": "ch04-work-02",
           "senderId": "junhao",
-          "body": "那我先交草稿。节目还没写完，能先占个坑吗？",
+          "body": "那我先交草稿。还没写完，先占个坑行不行？",
           "hidden": true,
           "time": "草稿提交日"
         },
         {
           "id": "ch04-work-03",
           "senderId": "brother",
-          "body": "能。文件名写清楚，别最后交上来三个最终版。",
+          "body": "能，文件名写明白。别到时候三个都叫最终版。",
           "hidden": true,
           "time": "草稿提交日"
         },
         {
           "id": "ch04-work-04",
           "senderId": "junhao",
-          "body": "放心，目前只有一个草稿版。连我自己都不敢叫它最终版。",
+          "body": "放心，就一个草稿版。还没到叫最终版的时候。",
           "hidden": true,
           "time": "草稿提交日"
         },
@@ -66,7 +66,7 @@
         {
           "id": "ch04-work-06",
           "senderId": "junhao",
-          "body": "我只拿了笔。胶带和数学卷子都不在我的创作范围内。",
+          "body": "我就拿了支笔。胶带和数学卷子就别找我了。",
           "hidden": true,
           "time": "草稿提交日"
         },
@@ -87,28 +87,28 @@
         {
           "id": "ch04-work-09",
           "senderId": "brother",
-          "body": "谢谢。你俩对我的卷子比对文化节还上心。",
+          "body": "谢谢，你俩可比我本人惦记这张卷子。",
           "hidden": true,
           "time": "草稿提交日"
         },
         {
           "id": "ch04-work-10",
           "senderId": "zuohang",
-          "body": "毕竟文化节不会因为少一道大题扣你分。",
+          "body": "文化节不扣这分，数学老师要扣。",
           "hidden": true,
           "time": "草稿提交日"
         },
         {
           "id": "ch04-work-11",
           "senderId": "junhao",
-          "body": "附件我放文件夹里了。中间那段还没接好，先按草稿登记。",
+          "body": "附件放文件夹了。中间还没接顺，先记草稿。",
           "hidden": true,
           "time": "草稿提交日"
         },
         {
           "id": "ch04-work-12",
           "senderId": "brother",
-          "body": "收到。你负责把旋律写完，我负责把文件名看懂。",
+          "body": "行，你继续写。我先认一下你这些文件名。",
           "hidden": true,
           "time": "草稿提交日"
         }
@@ -126,49 +126,49 @@
         {
           "id": "ch04-junhao-01",
           "senderId": "junhao",
-          "body": "草稿你看到了吧？中间有一段我还没接上。",
+          "body": "草稿看到了吧？中间那段还没接上。",
           "hidden": true,
           "time": "草稿提交日"
         },
         {
           "id": "ch04-junhao-02",
           "senderId": "junhao",
-          "body": "我本来想了两个接法，听了几遍，两个都觉得差点意思。",
+          "body": "留了两个接法，来回听好几遍，哪个都差点意思。",
           "hidden": true,
           "time": "草稿提交日"
         },
         {
           "id": "ch04-junhao-03",
           "senderId": "junhao",
-          "body": "不过先报名再说。等我把它改到满意，文化节估计都结束了。",
+          "body": "先报。等我自己改满意，文化节都散场了。",
           "hidden": true,
           "time": "草稿提交日"
         },
         {
           "id": "ch04-junhao-04",
           "senderId": "junhao",
-          "body": "你听的时候有没有哪一段觉得还不错？别客气，也别为了鼓励我全夸一遍。",
+          "body": "你听着哪段还行？说具体点，别一句“都挺好”把我打发了。",
           "hidden": true,
           "time": "草稿提交日"
         },
         {
           "id": "ch04-junhao-05",
           "senderId": "junhao",
-          "body": "有时候自己改久了，只剩下哪儿不满意，反而忘了最开始为什么想写它。",
+          "body": "中间不想一下填满，又不能这么断着。两个接法都没弄顺，改久了连开头为什么这么写都快忘了。",
           "hidden": true,
           "time": "草稿提交日"
         },
         {
           "id": "ch04-junhao-06",
           "senderId": "junhao",
-          "body": "你先忙你的。附件我补齐，旋律我自己再折腾一会儿。",
+          "body": "附件我补，旋律我再折腾会儿。你先忙。",
           "hidden": true,
           "time": "草稿提交日"
         },
         {
           "id": "ch04-junhao-07",
           "senderId": "junhao",
-          "body": "对了，晚点我在排练室。核完的表放门口文件夹就行，别专门跑一趟。",
+          "body": "对了，我晚点在排练室。核完的表放门口文件夹就行，不用专门跑。",
           "hidden": true,
           "time": "草稿提交日"
         }

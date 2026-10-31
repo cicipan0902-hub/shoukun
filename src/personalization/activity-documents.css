@@ -3,6 +3,13 @@
 .activity-document h2 { font-size: 21px; margin: 8px 0 14px; }
 .activity-document p { white-space: pre-wrap; line-height: 1.75; font-size: 14px; text-align: left; }
 .activity-document small, .activity-hint { color: #69737a; }
+.activity-reading { background: #f4efe4; color: #3d352b; }
+.activity-reading .activity-scene-section { background: #fffaf0; border-color: #dfd4be; }
+.activity-reading-cover { margin: 18px 0; padding: 24px 18px; border-left: 6px solid #8a7050; background: #e9dec7; text-align: center; border-radius: 3px 12px 12px 3px; }
+.activity-reading-cover .activity-reading-title { font-family: serif; font-size: 23px; line-height: 1.6; }
+.activity-reading-cover img { max-width: 150px; max-height: 220px; object-fit: contain; }
+.activity-reading-cover p { text-align: center; margin: 12px 0 6px; }
+.activity-reading .activity-controls button { background: #685c42; }
 .activity-progress { background: #e8eee9; border-radius: 8px; padding: 8px; }
 .activity-table-scroll { width: 100%; overflow-x: auto; border: 1px solid #ddd; border-radius: 8px; background: white; }
 .activity-document table { border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 12px; }
